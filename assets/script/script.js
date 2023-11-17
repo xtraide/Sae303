@@ -15,6 +15,7 @@
         nextStep(stepForward);
     });
 
+    
     next.addEventListener('click', () => {
         let stepReward = count -= stepCount;
         nextStep(stepReward);
