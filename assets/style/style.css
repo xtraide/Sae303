@@ -1,16 +1,17 @@
-*{
-    margin: 0; 
-    padding: 0; 
-    box-sizing: border-box;}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-:root{
+:root {
   font-family: 'Courier New', Courier, monospace;
   font-size: 100%;
   --translateZ: 360px;
   --faceWidth: 180px;
 }
 
-body{ 
+body {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -19,15 +20,15 @@ body{
   background: white;
 }
 
-.carousel_scene{
-	position: absolute;
+.carousel_scene {
+  position: absolute;
   width: 200px;
   height: 110px;
   top: 20%;
   perspective: 640px;
 }
-  
-.carousel{
+
+.carousel {
   position: relative;
   width: 100%;
   height: 100%;
@@ -35,22 +36,17 @@ body{
   transition: 0.4s;
 }
 
-
-
-
-
-
-.face{
-  position:absolute;
+.face {
+  position: absolute;
   height: 120px;
   width: var(--faceWidth);
   text-align: center;
   font-size: 4.4rem;
   background-color: white;
-border: 3px solid;
+  border: 3px solid;
 }
 
-.button_wrap{
+.button_wrap {
   position: relative;
   display: flex;
   justify-content: center;
@@ -59,7 +55,7 @@ border: 3px solid;
   top: 23rem;
 }
 
-.button{
+.button {
   cursor: pointer;
   width: 6rem;
   height: 6rem;
@@ -67,31 +63,23 @@ border: 3px solid;
   font-size: 3rem;
 }
 
-.button:active{
+.button:active {
   font-size: 2.6rem;
 }
 
-.backface{
+.backface {
 
 }
 
-.f_01, .back_01{ 
-  transform: 
-  rotateY(0deg)
-  translateZ(var(--translateZ));
+.f_01, .back_01 {
+  transform: rotateY(0deg) translateZ(var(--translateZ));
+
 }
 
-
-.f_02, .back_02{ 
-  transform: 
-  rotateY(30deg) 
-  translateZ(var(--translateZ));
+.f_02, .back_02 {
+  transform: rotateY(30deg) translateZ(var(--translateZ));
 }
 
-
-.f_03, .back_03{ 
-  transform: 
-  rotateY(60deg) 
-  translateZ(var(--translateZ));
+.f_03, .back_03 {
+  transform: rotateY(60deg) translateZ(var(--translateZ));
 }
-
