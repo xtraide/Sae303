@@ -43,7 +43,17 @@
         <button class="button cursor-pointer width-6rem height-6rem m-2 fs-3" id="prev">prev</button>
         <button class="button cursor-pointer width-6rem height-6rem m-2 fs-3" id="next">next</button>
     </section>
+
+    <div class="card">
+        <h1 id="h1-card">Météo à Vesoul</h1>
+        <div class="weather-icon"></div>
+        <div id="temp-info"></div>
+        <div id="conditions-info"></div>
+        <div id="wind-info"></div>
+        <div id="clouds-info"></div>
+    </div>
     <script src="../assets/script/script.js"></script>
+    <script src="../assets/script/api_meteo.js"></script>
 </body>
 
 </html>
