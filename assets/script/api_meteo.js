@@ -23,21 +23,30 @@ document.addEventListener('DOMContentLoaded', () => {
                 infoDescription.innerHTML = htmlDescription;
 
                 const card = document.querySelector('.card');
-            
+
                 if (description.includes('pluie')) {
                     card.style.backgroundColor = 'lightblue';
-                } else if (description.includes('nuage')) {
+                } else if (description.includes('nuageux') || description.includes('nuage')) {
                     card.style.backgroundColor = 'gray';
-                } else if (description.includes('clair')) {
+                } else if (description.includes('clair') || description.includes('dégagé')) {
                     card.style.backgroundColor = 'skyblue';
+                } else if (description.includes('brume') || description.includes('brouillard')) {
+                    card.style.backgroundColor = 'lightgray';
+                } else if (description.includes('neige')) {
+                    card.style.backgroundColor = 'white';
+                } else if (description.includes('orage') || description.includes('tonnerre')) {
+                    card.style.backgroundColor = 'darkgray';
                 } else if (description.includes('couvert')) {
 
                     card.style.background = 'linear-gradient(0deg, rgba(41,41,41,1) 0%, rgba(187,187,187,1) 100%)';
                     infoDescription.style.color = 'white'
                     infoTemperature.style.color = 'white'
                     h1.style.color = 'white'
+                } else {
+
+                    card.style.backgroundColor = 'red';
                 }
-            
+
                 const iconUrl = `http://openweathermap.org/img/w/${iconCode}.png`;
                 infoIcon.innerHTML = `<img src="${iconUrl}" alt="Weather Icon">`;
             } else {
