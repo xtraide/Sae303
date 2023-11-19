@@ -39,7 +39,7 @@ body {
 }
 
 .card {
-  display: none;
+  display: none!important /* a modifier qd on aura une maquette */;
   border-radius: 10px;
   width: 235px;
   height: 325px;
