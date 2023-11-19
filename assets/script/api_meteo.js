@@ -33,20 +33,43 @@ document.addEventListener('DOMContentLoaded', () => {
                 const card = document.querySelector('.card');
 
                 if (conditions.includes('pluie')) {
+
                     card.style.backgroundColor = 'lightblue';
+                    card.style.color = 'white';
+
                 } else if (conditions.includes('nuageux') || conditions.includes('nuage')) {
-                    card.style.backgroundColor = 'gray';
+
+                    const nuages = données.clouds.all;
+                    const pourcentageNuages = nuages + '%';
+                    const styleGradient = `linear-gradient(0deg, rgba(79,79,79,1) ${pourcentageNuages}, rgba(187,187,187,1) 100%)`;
+
+                    card.style.background = styleGradient;
+                    card.style.color = "rgb(241, 241, 241)";
+
+
                 } else if (conditions.includes('clair') || conditions.includes('dégagé')) {
+
                     card.style.backgroundColor = 'skyblue';
+                    card.style.color = 'white';
+
                 } else if (conditions.includes('brume') || conditions.includes('brouillard')) {
+
                     card.style.backgroundColor = 'lightgray';
+                    card.style.color = 'white';
+
                 } else if (conditions.includes('neige')) {
+
                     card.style.backgroundColor = 'white';
+                    card.style.color = '#fff';
                 } else if (conditions.includes('orage') || conditions.includes('tonnerre')) {
+
                     card.style.backgroundColor = 'darkgray';
+                    card.style.color = 'white';
                 } else if (conditions.includes('couvert')) {
+
                     card.style.background = 'linear-gradient(0deg, rgba(41,41,41,1) 0%, rgba(187,187,187,1) 100%)';
                     card.style.color = 'white';
+
                 } else {
                     card.style.backgroundColor = 'red';
                 }

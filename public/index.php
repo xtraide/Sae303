@@ -41,10 +41,10 @@
         </section>
     </section>
     <section class="button_wrap position-relative d-flex justify-content-center w-90 mt-23rem">
-        <button class="button cursor-pointer width-6rem height-6rem m-2 fs-3" id="prev">prev</button>
-        <button class="button cursor-pointer width-6rem height-6rem m-2 fs-3" id="next">next</button>
+        <button class="button cursor-pointer width-6rem height-6rem m-2 fs-3" id="prev">◄</button>
+        <button class="button cursor-pointer width-6rem height-6rem m-2 fs-3" id="next">►</button>
     </section>
-    <div class="card">
+    <div class="card border-0 m-auto p-3 text-center">
         <h1 id="h1-card">Météo à Vesoul</h1>
         <div class="weather-icon"></div>
         <div id="temp-info"></div>
