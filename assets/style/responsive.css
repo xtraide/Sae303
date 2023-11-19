@@ -1,0 +1,32 @@
+@media (max-width: 890px) {
+    :root {
+        --translateZ: 290px!important;
+        --faceWidth: 150px!important;
+      }
+
+      .carousel_scene{
+        width: 150px!important;
+
+      }
+      .face{
+        height: 100px!important;
+      }
+}
+
+
+
+@media (max-width: 645px) {
+    :root {
+        --translateZ: 194px!important;
+        --faceWidth: 100px!important;
+      }
+      .carousel_scene{
+        width: 100px!important;
+
+      }
+
+      .face{
+        border: 2px solid!important;
+        height: 67px!important;
+      }
+}
