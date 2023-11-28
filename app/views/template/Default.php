@@ -1,0 +1,1 @@
+contien les element commune a tout les page (nav,footer...) pour adherent
