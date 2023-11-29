@@ -31,12 +31,10 @@ class Database
         return $this->pdo;
     }
 
-    public  function query($sql, $params = [], $class_name)
+    public  function query($sql, $class_name)
     {
         $req = $this->connect()->query($sql);
-
         $data = $req->fetchAll(PDO::FETCH_CLASS, $class_name);
-
         return $data;
     }
 

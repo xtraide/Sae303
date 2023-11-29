@@ -2,6 +2,6 @@
 
 namespace App\Table;
 
-class Staff
+class Staff extends Table
 {
 }

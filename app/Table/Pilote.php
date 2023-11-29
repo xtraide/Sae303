@@ -2,6 +2,6 @@
 
 namespace App\Table;
 
-class Pilote
+class Pilote extends Table
 {
 }

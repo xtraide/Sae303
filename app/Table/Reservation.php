@@ -2,6 +2,6 @@
 
 namespace App\Table;
 
-class Reservation
+class Reservation extends Table
 {
 }

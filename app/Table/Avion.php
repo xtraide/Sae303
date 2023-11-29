@@ -4,7 +4,7 @@ namespace App\Table;
 
 use app\Database;
 
-class Avion
+class Avion extends Table
 {
     public function count()
     {
@@ -17,6 +17,6 @@ class Avion
     //get image name 
     public function getImageName()
     {
-        return $this->image_name;
+        //return $this->image_name;
     }
 }
