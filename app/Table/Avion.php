@@ -2,17 +2,13 @@
 
 namespace App\Table;
 
-use app\Database;
+
 
 class Avion extends Table
 {
-    public function count()
-    {
-        $sql = "SELECT COUNT(*) FROM avions";
-        $db = new Database('test');
-        $data = $db->prepare($sql, [], "App\\Table\\Avion");
-        return $data[0]->count;
-    }
+    public $id_av;
+    public $modele;
+
 
     //get image name 
     public function getImageName()

@@ -1,9 +1,11 @@
 <?php
 
 
+foreach (\App\Table\Pilote::all() as $row) {
+    var_dump($row);
+}
 
-
-echo 'TAMER';
+APP\App::setTitle("Acceuil");
 ?>
 <section class="carousel_scene position-absolute top-20 start-50 translate-middle-x" style="width: 180px; height: 110px; perspective: 640px;">
 
