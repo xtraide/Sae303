@@ -10,7 +10,7 @@ class App
     private static $database;
     private static $title = "SAE 303";
 
-    public function getInstance()
+    public static function getInstance()
     {
         if (!self::$instance) {
             self::$instance = new App();
@@ -38,10 +38,10 @@ class App
             $config = Config::getInstance();
 
             return new Database(
-                $config->get('db_name'),
-                $config->get('db_user'),
-                $config->get('db_pass'),
-                $config->get('db_host')
+                $config->get('DB_NAME'),
+                $config->get('DB_USER'),
+                $config->get('DB_PASS'),
+                $config->get('DB_HOST')
             );
         }
         return self::$database;

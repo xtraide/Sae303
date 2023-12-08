@@ -20,7 +20,7 @@ class Table
         self::$database = $db;
         if (!self::$table) {
             $class_name = explode(DIRECTORY_SEPARATOR, get_called_class());
-            self::$table = strtolower(end($class_name));
+            self::$table = self::$prefix . strtolower(end($class_name));
         }
     }
 
@@ -38,14 +38,7 @@ class Table
         }
         return null;
     }
-    public function query($sql, $params = [])
-    {
-        if (!$params) {
-            return App::getDatabase()->prepare($sql, $params, get_called_class());
-        } else {
-            return App::getDatabase()->query($sql, get_called_class());
-        }
-    }
+
 
     public function count()
     {

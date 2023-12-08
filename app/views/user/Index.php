@@ -1,6 +1,8 @@
 <?php
 
+$app = App\App::getInstance();
 
+$post = $app->getTable('pilote');
 foreach (\App\Table\Pilote::all() as $row) {
     var_dump($row);
 }
