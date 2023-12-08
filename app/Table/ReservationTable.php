@@ -2,7 +2,9 @@
 
 namespace App\Table;
 
-class Reservation extends Table
+use \Core\Table\Table;
+
+class ReservationTable extends Table
 {
     public $id_resa;
     public $_date;

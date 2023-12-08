@@ -1,20 +1,23 @@
 <?php
+define("ROOT", dirname(__DIR__));
 
-require '../App/Autoloader.php';
+require ROOT . '/App/App.php';
 
-App\Autoloader::register();
+App::Load();
+
+$app = App::getInstance();
 
 
 if (isset($_GET['page'])) {
-    $p = $_GET['page'];
+    $page = $_GET['page'];
 } else {
-    $p = "index";
+    $page = "index";
 }
 
 
 ob_start();
-if ($p == "index") {
-    require "../App/Views/User/Index.php";
+if ($page == "index") {
+    require ROOT . "/Views/User/Index.php";
 }
 $content = ob_get_clean();
-require '../App/Views/Template/Default.php';
+require ROOT . '/Views/Template/Default.php';

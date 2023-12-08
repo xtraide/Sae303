@@ -2,7 +2,9 @@
 
 namespace App\Table;
 
-class Pilote extends Table
+use \Core\Table\Table;
+
+class PiloteTable extends Table
 {
     public $id_pil;
     public $nom;

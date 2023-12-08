@@ -3,8 +3,9 @@
 namespace App\Table;
 
 
+use \Core\Table\Table;
 
-class Avion extends Table
+class AvionTable extends Table
 {
     public $id_av;
     public $modele;

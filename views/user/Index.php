@@ -1,13 +1,10 @@
 <?php
 
-$app = App\App::getInstance();
-
-$post = $app->getTable('pilote');
-foreach (\App\Table\Pilote::all() as $row) {
+foreach (App::getInstance()->getTable('adherent')->all() as $row) {
     var_dump($row);
 }
 
-APP\App::setTitle("Acceuil");
+$app->setTitle("Acceuil");
 ?>
 <section class="carousel_scene position-absolute top-20 start-50 translate-middle-x" style="width: 180px; height: 110px; perspective: 640px;">
 

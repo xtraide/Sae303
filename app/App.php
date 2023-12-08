@@ -1,14 +1,15 @@
 <?php
 
-namespace App;
 
-use App\Database;
+
+use  Core\Database;
+use \Core\Config;
 // class factory
 class App
 {
     private static $instance;
     private static $database;
-    private static $title = "SAE 303";
+    private  $title = "SAE 303";
 
     public static function getInstance()
     {
@@ -16,6 +17,14 @@ class App
             self::$instance = new App();
         }
         return self::$instance;
+    }
+    public static function Load()
+    {
+        session_start();
+        require ROOT . "/App/Autoloader.php";
+        App\Autoloader::register();
+        require ROOT . "/Core/Autoloader.php";
+        Core\Autoloader::register();
     }
 
 
@@ -26,16 +35,17 @@ class App
     */
     public  function getTable($name)
     {
-        $class_name = '\\App\\Table\\' . ucfirst($name);
+        $class_name = '\\App\\Table\\' . ucfirst($name) . "Table";
+
         return new  $class_name(self::getDatabase());
     }
 
 
 
-    public static function getDatabase()
+    public  function getDatabase()
     {
         if (!self::$database) {
-            $config = Config::getInstance();
+            $config = Config::getInstance(ROOT . '/Config/Config.php');
 
             return new Database(
                 $config->get('DB_NAME'),
@@ -44,7 +54,7 @@ class App
                 $config->get('DB_HOST')
             );
         }
-        return self::$database;
+        return $this->database;
     }
 
     public static function notFound()
@@ -53,13 +63,13 @@ class App
         header('location: App/Views/User/404.php');
     }
 
-    public static function getTitle()
+    public  function getTitle()
     {
-        return self::$title;
+        return $this->title;
     }
 
-    public static function setTitle($title)
+    public  function setTitle($title)
     {
-        self::$title = $title;
+        $this->title = $title;
     }
 }

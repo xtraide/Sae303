@@ -2,7 +2,9 @@
 
 namespace App\Table;
 
-class Staff extends Table
+use \Core\Table\Table;
+
+class StaffTable extends Table
 {
     public $id_staff;
     public $nom;
