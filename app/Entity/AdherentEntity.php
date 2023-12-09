@@ -12,4 +12,10 @@ use Core\Entity\Entity;
 
 class AdherentEntity extends Entity
 {
+
+
+    public function getUrl()
+    {
+        return "index.php?page=adherent&id=" . $this->id;
+    }
 }

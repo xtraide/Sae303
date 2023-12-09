@@ -9,7 +9,7 @@ class App
 {
     private static $instance;
     private static $database;
-    private  $title = "SAE 303";
+    public  $title = "SAE 303";
 
     public static function getInstance()
     {

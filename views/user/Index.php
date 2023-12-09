@@ -4,7 +4,7 @@ foreach (App::getInstance()->getTable('adherent')->all() as $row) {
     var_dump($row);
 }
 
-$app->setTitle("Acceuil");
+
 ?>
 <section class="carousel_scene position-absolute top-20 start-50 translate-middle-x" style="width: 180px; height: 110px; perspective: 640px;">
 
