@@ -34,18 +34,12 @@ switch ($page) {
         $app->setTitle("Déconnexion");
         require ROOT . "/Views/User/Logout.php";
         break;
-    case "dashboard":
-        $app->setTitle("Tableau de bord");
-        require ROOT . "/Views/Staff/Dashboard.php";
-        break;
+
     case "profile":
         $app->setTitle("Profil");
         require ROOT . "/Views/User/Profile.php";
         break;
-    case "admin":
-        $app->setTitle("Administration");
-        require ROOT . "/Views/Staff/index.php";
-        break;
+
 
     default:
         $app->setTitle("Page non trouvée");

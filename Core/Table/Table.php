@@ -27,7 +27,6 @@ class Table
 
     public  function all()
     {
-
         return $this->query("SELECT * FROM  " . $this->table);
     }
 
@@ -46,7 +45,7 @@ class Table
      */
     public function count()
     {
-        return  $this->query("SELECT COUNT(*) FROM " . $this->table, [], get_called_class())[0]->count;
+        return  $this->query("SELECT COUNT(*) FROM " . $this->table)[0]->count;
     }
 
     //delete function
@@ -54,7 +53,7 @@ class Table
 
     public function delete($id)
     {
-        return $this->query("DELETE FROM " . $this->table . " WHERE id = :id;", ['id' => $id], get_called_class());
+        return $this->query("DELETE FROM " . $this->table . " WHERE id = :id;", ['id' => $id]);
     }
     //insert function
 
@@ -63,7 +62,7 @@ class Table
     //find function
     public  function find($id)
     {
-        return  $this->query("SELECT * FROM  " . $this->table . " WHERE id = :id;", ['id' => $id], get_called_class());
+        return  $this->query("SELECT * FROM  " . $this->table . " WHERE id = :id;", ['id' => $id]);
     }
     /**
      * choisie la methode de recherche 
