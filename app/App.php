@@ -7,6 +7,7 @@ use \Core\Config;
 // class factory
 class App
 {
+
     private static $instance;
     private static $database;
     public  $title = "SAE 303";
@@ -65,15 +66,7 @@ class App
         return $this->database;
     }
 
-    /**
-     * methode en cas de page non trouver 
-     * renvoie une page 404 et un message d'erreur
-     */
-    public static function notFound()
-    {
-        header('HTTP/1.1 404 Not Found');
-        header('location: App/Views/User/404.php');
-    }
+
 
     /**
      * Renvoie le titre pour cette page 
@@ -92,5 +85,24 @@ class App
     public  function setTitle($title)
     {
         $this->title = $title;
+    }
+    /**
+     * Renvoie une page d'acces interdit
+     */
+
+    public function forbidden()
+    {
+        header('HTTP/1.1 403 Forbidden');
+        die('Acces interdit');
+    }
+    /**
+     * methode en cas de page non trouver 
+     * renvoie une page 404 et un message d'erreur
+     */
+    public static function notFound()
+    {
+        header('HTTP/1.0 404 Not Found');
+        die('Page introuvable');
+        //header('location: App/Views/User/404.php');
     }
 }

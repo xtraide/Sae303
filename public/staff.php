@@ -1,4 +1,7 @@
 <?php
+
+use Core\Auth\DatabaseAuth;
+
 define("ROOT", dirname(__DIR__));
 
 require ROOT . '/App/App.php';
@@ -14,6 +17,10 @@ if (isset($_GET['page'])) {
     $page = "index";
 }
 
+$auth = new DatabaseAuth($app->getDatabase());
+if (!$auth->logged()) {
+    $app->forbidden();
+}
 
 ob_start();
 

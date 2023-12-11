@@ -70,7 +70,7 @@ class Database
      * @param array $params parametres
      * @param string $class_name nom de la classe
      * @param string $one si on veut recuperer un seul element
-     * @return array
+     * @return Object
      */
     public function prepare($sql, $params = [], $class_name = null, $one = null)
     {

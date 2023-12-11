@@ -53,7 +53,7 @@ class Table
 
     public function delete($id)
     {
-        return $this->query("DELETE FROM " . $this->table . " WHERE id = :id;", ['id' => $id]);
+        return $this->query("DELETE FROM " . $this->table . " WHERE id = ?;", [$id]);
     }
     //insert function
 
@@ -62,7 +62,7 @@ class Table
     //find function
     public  function find($id)
     {
-        return  $this->query("SELECT * FROM  " . $this->table . " WHERE id = :id;", ['id' => $id]);
+        return  $this->query("SELECT * FROM  " . $this->table . " WHERE id = ?;", [$id]);
     }
     /**
      * choisie la methode de recherche 
