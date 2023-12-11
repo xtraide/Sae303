@@ -11,6 +11,9 @@ class App
     private static $database;
     public  $title = "SAE 303";
 
+    /**
+     * Cree une instance de l'app 
+     */
     public static function getInstance()
     {
         if (!self::$instance) {
@@ -18,6 +21,10 @@ class App
         }
         return self::$instance;
     }
+
+    /**
+     * Fonction pour load les partie necessaire a l'app
+     */
     public static function Load()
     {
         session_start();
@@ -27,26 +34,27 @@ class App
         Core\Autoloader::register();
     }
 
-
-    /* Factory method to create a new instance
-    
-    $c = App::getInstance();
-    $c->getTable('table');
-    */
-    public  function getTable($name)
+    /**
+     * Factory method to create a new instance
+     * $c = App::getInstance();
+     * $c->getTable('table');
+     * @param string $name the name of the table
+     * @return class(Database)
+     */
+    public function getTable($name)
     {
         $class_name = '\\App\\Table\\' . ucfirst($name) . "Table";
-
-        return new  $class_name(self::getDatabase());
+        return new $class_name(self::getDatabase());
     }
 
-
-
-    public  function getDatabase()
+    /**
+     * Cree/recupere une instance de la bdd
+     * @return Database l'instance de la db
+     */
+    public function getDatabase()
     {
         if (!self::$database) {
             $config = Config::getInstance(ROOT . '/Config/Config.php');
-
             return new Database(
                 $config->get('DB_NAME'),
                 $config->get('DB_USER'),
@@ -57,17 +65,30 @@ class App
         return $this->database;
     }
 
+    /**
+     * methode en cas de page non trouver 
+     * renvoie une page 404 et un message d'erreur
+     */
     public static function notFound()
     {
         header('HTTP/1.1 404 Not Found');
         header('location: App/Views/User/404.php');
     }
 
-    public  function getTitle()
+    /**
+     * Renvoie le titre pour cette page 
+     * @return string $title le titre de la page
+     */
+    public function getTitle()
     {
         return $this->title;
     }
 
+    /**
+     * Set le titre de la page 
+     * @param string $title le titre de la page
+     * @return string $title 
+     */
     public  function setTitle($title)
     {
         $this->title = $title;

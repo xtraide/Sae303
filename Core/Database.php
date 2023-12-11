@@ -13,7 +13,7 @@ class Database
     private $db_pass;
     private $pdo;
     /**
-     * 
+     * Constructeur de la class Database
      * @param string $db_name 
      * @param string $db_user 
      * @param string $db_pass 
@@ -27,6 +27,7 @@ class Database
         $this->db_pass = $db_pass;
     }
     /**
+     * Cree une connection avec la bdd
      * @return PDO
      */
     public function connect()
@@ -39,6 +40,7 @@ class Database
         return $this->pdo;
     }
     /**
+     * Envoie une requete sans parametre a la bdd
      * @param string $sql the SQL
      * @param string $class_name the class name
      * @param string $one si on veut recuperer un seul element
@@ -63,6 +65,7 @@ class Database
     }
 
     /**
+     * Envoie une requete avec parrametre a la bdd
      * @param string $sql reque sql
      * @param array $params parametres
      * @param string $class_name nom de la classe

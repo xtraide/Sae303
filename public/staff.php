@@ -28,11 +28,11 @@ switch ($page) {
         require ROOT . "/Views/Staff/Dashboard.php";
         break;
 
-
     default:
         $app->setTitle("Page non trouvée");
         require ROOT . "/Views/Staff/Index.php";
         break;
 }
 $content = ob_get_clean();
+
 require ROOT . '/Views/Template/Default.php';

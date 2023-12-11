@@ -17,8 +17,11 @@ class Config
     {
         $this->config = require($file);
     }
-
-    // recuperation de l'instance  pour avoir toujour la meme instance 
+    /**
+     * Recupere l'instance de la config 
+     * @param string $file le chemin du fichier de configuration  avec les user,pass...
+     * @return instance 
+     */
     public static function getInstance($file)
     {
         if (!self::$_instance) {
@@ -27,7 +30,10 @@ class Config
         return self::$_instance;
     }
 
-    //recuperation d'unne key du tableaux de config
+    /**
+     * Recupere la clee => value du tableaux de config
+     * @param string $key nom de la clee a recupere du tableaux      DB_NAME, DB_USER, DB_PASS, DB_HOST
+     */
     public function get($key)
     {
         if (!array_key_exists($key, $this->config)) {

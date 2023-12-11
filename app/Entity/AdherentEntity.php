@@ -13,9 +13,12 @@ use Core\Entity\Entity;
 class AdherentEntity extends Entity
 {
 
-
+    /**
+     * Recupere L'url
+     * @return string Url a donne
+     */
     public function getUrl()
     {
-        return "index.php?page=adherent&id=" . $this->id;
+        return "index.php?page=Adherent&id=" . $this->id;
     }
 }
