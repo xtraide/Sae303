@@ -18,13 +18,16 @@ if (isset($_GET['page'])) {
 }
 
 $auth = new DatabaseAuth($app->getDatabase());
+/* A SUPRIMER 
+
 if (!$auth->logged()) {
     $app->forbidden();
-}
+}*/
 
 ob_start();
 
 switch ($page) {
+
     case "index":
         $app->setTitle("Acceuil");
         require ROOT . "/Views/Staff/Index.php";
@@ -34,7 +37,10 @@ switch ($page) {
         $app->setTitle("Tableau de bord");
         require ROOT . "/Views/Staff/Dashboard.php";
         break;
-
+    case "avion.edit":
+        $app->setTitle("Editer un avion");
+        require ROOT . "/Views/Staff/Avion/edit.php";
+        break;
     default:
         $app->setTitle("Page non trouvée");
         require ROOT . "/Views/Staff/Index.php";

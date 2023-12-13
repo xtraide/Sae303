@@ -22,19 +22,24 @@
 
 <body>
     <nav>
+
+        <a href="/Sae303/public/Staff.php?page=Admin">Admin</a> A SUPR
         <ul>
             <?php
+            $base = "/Sae303/public/index.php?page=";
             $dirs = ["../Views/staff", "../Views/user", "../Views/template"];
             foreach ($dirs as $dir) {
                 echo "<li><h4>" . $dir . "</h4>";
                 $scandir = scandir($dir);
                 foreach (array_diff($scandir, array(".", "..")) as $row) {
-                    echo "<a href='" . $dir . "/" . $row . "'>" . $row . "</a> <br>";
+                    $row = str_replace(".php", "", $row);
+                    echo "<a href='" . $base .  $row . "'>" . $row . "</a> <br>";
                 }
                 echo "</li>";
             }
 
             ?>
+
         </ul>
     </nav>
 
