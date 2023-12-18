@@ -1,5 +1,16 @@
 <?php
-$post = App::getInstance()->getTable('avion')->find($_GET['id']);
+$table = App::getInstance()->getTable('avion');
+if (!empty($_POST)) {
+    $result = $table->update($_GET['id'], [
+        'modele' => $_POST['modele']
+    ]);
+    if ($result) {
+?>
+        <div class="alert alert-success">L'avion a bien été modifié</div>
+<?php
+    }
+}
+$post = $table->find($_GET['id']);
 
 $form = new \Core\HTML\BootstrapForm($post);
 ?>

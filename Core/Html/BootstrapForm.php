@@ -32,6 +32,7 @@ class BootstrapForm extends Form
     }
 
 
+
     /**
      * Cree un champ de type submit
      * @return string

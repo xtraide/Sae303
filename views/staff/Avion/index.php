@@ -2,6 +2,9 @@
 
 $planes = App::getInstance()->getTable('avion')->all();
 ?>
+<p>
+    <a href="?page=avion.add" class="btn btn-success"></a>
+</p>
 <h2>Administrer les avions</h2>
 <table class="table">
     <thead>

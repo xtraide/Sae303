@@ -39,7 +39,11 @@ switch ($page) {
         break;
     case "avion.edit":
         $app->setTitle("Editer un avion");
-        require ROOT . "/Views/Staff/Avion/edit.php";
+        require ROOT . "/Views/Staff/Avion/Edit.php";
+        break;
+    case "avion.add":
+        $app->setTitle("Editer un avion");
+        require ROOT . "/Views/Staff/Avion/Add.php";
         break;
     default:
         $app->setTitle("Page non trouvée");

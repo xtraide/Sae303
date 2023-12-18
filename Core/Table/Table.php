@@ -65,6 +65,38 @@ class Table
         return  $this->query("SELECT * FROM  " . $this->table . " WHERE id = ?;", [$id]);
     }
     /**
+     * insert un element dans la base de donnee
+     * @param number $id
+     * @param array $fields
+     * @return boolean
+     */
+    public function update($id, $fields)
+    {
+        $sql_parts = [];
+        $attributes = [];
+        foreach ($fields as $champ => $value) {
+            $sql_parts[] = "$champ = ?";
+            $attributes[] = $value;
+        }
+        $attributes[] = $id;
+        $sql_part = implode(', ', $sql_parts);
+        return $this->query("UPDATE " . $this->table . " SET $sql_part WHERE id = ?", $attributes, true);
+    }
+    /**
+     * 
+     */
+    function extract($key, $value)
+    {
+        $records = $this->all();
+        $return = [];
+        foreach ($records as $v) {
+            $return[$v->$key] = $v->$value;
+        }
+        return $return;
+    }
+
+
+    /**
      * choisie la methode de recherche 
      * query = pas de parramètre
      * prepare = avec parametre
