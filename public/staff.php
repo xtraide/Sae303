@@ -37,11 +37,11 @@ switch ($page) {
         $app->setTitle("Tableau de bord");
         require ROOT . "/Views/Staff/Dashboard.php";
         break;
-    case "avion.edit":
+    case "Avion.edit":
         $app->setTitle("Editer un avion");
         require ROOT . "/Views/Staff/Avion/Edit.php";
         break;
-    case "avion.add":
+    case "Avion.add":
         $app->setTitle("Editer un avion");
         require ROOT . "/Views/Staff/Avion/Add.php";
         break;

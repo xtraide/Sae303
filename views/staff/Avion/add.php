@@ -1,7 +1,7 @@
 <?php
 $table = App::getInstance()->getTable('avion');
 if (!empty($_POST)) {
-    $result = $table->update($_GET['id'], [
+    $result = $table->create([
         'modele' => $_POST['modele']
     ]);
 
@@ -11,9 +11,8 @@ if (!empty($_POST)) {
 <?php
     }
 }
-$post = $table->find($_GET['id']);
-var_dump($post);
-$form = new \Core\HTML\BootstrapForm($post);
+
+$form = new \Core\HTML\BootstrapForm($_POST);
 ?>
 <form method="post">
     <?= $form->input('modele', 'Modèle de l\'avion'); ?>

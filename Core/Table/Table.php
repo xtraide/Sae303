@@ -55,9 +55,7 @@ class Table
     {
         return $this->query("DELETE FROM " . $this->table . " WHERE id = ?;", [$id], true);
     }
-    //insert function
 
-    //update function
 
     //find function
     public  function find($id)
@@ -76,13 +74,32 @@ class Table
         $attributes = [];
         foreach ($fields as $champ => $value) {
             $sql_parts[] = "$champ = ?";
-
             $attributes[] = $value;
         }
         $attributes[] = $id;
         $sql_part = implode(', ', $sql_parts);
         return $this->query("UPDATE " . $this->table . " SET $sql_part WHERE id = ?", $attributes, true);
     }
+
+
+    /**
+     * insert un element dans la base de donnee
+
+     * @param array $fields
+     * @return boolean
+     */
+    public function create($fields)
+    {
+        $sql_parts = [];
+        $attributes = [];
+        foreach ($fields as $champ => $value) {
+            $sql_parts[] = "$champ = ?";
+            $attributes[] = $value;
+        }
+        $sql_part = implode(', ', $sql_parts);
+        return $this->query("INSERT INTO " . $this->table . " SET $sql_part", $attributes, true);
+    }
+
     /**
      * 
      */
