@@ -53,7 +53,7 @@ class Table
 
     public function delete($id)
     {
-        return $this->query("DELETE FROM " . $this->table . " WHERE id = ?;", [$id]);
+        return $this->query("DELETE FROM " . $this->table . " WHERE id = ?;", [$id], true);
     }
     //insert function
 
@@ -62,7 +62,7 @@ class Table
     //find function
     public  function find($id)
     {
-        return  $this->query("SELECT * FROM  " . $this->table . " WHERE id = ?;", [$id]);
+        return  $this->query("SELECT * FROM  " . $this->table . " WHERE id = ?;", [$id], true);
     }
     /**
      * insert un element dans la base de donnee
@@ -76,6 +76,7 @@ class Table
         $attributes = [];
         foreach ($fields as $champ => $value) {
             $sql_parts[] = "$champ = ?";
+
             $attributes[] = $value;
         }
         $attributes[] = $id;
@@ -107,14 +108,19 @@ class Table
      */
     public function query($sql, $parrams = [], $one = null)
     {
+
         if ($parrams) {
 
-            return $this->database->prepare($sql, $parrams,  str_replace(
-                'Table',
-                'Entity',
-                get_class($this),
+            return $this->database->prepare(
+                $sql,
+                $parrams,
+                str_replace(
+                    'Table',
+                    'Entity',
+                    get_class($this)
+                ),
                 $one
-            ));
+            );
         } else {
 
             return $this->database->query(
@@ -122,9 +128,10 @@ class Table
                 str_replace(
                     'Table',
                     'Entity',
-                    get_class($this),
-                    $one
-                )
+                    get_class($this)
+                ),
+                $one
+
             );
         }
     }

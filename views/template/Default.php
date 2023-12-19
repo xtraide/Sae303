@@ -23,7 +23,7 @@
 <body>
     <nav>
 
-        <a href="/Sae303/public/Staff.php?page=Admin">Admin</a> A SUPR
+        <a href="Staff.php?page=index">Admin</a> A SUPR
         <ul>
             <?php
             $base = "/Sae303/public/index.php?page=";
