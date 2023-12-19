@@ -31,12 +31,17 @@
 </header>
 
 <body>
-    <nav>
+   <!-- <nav>
 
         <a href="Staff.php?page=index">Admin</a> A SUPR
         <ul>
+<<<<<<< HEAD
             <?php
             $base = "index.php?page=";
+=======
+            <?php/*
+            $base = "/Sae303/public/index.php?page=";
+>>>>>>> 460d648f3414fcd72e7b7dbe20d34169a4a4fcef
             $dirs = ["../Views/staff", "../Views/user", "../Views/template"];
             foreach ($dirs as $dir) {
                 echo "<li><h4>" . $dir . "</h4>";
@@ -48,11 +53,11 @@
                 echo "</li>";
             }
 
-            ?>
+           */ ?>
 
         </ul>
     </nav>
-
+        -->
     <?= $content ?>
 
 </body>
