@@ -18,27 +18,28 @@ if (isset($_GET['page'])) {
 ob_start();
 
 switch ($page) {
-    case "index":
+
+    case "Index":
         $app->setTitle("Acceuil");
         require ROOT . "/Views/User/Index.php";
         break;
 
-    case "login":
+    case "Login":
         $app->setTitle("Connexion");
         require ROOT . "/Views/User/Login.php";
         break;
 
-    case "register":
+    case "Register":
         $app->setTitle("Inscription");
         require ROOT . "/Views/User/Register.php";
         break;
 
-    case "logout":
+    case "Logou":
         $app->setTitle("Déconnexion");
         require ROOT . "/Views/User/Logout.php";
         break;
 
-    case "profile":
+    case "Profile":
         $app->setTitle("Profil");
         require ROOT . "/Views/User/Profile.php";
         break;

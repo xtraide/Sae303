@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.1
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le : lun. 11 déc. 2023 à 23:40
--- Version du serveur : 8.2.0
--- Version de PHP : 8.2.13
+-- Généré le : mer. 13 déc. 2023 à 11:38
+-- Version du serveur : 8.0.31
+-- Version de PHP : 8.0.26
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,11 +24,40 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Structure de la table `ntrhndmam_adherent`
+--
+
+DROP TABLE IF EXISTS `ntrhndmam_adherent`;
+CREATE TABLE IF NOT EXISTS `ntrhndmam_adherent` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `civilite` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `nom` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `prenom` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `_date` date NOT NULL,
+  `adresse` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `situation_familiale` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `date_situation_familiale` varchar(50) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `dateFin_situation_familiale` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `email` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `numero` int NOT NULL,
+  `nb_a_charge` int NOT NULL,
+  `activite` varchar(50) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `token` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `verified` tinyint(1) DEFAULT NULL,
+  `mdp` varchar(50) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `role` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
 -- Structure de la table `ntrhndmam_avion`
 --
 
 DROP TABLE IF EXISTS `ntrhndmam_avion`;
 CREATE TABLE IF NOT EXISTS `ntrhndmam_avion` (
+<<<<<<< HEAD
   `id_av` int NOT NULL,
   `modèle` varchar(50) NOT NULL,
   PRIMARY KEY (`id_av`)
@@ -42,6 +71,12 @@ INSERT INTO `ntrhndmam_avion` (`id_av`, `modèle`) VALUES
 (1, 'Airbus A320'),
 (2, 'Boeing 737'),
 (3, 'Cessna 172');
+=======
+  `id` int NOT NULL AUTO_INCREMENT,
+  `modele` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+>>>>>>> 010467bd58c2458c31d4a339735810942979917c
 
 -- --------------------------------------------------------
 
@@ -51,6 +86,7 @@ INSERT INTO `ntrhndmam_avion` (`id_av`, `modèle`) VALUES
 
 DROP TABLE IF EXISTS `ntrhndmam_pilote`;
 CREATE TABLE IF NOT EXISTS `ntrhndmam_pilote` (
+<<<<<<< HEAD
   `id_pil` int NOT NULL,
   `nom` varchar(50) NOT NULL,
   `prenom` varchar(50) NOT NULL,
@@ -66,6 +102,15 @@ CREATE TABLE IF NOT EXISTS `ntrhndmam_pilote` (
 INSERT INTO `ntrhndmam_pilote` (`id_pil`, `nom`, `prenom`, `civilite`, `email`) VALUES
 (1, 'Smith', 'John', 'Monsieur', 'john.smith@email.com'),
 (2, 'Johnson', 'Emily', 'Madame', 'emily.johnson@email.com');
+=======
+  `id` int NOT NULL AUTO_INCREMENT,
+  `nom` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `prenom` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `civilite` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `email` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+>>>>>>> 010467bd58c2458c31d4a339735810942979917c
 
 -- --------------------------------------------------------
 
@@ -75,8 +120,9 @@ INSERT INTO `ntrhndmam_pilote` (`id_pil`, `nom`, `prenom`, `civilite`, `email`) 
 
 DROP TABLE IF EXISTS `ntrhndmam_reservation`;
 CREATE TABLE IF NOT EXISTS `ntrhndmam_reservation` (
-  `id_resa` int NOT NULL,
+  `id` int NOT NULL AUTO_INCREMENT,
   `_date` date DEFAULT NULL,
+<<<<<<< HEAD
   `id_av` int NOT NULL,
   `id_pil` int NOT NULL,
   `id_ad` int NOT NULL,
@@ -129,6 +175,16 @@ CREATE TABLE IF NOT EXISTS `ntrhndmam_user` (
 INSERT INTO `ntrhndmam_user` (`id_ad`, `civilite`, `nom`, `prénom`, `_date`, `adresse`, `situation_familiale`, `date_situation_familiale`, `dateFin__situation_familiale`, `email`, `numero`, `nb_a_charge`, `activite`, `token`, `verified`, `mdp`, `role`) VALUES
 (1, 'Monsieur', 'Dupont', 'Jean', '1990-01-01', '123 Rue de la Paix', 'Marié', '1988-05-15', '2022-01-01', 'dupont.jean@email.com', 123456789, 2, 'Ingénieur', 'xyz123', 1, 'motdepasse123', 'Utilisateur'),
 (2, 'Madame', 'Durand', 'Sophie', '1995-03-15', '456 Avenue des Fleurs', 'Célibataire', NULL, '', 'durand.sophie@email.com', 987654321, 0, 'Docteur', 'abc456', 0, 'mdp456', 'Administrateur');
+=======
+  `id_1` int NOT NULL,
+  `id_2` int NOT NULL,
+  `id_3` int NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `id_1` (`id_1`),
+  KEY `id_2` (`id_2`),
+  KEY `id_3` (`id_3`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+>>>>>>> 010467bd58c2458c31d4a339735810942979917c
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

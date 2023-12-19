@@ -53,7 +53,7 @@ class Table
 
     public function delete($id)
     {
-        return $this->query("DELETE FROM " . $this->table . " WHERE id = ?;", [$id]);
+        return $this->query("DELETE FROM " . $this->table . " WHERE id = ?;", [$id], true);
     }
     //insert function
 
@@ -62,8 +62,41 @@ class Table
     //find function
     public  function find($id)
     {
-        return  $this->query("SELECT * FROM  " . $this->table . " WHERE id = ?;", [$id]);
+        return  $this->query("SELECT * FROM  " . $this->table . " WHERE id = ?;", [$id], true);
     }
+    /**
+     * insert un element dans la base de donnee
+     * @param number $id
+     * @param array $fields
+     * @return boolean
+     */
+    public function update($id, $fields)
+    {
+        $sql_parts = [];
+        $attributes = [];
+        foreach ($fields as $champ => $value) {
+            $sql_parts[] = "$champ = ?";
+
+            $attributes[] = $value;
+        }
+        $attributes[] = $id;
+        $sql_part = implode(', ', $sql_parts);
+        return $this->query("UPDATE " . $this->table . " SET $sql_part WHERE id = ?", $attributes, true);
+    }
+    /**
+     * 
+     */
+    function extract($key, $value)
+    {
+        $records = $this->all();
+        $return = [];
+        foreach ($records as $v) {
+            $return[$v->$key] = $v->$value;
+        }
+        return $return;
+    }
+
+
     /**
      * choisie la methode de recherche 
      * query = pas de parramètre
@@ -75,14 +108,19 @@ class Table
      */
     public function query($sql, $parrams = [], $one = null)
     {
+
         if ($parrams) {
 
-            return $this->database->prepare($sql, $parrams,  str_replace(
-                'Table',
-                'Entity',
-                get_class($this),
+            return $this->database->prepare(
+                $sql,
+                $parrams,
+                str_replace(
+                    'Table',
+                    'Entity',
+                    get_class($this)
+                ),
                 $one
-            ));
+            );
         } else {
 
             return $this->database->query(
@@ -90,9 +128,10 @@ class Table
                 str_replace(
                     'Table',
                     'Entity',
-                    get_class($this),
-                    $one
-                )
+                    get_class($this)
+                ),
+                $one
+
             );
         }
     }

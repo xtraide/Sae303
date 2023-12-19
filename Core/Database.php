@@ -49,6 +49,16 @@ class Database
     public  function query($sql, $class_name = null, $one = null)
     {
         $req = $this->connect()->query($sql);
+
+        if (
+            strpos($sql, 'INSERT') === 0
+            || strpos($sql, 'UPDATE') === 0
+            || strpos($sql, 'DELETE') === 0
+        ) {
+            return $req;
+        }
+
+
         if ($class_name != null) {
             $req->setFetchMode(PDO::FETCH_CLASS, $class_name);
         } else {
@@ -69,13 +79,21 @@ class Database
      * @param string $sql reque sql
      * @param array $params parametres
      * @param string $class_name nom de la classe
-     * @param string $one si on veut recuperer un seul element
+     * @param boolean $one si on veut recuperer un seul element
      * @return Object
      */
     public function prepare($sql, $params = [], $class_name = null, $one = null)
     {
+
         $req = $this->connect()->prepare($sql);
-        $req->execute($params) or die($this->connect()->errorInfo());
+        $res = $req->execute($params) or die($this->connect()->errorInfo());
+        if (
+            strpos($sql, 'INSERT') === 0
+            || strpos($sql, 'UPDATE') === 0
+            || strpos($sql, 'DELETE') === 0
+        ) {
+            return $res;
+        }
         if ($class_name != null) {
             $req->setFetchMode(PDO::FETCH_CLASS, $class_name);
         } else {

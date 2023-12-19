@@ -18,9 +18,24 @@ if (!empty($_POST)) {
 $form = new BootstrapForm($_POST);
 ?>
 <form action="#" method="post">
-    <?php
-    echo $form->input('email', "Adresse email");
-    echo $form->input('password', "Mot de passe", ['type' => 'password']);
-    echo $form->submit();
-    ?>
+    <div>
+        <div>
+            <H3>Adresse Email</H3>
+            <?php
+            echo $form->input('email', "Adresse email");
+            ?>
+        </div>
+        <div>
+            <h3>Mot de Passe</h3>
+            <?php
+            echo $form->input('password', "Mot de passe", ['type' => 'password']);
+            ?>
+        </div>
+        <div>
+            <?php
+            echo $form->submit();
+            ?>
+        </div>
+    </div>
+
 </form>
