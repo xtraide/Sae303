@@ -21,12 +21,13 @@ class BootstrapForm extends Form
     public function input($name, $label = null, $options = [])
     {
         $type = isset($options['type']) ? $options['type'] : 'text';
+        $class = isset($options['class']) ? $options['class'] : '';
         $label = $label ?? $name;
         $label = '<label>' . $label . '</label>';
         if ($type === 'textarea') {
             $input = '<textarea name="' . $name . '" class="form-control">' . $this->getValue($name) . '</textarea>';
         } else {
-            $input = '<input type="' . $type . '" name="' . $name . '" value="' . $this->getValue($name) . '" class="form-control">';
+            $input = '<input type="' . $type . '" name="' . $name . '" value="' . $this->getValue($name) . '" class="form-control ' . $class . '">';
         }
         return $this->surround($label . $input);
     }
