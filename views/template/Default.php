@@ -18,7 +18,15 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Io4HIM2JZ5V7WtjHX3g5D6DfSi7M6Roi7zTP25IKb3kkZfL6BuP+4+DTP6DK6MgD" crossorigin="anonymous"></script>
     <title><?= App::getInstance()->title ?></title>
 </head>
-
+<header>
+    <nav>
+        <div>
+            <div name=""></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
+</header>
 
 <body>
     <nav>

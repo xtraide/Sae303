@@ -15,7 +15,7 @@ SET time_zone = "+00:00";
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
+/*!40101 SET NAMES utf8mb3_general_ci */;
 
 --
 -- Base de données : `ntrhndmam_acf2l`
@@ -32,7 +32,7 @@ CREATE TABLE IF NOT EXISTS `ntrhndmam_avion` (
   `id_av` int NOT NULL,
   `modèle` varchar(50) NOT NULL,
   PRIMARY KEY (`id_av`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3_general_ci COLLATE=utf8mb3_general_ci;
 
 --
 -- Déchargement des données de la table `ntrhndmam_avion`
@@ -57,7 +57,7 @@ CREATE TABLE IF NOT EXISTS `ntrhndmam_pilote` (
   `civilite` varchar(50) NOT NULL,
   `email` varchar(50) NOT NULL,
   PRIMARY KEY (`id_pil`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3_general_ci COLLATE=utf8mb3_general_ci;
 
 --
 -- Déchargement des données de la table `ntrhndmam_pilote`
@@ -84,7 +84,7 @@ CREATE TABLE IF NOT EXISTS `ntrhndmam_reservation` (
   KEY `id_av` (`id_av`),
   KEY `id_pil` (`id_pil`),
   KEY `id_ad` (`id_ad`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3_general_ci COLLATE=utf8mb3_general_ci;
 
 --
 -- Déchargement des données de la table `ntrhndmam_reservation`
@@ -120,7 +120,7 @@ CREATE TABLE IF NOT EXISTS `ntrhndmam_user` (
   `mdp` varchar(50) DEFAULT NULL,
   `role` varchar(50) NOT NULL,
   PRIMARY KEY (`id_ad`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3_general_ci COLLATE=utf8mb3_general_ci;
 
 --
 -- Déchargement des données de la table `ntrhndmam_user`
