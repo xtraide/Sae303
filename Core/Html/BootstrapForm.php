@@ -38,9 +38,10 @@ class BootstrapForm extends Form
      * Cree un champ de type submit
      * @return string
      */
-    public function submit()
+    public function submit($options = [])
     {
-        return $this->surround('<button type="submit" class="btn btn-primary">Envoyer</button>');
+        $class = isset($options['class']) ? $options['class'] : '';
+        return $this->surround('<button type="submit" class="btn btn-primary ' . $class . '">Envoyer</button>');
     }
     /**
      * Cree un champ de type file
