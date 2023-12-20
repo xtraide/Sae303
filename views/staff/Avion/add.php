@@ -7,7 +7,7 @@ if (!empty($_POST)) {
 
     if ($result) {
 ?>
-        <div class="alert alert-success">L'avion a bien été modifié</div>
+        <div class="alert alert-success">L'avion a bien été ajouter</div>
 <?php
     }
 }
