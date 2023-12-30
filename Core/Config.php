@@ -17,6 +17,7 @@ class Config
     {
         $this->config = require($file);
     }
+
     /**
      * Recupere l'instance de la config 
      * @param string $file le chemin du fichier de configuration  avec les user,pass...

@@ -12,6 +12,8 @@ class Autoloader
     {
         spl_autoload_register(array(__CLASS__, 'autoload'));
     }
+
+
     /**
      *  Va chercher les class/ficher donc le site a besoin 
      * @param string  $class class a charger
