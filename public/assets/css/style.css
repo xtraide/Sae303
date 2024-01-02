@@ -8,6 +8,10 @@
   font-family: quicksand;
   src: url(../quickravageregular-x31g8.otf);
   }
+  @font-face {
+    font-family: baloo;
+    src: url(../Baloo2-VariableFont_wght.ttf);
+    }
 
 :root {
   --translateZ: 360px;
@@ -62,13 +66,13 @@ border-bottom: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 
-.nav-element > a{
+.nav-element > div > a{
 text-decoration: none;
 color: black;
 text-align: center;
 }
 
-.nav-element > a:hover{
+.nav-element > div > a:hover{
 color: rgba(0, 0, 0, 0.5);
 }
 
@@ -81,25 +85,6 @@ h2{
   padding-top: 47%;
 }
 
-.decouvrer{
-  font-family: quicksand;
-  font-size: 2rem;
-  color: white;
-  text-align: center;
-  margin-top: 10%;
-  background-color: black;
-  border-radius: 20px;
-}
-
-#Q{
-  font-family: quicksand;
-  font-size: 3.5rem;
-  color: white;
-  text-align: center;
-  margin-top: 10%;
-  border-radius: 20px;
-}
-
 .cursor-classic{
   cursor: default;
 }
@@ -108,7 +93,6 @@ h2{
   margin-left: 1em;
   margin-right: 1em;
 }
-
-body{
-  background-color: #ff0000;
+.label-log > .form-group > label{
+  font-family: baloo;
 }

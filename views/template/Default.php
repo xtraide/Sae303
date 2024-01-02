@@ -72,7 +72,7 @@
 </header>
 
 <body>
-    <a href="Staff.php?page=index">Admin</a> A SUPR
+    <a href="Staff.php?page=index">Admin</a>
 
     <?= $content ?>
 
