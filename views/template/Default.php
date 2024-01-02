@@ -72,9 +72,37 @@
 </header>
 
 <body>
-    <a href="Staff.php?page=index">Admin</a>
+    <?php /*
+    $dir = "../Views/staff";
+    echo "<h4>" . $dir . "</h4>";
+    $scandir = scandir($dir);
 
-    <?= $content ?>
+    foreach (array_diff($scandir, array(".", "..")) as $row) {
+    ?>
+        <a href="<?= $dir . "/" . $row ?>"><?= $row ?></a> <br>
+    <?php
+    }
+    $dir = "../Views/user";
+    echo "<h4>" . $dir . "</h4>";
+    $scandir = scandir($dir);
+    foreach (array_diff($scandir, array(".", "..")) as $row) {
+    ?>
+        <a href="<?= $dir . "/" . $row ?>"><?= $row ?></a> <br>
+    <?php
+    }
+    $dir = "../Views/template";
+    echo "<h4>" . $dir . "</h4>";
+    $scandir = scandir($dir);
+    foreach (array_diff($scandir, array(".", "..")) as $row) {
+    ?>
+        <a href="<?= $dir . "/" . $row ?>"><?= $row ?></a> <br>
+    <?php
+    }
+
+
+
+    ?>
+    <?= $content */?>
 
 </body>
 
