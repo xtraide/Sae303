@@ -1,8 +1,3 @@
-<?php
-
-$planes = App::getInstance()->getTable('pilote')->all();
-?>
-
 <h2>Administrer les pilotes</h2>
 <a href="?page=pilote.add" class="btn btn-success m-2">Crée un nouvel pilote</a>
 <table class="table">
@@ -18,18 +13,18 @@ $planes = App::getInstance()->getTable('pilote')->all();
         </tr>
     </thead>
     <tbody>
-        <?php foreach ($planes as $plane) { ?>
+        <?php foreach ($avions as $avion) { ?>
             <tr>
 
-                <td><?= $plane->nom ?></td>
-                <td><?= $plane->prenom ?></td>
-                <td><?= $plane->civilite ?></td>
-                <td><?= $plane->email ?></td>
+                <td><?= $avion->nom ?></td>
+                <td><?= $avion->prenom ?></td>
+                <td><?= $avion->civilite ?></td>
+                <td><?= $avion->email ?></td>
                 <td>
-                    <a href="?page=pilote.edit&id=<?= $plane->id ?>" class="btn btn-primary">Editer</a>
+                    <a href="?page=pilote.edit&id=<?= $avion->id ?>" class="btn btn-primary">Editer</a>
                     <form action="?page=pilote.delete" method="post" style="display: inline-block;">
-                        <input type="hidden" name="id" value="<?= $plane->id ?>">
-                        <button type="submit" href="?page=pilote.Delete&id=<?= $plane->id ?>" class="btn btn-danger">Supprimer</a>
+                        <input type="hidden" name="id" value="<?= $avion->id ?>">
+                        <button type="submit" href="?page=pilote.Delete&id=<?= $avion->id ?>" class="btn btn-danger">Supprimer</a>
                     </form>
 
                 </td>

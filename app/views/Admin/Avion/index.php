@@ -4,12 +4,12 @@
     <thead>
         <tr>
             <td>modèle</td>
+            <td>Action</td>
         </tr>
     </thead>
     <tbody>
         <?php foreach ($avions as $plane) { ?>
             <tr>
-
                 <td><?= $plane->modele ?></td>
                 <td>
                     <a href="?page=admin.avion.edit&id=<?= $plane->id ?>" class="btn btn-primary">Editer</a>

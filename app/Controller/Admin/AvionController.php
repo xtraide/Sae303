@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Admin\Controller;
+namespace App\Controller\Admin;
 
 use Core\HTML\BootstrapForm;
 
-class AvionController extends AppController
+class AvionController extends \App\Controller\AppController
 {
     public function __construct()
     {
@@ -55,6 +55,8 @@ class AvionController extends AppController
         $form = new \Core\HTML\BootstrapForm($_POST);
         $this->render('admin.avion.edit', compact('form'));
     }
+
+
     public function delete()
     {
         if (!empty($_POST)) {

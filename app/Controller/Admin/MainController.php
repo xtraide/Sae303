@@ -1,8 +1,9 @@
 <?php
 
-namespace App\Controller;
+namespace App\Controller\Admin;
 
-class MainController extends AppController
+
+class MainController extends \App\Controller\AppController
 {
     public function __construct()
     {
@@ -12,6 +13,6 @@ class MainController extends AppController
     public function index()
     {
         $avions = $this->Avion->all();
-        $this->render('main.index', compact('avions'));
+        $this->render('admin.avion.index', compact('avions'));
     }
 }

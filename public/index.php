@@ -5,9 +5,6 @@ require ROOT . '/App/App.php';
 
 App::Load();
 
-
-
-
 if (isset($_GET['page'])) {
     $page = $_GET['page'];
 } else {
@@ -15,9 +12,11 @@ if (isset($_GET['page'])) {
 }
 
 
+
+
 $page = explode('.', $page);
 if ($page[0] == 'admin') {
-    $controller = '\App\Controller\Staff\\' . ucfirst($page[1]) . 'Controller';
+    $controller = '\App\Controller\Admin\\' . ucfirst($page[1]) . 'Controller';
     $action = $page[2];
 } else {
     $controller = '\App\Controller\\' . ucfirst($page[0]) . 'Controller';
