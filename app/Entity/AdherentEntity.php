@@ -21,4 +21,8 @@ class AdherentEntity extends Entity
     {
         return "index.php?page=Adherent&id=" . $this->id;
     }
+    public function tamer()
+    {
+        return "ARNOOOOOOOOOOOOOO";
+    }
 }
