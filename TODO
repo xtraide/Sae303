@@ -1,0 +1,14 @@
+- RESERVATION 
+   - Verif heur(bdd) date 
+
+- CONTROLLER ADMIN 
+    - ADD EDIT DELET  avion fait
+
+- VERIF INPUT 
+    - user/ 
+    - admin/
+
+- ERROR 
+    - 404 
+
+-VERIF tout les page marche 
