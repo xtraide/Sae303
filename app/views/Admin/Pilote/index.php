@@ -8,16 +8,23 @@ $planes = App::getInstance()->getTable('pilote')->all();
 <table class="table">
     <thead>
         <tr>
-            <td>ID</td>
-            <td>modèle</td>
-            <td>Action</td>
+
+
+            <td>Nom</td>
+            <td>Prénom</td>
+            <td>Civilité</td>
+            <td>Email</td>
+
         </tr>
     </thead>
     <tbody>
         <?php foreach ($planes as $plane) { ?>
             <tr>
-                <td><?= $plane->id ?></td>
-                <td><?= $plane->modele ?></td>
+
+                <td><?= $plane->nom ?></td>
+                <td><?= $plane->prenom ?></td>
+                <td><?= $plane->civilite ?></td>
+                <td><?= $plane->email ?></td>
                 <td>
                     <a href="?page=pilote.edit&id=<?= $plane->id ?>" class="btn btn-primary">Editer</a>
                     <form action="?page=pilote.delete" method="post" style="display: inline-block;">

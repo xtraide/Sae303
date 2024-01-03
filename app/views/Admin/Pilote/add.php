@@ -2,7 +2,10 @@
 $table = App::getInstance()->getTable('pilote');
 if (!empty($_POST)) {
     $result = $table->create([
-        'modele' => $_POST['modele']
+        'nom' => $_POST['nom'],
+        'prenom' => $_POST['prenom'],
+        'civilite' => $_POST['civilite'],
+        'email' => $_POST['email']
     ]);
 
     if ($result) {
@@ -15,6 +18,9 @@ if (!empty($_POST)) {
 $form = new \Core\HTML\BootstrapForm($_POST);
 ?>
 <form method="post">
-    <?= $form->input('modele', 'Modèle de l\'pilote'); ?>
+    <?= $form->input('nom', 'Nom'); ?>
+    <?= $form->input('prenom', 'Prénom'); ?>
+    <?= $form->input('civilite', 'Civilité'); ?>
+    <?= $form->input('email', 'Email'); ?>
     <button class="btn btn-primary">Sauvegarder</button>
 </form>

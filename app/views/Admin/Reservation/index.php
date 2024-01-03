@@ -9,15 +9,14 @@ $planes = App::getInstance()->getTable('reservation')->all();
     <thead>
         <tr>
             <td>ID</td>
-            <td>modèle</td>
-            <td>Action</td>
+            <td>Date</td>
         </tr>
     </thead>
     <tbody>
         <?php foreach ($planes as $plane) { ?>
             <tr>
                 <td><?= $plane->id ?></td>
-                <td><?= $plane->modele ?></td>
+                <td><?= $plane->_date ?></td>
                 <td>
                     <a href="?page=reservation.edit&id=<?= $plane->id ?>" class="btn btn-primary">Editer</a>
                     <form action="?page=reservation.delete" method="post" style="display: inline-block;">

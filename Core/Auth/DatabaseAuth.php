@@ -48,4 +48,21 @@ class DatabaseAuth
     {
         unset($_SESSION['auth']);
     }
+
+    public function register($fields)
+    {
+        $sql_parts = [];
+        $attributes = [];
+        foreach ($fields as $champ => $value) {
+            $sql_parts[] = "$champ = ?";
+            $attributes[] = $value;
+        }
+        $sql_part = implode(', ', $sql_parts);
+        $result = $this->db->prepare("INSERT INTO  " . self::$prefix . "user SET $sql_part", $attributes, true);
+        if ($result) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 }
