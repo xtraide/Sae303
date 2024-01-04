@@ -100,7 +100,6 @@ h2{
   padding-top: 47%;
 }
 
-<<<<<<< HEAD
 .decouvrer{
   font-family: quicksand;
   font-size: 2rem;
@@ -123,8 +122,6 @@ h2{
   border-radius: 20px;
 }
 
-=======
->>>>>>> 7710a10cf45a8acbdab8a9d2c3676bb1ee873a28
 .cursor-classic{
   cursor: default;
 }
@@ -133,7 +130,6 @@ h2{
   margin-left: 1em;
   margin-right: 1em;
 }
-<<<<<<< HEAD
 
 body{
   background-color: #ff0000;
@@ -159,10 +155,6 @@ body{
   width: 100%;
   position: absolute;
   margin-top: -600px;
-=======
-.label-log > .form-group > label{
-  font-family: baloo;
->>>>>>> 7710a10cf45a8acbdab8a9d2c3676bb1ee873a28
 }
 
 
