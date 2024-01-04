@@ -30,9 +30,9 @@ foreach (App::getInstance()->getTable('adherent')->all() as $row) {
 
 </section>
 <section>
-    <img src="../public/assets/ressources/BlackSmokeEnBasDesPersonnages.png" alt="black_smoke1" id="smoke">
+    <img src="../public/assets/ressources/Aerodrometadaam.png" alt="black_smoke1" id="smoke">
     <div id="personnage" class="d-flex justify-content-evenly align-content-center" style="padding-top: 20%; padding-bottom: 30%;">
-        <div id="card_1" class="card p-1">
+        <div id="card_1" class="card bs-card-bg:transparent p-1" >
             <h3>Kevin SATOUT</h3>
             <img src="../public/assets/ressources/ChefPilote.png" alt="chef_pilote" class="pt-1" />
             <button onclick="aerodrome()" class="decouvrer">Chef Pilote</button>

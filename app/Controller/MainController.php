@@ -13,6 +13,6 @@ class MainController extends AppController
     public function index()
     {
         $avions = $this->Avion->all();
-        $this->render('main.index', compact('avions'));
+        $this->render('error.404', compact('avions'));
     }
 }
