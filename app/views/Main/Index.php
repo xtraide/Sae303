@@ -57,6 +57,304 @@ foreach (App::getInstance()->getTable('adherent')->all() as $row) {
         <p id="txt">Evenement à venir !</p>
     </div>
 </section>
+<div class="d-flex justify-content-center">
+    <div id="carouselExampleIndicators" class="carousel slide m-auto d-flex flex-column" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="card" style="width: 25rem; height: 200px">
+            <img src="..." class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Card title 1</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="card" style="width: 25rem; height: 200px">
+            <div class="card-body m-auto text-center">
+              <h5 class="card-title">
+                Journée sécurité des vols - GRAND EST
+              </h5>
+              <img src="..." class="card-img-top m-auto" alt="..." />
+              <div class="d-flex">
+                <img src="" alt="loc" />
+                <p>Aéroport de Lyon-Bron - Bron, France</p>
+              </div>
+              <div class="d-flex">
+                <img src="" alt="heur" />
+                <p>09:00 AM to 02:00 PM</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="card" style="width: 25rem; height: 200px">
+            <img src="..." class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Card title 3</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="d-flex justify-content-center">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active m-3"
+      aria-current="true" aria-label="Slide 1" style="
+          background-color: black;
+          height: 20px;
+          width: 20px;
+          border-radius: 100%;
+        "></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="m-3"
+      aria-label="Slide 2" style="
+          background-color: black;
+          height: 20px;
+          width: 20px;
+          border-radius: 100%;
+        "></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="m-3"
+      aria-label="Slide 3" style="
+          background-color: black;
+          height: 20px;
+          width: 20px;
+          border-radius: 100%;
+        "></button>
+  </div>
+
+  <section name="activités" class="acti section">
+    <h1 class="text-center m-auto">Activités</h1>
+    <div class="m-auto text-center">
+      <img src="backgroundActivites.jpg" alt="" width="80%"
+        style="aspect-ratio: 16/9; margin: auto; object-fit: cover; object-position: 50% 63%; text-align: center; ">
+    </div>
+    <h2 class="text-center" style="background-color: white; border-radius: 20px; color: black; margin: 2% auto!important; padding: 1%; height: auto; width: 40%;">services proposes</h2>
+    <div class="container mt-5 d-flex flex-column align-items-center justify-content-center">
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-4 d-flex">
+          <div class="card h-100">
+            <div class="card-body d-flex flex-column justify-content-center align-items-center">
+              <h5 class="card-title">Baptême de l'air</h5>
+              <p class="card-text text-center">Un vol d'initiation avec un pilote expérimenté, offrant une première
+                expérience mémorable du vol et une vue aérienne spectaculaire. Idéal pour découvrir les joies de
+                l'aviation.</p>
+              <div class="card-footer bg-white border-white rounded d-flex align-items-center justify-content-center w-50">
+                <p class="text-center " style="color: black; margin: 0;">Prix</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 d-flex">
+          <div class="card flex-column h-100">
+            <div class="card-body mb-auto d-flex flex-column justify-content-center align-items-center">
+              <h5 class="card-title">Formation pilote</h5>
+              <p class="card-text text-center">Programme intégral pour aspirants pilotes, comprenant théorie du vol,
+                entraînement pratique, navigation et communication aérienne, préparant à la licence de pilote.</p>
+                <div class="card-footer bg-white border-white rounded d-flex align-items-center justify-content-center w-50">
+                  <p class="text-center " style="color: black; margin: 0;">Prix</p>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 d-flex">
+          <div class="card flex-column h-100">
+            <div class="card-body mb-auto d-flex flex-column justify-content-center align-items-center">
+              <h5 class="card-title">Formation instructeur</h5>
+              <p class="card-text text-center">Cours avancé pour pilotes expérimentés axé sur les techniques
+                d'enseignement et la gestion de vol, visant à former des instructeurs compétents.</p>
+                <div class="card-footer bg-white border-white rounded d-flex align-items-center justify-content-center w-50">
+                  <p class="text-center " style="color: black; margin: 0;">Prix</p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-4 justify-content-around">
+        <div class="col-md-5 d-flex">
+          <div class="card flex-column h-100">
+            <div class="card-body mb-auto d-flex flex-column justify-content-center align-items-center">
+              <h5 class="card-title">Forfaits achat immédiat</h5>
+              <p class="card-text text-center">Ces forfaits offrent une solution flexible et économique pour les
+                passionnés d'ULM à tous les niveaux. Choisissez parmi trois options - Découverte, Évolution,
+                Maîtrise - pour répondre à vos besoins de formation et d'expérience de vol.</p>
+                <div class="card-footer bg-white border-white rounded d-flex align-items-center justify-content-center w-50">
+                  <p class="text-center " style="color: black; margin: 0;">Prix</p>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5 d-flex">
+          <div class="card flex-column h-100">
+            <div class="card-body mb-auto d-flex flex-column justify-content-center align-items-center">
+              <h5 class="card-title">Forfait abonnements</h5>
+              <p class="card-text text-center">Idéal pour un engagement régulier dans le pilotage d'ULM, nos
+                abonnements mensuels sont disponibles en trois niveaux - Envol, Ascension, Horizon. Ils permettent
+                une progression constante et adaptée à vos objectifs de vol.</p>
+                <div class="card-footer bg-white border-white rounded d-flex align-items-center justify-content-center w-50">
+                  <p class="text-center " style="color: black; margin: 0;">Prix</p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+
+    <h1 class="text-center">PRESTATIONS ASSURES</h1>
+
+    <div style="margin-top: 2%;">
+
+      <h2 class="text-center">Services supplémentaires</h2>
+
+      <p class="text-center w-50" style="margin: 2% auto;">Notre aérodrome offre non seulement des formations de vol de premier plan, mais
+        également un éventail de services complémentaires pour répondre à tous les besoins des passionnés d'aviation
+        :</p>
+    </div>
+    <div class="container mt-5 m-auto">
+      <div class="row m-auto">
+        <div class="col-12 col-md-6">
+          <ul class="list-group">
+            <li class="list-group-item">Maintenance des ULM</li>
+            <li class="list-group-item">Montage des ULM</li>
+            <li class="list-group-item">Location d’emplacements ULM protégés</li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-6 m-auto">
+          <ul class="list-group">
+            <li class="list-group-item">Hébergement</li>
+            <li class="list-group-item">Service de restauration</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="temoigniage">
+    <div class="container mt-5 mt-sm-5">
+      <header>
+        <h2 class="text-center">Témoignages</h2>
+      </header>
+      <div class="row">
+        <div class="col-12 col-md-4 mt-sm-5 mb-3">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Kristal Hickman</h5>
+              <p class="card-text">Cet aéroclub de Frotey-Lès-Lure est vraiment unique. Je le recommande à qui conque
+                souhaitant découvrir le monde de l’aviation !</p>
+              <p class="card-text"><small class="text-muted">Note : 5/5</small></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 mt-sm-5 mb-3">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Stéphanie Haller</h5>
+              <p class="card-text">Cadre idyllique, et transmission de la passion par
+                un instructeur exemplaire, je remercie
+                chaleureusement Alain, aéroclub génial !</p>
+              <p class="card-text"><small class="text-muted">Note : 4.5/5</small></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 mt-sm-5 mb-3">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Christophe Maurice</h5>
+              <p class="card-text">De très bonnes machines, bien entretenues,
+                l’autogire est très stable mais pas moins agile.
+                Prix attractif, et personnel aimable.</p>
+              <p class="card-text"><small class="text-muted">Note : 4/5</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--formulaire d'avis utilisateur-->
+    <div class="m-auto mt-sm-5" name="laisser votre avis">
+      <h2 class="text-center">Laisser votre avis</h2>
+      <form class="m-auto w-50 mt-sm-5" action="" method="post">
+        <div class="mb-3 m-auto mt-sm-5">
+          <label for="message" class="form-label w-50">Avis </label>
+          <textarea class="form-control m-auto" id="message" rows="3" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Envoyer</button>
+      </form>
+    </div>
+  </section>
+  <section name="info + contact" style="padding-bottom: 5%;">
+    <div class="container mt-5">
+      <div class="row d-flex justify-content-around">
+        <div class="col-12 col-md-5">
+          <div class="card">
+            <div class="card-header">
+              <h3 class="mb-0 ">
+                <button class="btn btn-link d-flex align-items-center w-100 justify-content-between" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#infoCollapse1" aria-expanded="false"
+                  aria-controls="infoCollapse1" style="color: black; text-decoration: none;">
+                  <div>Infos</div>
+                  <div class="fas p-2 text-end">▲</div>
+                </button>
+              </h3>
+            </div>
+            <div class="collapse" id="infoCollapse1">
+              <div class="card-body">
+                Localisation: <br>
+                Adresse mail: acf2l@gmail.com<br>
+                01.24.26.85.45 <br>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-12 col-md-5 mt-3 mt-md-0">
+          <div class="card">
+            <div class="card-header">
+              <h3 class="mb-0 d-flex justify-content-between">
+                <button class="btn btn-link d-flex align-items-center w-100 justify-content-between" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#contactForm" aria-expanded="false"
+                  aria-controls="contactForm" style="color: black; text-decoration: none;">
+                  <div>Contactez-nous</div>
+                  <div class="fas p-2 text-end">▲</div>
+                </button>
+
+              </h3>
+            </div>
+            <!--formulaire de contact   -->
+            <div class="collapse" id="contactForm">
+              <div class="card-body">
+                <form>
+                  <div class="mb-3">
+                    <label for="name" class="form-label">Nom</label>
+                    <input type="text" class="form-control" id="name" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="subject" class="form-label">Sujet</label>
+                    <input type="text" class="form-control" id="subject" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control " id="message" rows="3" required></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Envoyer</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+  </section>
 
 <script src="../assets/script/script.js"></script>
 <script src="../assets/script/api_meteo.js"></script>

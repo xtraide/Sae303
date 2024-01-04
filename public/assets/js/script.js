@@ -34,3 +34,12 @@
         carousel.style.transform = `rotateY(${x}deg)`;
     }
 }());
+
+
+var coll = document.querySelectorAll(".btn.btn-link");
+coll.forEach((btn) => {
+  btn.addEventListener("click", function () {
+    var arrowIcon = this.querySelector('.fas');
+    arrowIcon.classList.toggle('rotate');
+  });
+});

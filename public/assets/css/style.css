@@ -164,3 +164,57 @@ body{
   font-family: baloo;
 >>>>>>> 7710a10cf45a8acbdab8a9d2c3676bb1ee873a28
 }
+
+
+.rotate {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+}
+
+.fondu {
+  background: rgb(118, 136, 145);
+  background: linear-gradient(
+    180deg,
+    rgba(118, 136, 145, 1) 0%,
+    rgba(53, 69, 82, 1) 100%
+  );
+}
+.acti {
+  color: white;
+}
+.acti > div > div > div > div > div {
+  color: white;
+  background-color: #556672;
+  border-radius: 20px;
+}
+
+.acti > div > div > div > div {
+  background: none;
+  border: none;
+}
+body {
+  color: white;
+}
+section {
+  color: white;
+}
+.list-group > li {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.list-group{
+margin: auto;
+}
+
+.section {
+  margin: auto;
+  padding: 10px;
+
+}
+
+.card-body {
+  margin: 2% auto 2% auto;
+}
