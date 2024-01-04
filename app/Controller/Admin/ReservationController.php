@@ -4,7 +4,7 @@ namespace App\Controller\Admin;
 
 use Core\HTML\BootstrapForm;
 
-class AvionController extends \App\Controller\AppController
+class ReservationController extends \App\Controller\AppController
 {
     public function __construct()
     {
@@ -15,8 +15,8 @@ class AvionController extends \App\Controller\AppController
 
     public function index()
     {
-        $avions = $this->Reservation->all();
-        $this->render('admin.avion.index', compact('avions'));
+        $Reservations = $this->Reservation->all();
+        $this->render('admin.avion.index', compact('Reservations'));
     }
 
 

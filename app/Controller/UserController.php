@@ -22,11 +22,13 @@ class UserController extends AppController
             $this->render('user.login', compact('form', 'error'));
         }
     }
+
     public function logout()
     {
         session_destroy();
         return $this->login();
     }
+
     public function register()
     {
         $form = new BootstrapForm($_POST);

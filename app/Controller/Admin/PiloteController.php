@@ -5,7 +5,7 @@ namespace App\Controller\Admin;
 use Core\HTML\BootstrapForm;
 use App;
 
-class AvionController extends \App\Controller\AppController
+class PiloteController extends \App\Controller\AppController
 {
     public function __construct()
     {
@@ -16,8 +16,8 @@ class AvionController extends \App\Controller\AppController
 
     public function index()
     {
-        $pilote = $this->Pilote->all();
-        $this->render('admin.pilote.index', compact('avions'));
+        $pilotes = $this->Pilote->all();
+        $this->render('admin.pilote.index', compact('pilotes'));
     }
 
 

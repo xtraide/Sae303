@@ -4,7 +4,7 @@ namespace App\Controller\Admin;
 
 use Core\HTML\BootstrapForm;
 
-class AvionController extends \App\Controller\AppController
+class AdherentController extends \App\Controller\AppController
 {
     public function __construct()
     {
