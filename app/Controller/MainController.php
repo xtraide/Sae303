@@ -15,4 +15,8 @@ class MainController extends AppController
         $avions = $this->Avion->all();
         $this->render('main.index', compact('avions'));
     }
+    function forfait()
+    {
+        $this->render('main.forfait');
+    }
 }

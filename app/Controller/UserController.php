@@ -42,4 +42,9 @@ class UserController extends AppController
         }
         $this->render('user.register', compact('form', 'error'));
     }
+    public function profil()
+    {
+
+        $this->render('user.profil', compact('user'));
+    }
 }
