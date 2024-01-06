@@ -57,16 +57,16 @@
                     <a class="nav-link" href="#">Plus</a>
                 </li>
                 <li class="nav-item d-lg-none">
-                    <button class="btn my-2 my-sm-0" type="submit">Connexion</button>
+                    <a href="?page=user.login" class="btn my-2 my-sm-0" type="submit">Connexion</a>
                 </li>
                 <li class="nav-item d-lg-none">
-                    <button class="btn my-2 my-sm-0" type="submit">Inscription</button>
+                    <a href="?page=user.register" class="btn my-2 my-sm-0" type="submit">Inscription</a>
                 </li>
             </ul>
         </div>
         <div class="form-inline d-none d-lg-flex nav-element align-items-center">
-            <button class="btn my-2 my-sm-0" type="submit">Connexion</button>
-            <button class="btn my-2 my-sm-0" type="submit">Inscription</button>
+            <a href="?page=user.login" class="btn my-2 my-sm-0" type="submit">Connexion</a>
+            <a href="?page=user.register" class="btn my-2 my-sm-0" type="submit">Inscription</a>
         </div>
     </nav>
 </header>

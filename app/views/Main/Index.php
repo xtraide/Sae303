@@ -18,7 +18,7 @@ foreach (App::getInstance()->getTable('adherent')->all() as $row) {
             <button onclick="aerodrome()" class="decouvrer">Découvrez</button>
         </div>
         <div id="card_2" class="card p-3" style="background-color: rgba(255, 255, 255, 0.5);">
-            <h2>Activité</h2>
+            <h2>ACTIVITE</h2>
             <img src="../public/assets/ressources/AppTwo.png" alt="icone_avion" class="pt-1" />
             <button onclick="aerodrome()" class="decouvrer">Découvrez</button>
         </div>
@@ -62,7 +62,7 @@ foreach (App::getInstance()->getTable('adherent')->all() as $row) {
         </div>
     </div>
     <div class="container w-50 p-2">
-        <h1 id="txt" class="title_h1">Evenement à venir !</h1>
+        <h1 id="txt" class="title_h1">EVENEMENT A VENIR !</h1>
     </div>
 </section>
 <div class="d-flex justify-content-center">
@@ -138,21 +138,21 @@ foreach (App::getInstance()->getTable('adherent')->all() as $row) {
 </div>
 <div class="fondu">
 <section name="activités" class="acti section">
-    <h1 class="text-center m-auto title_h1" style="color: black;">Activités</h1>
+    <h1 class="text-center m-auto mt-3 mb-3 title_h1" style="color: black;" >ACTIVITES</h1>
     <div class="m-auto text-center">
         <img src="../public/assets/ressources/backgroundActivites.jpg" alt="" width="80%"
             style="aspect-ratio: 16/9; margin: auto; object-fit: cover; object-position: 50% 63%; text-align: center; ">
     </div>
-    <h2 class="text-center"
+    <h1 class="text-center"
         style="background-color: white; border-radius: 20px; color: black;
          margin: 2% auto!important; padding: 1%; height: auto; width: 40%;">
-        services proposes</h2>
+        SERVICES PROPOSES</h1>
     <div class="container mt-5 d-flex flex-column align-items-center justify-content-center">
-        <div class="row d-flex justify-content-center">
+        <div class="row d-flex justify-content-center" id="card-price">
             <div class="col-md-4 d-flex">
                 <div class="card h-100">
                     <div class="card-body d-flex flex-column justify-content-center align-items-center">
-                        <h5 class="card-title">Baptême de l'air</h5>
+                        <h5 class="card-title title_h5">Baptême de l'air</h5>
                         <p class="card-text text-center">Un vol d'initiation avec un pilote expérimenté, offrant une
                             première
                             expérience mémorable du vol et une vue aérienne spectaculaire. Idéal pour découvrir les
@@ -161,7 +161,7 @@ foreach (App::getInstance()->getTable('adherent')->all() as $row) {
                         <div
                             class="card-footer bg-white border-white rounded d-flex
                             align-items-center justify-content-center w-50">
-                            <p class="text-center " style="color: black; margin: 0;">Prix</p>
+                            <p class="text-center " style="color: black; margin: 0;">300 €</p>
                         </div>
                     </div>
                 </div>
@@ -169,7 +169,7 @@ foreach (App::getInstance()->getTable('adherent')->all() as $row) {
             <div class="col-md-4 d-flex">
                 <div class="card flex-column h-100">
                     <div class="card-body mb-auto d-flex flex-column justify-content-center align-items-center">
-                        <h5 class="card-title">Formation pilote</h5>
+                        <h5 class="card-title title_h5">Formation pilote</h5>
                         <p class="card-text text-center">Programme intégral pour aspirants pilotes, comprenant théorie
                             du vol,
                             entraînement pratique, navigation et communication aérienne, préparant à la licence de
@@ -177,7 +177,7 @@ foreach (App::getInstance()->getTable('adherent')->all() as $row) {
                         <div
                             class="card-footer bg-white border-white rounded
                             d-flex align-items-center justify-content-center w-50">
-                            <p class="text-center " style="color: black; margin: 0;">Prix</p>
+                            <p class="text-center " style="color: black; margin: 0;">1500 €</p>
                         </div>
                     </div>
                 </div>
@@ -185,13 +185,13 @@ foreach (App::getInstance()->getTable('adherent')->all() as $row) {
             <div class="col-md-4 d-flex">
                 <div class="card flex-column h-100">
                     <div class="card-body mb-auto d-flex flex-column justify-content-center align-items-center">
-                        <h5 class="card-title">Formation instructeur</h5>
+                        <h5 class="card-title title_h5">Formation instructeur</h5>
                         <p class="card-text text-center">Cours avancé pour pilotes expérimentés axé sur les techniques
                             d'enseignement et la gestion de vol, visant à former des instructeurs compétents.</p>
                         <div
                             class="card-footer bg-white border-white rounded
                             d-flex align-items-center justify-content-center w-50">
-                            <p class="text-center " style="color: black; margin: 0;">Prix</p>
+                            <p class="text-center " style="color: black; margin: 0;">5000 €</p>
                         </div>
                     </div>
                 </div>
@@ -201,7 +201,7 @@ foreach (App::getInstance()->getTable('adherent')->all() as $row) {
             <div class="col-md-5 d-flex">
                 <div class="card flex-column h-100">
                     <div class="card-body mb-auto d-flex flex-column justify-content-center align-items-center">
-                        <h5 class="card-title">Forfaits achat immédiat</h5>
+                        <h5 class="card-title title_h5">Forfaits achat immédiat</h5>
                         <p class="card-text text-center">Ces forfaits offrent une solution flexible et économique pour
                             les
                             passionnés d'ULM à tous les niveaux. Choisissez parmi trois options - Découverte, Évolution,
@@ -209,7 +209,7 @@ foreach (App::getInstance()->getTable('adherent')->all() as $row) {
                         <div
                             class="card-footer bg-white border-white rounded
                             d-flex align-items-center justify-content-center w-50">
-                            <p class="text-center " style="color: black; margin: 0;">Prix</p>
+                            <a href=" " class="text-center " style="color: black; margin: 0;">EN SAVOIR PLUS</a>
                         </div>
                     </div>
                 </div>
@@ -217,7 +217,7 @@ foreach (App::getInstance()->getTable('adherent')->all() as $row) {
             <div class="col-md-5 d-flex">
                 <div class="card flex-column h-100">
                     <div class="card-body mb-auto d-flex flex-column justify-content-center align-items-center">
-                        <h5 class="card-title">Forfait abonnements</h5>
+                        <h5 class="card-title title_h5">Forfait abonnements</h5>
                         <p class="card-text text-center">Idéal pour un engagement régulier dans le pilotage d'ULM, nos
                             abonnements mensuels sont disponibles en trois niveaux - Envol, Ascension, Horizon. Ils
                             permettent
@@ -225,7 +225,7 @@ foreach (App::getInstance()->getTable('adherent')->all() as $row) {
                         <div
                             class="card-footer bg-white border-white rounded
                             d-flex align-items-center justify-content-center w-50">
-                            <p class="text-center " style="color: black; margin: 0;">Prix</p>
+                            <a href=" " class="text-center " style="color: black; margin: 0;">EN SAVOIR PLUS</a>
                         </div>
                     </div>
                 </div>
@@ -235,11 +235,13 @@ foreach (App::getInstance()->getTable('adherent')->all() as $row) {
 </section>
 <section>
 
-    <h1 class="text-center title_h1">PRESTATIONS ASSURES</h1>
+    <h1 class="text-center title_h1" style="background-color: white; border-radius: 20px; color: black;
+         margin: 2% auto!important; padding: 1%; height: auto; width: 40%;">PRESTATIONS ASSURES</h1>
 
     <div style="margin-top: 2%;">
 
-        <h2 class="text-center title_h2">Services supplémentaires</h2>
+        <h2 class="text-center title_h2" style=" color: white;
+         margin: 2% auto!important; padding: 1%; height: auto; width: 40%;">Services supplémentaires</h2>
 
         <p class="text-center w-50" style="margin: 2% auto;">Notre aérodrome offre non seulement des formations de vol
             de premier plan, mais
@@ -268,7 +270,8 @@ foreach (App::getInstance()->getTable('adherent')->all() as $row) {
 <section id="temoigniage">
     <div class="container mt-5 mt-sm-5">
         <header>
-            <h2 class="text-center title_h2">Témoignages</h2>
+            <h1 class="text-center title_h1" style="background-color: white; border-radius: 20px; color: black;
+         margin: 2% auto!important; padding: 1%; height: auto; width: 40%;">Témoignages</h1>
         </header>
         <div class="row">
             <div class="col-12 col-md-4 mt-sm-5 mb-3">
@@ -374,6 +377,7 @@ foreach (App::getInstance()->getTable('adherent')->all() as $row) {
           </div>
         </div>
   </section>
+  <section name="ULM"></section>
   <script>
     var coll = document.querySelectorAll(".btn.btn-link");
     coll.forEach((btn) => {
