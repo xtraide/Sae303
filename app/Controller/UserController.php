@@ -31,6 +31,7 @@ class UserController extends AppController
 
     public function register()
     {
+        $error = false;
         $form = new BootstrapForm($_POST);
         if (!empty($_POST)) {
             $auth = new DatabaseAuth(App::getInstance()->getDatabase());
