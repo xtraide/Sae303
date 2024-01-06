@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use Core\HTML\BootstrapForm;
 
 class MainController extends AppController
 {
@@ -17,6 +18,7 @@ class MainController extends AppController
     }
     function forfait()
     {
-        $this->render('main.forfait');
+        $form = new BootstrapForm($_POST);
+        $this->render('main.forfait', compact('form', 'error'));
     }
 }
