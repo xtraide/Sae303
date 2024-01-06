@@ -26,7 +26,7 @@ class BootstrapForm extends Form
         $label = '<label>' . $label . '</label>';
         if ($type === 'textarea') {
             $input = '<textarea name="' . $name . '" class="form-control">' . $this->getValue($name) . '</textarea>';
-        } else if ($type === 'chekbox') {
+        } else if ($type === 'checkbox') {
             $input = '<input type="' . $type . '" name="' . $name . '" value="' . $this->getValue($name) . '" class="form-check-input ' . $class . '">';
         } else {
             $input = '<input type="' . $type . '" name="' . $name . '" value="' . $this->getValue($name) . '" class="form-control ' . $class . '">';
