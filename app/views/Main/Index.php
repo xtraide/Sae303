@@ -375,7 +375,63 @@
         </div>
     </div>
 </section>
-<section name="ULM"></section>
+<section name="ULM">
+<div id="carousel1">
+  <div class="carousel-item1 active">Item 1</div>
+  <div class="carousel-item1">Item 2</div>
+  <div class="carousel-item1">Item 3</div>
+  <div class="carousel-item1">Item 4</div>
+  <div class="carousel-item1">Item 5</div>
+  <div class="carousel-item1">Item 6</div>
+</div>
+<button id="prev">Précédent</button>
+<button id="next">Suivant</button>
+</section>
+<style>
+    #carousel1 {
+  display: flex;
+  overflow: hidden;
+}
+
+.carousel-item1 {
+  flex: 0 0 auto;
+  width: 100%;
+  color: #000;
+  transition: transform 0.5s ease-in-out;
+  display: none;
+}
+
+.carousel-item1.active {
+  display: block;
+}
+</style>
+
+<script>
+let index = 0;
+const items1 = document.querySelectorAll('.carousel-item1');
+const nextButton = document.getElementById('next');
+const prevButton = document.getElementById('prev');
+
+window.onload = function() {
+  items1[0].classList.add('active');
+}
+
+nextButton.addEventListener('click', () => {
+  items1[index].classList.remove('active');
+  index = (index + 1) % items1.length;
+  items1[index].classList.add('active');
+});
+
+prevButton.addEventListener('click', () => {
+  items1[index].classList.remove('active');
+  index = (index - 1 + items1.length) % items1.length;
+  items1[index].classList.add('active');
+});
+</script>
+
+
+
+<!--
 <script>
     var coll = document.querySelectorAll(".btn.btn-link");
     coll.forEach((btn) => {
@@ -386,4 +442,4 @@
     });
 </script>
 <script src="../public/assets/script/script.js"></script>
-<script src="../public/assets/script/api_meteo.js"></script>
+<script src="../public/assets/script/api_meteo.js"></script> -->

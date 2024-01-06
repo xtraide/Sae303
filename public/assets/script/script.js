@@ -52,3 +52,24 @@ function toggleResponsive() {
       navbar.className = "navbar";
     }
   }
+
+  let index = 0;
+const items1 = document.querySelectorAll('.carousel-item1');
+const nextButton = document.getElementById('next');
+const prevButton = document.getElementById('prev');
+
+window.onload = function() {
+  items1[0].classList.add('active');
+}
+
+nextButton.addEventListener('click', () => {
+  items1[index].classList.remove('active');
+  index = (index + 1) % items1.length;
+  items1[index].classList.add('active');
+});
+
+prevButton.addEventListener('click', () => {
+  items1[index].classList.remove('active');
+  index = (index - 1 + items1.length) % items1.length;
+  items1[index].classList.add('active');
+});
