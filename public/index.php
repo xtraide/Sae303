@@ -26,4 +26,3 @@ if ($page[0] == 'admin') {
 $controller = new $controller();
 
 $controller->$action();
-var_dump($controller);

@@ -1,8 +1,3 @@
-<?php
-
-
-
-?>
 <section class="container-fluid w-100" style="background-image: url('../public/assets/ressources/BackgroundAcceuil.png'); 
            background-size: cover; 
            background-position: center">
