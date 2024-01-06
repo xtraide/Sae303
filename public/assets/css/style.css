@@ -91,7 +91,7 @@ nav {
   padding: 0.75rem;
 }
 
-.nav-element>button {
+.nav-element>a {
   margin: auto;
   text-decoration: none;
   color: black !important;
@@ -268,14 +268,7 @@ section {
   border-bottom: 1px solid rgba(255, 255, 255, 0.18);
 }
 
-.navbar a {
-  float: left;
-  display: block;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
+
 
 .navbar a.icon {
   display: none;
@@ -283,4 +276,9 @@ section {
 
 #card-price > div > div > div > p {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.checkbox {
+  margin-left: 10px!important;
+  margin-top: 5px!important;
 }

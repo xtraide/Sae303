@@ -1,18 +1,32 @@
-<div class="w-100 vh-100 background d-flex align-items-center">
-    <form action="#" method="post" class="w-50 m-auto ">
-        <h1 class="text-center">Sign in</h1>
-        <div class="d-flex align-items-center justify-content-evenly">
-            <div><?= $form->input('nom', "Nom", ['class' => 'form-control w-100', 'id' => 'nom']); ?></div>
-            <div><?= $form->input('prenom', "Prenom", ['class' => 'form-control w-100', 'id' => 'prenom']); ?></div>
-        </div>
-        <div class="form-group w-100 m-auto label-log">
-            <?= $form->input('email', "Adresse email", ['class' => 'form-control w-100', 'id' => 'email']); ?>
-        </div>
-        <div class="form-group w-100 m-auto label-log">
-            <?= $form->input('password', "Mot de passe", ['type' => 'password', 'class' => 'form-control w-100 back_input']); ?>
-        </div>
-        <div class="form-group m-auto">
+<div class="container" style="padding-top: 90px;">
+    <div class="col-md-6 mx-auto">
+<form>
+            <div class="">
+                <div class="form-check-inline">
+                    <?= $form->input('checkbox', "Monsieur", ['class' => 'checkbox', 'id' => '', 'type' => 'radio']); ?>
+                </div>
+                <div class="form-check-inline">
+                    <?= $form->input('checkbox', "Madame", ['class' => 'checkbox', 'id' => '', 'type' => 'radio']); ?>
+                </div>
+            </div>
+            <div class="form-group">
+                <?= $form->input('Nom', "Nom", ['class' => '']); ?>
+            </div>
+            <div class="form-group">
+                <?= $form->input('text', "Prénom", ['class' => '']); ?>
+            </div>
+            <div class="form-group">
+                <?= $form->input('email', "Adresse email", ['class' => 'form-control w-100', 'id' => 'email']); ?>
+            </div>
+            <div class="form-group">
+                <?= $form->input('Tel', "Téléphone", ['class' => '', 'id' => '', 'type' => 'number']); ?>
+            </div>
+            <div class="form-group">
+                <?= $form->input('date', "Date de naissance", ['class' => 'btn btn-primary d-flex align-items-center m-auto ', 'type' => 'date']); ?>
+            </div>
+            <div class="form-group m-auto">
             <?= $form->submit(['class' => 'btn btn-primary d-flex align-items-center m-auto ', 'value' => 'Se connecter']); ?>
         </div>
-    </form>
+        </form>
+</div>
 </div>
