@@ -45,8 +45,8 @@ class UserController extends AppController
     }
     public function profil()
     {
+        $form = new BootstrapForm($_POST);
 
-
-        $this->render('user.profil'/*, compact('user')*/);
+        $this->render('user.profil',  compact('form'));
     }
 }
