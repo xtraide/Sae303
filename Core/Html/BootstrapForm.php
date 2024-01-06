@@ -28,6 +28,8 @@ class BootstrapForm extends Form
             $input = '<textarea name="' . $name . '" class="form-control">' . $this->getValue($name) . '</textarea>';
         } else if ($type === 'checkbox') {
             $input = '<input type="' . $type . '" name="' . $name . '" value="' . $this->getValue($name) . '" class="form-check-input ' . $class . '">';
+        } else if ($type === 'radio') {
+            $input = '<input type="' . $type . '" name="' . $name . '" value="' . $this->getValue($name) . '" class="form-check-input ' . $class . '">';
         } else {
             $input = '<input type="' . $type . '" name="' . $name . '" value="' . $this->getValue($name) . '" class="form-control ' . $class . '">';
         }
