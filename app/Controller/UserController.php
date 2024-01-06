@@ -19,8 +19,8 @@ class UserController extends AppController
             } else {
                 $error = true;
             }
-            $this->render('user.login', compact('form', 'error'));
         }
+        $this->render('user.login', compact('form', 'error'));
     }
 
     public function logout()
@@ -39,7 +39,7 @@ class UserController extends AppController
             } else {
                 $error = true;
             }
-            $this->render('user.register', compact('form', 'error'));
         }
+        $this->render('user.register', compact('form', 'error'));
     }
 }
