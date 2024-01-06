@@ -1,14 +1,15 @@
 <section class="container-fluid w-100" style="background-image: url('../public/assets/ressources/BackgroundAcceuil.png'); 
            background-size: cover; 
            background-position: center">
-    <div id="icones" class="container-card d-flex justify-content-evenly align-content-center" style="padding-top: 50%; padding-bottom: 30%;">
+    <div id="icones" class="container-card d-flex justify-content-evenly align-content-center"
+        style="padding-top: 50%; padding-bottom: 30%;">
         <div id="card_1" class="card p-3" style="background-color: rgba(255, 255, 255, 0.5);">
             <h2>L'AERODROME</h2>
             <img src="../public/assets/ressources/AppOne.png" alt="icone_piste" class="pt-1" />
             <button onclick="aerodrome()" class="decouvrer">Découvrez</button>
         </div>
         <div id="card_2" class="card p-3" style="background-color: rgba(255, 255, 255, 0.5);">
-            <h2>Activité</h2>
+            <h2>ACTIVITE</h2>
             <img src="../public/assets/ressources/AppTwo.png" alt="icone_avion" class="pt-1" />
             <button onclick="aerodrome()" class="decouvrer">Découvrez</button>
         </div>
@@ -28,7 +29,8 @@
 </section>
 <section>
 
-    <div id="personnage" class="d-flex justify-content-evenly align-content-center" style="padding-top: 20%; padding-bottom: 30%;">
+    <div id="personnage" class="d-flex justify-content-evenly align-content-center"
+        style="padding-top: 20%; padding-bottom: 30%;">
         <div id="card_1" class="card p-1">
             <h3>Kevin SATOUT</h3>
             <img src="../public/assets/ressources/ChefPilote.png" alt="chef_pilote" class="pt-1" />
@@ -51,7 +53,7 @@
         </div>
     </div>
     <div class="container w-50 p-2">
-        <h1 id="txt" class="title_h1">Evenement à venir !</h1>
+        <h1 id="txt" class="title_h1">EVENEMENT A VENIR !</h1>
     </div>
 </section>
 <div class="d-flex justify-content-center">
@@ -103,19 +105,22 @@
     </div>
 </div>
 <div class="d-flex justify-content-center">
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active m-3" aria-current="true" aria-label="Slide 1" style="
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active m-3"
+        aria-current="true" aria-label="Slide 1" style="
           background-color: black;
           height: 20px;
           width: 20px;
           border-radius: 100%;
         "></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="m-3" aria-label="Slide 2" style="
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="m-3"
+        aria-label="Slide 2" style="
           background-color: black;
           height: 20px;
           width: 20px;
           border-radius: 100%;
         "></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="m-3" aria-label="Slide 3" style="
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="m-3"
+        aria-label="Slide 3" style="
           background-color: black;
           height: 20px;
           width: 20px;
@@ -124,19 +129,21 @@
 </div>
 <div class="fondu">
     <section name="activités" class="acti section">
-        <h1 class="text-center m-auto title_h1" style="color: black;">Activités</h1>
+        <h1 class="text-center m-auto mt-3 mb-3 title_h1" style="color: black;">ACTIVITES</h1>
         <div class="m-auto text-center">
-            <img src="../public/assets/ressources/backgroundActivites.jpg" alt="" width="80%" style="aspect-ratio: 16/9; margin: auto; object-fit: cover; object-position: 50% 63%; text-align: center; ">
+            <img src="../public/assets/ressources/backgroundActivites.jpg" alt="" width="80%"
+                style="aspect-ratio: 16/9; margin: auto; object-fit: cover; object-position: 50% 63%;
+                 text-align: center; ">
         </div>
-        <h2 class="text-center" style="background-color: white; border-radius: 20px; color: black;
+        <h1 class="text-center" style="background-color: white; border-radius: 20px; color: black;
          margin: 2% auto!important; padding: 1%; height: auto; width: 40%;">
-            services proposes</h2>
+            SERVICES PROPOSES</h1>
         <div class="container mt-5 d-flex flex-column align-items-center justify-content-center">
-            <div class="row d-flex justify-content-center">
+            <div class="row d-flex justify-content-center" id="card-price">
                 <div class="col-md-4 d-flex">
                     <div class="card h-100">
                         <div class="card-body d-flex flex-column justify-content-center align-items-center">
-                            <h5 class="card-title">Baptême de l'air</h5>
+                            <h5 class="card-title title_h5">Baptême de l'air</h5>
                             <p class="card-text text-center">Un vol d'initiation avec un pilote expérimenté, offrant une
                                 première
                                 expérience mémorable du vol et une vue aérienne spectaculaire. Idéal pour découvrir les
@@ -144,7 +151,7 @@
                                 l'aviation.</p>
                             <div class="card-footer bg-white border-white rounded d-flex
                             align-items-center justify-content-center w-50">
-                                <p class="text-center " style="color: black; margin: 0;">Prix</p>
+                                <p class="text-center " style="color: black; margin: 0;">300 €</p>
                             </div>
                         </div>
                     </div>
@@ -152,14 +159,15 @@
                 <div class="col-md-4 d-flex">
                     <div class="card flex-column h-100">
                         <div class="card-body mb-auto d-flex flex-column justify-content-center align-items-center">
-                            <h5 class="card-title">Formation pilote</h5>
-                            <p class="card-text text-center">Programme intégral pour aspirants pilotes, comprenant théorie
+                            <h5 class="card-title title_h5">Formation pilote</h5>
+                            <p class="card-text text-center">Programme intégral pour aspirants pilotes, comprenant
+                                théorie
                                 du vol,
                                 entraînement pratique, navigation et communication aérienne, préparant à la licence de
                                 pilote.</p>
                             <div class="card-footer bg-white border-white rounded
                             d-flex align-items-center justify-content-center w-50">
-                                <p class="text-center " style="color: black; margin: 0;">Prix</p>
+                                <p class="text-center " style="color: black; margin: 0;">1500 €</p>
                             </div>
                         </div>
                     </div>
@@ -167,12 +175,13 @@
                 <div class="col-md-4 d-flex">
                     <div class="card flex-column h-100">
                         <div class="card-body mb-auto d-flex flex-column justify-content-center align-items-center">
-                            <h5 class="card-title">Formation instructeur</h5>
-                            <p class="card-text text-center">Cours avancé pour pilotes expérimentés axé sur les techniques
+                            <h5 class="card-title title_h5">Formation instructeur</h5>
+                            <p class="card-text text-center">Cours avancé pour pilotes expérimentés axé sur les
+                                techniques
                                 d'enseignement et la gestion de vol, visant à former des instructeurs compétents.</p>
                             <div class="card-footer bg-white border-white rounded
                             d-flex align-items-center justify-content-center w-50">
-                                <p class="text-center " style="color: black; margin: 0;">Prix</p>
+                                <p class="text-center " style="color: black; margin: 0;">5000 €</p>
                             </div>
                         </div>
                     </div>
@@ -182,14 +191,16 @@
                 <div class="col-md-5 d-flex">
                     <div class="card flex-column h-100">
                         <div class="card-body mb-auto d-flex flex-column justify-content-center align-items-center">
-                            <h5 class="card-title">Forfaits achat immédiat</h5>
-                            <p class="card-text text-center">Ces forfaits offrent une solution flexible et économique pour
+                            <h5 class="card-title title_h5">Forfaits achat immédiat</h5>
+                            <p class="card-text text-center">Ces forfaits offrent une solution flexible et économique
+                                pour
                                 les
-                                passionnés d'ULM à tous les niveaux. Choisissez parmi trois options - Découverte, Évolution,
+                                passionnés d'ULM à tous les niveaux. Choisissez parmi trois options - Découverte,
+                                Évolution,
                                 Maîtrise - pour répondre à vos besoins de formation et d'expérience de vol.</p>
                             <div class="card-footer bg-white border-white rounded
                             d-flex align-items-center justify-content-center w-50">
-                                <p class="text-center " style="color: black; margin: 0;">Prix</p>
+                                <a href=" " class="text-center " style="color: black; margin: 0;">EN SAVOIR PLUS</a>
                             </div>
                         </div>
                     </div>
@@ -197,14 +208,15 @@
                 <div class="col-md-5 d-flex">
                     <div class="card flex-column h-100">
                         <div class="card-body mb-auto d-flex flex-column justify-content-center align-items-center">
-                            <h5 class="card-title">Forfait abonnements</h5>
-                            <p class="card-text text-center">Idéal pour un engagement régulier dans le pilotage d'ULM, nos
+                            <h5 class="card-title title_h5">Forfait abonnements</h5>
+                            <p class="card-text text-center">Idéal pour un engagement régulier dans le pilotage d'ULM,
+                                nos
                                 abonnements mensuels sont disponibles en trois niveaux - Envol, Ascension, Horizon. Ils
                                 permettent
                                 une progression constante et adaptée à vos objectifs de vol.</p>
                             <div class="card-footer bg-white border-white rounded
                             d-flex align-items-center justify-content-center w-50">
-                                <p class="text-center " style="color: black; margin: 0;">Prix</p>
+                                <a href=" " class="text-center " style="color: black; margin: 0;">EN SAVOIR PLUS</a>
                             </div>
                         </div>
                     </div>
@@ -214,15 +226,19 @@
     </section>
     <section>
 
-        <h1 class="text-center title_h1">PRESTATIONS ASSURES</h1>
+        <h1 class="text-center title_h1" style="background-color: white; border-radius: 20px; color: black;
+         margin: 2% auto!important; padding: 1%; height: auto; width: 40%;">PRESTATIONS ASSURES</h1>
 
         <div style="margin-top: 2%;">
 
-            <h2 class="text-center title_h2">Services supplémentaires</h2>
+            <h2 class="text-center title_h2" style=" color: white;
+         margin: 2% auto!important; padding: 1%; height: auto; width: 40%;">Services supplémentaires</h2>
 
-            <p class="text-center w-50" style="margin: 2% auto;">Notre aérodrome offre non seulement des formations de vol
+            <p class="text-center w-50" style="margin: 2% auto;">Notre aérodrome offre non seulement des formations de
+                vol
                 de premier plan, mais
-                également un éventail de services complémentaires pour répondre à tous les besoins des passionnés d'aviation
+                également un éventail de services complémentaires pour répondre à tous les besoins des passionnés
+                d'aviation
                 :</p>
         </div>
         <div class="container mt-5 m-auto">
@@ -247,14 +263,16 @@
     <section id="temoigniage">
         <div class="container mt-5 mt-sm-5">
             <header>
-                <h2 class="text-center title_h2">Témoignages</h2>
+                <h1 class="text-center title_h1" style="background-color: white; border-radius: 20px; color: black;
+         margin: 2% auto!important; padding: 1%; height: auto; width: 40%;">Témoignages</h1>
             </header>
             <div class="row">
                 <div class="col-12 col-md-4 mt-sm-5 mb-3">
                     <div class="card">
                         <div class="card-body">
                             <h5 class="card-title">Kristal Hickman</h5>
-                            <p class="card-text">Cet aéroclub de Frotey-Lès-Lure est vraiment unique. Je le recommande à qui
+                            <p class="card-text">Cet aéroclub de Frotey-Lès-Lure est vraiment unique. Je le recommande à
+                                qui
                                 conque
                                 souhaitant découvrir le monde de l’aviation !</p>
                             <p class="card-text"><small class="text-muted">Note : 5/5</small></p>
@@ -294,7 +312,10 @@
                 <div class="card">
                     <div class="card-header">
                         <h3 class="mb-0 ">
-                            <button class="btn btn-link d-flex align-items-center w-100 justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#infoCollapse1" aria-expanded="false" aria-controls="infoCollapse1" style="color: black; text-decoration: none;">
+                            <button class="btn btn-link d-flex align-items-center w-100 justify-content-between"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#infoCollapse1"
+                                aria-expanded="false" aria-controls="infoCollapse1"
+                                style="color: black; text-decoration: none;">
                                 <div>Infos</div>
                                 <div class="fas p-2 text-end">▲</div>
                             </button>
@@ -315,7 +336,10 @@
                 <div class="card">
                     <div class="card-header">
                         <h3 class="mb-0 d-flex justify-content-between">
-                            <button class="btn btn-link d-flex align-items-center w-100 justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#contactForm" aria-expanded="false" aria-controls="contactForm" style="color: black; text-decoration: none;">
+                            <button class="btn btn-link d-flex align-items-center w-100 justify-content-between"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#contactForm"
+                                aria-expanded="false" aria-controls="contactForm"
+                                style="color: black; text-decoration: none;">
                                 <div>Contactez-nous</div>
                                 <div class="fas p-2 text-end">▲</div>
                             </button>
@@ -348,11 +372,38 @@
                     </div>
                 </div>
             </div>
+            <!--formulaire de contact   -->
+            <div class="collapse" id="contactForm">
+                <div class="card-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nom</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="subject" class="form-label">Sujet</label>
+                            <input type="text" class="form-control" id="subject" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control " id="message" rows="3" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
+<section name="ULM"></section>
 <script>
     var coll = document.querySelectorAll(".btn.btn-link");
     coll.forEach((btn) => {
-        btn.addEventListener("click", function() {
+        btn.addEventListener("click", function () {
             var arrowIcon = this.querySelector('.fas');
             arrowIcon.classList.toggle('rotate');
         });
