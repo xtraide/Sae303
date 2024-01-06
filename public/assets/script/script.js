@@ -43,3 +43,12 @@ coll.forEach((btn) => {
     arrowIcon.classList.toggle('rotate');
   });
 });
+
+function toggleResponsive() {
+    var navbar = document.getElementById("myNavbar");
+    if (navbar.className === "navbar") {
+      navbar.className += " responsive";
+    } else {
+      navbar.className = "navbar";
+    }
+  }
