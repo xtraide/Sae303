@@ -11,12 +11,14 @@ class MainController extends AppController
         parent::__construct();
         $this->loadModel('Avion');
     }
+
     public function index()
     {
         $avions = $this->Avion->all();
         $this->render('main.index', compact('avions'));
     }
-    function forfait()
+
+    public function forfait()
     {
         $form = new BootstrapForm($_POST);
         $this->render('main.forfait', compact('form', 'error'));

@@ -46,6 +46,7 @@ class UserController extends AppController
     public function profil()
     {
 
+
         $this->render('user.profil'/*, compact('user')*/);
     }
 }
