@@ -355,7 +355,7 @@
                     <img src="../public/assets/ressources/Multiaxes.png" alt="ULM1" width="30%" id="ulm1"
                         style="margin: auto; display: block;" />
                     <h3 style="padding: 4px 40px; background-color:#556672; border-radius:10px;position: absolute;
-                         top: 50%; left: 50%; transform: translate(-50%, -50%); z-index:4;">
+                         top: 50%; left: 50%; transform: translate(-50%, -50%);">
                         Multiaxes</h3>
                 </div>
                 <div style="color:#fff; background-color:#556672; border-radius:10px; width:300px; margin:auto;">
@@ -366,7 +366,7 @@
                                 Vitesse max: <br>
                                 Capacité: <br>
                                 Autonomie: <br>
-                                Poids
+                                Poidswidth:300px
                             </p>
                         </div>
                         <div>
@@ -385,7 +385,7 @@
                     <img src="../public/assets/ressources/Paramoteur.png" alt="ULM1" width="30%" id="ulm1"
                         style="margin: auto; display: block;" />
                     <h3 style="padding: 4px 40px; background-color:#556672; border-radius:10px;position: absolute;
-                         top: 50%; left: 50%; transform: translate(-50%, -50%); z-index:4;">
+                         top: 50%; left: 50%; transform: translate(-50%, -50%); ">
                         Paramoteur</h3>
                 </div>
                 <div style="color:#fff; background-color:#556672; border-radius:10px; width:300px; margin:auto;">
@@ -415,7 +415,7 @@
                     <img src="../public/assets/ressources/Autogire.png" alt="ULM1" width="30%" id="ulm1"
                         style="margin: auto; display: block;" />
                     <h3 style="padding: 4px 40px; background-color:#556672; border-radius:10px;position: absolute;
-                         top: 50%; left: 50%; transform: translate(-50%, -50%); z-index:4;">
+                         top: 50%; left: 50%; transform: translate(-50%, -50%); ">
                         Autogire Ultraléger</h3>
                 </div>
                 <div style="color:#fff; background-color:#556672; border-radius:10px; width:300px; margin:auto;">
@@ -445,7 +445,7 @@
                     <img src="../public/assets/ressources/Pendulaire.png" alt="ULM1" width="30%" id="ulm1"
                         style="margin: auto; display: block;" />
                     <h3 style="padding: 4px 40px; background-color:#556672; border-radius:10px;position: absolute;
-                         top: 50%; left: 50%; transform: translate(-50%, -50%); z-index:4;">
+                         top: 50%; left: 50%; transform: translate(-50%, -50%); ">
                         Pendulaire</h3>
                 </div>
                 <div style="color:#fff; background-color:#556672; border-radius:10px; width:300px; margin:auto;">
@@ -475,7 +475,7 @@
                     <img src="../public/assets/ressources/HelicoLeger.png" alt="ULM1" width="30%" id="ulm1"
                         style="margin: auto; display: block;" />
                     <h3 style="padding: 4px 40px; background-color:#556672; border-radius:10px;position: absolute;
-                         top: 50%; left: 50%; transform: translate(-50%, -50%); z-index:4;">
+                         top: 50%; left: 50%; transform: translate(-50%, -50%); ">
                         Hélicoptère Ultraléger</h3>
                 </div>
                 <div style="color:#fff; background-color:#556672; border-radius:10px; width:300px; margin:auto;">
@@ -505,7 +505,7 @@
                     <img src="../public/assets/ressources/Baloon.png" alt="ULM1" width="30%" id="ulm1"
                         style="margin: auto; display: block;" />
                     <h3 style="padding: 4px 40px; background-color:#556672;border-radius:10px;position: absolute;
-                         top: 50%; left: 50%; transform: translate(-50%, -50%); z-index:4;">
+                         top: 50%; left: 50%; transform: translate(-50%, -50%); ">
                         Aérostat Ultraléger</h3>
                 </div>
                 <div style="color:#fff; background-color:#556672; border-radius:10px; width:300px; margin:auto;">
@@ -530,8 +530,8 @@
                     </div>
                 </div>
             </div>
-            <button id="prev" style="position: absolute; top: 50%; left: 0; transform: translateY(-50%);
-                z-index:4;">Précédent</button>
+            <button id="prev" style="position: absolute; top: 50%; left: 0;
+             transform: translateY(-50%);">Précédent</button>
             <button id="next"
                 style="position: absolute; top: 50%; right: 0; transform: translateY(-50%);">Suivant</button>
         </div>

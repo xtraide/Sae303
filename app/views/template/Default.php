@@ -141,8 +141,6 @@
                             </li>
                         </ul>
                     </div>
-                </div>
-                <div class="row justify-content-around pt-2">
                     <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
                         <h5 class="text-uppercase">Nos services</h5>
                         <ul class="list-unstyled mb-0">
