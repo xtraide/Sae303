@@ -52,9 +52,6 @@
         <li class="nav-item ">
           <button class="nav-link">ULM</button>
         </li>
-        <li class="nav-item ">
-          <a class="nav-link ">Plus</a>
-        </li>
         <?php if (!$logged) : ?>
           <li class="nav-item d-lg-none">
             <a href="?page=user.login">Connexion</a>
@@ -84,6 +81,7 @@
 </header>
 
 <body>
+  
   <?php /*
     $dir = "../Views/staff";
     echo "<h4>" . $dir . "</h4>";
@@ -178,9 +176,24 @@
 
                 if (section) {
                     section.scrollIntoView({ behavior: 'smooth' });
+                } else {
+                    localStorage.setItem('sectionName', sectionName);
+                    window.location.href = "?page=main.index";
                 }
             });
         });
+
+        var storedSectionName = localStorage.getItem('sectionName');
+
+        if (storedSectionName) {
+            var storedSection = document.getElementById(storedSectionName);
+
+            if (storedSection) {
+                storedSection.scrollIntoView({ behavior: 'smooth' });
+            }
+
+            localStorage.removeItem('sectionName');
+        }
     });
 </script>
 </html>
