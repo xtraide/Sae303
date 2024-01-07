@@ -55,18 +55,31 @@
         <li class="nav-item ">
           <a class="nav-link " href="#">Plus</a>
         </li>
-        <li class="nav-item d-lg-none">
-          <a href="?page=user.login">Connexion</a>
-        </li>
-        <li class="nav-item d-lg-none">
-          <a href="?page=user.register" >Inscription</a>
-        </li>
+        <?php if (!$logged) : ?>
+          <li class="nav-item d-lg-none">
+            <a href="?page=user.login">Connexion</a>
+          </li>
+          <li class="nav-item d-lg-none">
+            <a href="?page=user.register">Inscription</a>
+          </li>
+        <?php else : ?>
+          <li class="nav-item d-lg-none">
+            <a href=""><img src="profile.png" alt=""></a>
+          </li>
+        <?php endif ?>
       </ul>
     </div>
-    <div class="form-inline d-none d-lg-flex nav-element align-items-center">
-      <a href="?page=user.login" class="btn my-2 my-sm-0" type="submit">Connexion</a>
-      <a href="?page=user.register" class="btn my-2 my-sm-0" type="submit">Inscription</a>
-    </div>
+    <?php if (!$logged) : ?>
+      <div class="form-inline d-none d-lg-flex nav-element align-items-center">
+        <a href="?page=user.login" class="btn my-2 my-sm-0" type="submit">Connexion</a>
+        <a href="?page=user.register" class="btn my-2 my-sm-0" type="submit">Inscription</a>
+      </div>
+    <?php else : ?>
+      <div>
+        <a href=""><img src="profile.png" alt=""></a>
+      </div>
+    <?php endif ?>
+
   </nav>
 </header>
 

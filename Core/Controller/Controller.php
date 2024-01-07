@@ -2,6 +2,9 @@
 
 namespace Core\Controller;
 
+use App;
+use Core\Auth\DatabaseAuth;
+
 class Controller
 {
     protected $viewPath;
@@ -14,6 +17,8 @@ class Controller
      */
     protected function render($view, $variables = [])
     {
+        $logged = new DatabaseAuth(App::getInstance()->getDatabase());
+        $logged = $logged->logged();
         ob_start();
         extract($variables);
         require($this->viewPath . str_replace('.', '/', $view) . '.php');
