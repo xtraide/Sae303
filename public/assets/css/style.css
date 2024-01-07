@@ -20,6 +20,7 @@
 
 body {
   font-family: Arial, sans-serif;
+  width: 100%;
 }
 
 #icones .card {
@@ -162,24 +163,81 @@ body{
 
 
 .image-container img{
-    position: relative;
-    width: 110%;
-    height: 100vh;
+    position: absolute;
+    width: 100%;
+    height: 100%;
     filter: blur(10px);
+    border: none;
     top: 0;
-    left: -10;
-    z-index: 1;
-
+    left: 0;
+    z-index: -1;
+    object-fit: cover;
 }
 
 #error{
   position: relative;
-  font-size: 70px;
-  z-index: 1000;
+  font-size: 6vw;
 }
 
 .texte{
   position: relative;
-  font-size: 25px;
-  z-index: 1000;
+  font-size: 2vw;
+}
+
+#icone_erreur{
+  width: 20vw;
+}
+
+
+.rotate {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+}
+
+.fondu {
+  background: rgb(118, 136, 145);
+  background: linear-gradient(
+    180deg,
+    rgba(118, 136, 145, 1) 0%,
+    rgba(53, 69, 82, 1) 100%
+  );
+}
+.acti {
+  color: white;
+}
+.acti > div > div > div > div > div {
+  color: white;
+  background-color: #556672;
+  border-radius: 20px;
+}
+
+.acti > div > div > div > div {
+  background: none;
+  border: none;
+}
+body {
+  color: white;
+}
+section {
+  color: white;
+}
+.list-group > li {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.list-group{
+margin: auto;
+}
+
+.section {
+  margin: auto;
+  padding: 10px;
+
+}
+
+.card-body {
+  margin: 2% auto 2% auto;
 }
