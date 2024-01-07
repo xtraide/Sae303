@@ -16,9 +16,13 @@ class Controller
      * @return void return la page demandée 
      */
     protected function render($view, $variables = [])
-    {
-        $logged = new DatabaseAuth(App::getInstance()->getDatabase());
-        $logged = $logged->logged();
+    { /* a supprimer */
+        $auth = new DatabaseAuth(App::getInstance()->getDatabase());
+        $logged = $auth->logged();
+
+        $admin = $auth->isAdmin();
+
+        /** */
         ob_start();
         extract($variables);
         require($this->viewPath . str_replace('.', '/', $view) . '.php');
