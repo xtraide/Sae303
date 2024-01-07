@@ -146,10 +146,6 @@ h2 {
   border-radius: 20px;
 }
 
-.decouvrer:hover {
-  border: solid rgb(0, 0, 0) 2px;
-}
-
 #Q {
   font-family: quicksand;
   font-size: 3.5rem;
@@ -472,4 +468,8 @@ section {
   content: '\00B2';
   vertical-align: super;
   font-size: smaller;
+}
+
+.margintop{
+  margin-top: 20%;
 }

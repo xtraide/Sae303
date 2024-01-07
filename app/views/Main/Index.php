@@ -13,8 +13,7 @@
 </section>
 <section>
 
-    <div id="personnage" class="d-flex justify-content-evenly align-content-center"
-        style="padding-top: 20%; padding-bottom: 30%;">
+    <div id="personnage" class="d-flex justify-content-evenly align-content-center" style="padding-top: 20%; padding-bottom: 30%;">
         <div id="card_1" class="card p-1">
             <h3>Kevin SATOUT</h3>
             <img src="../public/assets/ressources/ChefPilote.png" alt="chef_pilote" class="pt-1" />
@@ -43,7 +42,7 @@
         <h1 id="txt" class="title_h1">EVENEMENT A VENIR !</h1>
     </div>
 
-    <div class="d-flex justify-content-center">
+    <div class="d-flex justify-content-center mt-5">
         <div id="carouselExampleIndicators" class="carousel slide m-auto d-flex flex-column" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active carou-card">
@@ -52,8 +51,7 @@
                         <div class="card-body ">
                             <h5 class="card-title text-center">France Air Expo 2023</h5>
                             <div class="m-auto text-center">
-                                <img src="../public/assets/ressources/yesiiir.png" width="80%"
-                                    class="m-auto text-center" alt="..." />
+                                <img src="../public/assets/ressources/yesiiir.png" width="80%" class="m-auto text-center" alt="..." />
                             </div>
                             <div class="d-flex">
                                 <img src="../public/assets/ressources/loc.png" alt="loc" width="5%" height="5%" />
@@ -73,8 +71,7 @@
                                 1er Rassemblement ULM des femmes pilotes
                             </h5>
                             <div class="m-auto text-center">
-                                <img src="../public/assets/ressources/360_F_159634840_Fa2HPb8ITrbr5gddY2eKlomVfsnu1gx6.png"
-                                    alt="..." />
+                                <img src="../public/assets/ressources/360_F_159634840_Fa2HPb8ITrbr5gddY2eKlomVfsnu1gx6.png" alt="..." />
                             </div>
                             <div class="d-flex">
                                 <img src="../public/assets/ressources/loc.png" alt="loc" width="5%" height="5%" />
@@ -92,8 +89,7 @@
                         <div class="card-body">
                             <h5 class="card-title text-center">Journée sécurité des vols - GRAND EST</h5>
                             <div class="m-auto text-center">
-                                <img src="../public/assets/ressources/Event1 (1).png" width="80%" alt="..."
-                                    class="m-auto text-center" />
+                                <img src="../public/assets/ressources/Event1 (1).png" width="80%" alt="..." class="m-auto text-center" />
                             </div>
                             <div class="d-flex">
                                 <img src="../public/assets/ressources/loc.png" alt="loc" width="5%" height="5%" />
@@ -110,22 +106,19 @@
         </div>
     </div>
     <div class="d-flex justify-content-center">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active m-3"
-            aria-current="true" aria-label="Slide 1" style="
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active m-3" aria-current="true" aria-label="Slide 1" style="
           background-color: black;
           height: 20px;
           width: 20px;
           border-radius: 100%;
         "></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="m-3"
-            aria-label="Slide 2" style="
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="m-3" aria-label="Slide 2" style="
           background-color: black;
           height: 20px;
           width: 20px;
           border-radius: 100%;
         "></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="m-3"
-            aria-label="Slide 3" style="
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="m-3" aria-label="Slide 3" style="
           background-color: black;
           height: 20px;
           width: 20px;
@@ -133,15 +126,15 @@
         "></button>
     </div>
 
-    <section name="activités" class="acti section" id="Activités">
-        <h1 class="text-center m-auto mt-3 mb-3 title_h1" style="color: black;">ACTIVITES</h1>
-        <div class="m-auto text-center">
+    <section name="activités" class="acti section mt-5" id="Activités">
+        <h1 class="text-center m-auto mt-3 mb-3 title_h1" style="color: black;">ACTIVITÉS</h1>
+        <div class="m-auto text-center mb-5">
             <img src="../public/assets/ressources/backgroundActivites.jpg" alt="" width="80%" style="aspect-ratio: 16/9; margin: auto; object-fit: cover; object-position: 50% 63%;
                  text-align: center; ">
         </div>
         <h1 class="text-center" style="background-color: rgba(0, 0, 0, 0.7); border-radius: 20px; color: white;
          margin: 2% auto!important; padding: 1%; height: auto; width: 40%;">
-            SERVICES PROPOSES</h1>
+            SERVICES PROPOSÉS</h1>
         <div class="container mt-5 d-flex flex-column align-items-center justify-content-center">
             <div class="row d-flex justify-content-center" id="card-price">
                 <div class="col-md-4 d-flex">
@@ -228,10 +221,10 @@
             </div>
         </div>
     </section>
-    <section>
+    <section class="margintop">
 
         <h1 class="text-center title_h1" style="background-color: rgba(0, 0, 0, 0.7); border-radius: 20px; color: white;
-         margin: 2% auto!important; padding: 1%; height: auto; width: 40%;">PRESTATIONS ASSURES</h1>
+         margin: 2% auto!important; padding: 1%; height: auto; width: 40%;">PRESTATIONS ASSURÉES</h1>
 
         <div style="margin-top: 2%;">
 
@@ -249,11 +242,9 @@
             <div class="row m-auto">
                 <div class="col-12 col-md-6">
                     <ul class="list-group">
-                        <li class="list-group-item" style="cursor:pointer;" id="i1">Maintenance des ULM <img
-                                src="../public/assets/ressources/i.png" width="5%" alt="i" style="margin-left: 2%;">
+                        <li class="list-group-item" style="cursor:pointer;" id="i1">Maintenance des ULM <img src="../public/assets/ressources/i.png" width="5%" alt="i" style="margin-left: 2%;">
                         </li>
-                        <li class="list-group-item" style="cursor:pointer;" id="i2">Montage des ULM <img
-                                src="../public/assets/ressources/i.png" width="5%" alt="i" style="margin-left: 2%;">
+                        <li class="list-group-item" style="cursor:pointer;" id="i2">Montage des ULM <img src="../public/assets/ressources/i.png" width="5%" alt="i" style="margin-left: 2%;">
                         </li>
                         <li class="list-group-item" style="cursor:pointer;" id="i3">Location d’emplacements ULM protégés
                             <img src="../public/assets/ressources/i.png" width="5%" alt="i" style="margin-left: 2%;">
@@ -262,11 +253,9 @@
                 </div>
                 <div class="col-12 col-md-6 m-auto">
                     <ul class="list-group">
-                        <li class="list-group-item" style="cursor:pointer;" id="i4">Hébergement <img
-                                src="../public/assets/ressources/i.png" width="5%" alt="i" style="margin-left: 2%;">
+                        <li class="list-group-item" style="cursor:pointer;" id="i4">Hébergement <img src="../public/assets/ressources/i.png" width="5%" alt="i" style="margin-left: 2%;">
                         </li>
-                        <li class="list-group-item" style="cursor:pointer;" id="i5">Service de restauration <img
-                                src="../public/assets/ressources/i.png" width="5%" alt="i" style="margin-left: 2%;">
+                        <li class="list-group-item" style="cursor:pointer;" id="i5">Service de restauration <img src="../public/assets/ressources/i.png" width="5%" alt="i" style="margin-left: 2%;">
                         </li>
                     </ul>
                 </div>
@@ -274,11 +263,11 @@
         </div>
     </section>
 
-    <section id="temoigniage">
+    <section class="margintop">
         <div class="container mt-5 mt-sm-5">
             <header>
                 <h1 class="text-center title_h1" style="background-color: rgba(0, 0, 0, 0.7); border-radius: 20px; color: white;
-         margin: 2% auto!important; padding: 1%; height: auto; width: 40%;">Témoignages</h1>
+         margin: 2% auto!important; padding: 1%; height: auto; width: 40%; margin-top: 20%;">Témoignages</h1>
             </header>
             <div class="row">
                 <div class="col-12 col-md-4 mt-sm-5 mb-3">
@@ -321,21 +310,14 @@
 
 
     <section name="ULM" id="ULM">
-        <div class="m-auto text-center">
-            <h1>Les Types d'ULM</h1>
-            <img src="../public/assets/ressources/backgroundTypeDeULM.jpg" alt="" width="80%"
-                style="aspect-ratio: 16/9; object-fit: cover;">
-        </div>
         <div>
-            <h2 class="text-center"
-                style="background-color: rgba(0, 0, 0, 0.7); border-radius: 10px; color: white; width:20%; margin:3% auto;">
-                Différents ULM</h2>
+            <h1 class="text-center p-2 mb-5" style="background-color: rgba(0, 0, 0, 0.7); border-radius: 10px; color: white; width:25%; margin:3% auto; margin-top: 20%;">
+                Différents ULM</h1>
         </div>
         <div id="carousel1" style="position: relative;">
             <div class="carousel-item1 active">
                 <div style="position: relative; display: block; text-align: center; margin: auto;">
-                    <img src="../public/assets/ressources/Multiaxes.png" alt="ULM1" width="30%" id="ulm1"
-                        style="margin: auto; display: block;" />
+                    <img src="../public/assets/ressources/Multiaxes.png" alt="ULM1" width="30%" id="ulm1" style="margin: auto; display: block;" />
                     <h3 style="padding: 4px 40px; background-color:#556672; border-radius:10px;position: absolute;
                          top: 50%; left: 50%; transform: translate(-50%, -50%);">
                         Multiaxes</h3>
@@ -364,8 +346,7 @@
             </div>
             <div class="carousel-item1">
                 <div style="position: relative; display: block; text-align: center; margin: auto;">
-                    <img src="../public/assets/ressources/Paramoteur.png" alt="ULM1" width="30%" id="ulm1"
-                        style="margin: auto; display: block;" />
+                    <img src="../public/assets/ressources/Paramoteur.png" alt="ULM1" width="30%" id="ulm1" style="margin: auto; display: block;" />
                     <h3 style="padding: 4px 40px; background-color:#556672; border-radius:10px;position: absolute;
                          top: 50%; left: 50%; transform: translate(-50%, -50%); ">
                         Paramoteur</h3>
@@ -394,8 +375,7 @@
             </div>
             <div class="carousel-item1">
                 <div style="position: relative; display: block; text-align: center; margin: auto;">
-                    <img src="../public/assets/ressources/Autogire.png" alt="ULM1" width="30%" id="ulm1"
-                        style="margin: auto; display: block;" />
+                    <img src="../public/assets/ressources/Autogire.png" alt="ULM1" width="30%" id="ulm1" style="margin: auto; display: block;" />
                     <h3 style="padding: 4px 40px; background-color:#556672; border-radius:10px;position: absolute;
                          top: 50%; left: 50%; transform: translate(-50%, -50%); ">
                         Autogire Ultraléger</h3>
@@ -424,8 +404,7 @@
             </div>
             <div class="carousel-item1">
                 <div style="position: relative; display: block; text-align: center; margin: auto;">
-                    <img src="../public/assets/ressources/Pendulaire.png" alt="ULM1" width="30%" id="ulm1"
-                        style="margin: auto; display: block;" />
+                    <img src="../public/assets/ressources/Pendulaire.png" alt="ULM1" width="30%" id="ulm1" style="margin: auto; display: block;" />
                     <h3 style="padding: 4px 40px; background-color:#556672; border-radius:10px;position: absolute;
                          top: 50%; left: 50%; transform: translate(-50%, -50%); ">
                         Pendulaire</h3>
@@ -454,8 +433,7 @@
             </div>
             <div class="carousel-item1">
                 <div style="position: relative; display: block; text-align: center; margin: auto;">
-                    <img src="../public/assets/ressources/HelicoLeger.png" alt="ULM1" width="30%" id="ulm1"
-                        style="margin: auto; display: block;" />
+                    <img src="../public/assets/ressources/HelicoLeger.png" alt="ULM1" width="30%" id="ulm1" style="margin: auto; display: block;" />
                     <h3 style="padding: 4px 40px; background-color:#556672; border-radius:10px;position: absolute;
                          top: 50%; left: 50%; transform: translate(-50%, -50%); ">
                         Hélicoptère Ultraléger</h3>
@@ -484,8 +462,7 @@
             </div>
             <div class="carousel-item1">
                 <div style="position: relative; display: block; text-align: center; margin: auto;">
-                    <img src="../public/assets/ressources/Baloon.png" alt="ULM1" width="30%" id="ulm1"
-                        style="margin: auto; display: block;" />
+                    <img src="../public/assets/ressources/Baloon.png" alt="ULM1" width="30%" id="ulm1" style="margin: auto; display: block;" />
                     <h3 style="padding: 4px 40px; background-color:#556672;border-radius:10px;position: absolute;
                          top: 50%; left: 50%; transform: translate(-50%, -50%); ">
                         Aérostat Ultraléger</h3>
@@ -514,44 +491,45 @@
             </div>
             <button id="prev" style="position: absolute; top: 50%; left: 0;
              transform: translateY(-50%);">Précédent</button>
-            <button id="next"
-                style="position: absolute; top: 50%; right: 0; transform: translateY(-50%);">Suivant</button>
+            <button id="next" style="position: absolute; top: 50%; right: 0; transform: translateY(-50%);">Suivant</button>
         </div>
         <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            let index = 0;
-            const items1 = document.querySelectorAll('.carousel-item1');
-            const nextButton = document.getElementById('next');
-            const prevButton = document.getElementById('prev');
+            document.addEventListener('DOMContentLoaded', function() {
+                let index = 0;
+                const items1 = document.querySelectorAll('.carousel-item1');
+                const nextButton = document.getElementById('next');
+                const prevButton = document.getElementById('prev');
 
-            items1[0].classList.add('active');
+                items1[0].classList.add('active');
 
-            nextButton.addEventListener('click', () => {
-                items1[index].classList.remove('active');
-                index = (index + 1) % items1.length;
-                items1[index].classList.add('active');
+                nextButton.addEventListener('click', () => {
+                    items1[index].classList.remove('active');
+                    index = (index + 1) % items1.length;
+                    items1[index].classList.add('active');
+                });
+
+                prevButton.addEventListener('click', () => {
+                    items1[index].classList.remove('active');
+                    index = (index - 1 + items1.length) % items1.length;
+                    items1[index].classList.add('active');
+
+                });
             });
-
-            prevButton.addEventListener('click', () => {
-                items1[index].classList.remove('active');
-                index = (index - 1 + items1.length) % items1.length;
-                items1[index].classList.add('active');
-
-            });
-        });
         </script>
     </section>
     <section name="info + contact" style="padding-bottom: 5%;">
-        <div class="container mt-5">
+        <div class="container mt-5 mb-5">
+            <div class="text-center m-auto bg-white mb-5" >
+                <button class="btn btn-link  w-50" style="color: black; text-decoration: none;">
+                    <div class="text-center">RESERVEZ VOTRE VOL MAINTENANT</div>
+                </button>
+            </div>
             <div class="row d-flex justify-content-around">
                 <div class="col-12 col-md-5">
                     <div class="card">
                         <div class="card-header">
                             <h3 class="mb-0 ">
-                                <button class="btn btn-link d-flex align-items-center w-100 justify-content-between"
-                                    type="button" data-bs-toggle="collapse" data-bs-target="#infoCollapse1"
-                                    aria-expanded="false" aria-controls="infoCollapse1"
-                                    style="color: black; text-decoration: none;">
+                                <button class="btn btn-link d-flex align-items-center w-100 justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#infoCollapse1" aria-expanded="false" aria-controls="infoCollapse1" style="color: black; text-decoration: none;">
                                     <div>Infos</div>
                                     <div class="fas p-2 text-end">▲</div>
                                 </button>
@@ -572,10 +550,7 @@
                     <div class="card">
                         <div class="card-header">
                             <h3 class="mb-0 d-flex justify-content-between">
-                                <button class="btn btn-link d-flex align-items-center w-100 justify-content-between"
-                                    type="button" data-bs-toggle="collapse" data-bs-target="#contactForm"
-                                    aria-expanded="false" aria-controls="contactForm"
-                                    style="color: black; text-decoration: none;">
+                                <button class="btn btn-link d-flex align-items-center w-100 justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#contactForm" aria-expanded="false" aria-controls="contactForm" style="color: black; text-decoration: none;">
                                     <div>Contactez-nous</div>
                                     <div class="fas p-2 text-end">▲</div>
                                 </button>
@@ -612,10 +587,3 @@
         </div>
     </section>
 </div>
-
-<script>
-
-</script>
-<script>
-
-</script>

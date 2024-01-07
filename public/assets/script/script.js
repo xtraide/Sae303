@@ -3,50 +3,50 @@ const items1 = document.querySelectorAll('.carousel-item1');
 const nextButton = document.getElementById('next');
 const prevButton = document.getElementById('prev');
 
-window.onload = function() {
-    items1[0].classList.add('active');
+window.onload = function () {
+  items1[0].classList.add('active');
 }
 
 nextButton.addEventListener('click', () => {
-    items1[index].classList.remove('active');
-    index = (index + 1) % items1.length;
-    items1[index].classList.add('active');
+  items1[index].classList.remove('active');
+  index = (index + 1) % items1.length;
+  items1[index].classList.add('active');
 });
 
 prevButton.addEventListener('click', () => {
-    items1[index].classList.remove('active');
-    index = (index - 1 + items1.length) % items1.length;
-    items1[index].classList.add('active');
+  items1[index].classList.remove('active');
+  index = (index - 1 + items1.length) % items1.length;
+  items1[index].classList.add('active');
 });
 
 
 var coll = document.querySelectorAll(".btn.btn-link");
 coll.forEach((btn) => {
-    btn.addEventListener("click", function() {
-        var arrowIcon = this.querySelector('.fas');
-        arrowIcon.classList.toggle('rotate');
-    });
+  btn.addEventListener("click", function () {
+    var arrowIcon = this.querySelector('.fas');
+    arrowIcon.classList.toggle('rotate');
+  });
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-var images = ['i1', 'i2', 'i3', 'i4', 'i5'];
-var texts = {
+document.addEventListener('DOMContentLoaded', function () {
+  var images = ['i1', 'i2', 'i3', 'i4', 'i5'];
+  var texts = {
     'i1': 'L’entretien des ULM est compris dans le service par défaut de location, lors de la location de ces derniers',
     'i2': 'Notre équipe s’occupe de tout, et monte votre ULM en amont du vol, afin de bénéficeier d’une expérience avancé',
     'i3': 'Un service de location d’emplacements sont disponible dans le cas d’une utilisation de votre propre ULM !',
     'i4': 'Nous avons la possibilité de vous accueillir à proximité de l’aéroclub pour y passez une merveilleuse nuit :',
     'i5': 'Un service de restauration est proposés tous les week-ends, à un moindre coût et de qualité.'
-};
+  };
 
-images.forEach(function(imageId) {
+  images.forEach(function (imageId) {
     var li = document.getElementById(imageId);
 
-    li.addEventListener('click', function(e) {
-        var popup = li.querySelector('div');
-        if (popup) {
-            li.removeChild(popup);
-        } else {
-            var popupHTML = `
+    li.addEventListener('click', function (e) {
+      var popup = li.querySelector('div');
+      if (popup) {
+        li.removeChild(popup);
+      } else {
+        var popupHTML = `
                 <div style="
                     position: absolute;
                     left: ${li.offsetLeft}px;
@@ -61,34 +61,34 @@ images.forEach(function(imageId) {
                     ${texts[imageId] || 'Erreur'}
                 </div>
             `;
-                li.insertAdjacentHTML('beforeend', popupHTML);
-            }
-        });
+        li.insertAdjacentHTML('beforeend', popupHTML);
+      }
     });
-}); 
- 
- // Fonction pour définir un cookie
-    function setCookie(name, value, days) {
-      var expires = "";
-      if (days) {
-          var date = new Date();
-          date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
-          expires = "; expires=" + date.toUTCString();
-      }
-      document.cookie = name + "=" + (value || "") + expires + "; path=/";
-  }
+  });
+});
 
-  // Fonction pour obtenir un cookie
-  function getCookie(name) {
-      var nameEQ = name + "=";
-      var ca = document.cookie.split(';');
-      for (var i = 0; i < ca.length; i++) {
-          var c = ca[i];
-          while (c.charAt(0) == ' ') c = c.substring(1, c.length);
-          if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
-      }
-      return null;
+// Fonction pour définir un cookie
+function setCookie(name, value, days) {
+  var expires = "";
+  if (days) {
+    var date = new Date();
+    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+    expires = "; expires=" + date.toUTCString();
   }
+  document.cookie = name + "=" + (value || "") + expires + "; path=/";
+}
+
+// Fonction pour obtenir un cookie
+function getCookie(name) {
+  var nameEQ = name + "=";
+  var ca = document.cookie.split(';');
+  for (var i = 0; i < ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+    if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+  }
+  return null;
+}
 
 // Fonction pour afficher le popup de cookies
 function showCookiePopup() {
@@ -105,23 +105,21 @@ function showCookiePopup() {
 
   var acceptButton = document.createElement('button');
   acceptButton.textContent = 'Accepter';
-  acceptButton.onclick = function() {
-      setCookie('cookiesAccepted', 'true', 30);
-      document.body.removeChild(cookiePopup);
+  acceptButton.onclick = function () {
+    setCookie('cookiesAccepted', 'true', 30);
+    document.body.removeChild(cookiePopup);
   };
   cookiePopup.appendChild(acceptButton);
 }
 
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   if (!getCookie('cookiesAccepted')) {
-      showCookiePopup();
+    showCookiePopup();
   }
 });
 
 function changeDisplay(selectedBtn) {
-  // Réinitialise le style des boutons et divs
-  console.log("coucou");
   document.getElementById('btn1').style.fontSize = '1.2rem';
   document.getElementById('btn2').style.fontSize = '1.2rem';
   document.getElementById('btn3').style.fontSize = '1.2rem';
@@ -130,7 +128,6 @@ function changeDisplay(selectedBtn) {
   document.getElementById('ctn2').style.display = 'none';
   document.getElementById('ctn3').style.display = 'none';
 
-  // Applique le style sélectionné
   document.getElementById(`btn${selectedBtn}`).style.fontSize = '3rem';
   document.getElementById(`ctn${selectedBtn}`).style.display = 'block';
 }
