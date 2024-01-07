@@ -2,21 +2,6 @@
            background-size: cover; 
            background-position: center">
     <div id="icones" class="container-card d-flex justify-content-evenly align-content-center" style="padding-top: 50%; padding-bottom: 30%;">
-        <div id="card_1" class="card p-3" style="background-color: rgba(255, 255, 255, 0.5);">
-            <h2>L'AERODROME</h2>
-            <img src="../public/assets/ressources/AppOne.png" alt="icone_piste" class="pt-1" />
-            <button onclick="aerodrome()" class="decouvrer">Découvrez</button>
-        </div>
-        <div id="card_2" class="card p-3" style="background-color: rgba(255, 255, 255, 0.5);">
-            <h2>ACTIVITE</h2>
-            <img src="../public/assets/ressources/AppTwo.png" alt="icone_avion" class="pt-1" />
-            <button onclick="aerodrome()" class="decouvrer">Découvrez</button>
-        </div>
-        <div id="card_3" class="card p-3" style="background-color: rgba(255, 255, 255, 0.5);">
-            <h2>CATEGORIE D'ULM</h2>
-            <img src="../public/assets/ressources/AppThree.png" alt="icone_ulm" class="pt-1" />
-            <button onclick="aerodrome()" class="decouvrer" class="pb-3">Découvrez</button>
-        </div>
     </div>
     <div class="container w-50 p-2 z-0">
         <p id="txt" class="z-0">Qui sommes nous ?</p>
@@ -32,22 +17,22 @@
         <div id="card_1" class="card p-1">
             <h3>Kevin SATOUT</h3>
             <img src="../public/assets/ressources/ChefPilote.png" alt="chef_pilote" class="pt-1" />
-            <button onclick="aerodrome()" class="decouvrer">Chef Pilote</button>
+            <div class="decouvrer">Chef Pilote</div>
         </div>
         <div id="card_2" class="card p-1">
             <h3>Céline LAPLUME</h3>
             <img src="../public/assets/ressources/Secretaire.png" alt="secretaire" class="pt-1" />
-            <button onclick="aerodrome()" class="decouvrer">Secrétaire</button>
+            <div class="decouvrer">Secrétaire</div>
         </div>
         <div id="card_3" class="card p-1">
             <h3>Alain STRUMENT</h3>
             <img src="../public/assets/ressources/Instructeur.png" alt="indtructeur" class="pt-1" />
-            <button onclick="aerodrome()" class="decouvrer" class="pb-3">Instructeur</button>
+            <div class="decouvrer" class="pb-3">Instructeur</div>
         </div>
         <div id="card_4" class="card p-1">
             <h3>Justine VOLAVU</h3>
             <img src="../public/assets/ressources/Secretaire.png" alt="instructrice" class="pt-1" />
-            <button onclick="aerodrome()" class="decouvrer" class="pb-3">Instructrice</button>
+            <div class="decouvrer" class="pb-3">Instructrice</div>
         </div>
     </div>
 
@@ -154,7 +139,7 @@
             <img src="../public/assets/ressources/backgroundActivites.jpg" alt="" width="80%" style="aspect-ratio: 16/9; margin: auto; object-fit: cover; object-position: 50% 63%;
                  text-align: center; ">
         </div>
-        <h1 class="text-center" style="background-color: white; border-radius: 20px; color: black;
+        <h1 class="text-center" style="background-color: rgba(0, 0, 0, 0.7); border-radius: 20px; color: white;
          margin: 2% auto!important; padding: 1%; height: auto; width: 40%;">
             SERVICES PROPOSES</h1>
         <div class="container mt-5 d-flex flex-column align-items-center justify-content-center">
@@ -169,8 +154,8 @@
                                 joies de
                                 l'aviation.</p>
                             <div class="card-footer bg-white border-white rounded d-flex
-                            align-items-center justify-content-center w-50">
-                                <p class="text-center " style="color: black; margin: 0;">300 €</p>
+                            align-items-center justify-content-center w-50" style=" background-color: rgba(0, 0, 0, 0.7) !important">
+                                <p class="text-center " style="color: white; margin: 0;">300 €</p>
                             </div>
                         </div>
                     </div>
@@ -185,8 +170,8 @@
                                 entraînement pratique, navigation et communication aérienne, préparant à la licence de
                                 pilote.</p>
                             <div class="card-footer bg-white border-white rounded
-                            d-flex align-items-center justify-content-center w-50">
-                                <p class="text-center " style="color: black; margin: 0;">1500 €</p>
+                            d-flex align-items-center justify-content-center w-50" style=" background-color: rgba(0, 0, 0, 0.7) !important">
+                                <p class="text-center " style="color: white; margin: 0;">1500 €</p>
                             </div>
                         </div>
                     </div>
@@ -199,8 +184,8 @@
                                 techniques
                                 d'enseignement et la gestion de vol, visant à former des instructeurs compétents.</p>
                             <div class="card-footer bg-white border-white rounded
-                            d-flex align-items-center justify-content-center w-50">
-                                <p class="text-center " style="color: black; margin: 0;">5000 €</p>
+                            d-flex align-items-center justify-content-center w-50" style=" background-color: rgba(0, 0, 0, 0.7) !important">
+                                <p class="text-center " style="color: white; margin: 0;">5000 €</p>
                             </div>
                         </div>
                     </div>
@@ -218,8 +203,8 @@
                                 Évolution,
                                 Maîtrise - pour répondre à vos besoins de formation et d'expérience de vol.</p>
                             <div class="card-footer bg-white border-white rounded
-                            d-flex align-items-center justify-content-center w-50">
-                                <a href=" " class="text-center " style="color: black; margin: 0;">EN SAVOIR PLUS</a>
+                            d-flex align-items-center justify-content-center w-50" style=" background-color: rgba(0, 0, 0, 0.7) !important">
+                                <a href=" " class="text-center " style="color: white; margin: 0;">EN SAVOIR PLUS</a>
                             </div>
                         </div>
                     </div>
@@ -234,8 +219,8 @@
                                 permettent
                                 une progression constante et adaptée à vos objectifs de vol.</p>
                             <div class="card-footer bg-white border-white rounded
-                            d-flex align-items-center justify-content-center w-50">
-                                <a href=" " class="text-center " style="color: black; margin: 0;">EN SAVOIR PLUS</a>
+                            d-flex align-items-center justify-content-center w-50" style=" background-color: rgba(0, 0, 0, 0.7) !important">
+                                <a href=" " class="text-center " style="color: white; margin: 0;">EN SAVOIR PLUS</a>
                             </div>
                         </div>
                     </div>
@@ -245,7 +230,7 @@
     </section>
     <section>
 
-        <h1 class="text-center title_h1" style="background-color: white; border-radius: 20px; color: black;
+        <h1 class="text-center title_h1" style="background-color: rgba(0, 0, 0, 0.7); border-radius: 20px; color: white;
          margin: 2% auto!important; padding: 1%; height: auto; width: 40%;">PRESTATIONS ASSURES</h1>
 
         <div style="margin-top: 2%;">
@@ -288,7 +273,7 @@
     <section id="temoigniage">
         <div class="container mt-5 mt-sm-5">
             <header>
-                <h1 class="text-center title_h1" style="background-color: white; border-radius: 20px; color: black;
+                <h1 class="text-center title_h1" style="background-color: rgba(0, 0, 0, 0.7); border-radius: 20px; color: white;
          margin: 2% auto!important; padding: 1%; height: auto; width: 40%;">Témoignages</h1>
             </header>
             <div class="row">
@@ -338,7 +323,7 @@
         </div>
         <div>
             <h2 class="text-center"
-                style="background-color: white; border-radius: 10px; color: black; width:20%; margin:3% auto;">
+                style="background-color: rgba(0, 0, 0, 0.7); border-radius: 10px; color: white; width:20%; margin:3% auto;">
                 Différents ULM</h2>
         </div>
         <div id="carousel1" style="position: relative;">
@@ -589,133 +574,8 @@
 </div>
 
 <script>
-    let index = 0;
-    const items1 = document.querySelectorAll('.carousel-item1');
-    const nextButton = document.getElementById('next');
-    const prevButton = document.getElementById('prev');
 
-    window.onload = function() {
-        items1[0].classList.add('active');
-    }
-
-    nextButton.addEventListener('click', () => {
-        items1[index].classList.remove('active');
-        index = (index + 1) % items1.length;
-        items1[index].classList.add('active');
-    });
-
-    prevButton.addEventListener('click', () => {
-        items1[index].classList.remove('active');
-        index = (index - 1 + items1.length) % items1.length;
-        items1[index].classList.add('active');
-    });
-</script>
-
-
-
-
-<script>
-    var coll = document.querySelectorAll(".btn.btn-link");
-    coll.forEach((btn) => {
-        btn.addEventListener("click", function() {
-            var arrowIcon = this.querySelector('.fas');
-            arrowIcon.classList.toggle('rotate');
-        });
-    });
-</script>
-<script src="../public/assets/script/script.js"></script>
-<script src="../public/assets/script/api_meteo.js"></script>
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    var images = ['i1', 'i2', 'i3', 'i4', 'i5'];
-    var texts = {
-        'i1': 'L’entretien des ULM est compris dans le service par défaut de location, lors de la location de ces derniers',
-        'i2': 'Notre équipe s’occupe de tout, et monte votre ULM en amont du vol, afin de bénéficeier d’une expérience avancé',
-        'i3': 'Un service de location d’emplacements sont disponible dans le cas d’une utilisation de votre propre ULM !',
-        'i4': 'Nous avons la possibilité de vous accueillir à proximité de l’aéroclub pour y passez une merveilleuse nuit :',
-        'i5': 'Un service de restauration est proposés tous les week-ends, à un moindre coût et de qualité.'
-    };
-
-    images.forEach(function(imageId) {
-        var li = document.getElementById(imageId);
-
-        li.addEventListener('click', function(e) {
-            var popup = li.querySelector('div');
-            if (popup) {
-                li.removeChild(popup);
-            } else {
-                var popupHTML = `
-                    <div style="
-                        position: absolute;
-                        left: ${li.offsetLeft}px;
-                        top: ${li.offsetTop + 10}px;
-                        background-color: #fff;
-                        width: 50%;
-                        border-radius: 10px;
-                        padding: 10px;
-                        color:black;
-                        text-align: center;
-                        z-index:1000;">
-                        ${texts[imageId] || 'Erreur'}
-                    </div>
-                `;
-                    li.insertAdjacentHTML('beforeend', popupHTML);
-                }
-            });
-        });
-    });
 </script>
 <script>
-    // Fonction pour définir un cookie
-    function setCookie(name, value, days) {
-        var expires = "";
-        if (days) {
-            var date = new Date();
-            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
-            expires = "; expires=" + date.toUTCString();
-        }
-        document.cookie = name + "=" + (value || "") + expires + "; path=/";
-    }
 
-    // Fonction pour obtenir un cookie
-    function getCookie(name) {
-        var nameEQ = name + "=";
-        var ca = document.cookie.split(';');
-        for (var i = 0; i < ca.length; i++) {
-            var c = ca[i];
-            while (c.charAt(0) == ' ') c = c.substring(1, c.length);
-            if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
-        }
-        return null;
-    }
-
-// Fonction pour afficher le popup de cookies
-function showCookiePopup() {
-    var cookiePopup = document.createElement('div');
-    cookiePopup.textContent = 'Ce site utilise des cookies pour améliorer votre expérience. En continuant à utiliser ce site, vous acceptez leur utilisation.';
-    cookiePopup.style.position = 'fixed';
-    cookiePopup.style.bottom = '0';
-    cookiePopup.style.left = '0';
-    cookiePopup.style.backgroundColor = '#fff';
-    cookiePopup.style.padding = '10px';
-    cookiePopup.style.zIndex = '1000';
-    cookiePopup.style.borderRadius = '10px';
-    document.body.appendChild(cookiePopup);
-
-    var acceptButton = document.createElement('button');
-    acceptButton.textContent = 'Accepter';
-    acceptButton.onclick = function() {
-        setCookie('cookiesAccepted', 'true', 30);
-        document.body.removeChild(cookiePopup);
-    };
-    cookiePopup.appendChild(acceptButton);
-}
-
-
-document.addEventListener('DOMContentLoaded', function() {
-    if (!getCookie('cookiesAccepted')) {
-        showCookiePopup();
-    }
-});
 </script>

@@ -23,7 +23,7 @@ body {
 
   font-family: Arial, sans-serif;
   width: 100%;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 #icones .card {
@@ -35,7 +35,7 @@ body {
 }
 
 #personnage {
-  background-color: black;
+  background-color: rgb(0, 0, 0);
 }
 
 #personnage .card {
@@ -68,11 +68,11 @@ body {
 /* login/signin */
 
 .nav-element {
-  background: rgba(255, 255, 255, 0.41);
+  background: rgba(0, 0, 0, 0.41);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(6.8px);
   filter: blur(0.5px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(0, 0, 0, 0.18);
   border-radius: 20px;
 }
 
@@ -84,7 +84,7 @@ nav {}
 
 .nav-element>li>a {
   text-decoration: none;
-  color: black !important;
+  color: rgb(255, 255, 255) !important;
   text-align: center;
   font-size: 2rem;
   padding: 0.75rem;
@@ -93,7 +93,7 @@ nav {}
 .nav-element>a {
   margin: auto;
   text-decoration: none;
-  color: black !important;
+  color: rgb(255, 255, 255) !important;
   text-align: center;
   font-size: 2rem;
 }
@@ -104,7 +104,7 @@ nav {}
 
 .nav-element>li>a {
   text-decoration: none;
-  color: black !important;
+  color: rgb(255, 255, 255) !important;
   text-align: center;
   font-size: 2rem;
   padding: 0.75rem;
@@ -113,18 +113,18 @@ nav {}
 .nav-element>li>button {
   margin: auto;
   text-decoration: none;
-  color: black !important;
+  color: rgb(255, 255, 255) !important;
   text-align: center;
   font-size: 2rem;
   padding: 0.75rem;
 }
 
 .nav-element>li>button:hover {
-  color: rgba(0, 0, 0, 0.5) !important;
+  color: rgba(255, 255, 255, 0.5) !important;
 }
 
 .nav-element>li>button:hover {
-  color: rgba(0, 0, 0, 0.5) !important;
+  color: rgba(255, 255, 255, 0.5) !important;
 }
 
 h2 {
@@ -147,7 +147,7 @@ h2 {
 }
 
 .decouvrer:hover {
-  border: solid white 2px;
+  border: solid rgb(0, 0, 0) 2px;
 }
 
 #Q {
@@ -178,9 +178,9 @@ h2 {
 #txt {
   font-family: quicksand;
   font-size: 3rem;
-  color: black;
+  color: rgb(255, 255, 255);
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(2, 2, 2, 0.8);
   border-radius: 20px;
   position: relative;
 
@@ -315,7 +315,7 @@ section {
   background-color: #333;
   font-family: quicksand;
   font-size: 2rem;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.1);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(7.1px);
   -webkit-backdrop-filter: blur(7.1px);
@@ -339,7 +339,7 @@ section {
 
 .navbar12 {
   z-index: 1000;
-  background-color: #333;
+  background-color: #121212;
   color: white;
   position: fixed;
   top: -260px;
