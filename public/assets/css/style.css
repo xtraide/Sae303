@@ -76,9 +76,7 @@ body {
   border-radius: 20px;
 }
 
-nav {
-
-}
+nav {}
 
 #mynavbar {
   width: 50% !important;
@@ -185,7 +183,7 @@ h2 {
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 20px;
   position: relative;
-  z-index: 900;
+
 }
 
 #smoke {
@@ -193,34 +191,35 @@ h2 {
   position: absolute;
   margin-top: -600px;
 }
-.label-log > .form-group > label{
+
+.label-log>.form-group>label {
   font-family: baloo;
 }
 
 
-.image-container img{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    filter: blur(10px);
-    border: none;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    object-fit: cover;
+.image-container img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  filter: blur(10px);
+  border: none;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  object-fit: cover;
 }
 
-#error{
+#error {
   position: relative;
   font-size: 6vw;
 }
 
-.texte{
+.texte {
   position: relative;
   font-size: 2vw;
 }
 
-#icone_erreur{
+#icone_erreur {
   width: 20vw;
 }
 
@@ -285,9 +284,11 @@ section {
   margin-top: 10%;
 
 }
-#logo{
+
+#logo {
   padding: 0;
 }
+
 .title_h2 {
   font-family: quicksand;
   font-size: 2rem;
@@ -303,6 +304,7 @@ section {
   text-align: center;
   margin-top: 1%;
 }
+
 .navbar a.icon {
   display: none;
   /* cache l'icône par défaut */
@@ -326,13 +328,13 @@ section {
   display: none;
 }
 
-#card-price > div > div > div > p {
+#card-price>div>div>div>p {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .checkbox {
-  margin-left: 10px!important;
-  margin-top: 5px!important;
+  margin-left: 10px !important;
+  margin-top: 5px !important;
 }
 
 .navbar12 {
@@ -365,7 +367,7 @@ section {
 
 .carou-card {
   width: 100%;
-  height: 400px!important;
+  height: 400px !important;
 }
 
 .aerodrome {
@@ -376,13 +378,13 @@ section {
 
 
 
-#avion_aerodrome{
+#avion_aerodrome {
   width: 60%;
   height: auto;
   margin-bottom: 10%;
 }
 
-.aerodrome div p{
+.aerodrome div p {
   font-family: quicksand;
   color: black;
   font-size: 3rem;
@@ -390,7 +392,7 @@ section {
   border-radius: 20px;
 }
 
-.aerodrome div div p{
+.aerodrome div div p {
   font-family: quicksand;
   color: black;
   font-size: 1.5rem;
@@ -398,25 +400,25 @@ section {
   border-radius: 20px;
 }
 
-.aerodrome div h1{
+.aerodrome div h1 {
   font-family: quicksand;
   color: black;
   font-size: 4rem;
 }
 
-.background_equipement{
-  background-color:#556672;
+.background_equipement {
+  background-color: #556672;
 }
 
-.border_equipement{
+.border_equipement {
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
   border: solid white 4px;
-  margin-top:-4px !important;
+  margin-top: -4px !important;
 
 }
 
-.equipement div button{
+.equipement div button {
   font-family: quicksand;
   background-color: #556672;
   border: solid white 4px;
@@ -428,19 +430,21 @@ section {
 }
 
 
-#btn1{
-font-size: 3rem;
-height: 100%;
-}
-#btn2{
-font-size: 1.2rem;
-height: 100%;
-}
-#btn3{
-font-size: 1.2rem;
-height: 100%;
+#btn1 {
+  font-size: 3rem;
+  height: 100%;
 }
 
-.equipement{
+#btn2 {
+  font-size: 1.2rem;
+  height: 100%;
+}
+
+#btn3 {
+  font-size: 1.2rem;
+  height: 100%;
+}
+
+.equipement {
   margin-bottom: 20%;
 }

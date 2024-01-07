@@ -1,8 +1,11 @@
-<?= $error ?>
-
-
 <div class="w-100 vh-100 background d-flex align-items-center">
+
     <form action="#" method="post" class="w-50 m-auto ">
+        <?php if (!empty($error)) : ?>
+            <div class="alert alert-danger">
+                <?= $error ?>
+            </div>
+        <?php endif; ?>
         <h1 class="text-center">Login</h1>
         <div class="form-group w-100 m-auto label-log">
             <?= $form->input('email', "Adresse email", ['class' => 'form-control w-100', 'id' => 'email']); ?>

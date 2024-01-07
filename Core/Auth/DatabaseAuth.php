@@ -32,7 +32,7 @@ class DatabaseAuth
     {
         $user = $this->db->prepare('SELECT * FROM ' . self::$prefix . 'user WHERE email = ?', [$email], null, true);
         if ($user) {
-
+            var_dump($user);
             if ($user->password === $password) {
                 $_SESSION['auth'] = $user->id;
                 return true;

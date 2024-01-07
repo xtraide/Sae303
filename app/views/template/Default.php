@@ -26,7 +26,7 @@
   <title><?= App::getInstance()->title ?></title>
 </head>
 <header>
-  <nav class="navbar navbar-expand-lg navbar-light position-fixed top-0 w-100 p-1 " id="navb12" style="z-index: 10000;">
+  <nav class="navbar navbar-expand-lg navbar-light position-fixed top-0 w-100 p-1 z-1 " id="navb12">
     <a class="navbar-brand" href="?page=main.index" id="logo">
       <svg width="auto" height="70" viewBox="0 0 149 109" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <rect width="149" height="108.354" fill="url(#pattern0)" />
@@ -95,7 +95,7 @@
 </header>
 
 <body>
-  
+
   <?php /*
     $dir = "../Views/staff";
     echo "<h4>" . $dir . "</h4>";
@@ -179,35 +179,40 @@
   </footer>
 </body>
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        var buttons = document.querySelectorAll('.nav-item button');
+  document.addEventListener('DOMContentLoaded', function() {
+    var buttons = document.querySelectorAll('.nav-item button');
 
-        buttons.forEach(function(button) {
-            button.addEventListener('click', function(e) {
-                e.preventDefault();
-                var sectionName = this.textContent.trim();
-                var section = document.getElementById(sectionName);
+    buttons.forEach(function(button) {
+      button.addEventListener('click', function(e) {
+        e.preventDefault();
+        var sectionName = this.textContent.trim();
+        var section = document.getElementById(sectionName);
 
-                if (section) {
-                    section.scrollIntoView({ behavior: 'smooth' });
-                } else {
-                    localStorage.setItem('sectionName', sectionName);
-                    window.location.href = "?page=main.index";
-                }
-            });
-        });
-
-        var storedSectionName = localStorage.getItem('sectionName');
-
-        if (storedSectionName) {
-            var storedSection = document.getElementById(storedSectionName);
-
-            if (storedSection) {
-                storedSection.scrollIntoView({ behavior: 'smooth' });
-            }
-
-            localStorage.removeItem('sectionName');
+        if (section) {
+          section.scrollIntoView({
+            behavior: 'smooth'
+          });
+        } else {
+          localStorage.setItem('sectionName', sectionName);
+          window.location.href = "?page=main.index";
         }
+      });
     });
+
+    var storedSectionName = localStorage.getItem('sectionName');
+
+    if (storedSectionName) {
+      var storedSection = document.getElementById(storedSectionName);
+
+      if (storedSection) {
+        storedSection.scrollIntoView({
+          behavior: 'smooth'
+        });
+      }
+
+      localStorage.removeItem('sectionName');
+    }
+  });
 </script>
+
 </html>
