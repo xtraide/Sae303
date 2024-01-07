@@ -24,8 +24,12 @@ class AvionController extends \App\Controller\AppController
     {
         if (!empty($_POST)) {
             $result = $this->Avion->update($_GET['id'], [
-                'name' => $_POST['name'],
-                'description' => $_POST['description']
+                'modele' => $_POST['modele'],
+                'v_max' => $_POST['v_max'],
+                'capacite' => $_POST['capacite'],
+                'autonomie' => $_POST['autonomie'],
+                'poid' => $_POST['poid']
+
             ]);
             if ($result) {
                 return $this->index();
@@ -42,7 +46,12 @@ class AvionController extends \App\Controller\AppController
         $table = $this->Avion;
         if (!empty($_POST)) {
             $result = $table->create([
-                'modele' => $_POST['modele']
+                'modele' => $_POST['modele'],
+                'v_max' => $_POST['v_max'],
+                'capacite' => $_POST['capacite'],
+                'autonomie' => $_POST['autonomie'],
+                'poid' => $_POST['poid'],
+
             ]);
 
             if ($result) {

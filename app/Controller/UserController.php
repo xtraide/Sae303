@@ -76,6 +76,7 @@ class UserController extends AppController
             Adresse mail ou mot de passe incorrect
         </div>';
     }
+
     public function wrongEmail()
     {
         return '
@@ -83,6 +84,7 @@ class UserController extends AppController
             Adresse mail incorrect ou invalide
         </div>';
     }
+
     public function noCredentials()
     {
         return '
@@ -90,6 +92,7 @@ class UserController extends AppController
             Veuillez remplir tous les champs
         </div>';
     }
+
     private function validateForm()
     {
 

@@ -4,6 +4,10 @@
     <thead>
         <tr>
             <td>modèle</td>
+            <td>Vitesse Max</td>
+            <td>Capacité</td>
+            <td>Autonomie</td>
+            <td>Poid</td>
             <td>Action</td>
         </tr>
     </thead>
@@ -11,6 +15,11 @@
         <?php foreach ($avions as $plane) : ?>
             <tr>
                 <td><?= $plane->modele ?></td>
+                <td><?= $plane->v_max ?></td>
+                <td><?= $plane->capacite ?></td>
+                <td><?= $plane->autonomie ?></td>
+                <td><?= $plane->poid ?></td>
+
                 <td>
                     <a href="?page=admin.avion.edit&id=<?= $plane->id ?>" class="btn btn-primary">Editer</a>
                     <form action="?page=admin.avion.delete" method="post" style="display: inline-block;">
