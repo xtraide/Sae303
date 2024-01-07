@@ -52,101 +52,104 @@
             <button onclick="aerodrome()" class="decouvrer" class="pb-3">Instructrice</button>
         </div>
     </div>
+
+</section>
+<div class="fondu">
     <div class="container w-50 p-2">
         <h1 id="txt" class="title_h1">EVENEMENT A VENIR !</h1>
     </div>
-</section>
-<div class="d-flex justify-content-center">
-    <div id="carouselExampleIndicators" class="carousel slide m-auto d-flex flex-column" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active carou-card">
-                <div class="card" style="width: 30rem; height: 400px">
 
-                    <div class="card-body ">
-                        <h5 class="card-title">France Air Expo 2023</h5>
-                        <div class="m-auto text-center">
-                            <img src="../public/assets/ressources/yesiiir.png" width="80%" class="m-auto text-center"
-                                alt="..." />
-                        </div>
-                        <div class="d-flex">
-                            <img src="../public/assets/ressources/loc.png" alt="loc" width="5%" height="5%" />
-                            <p>Aéroport de Lyon-Bron - Bron, France</p>
-                        </div>
-                        <div class="d-flex">
-                            <img src="../public/assets/ressources/temps.png " alt="heur" width="5%" height="5%" />
-                            <p>09:00 AM to 02:00 PM</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item carou-card">
-                <div class="card" style="width: 30rem; height: 400px">
-                    <div class="card-body m-auto text-center">
-                        <h5 class="card-title">
-                            1er Rassemblement ULM des femmes pilotes
-                        </h5>
-                        <div class="m-auto text-center">
-                            <img src="../public/assets/ressources/360_F_159634840_Fa2HPb8ITrbr5gddY2eKlomVfsnu1gx6.png"
-                                alt="..." />
-                        </div>
-                        <div class="d-flex">
-                            <img src="../public/assets/ressources/loc.png" alt="loc" width="5%" height="5%" />
-                            <p>Saint-Martin-de-Castillon</p>
-                        </div>
-                        <div class="d-flex">
-                            <img src="../public/assets/ressources/temps.png" alt="heur" width="5%" height="5%" />
-                            <p>09:00 AM to 06:00 PM </p>
+    <div class="d-flex justify-content-center">
+        <div id="carouselExampleIndicators" class="carousel slide m-auto d-flex flex-column" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active carou-card">
+                    <div class="card" style="width: 30rem; height: 400px">
+
+                        <div class="card-body ">
+                            <h5 class="card-title">France Air Expo 2023</h5>
+                            <div class="m-auto text-center">
+                                <img src="../public/assets/ressources/yesiiir.png" width="80%"
+                                    class="m-auto text-center" alt="..." />
+                            </div>
+                            <div class="d-flex">
+                                <img src="../public/assets/ressources/loc.png" alt="loc" width="5%" height="5%" />
+                                <p>Aéroport de Lyon-Bron - Bron, France</p>
+                            </div>
+                            <div class="d-flex">
+                                <img src="../public/assets/ressources/temps.png " alt="heur" width="5%" height="5%" />
+                                <p>09:00 AM to 02:00 PM</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="carousel-item carou-card">
-                <div class="card" style="width: 30rem; height: 400px">
-                    <img src="../public/assets/ressources/" class="card-img-top" alt="..." />
-                    <div class="card-body">
-                        <h5 class="card-title">Journée sécurité des vols - GRAND EST</h5>
-                        <div class="m-auto text-center">
-                            <img src="../public/assets/ressources/Event1 (1).png" width="80%" alt="..."
-                                class="m-auto text-center" />
+                <div class="carousel-item carou-card">
+                    <div class="card" style="width: 30rem; height: 400px">
+                        <div class="card-body m-auto text-center">
+                            <h5 class="card-title">
+                                1er Rassemblement ULM des femmes pilotes
+                            </h5>
+                            <div class="m-auto text-center">
+                                <img src="../public/assets/ressources/360_F_159634840_Fa2HPb8ITrbr5gddY2eKlomVfsnu1gx6.png"
+                                    alt="..." />
+                            </div>
+                            <div class="d-flex">
+                                <img src="../public/assets/ressources/loc.png" alt="loc" width="5%" height="5%" />
+                                <p>Saint-Martin-de-Castillon</p>
+                            </div>
+                            <div class="d-flex">
+                                <img src="../public/assets/ressources/temps.png" alt="heur" width="5%" height="5%" />
+                                <p>09:00 AM to 06:00 PM </p>
+                            </div>
                         </div>
-                        <div class="d-flex">
-                            <img src="../public/assets/ressources/loc.png" alt="loc" width="5%" height="5%" />
-                            <p>Serrouville, France</p>
-                        </div>
-                        <div class="d-flex">
-                            <img src="../public/assets/ressources/temps.png" width="5%" height="5%" alt="heur" />
-                            <p>09:00 AM to 02:00 PM</p>
+                    </div>
+                </div>
+                <div class="carousel-item carou-card">
+                    <div class="card" style="width: 30rem; height: 400px">
+                        <img src="../public/assets/ressources/" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">Journée sécurité des vols - GRAND EST</h5>
+                            <div class="m-auto text-center">
+                                <img src="../public/assets/ressources/Event1 (1).png" width="80%" alt="..."
+                                    class="m-auto text-center" />
+                            </div>
+                            <div class="d-flex">
+                                <img src="../public/assets/ressources/loc.png" alt="loc" width="5%" height="5%" />
+                                <p>Serrouville, France</p>
+                            </div>
+                            <div class="d-flex">
+                                <img src="../public/assets/ressources/temps.png" width="5%" height="5%" alt="heur" />
+                                <p>09:00 AM to 02:00 PM</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<div class="d-flex justify-content-center">
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active m-3"
-        aria-current="true" aria-label="Slide 1" style="
+    <div class="d-flex justify-content-center">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active m-3"
+            aria-current="true" aria-label="Slide 1" style="
           background-color: black;
           height: 20px;
           width: 20px;
           border-radius: 100%;
         "></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="m-3"
-        aria-label="Slide 2" style="
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="m-3"
+            aria-label="Slide 2" style="
           background-color: black;
           height: 20px;
           width: 20px;
           border-radius: 100%;
         "></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="m-3"
-        aria-label="Slide 3" style="
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="m-3"
+            aria-label="Slide 3" style="
           background-color: black;
           height: 20px;
           width: 20px;
           border-radius: 100%;
         "></button>
-</div>
-<div class="fondu">
+    </div>
+
     <section name="activités" class="acti section" id="Activités">
         <h1 class="text-center m-auto mt-3 mb-3 title_h1" style="color: black;">ACTIVITES</h1>
         <div class="m-auto text-center">
@@ -340,12 +343,20 @@
             <img src="../public/assets/ressources/backgroundTypeDeULM.jpg" alt="" width="80%"
                 style="aspect-ratio: 16/9; object-fit: cover;">
         </div>
-        <div id="carousel1">
+        <div>
+            <h2 class="text-center"
+                style="background-color: white; border-radius: 10px; color: black; width:20%; margin:3% auto;">
+                Différents ULM</h2>
+        </div>
+        <div id="carousel1" style="position: relative;">
             <div class="carousel-item1 active">
-                <div class="m-auto text-center">
-                    <img src="../public/assets/ressources/ULM1.png" alt="ULM1" />
+                <div style="position: relative; display: block; text-align: center; margin: auto;">
+                    <img src="../public/assets/ressources/Multiaxes.png" alt="ULM1" width="30%" id="ulm1"
+                        style="margin: auto; display: block;" />
+                    <h3 style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index:4;">
+                        Multiaxes</h3>
                 </div>
-                <div>
+                <div style="color:#fff; background-color:#556672; border-radius:10px; width:20%; margin:auto;">
                     <h3 class="text-center">Caractéristiques</h3>
                     <div class="d-flex justify-content-center">
                         <div>
@@ -357,7 +368,7 @@
                             </p>
                         </div>
                         <div>
-                            <p>
+                            <p style="text-align: right;">
                                 180 km/h <br>
                                 2 personnes <br>
                                 5 heures <br>
@@ -368,10 +379,13 @@
                 </div>
             </div>
             <div class="carousel-item1">
-                <div class="m-auto text-center">
-                    <img src="../public/assets/ressources/ULM1.png" alt="ULM1" />
+                <div style="position: relative; display: block; text-align: center; margin: auto;">
+                    <img src="../public/assets/ressources/Paramoteur.png" alt="ULM1" width="30%" id="ulm1"
+                        style="margin: auto; display: block;" />
+                    <h3 style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index:4;">
+                        Paramoteur</h3>
                 </div>
-                <div>
+                <div style="color:#fff; background-color:#556672; border-radius:10px; width:20%; margin:auto;">
                     <h3 class="text-center">Caractéristiques</h3>
                     <div class="d-flex justify-content-center">
                         <div>
@@ -383,7 +397,7 @@
                             </p>
                         </div>
                         <div>
-                            <p>
+                            <p style="text-align: right;">
                                 60 km/h <br>
                                 monoplace <br>
                                 3 heures <br>
@@ -394,10 +408,13 @@
                 </div>
             </div>
             <div class="carousel-item1">
-                <div class="m-auto text-center">
-                    <img src="../public/assets/ressources/ULM1.png" alt="ULM1" />
+                <div style="position: relative; display: block; text-align: center; margin: auto;">
+                    <img src="../public/assets/ressources/Autogire.png" alt="ULM1" width="30%" id="ulm1"
+                        style="margin: auto; display: block;" />
+                    <h3 style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index:4;">
+                        Autogire Ultraléger</h3>
                 </div>
-                <div>
+                <div style="color:#fff; background-color:#556672; border-radius:10px; width:20%; margin:auto;">
                     <h3 class="text-center">Caractéristiques</h3>
                     <div class="d-flex justify-content-center">
                         <div>
@@ -409,7 +426,7 @@
                             </p>
                         </div>
                         <div>
-                            <p>
+                            <p style="text-align: right;">
                                 150 km/h <br>
                                 2 personnes <br>
                                 4 heures <br>
@@ -420,10 +437,13 @@
                 </div>
             </div>
             <div class="carousel-item1">
-                <div class="m-auto text-center">
-                    <img src="../public/assets/ressources/ULM1.png" alt="ULM1" />
+                <div style="position: relative; display: block; text-align: center; margin: auto;">
+                    <img src="../public/assets/ressources/Pendulaire.png" alt="ULM1" width="30%" id="ulm1"
+                        style="margin: auto; display: block;" />
+                    <h3 style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index:4;">
+                        Pendulaire</h3>
                 </div>
-                <div>
+                <div style="color:#fff; background-color:#556672; border-radius:10px; width:20%; margin:auto;">
                     <h3 class="text-center">Caractéristiques</h3>
                     <div class="d-flex justify-content-center">
                         <div>
@@ -435,7 +455,7 @@
                             </p>
                         </div>
                         <div>
-                            <p>
+                            <p style="text-align: right;">
                                 130 km/h <br>
                                 2 personnes <br>
                                 4 heures <br>
@@ -446,10 +466,13 @@
                 </div>
             </div>
             <div class="carousel-item1">
-                <div class="m-auto text-center">
-                    <img src="../public/assets/ressources/ULM1.png" alt="ULM1" />
+                <div style="position: relative; display: block; text-align: center; margin: auto;">
+                    <img src="../public/assets/ressources/HelicoLeger.png" alt="ULM1" width="30%" id="ulm1"
+                        style="margin: auto; display: block;" />
+                    <h3 style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index:4;">
+                        Hélicoptère Ultraléger</h3>
                 </div>
-                <div>
+                <div style="color:#fff; background-color:#556672; border-radius:10px; width:20%; margin:auto;">
                     <h3 class="text-center">Caractéristiques</h3>
                     <div class="d-flex justify-content-center">
                         <div>
@@ -461,7 +484,7 @@
                             </p>
                         </div>
                         <div>
-                            <p>
+                            <p style="text-align: right;">
                                 130 km/h <br>
                                 monoplace <br>
                                 2 heures <br>
@@ -472,10 +495,13 @@
                 </div>
             </div>
             <div class="carousel-item1">
-                <div class="m-auto text-center">
-                    <img src="../public/assets/ressources/ULM1.png" alt="ULM1" />
+                <div style="position: relative; display: block; text-align: center; margin: auto;">
+                    <img src="../public/assets/ressources/Baloon.png" alt="ULM1" width="30%" id="ulm1"
+                        style="margin: auto; display: block;" />
+                    <h3 style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index:4;">
+                        Aérostat Ultraléger</h3>
                 </div>
-                <div>
+                <div style="color:#fff; background-color:#556672; border-radius:10px; width:20%; margin:auto;">
                     <h3 class="text-center">Caractéristiques</h3>
                     <div class="d-flex justify-content-center">
                         <div>
@@ -487,19 +513,21 @@
                             </p>
                         </div>
                         <div>
-                            <p>
-                                150 km/h <br>
+                            <p style="text-align: right;">
+                                25 km/h <br>
                                 2 personnes <br>
-                                4 heures <br>
-                                300 kg
+                                3 heures <br>
+                                450 kg
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
+            <button id="prev"
+                style="position: absolute; top: 50%; left: 0; transform: translateY(-50%); z-index:4;">Précédent</button>
+            <button id="next"
+                style="position: absolute; top: 50%; right: 0; transform: translateY(-50%);">Suivant</button>
         </div>
-        <button id="prev">Précédent</button>
-        <button id="next">Suivant</button>
     </section>
     <section name="info + contact" style="padding-bottom: 5%;">
         <div class="container mt-5">
@@ -612,25 +640,25 @@
 <script src="../public/assets/script/api_meteo.js"></script>
 
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-    var images = ['i1', 'i2', 'i3', 'i4', 'i5'];
-    var texts = {
-        'i1': 'L’entretien des ULM est compris dans le service par défaut de location, lors de la location de ces derniers',
-        'i2': 'Notre équipe s’occupe de tout, et monte votre ULM en amont du vol, afin de bénéficeier d’une expérience avancé',
-        'i3': 'Un service de location d’emplacements sont disponible dans le cas d’une utilisation de votre propre ULM !',
-        'i4': 'Nous avons la possibilité de vous accueillir à proximité de l’aéroclub pour y passez une merveilleuse nuit :',
-        'i5': 'Un service de restauration est proposés tous les week-ends, à un moindre coût et de qualité.'
-    };
+    document.addEventListener('DOMContentLoaded', function () {
+        var images = ['i1', 'i2', 'i3', 'i4', 'i5'];
+        var texts = {
+            'i1': 'L’entretien des ULM est compris dans le service par défaut de location, lors de la location de ces derniers',
+            'i2': 'Notre équipe s’occupe de tout, et monte votre ULM en amont du vol, afin de bénéficeier d’une expérience avancé',
+            'i3': 'Un service de location d’emplacements sont disponible dans le cas d’une utilisation de votre propre ULM !',
+            'i4': 'Nous avons la possibilité de vous accueillir à proximité de l’aéroclub pour y passez une merveilleuse nuit :',
+            'i5': 'Un service de restauration est proposés tous les week-ends, à un moindre coût et de qualité.'
+        };
 
-    images.forEach(function(imageId) {
-        var li = document.getElementById(imageId);
+        images.forEach(function (imageId) {
+            var li = document.getElementById(imageId);
 
-        li.addEventListener('click', function(e) {
-            var popup = li.querySelector('div');
-            if (popup) {
-                li.removeChild(popup);
-            } else {
-                var popupHTML = `
+            li.addEventListener('click', function (e) {
+                var popup = li.querySelector('div');
+                if (popup) {
+                    li.removeChild(popup);
+                } else {
+                    var popupHTML = `
                     <div style="
                         position: absolute;
                         left: ${li.offsetLeft}px;
@@ -645,62 +673,68 @@ document.addEventListener('DOMContentLoaded', function() {
                         ${texts[imageId] || 'Erreur'}
                     </div>
                 `;
-                li.insertAdjacentHTML('beforeend', popupHTML);
-            }
+                    li.insertAdjacentHTML('beforeend', popupHTML);
+                }
+            });
         });
     });
-});
 </script>
 <script>
     // Fonction pour définir un cookie
-function setCookie(name, value, days) {
-    var expires = "";
-    if (days) {
-        var date = new Date();
-        date.setTime(date.getTime() + (days*24*60*60*1000));
-        expires = "; expires=" + date.toUTCString();
+    function setCookie(name, value, days) {
+        var expires = "";
+        if (days) {
+            var date = new Date();
+            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+            expires = "; expires=" + date.toUTCString();
+        }
+        document.cookie = name + "=" + (value || "") + expires + "; path=/";
     }
-    document.cookie = name + "=" + (value || "")  + expires + "; path=/";
-}
 
-// Fonction pour obtenir un cookie
-function getCookie(name) {
-    var nameEQ = name + "=";
-    var ca = document.cookie.split(';');
-    for(var i=0;i < ca.length;i++) {
-        var c = ca[i];
-        while (c.charAt(0)==' ') c = c.substring(1,c.length);
-        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+    // Fonction pour obtenir un cookie
+    function getCookie(name) {
+        var nameEQ = name + "=";
+        var ca = document.cookie.split(';');
+        for (var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+            if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+        }
+        return null;
     }
-    return null;
-}
 
-// Fonction pour afficher le popup de cookies
-function showCookiePopup() {
-    var cookiePopup = document.createElement('div');
-    cookiePopup.textContent = 'Ce site utilise des cookies pour améliorer votre expérience. En continuant à utiliser ce site, vous acceptez leur utilisation.';
-    cookiePopup.style.position = 'fixed';
-    cookiePopup.style.bottom = '0';
-    cookiePopup.style.left = '0';
-    cookiePopup.style.backgroundColor = '#fff';
-    cookiePopup.style.padding = '10px';
-    cookiePopup.style.zIndex = '1000';
-    cookiePopup.style.borderRadius = '10px';
-    document.body.appendChild(cookiePopup);
+    // Fonction pour afficher le popup de cookies
+    function showCookiePopup() {
+        var cookiePopup = document.createElement('div');
+        cookiePopup.textContent =
+            'Ce site utilise des cookies pour améliorer votre expérience. En continuant à utiliser ce site, vous acceptez leur utilisation.';
+        cookiePopup.style.position = 'fixed';
+        cookiePopup.style.bottom = '0';
+        cookiePopup.style.left = '0';
+        cookiePopup.style.backgroundColor = '#fff';
+        cookiePopup.style.padding = '10px';
+        cookiePopup.style.zIndex = '1000';
+        cookiePopup.style.borderRadius = '10px';
+        document.body.appendChild(cookiePopup);
 
-    var acceptButton = document.createElement('button');
-    acceptButton.textContent = 'Accepter';
-    acceptButton.onclick = function() {
-        setCookie('cookiesAccepted', 'true', 30);
-        document.body.removeChild(cookiePopup);
-    };
-    cookiePopup.appendChild(acceptButton);
-}
-
-
-document.addEventListener('DOMContentLoaded', function() {
-    if (!getCookie('cookiesAccepted')) {
-        showCookiePopup();
+        var acceptButton = document.createElement('button');
+        acceptButton.textContent = 'Accepter';
+        acceptButton.onclick = function () {
+            setCookie('cookiesAccepted', 'true', 30);
+            document.body.removeChild(cookiePopup);
+        };
+        cookiePopup.appendChild(acceptButton);
     }
-});
+
+
+    document.addEventListener('DOMContentLoaded', function () {
+        if (!getCookie('cookiesAccepted')) {
+            showCookiePopup();
+        }
+    });
 </script>
+
+gffrefr"eferffze
+fcloseze
+fclosef
+zef

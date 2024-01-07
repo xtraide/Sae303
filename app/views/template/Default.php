@@ -146,15 +146,9 @@
           <div class="col-lg-3 col-md-6 mb-4 mb-md-0" style="background-color: #697987!important; color: #fff;">
             <h5 class="text-uppercase">Informations</h5>
             <ul class="list-unstyled mb-0">
-              <li><a href="#!" class="text-dark">Information 1</a></li>
-              <li><a href="#!" class="text-dark">Information 2</a></li>
-            </ul>
-          </div>
-          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <h5 class="text-uppercase w-100">Liens utiles</h5>
-            <ul class="list-unstyled mb-0">
-              <li><a href="#!" class="text-dark">Lien 1</a></li>
-              <li><a href="#!" class="text-dark">Lien 2</a></li>
+              <li><a href="#!" class="text-white" style="text-decoration: none;">L’aérdorome</a></li>
+              <li><a href="#!" class="text-white" style="text-decoration: none;">Mes données</a></li>
+              <li><a href="#!" class="text-white" style="text-decoration: none;">Conditions générales</a></li>
             </ul>
           </div>
         </div>
@@ -162,15 +156,15 @@
           <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
             <h5 class="text-uppercase">Nos services</h5>
             <ul class="list-unstyled mb-0">
-              <li><a href="#!" class="text-dark">Service 1</a></li>
-              <li><a href="#!" class="text-dark">Service 2</a></li>
+              <li><a href="#!" class="text-white" style="text-decoration: none;" onclick="acit()">Nos activités </a></li>
+              <li><a href="#!" class="text-white" style="text-decoration: none;" onclick="ulm()">ULM</a></li>
             </ul>
           </div>
           <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
             <h5 class="text-uppercase">Contactez nous</h5>
             <ul class="list-unstyled mb-0">
-              <li><a href="#!" class="text-dark">Contact 1</a></li>
-              <li><a href="#!" class="text-dark">Contact 2</a></li>
+              <li><a href="#!" class="text-white" style="text-decoration: none;">01.64.36.24.24</a></li>
+              <li><a href="#!" class="text-white" style="text-decoration: none;">aeroclubdefrotey@laposte.net</a></li>
             </ul>
           </div>
         </div>
@@ -209,5 +203,16 @@
             localStorage.removeItem('sectionName');
         }
     });
+</script>
+<script>
+  function acit() {
+    var section = document.getElementById('Activités');
+    section.scrollIntoView({behavior: 'smooth'});
+}
+
+function ulm() {
+    var section = document.getElementById('ULM');
+    section.scrollIntoView({behavior: 'smooth'});
+}
 </script>
 </html>
