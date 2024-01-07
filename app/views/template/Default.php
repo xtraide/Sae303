@@ -27,7 +27,7 @@
 </head>
 <header>
   <nav class="navbar navbar-expand-lg navbar-light position-fixed top-0 w-100 p-1 " id="navb12" style="z-index: 10000;">
-    <a class="navbar-brand" href="#" id="logo">
+    <a class="navbar-brand" href="?page=main.index" id="logo">
       <svg width="auto" height="70" viewBox="0 0 149 109" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <rect width="149" height="108.354" fill="url(#pattern0)" />
         <defs>
@@ -44,16 +44,16 @@
     <div class="collapse navbar-collapse justify-content-center align-items-center" id="navbarNav">
       <ul class="navbar-nav nav-element" id="z-index">
         <li class="nav-item ">
-          <a class="nav-link" href="#">Aérodrome</a>
+          <a class="nav-link" href="?page=main.aerodrome">Aérodrome</a>
         </li>
         <li class="nav-item ">
-          <a class="nav-link" href="#">Activité</a>
+          <button class="nav-link" href="#">Activités</button>
         </li>
         <li class="nav-item ">
-          <a class="nav-link" href="#">ULM</a>
+          <button class="nav-link">ULM</button>
         </li>
         <li class="nav-item ">
-          <a class="nav-link " href="#">Plus</a>
+          <a class="nav-link ">Plus</a>
         </li>
         <?php if (!$logged) : ?>
           <li class="nav-item d-lg-none">
@@ -166,5 +166,21 @@
     </div>
   </footer>
 </body>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var buttons = document.querySelectorAll('.nav-item button');
 
+        buttons.forEach(function(button) {
+            button.addEventListener('click', function(e) {
+                e.preventDefault();
+                var sectionName = this.textContent.trim();
+                var section = document.getElementById(sectionName);
+
+                if (section) {
+                    section.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    });
+</script>
 </html>

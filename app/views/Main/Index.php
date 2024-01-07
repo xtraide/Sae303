@@ -147,7 +147,7 @@
         "></button>
 </div>
 <div class="fondu">
-    <section name="activités" class="acti section">
+    <section name="activités" class="acti section" id="Activités">
         <h1 class="text-center m-auto mt-3 mb-3 title_h1" style="color: black;">ACTIVITES</h1>
         <div class="m-auto text-center">
             <img src="../public/assets/ressources/backgroundActivites.jpg" alt="" width="80%" style="aspect-ratio: 16/9; margin: auto; object-fit: cover; object-position: 50% 63%;
@@ -322,7 +322,162 @@
             </div>
         </div>
     </section>
-</div>
+
+
+<section name="ULM" id="ULM">
+    <div class="m-auto text-center">
+        <h1>Les Types d'ULM</h1>
+        <img src="../public/assets/ressources/backgroundTypeDeULM.jpg" alt="" width="80%" style="aspect-ratio: 16/9; object-fit: cover;">
+    </div>
+    <div id="carousel1">
+        <div class="carousel-item1 active">
+                        <div class="m-auto text-center">
+                <img src="../public/assets/ressources/ULM1.png" alt="ULM1" />
+            </div>
+            <div >
+                <h3 class="text-center">Caractéristiques</h3>
+                <div class="d-flex justify-content-center">
+                <div><p>
+                Vitesse max: <br>
+                Capacité: <br>
+                Autonomie: <br>
+                Poids
+                </p></div>
+                <div>
+                <p>
+                        180 km/h <br>
+                        2 personnes <br>
+                        5 heures <br>
+                        400 kg
+                    </p>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item1">
+                        <div class="m-auto text-center">
+                <img src="../public/assets/ressources/ULM1.png" alt="ULM1" />
+            </div>
+            <div >
+                <h3 class="text-center">Caractéristiques</h3>
+                <div class="d-flex justify-content-center">
+                <div><p>
+                Vitesse max: <br>
+                Capacité: <br>
+                Autonomie: <br>
+                Poids
+                </p></div>
+                <div>
+                    <p>
+                        60 km/h <br>
+                        monoplace <br>
+                        3 heures <br>
+                        50 kg
+                    </p>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item1">
+                        <div class="m-auto text-center">
+                <img src="../public/assets/ressources/ULM1.png" alt="ULM1" />
+            </div>
+            <div >
+                <h3 class="text-center">Caractéristiques</h3>
+                <div class="d-flex justify-content-center">
+                <div><p>
+                Vitesse max: <br>
+                Capacité: <br>
+                Autonomie: <br>
+                Poids
+                </p></div>
+                <div>
+                    <p>
+                        150 km/h <br>
+                        2 personnes <br>
+                        4 heures <br>
+                        300 kg
+                    </p>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item1">
+                        <div class="m-auto text-center">
+                <img src="../public/assets/ressources/ULM1.png" alt="ULM1" />
+            </div>
+            <div >
+                <h3 class="text-center">Caractéristiques</h3>
+                <div class="d-flex justify-content-center">
+                <div><p>
+                Vitesse max: <br>
+                Capacité: <br>
+                Autonomie: <br>
+                Poids
+                </p></div>
+                <div>
+                    <p>
+                        130 km/h <br>
+                        2 personnes <br>
+                        4 heures <br>
+                        400 kg
+                    </p>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item1">
+                        <div class="m-auto text-center">
+                <img src="../public/assets/ressources/ULM1.png" alt="ULM1" />
+            </div>
+            <div >
+                <h3 class="text-center">Caractéristiques</h3>
+                <div class="d-flex justify-content-center">
+                <div><p>
+                Vitesse max: <br>
+                Capacité: <br>
+                Autonomie: <br>
+                Poids
+                </p></div>
+                <div>
+                    <p>
+                        130 km/h <br>
+                        monoplace <br>
+                        2 heures <br>
+                        200 kg
+                    </p>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item1">
+            <div class="m-auto text-center">
+                <img src="../public/assets/ressources/ULM1.png" alt="ULM1" />
+            </div>
+            <div >
+                <h3 class="text-center">Caractéristiques</h3>
+                <div class="d-flex justify-content-center">
+                <div><p>
+                Vitesse max: <br>
+                Capacité: <br>
+                Autonomie: <br>
+                Poids
+                </p></div>
+                <div>
+                    <p>
+                        150 km/h <br>
+                        2 personnes <br>
+                        4 heures <br>
+                        300 kg
+                    </p>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button id="prev">Précédent</button>
+    <button id="next">Suivant</button>
+</section>
 <section name="info + contact" style="padding-bottom: 5%;">
     <div class="container mt-5">
         <div class="row d-flex justify-content-around">
@@ -393,166 +548,7 @@
         </div>
     </div>
 </section>
-<section name="ULM">
-    <div id="carousel1">
-        <div class="carousel-item1 active">
-            <div class="m-auto">
-                <img src="../public/assets/ressources/ULM1.png" alt="ULM1" />
-            </div>
-            <div >
-                <h3 class="text-center">Caractéristiques</h3>
-                <div class="d-flex justify-content-center">
-                <div><p>
-                Vitesse max: <br>
-                Capacité: <br>
-                Autonomie: <br>
-                Poids
-                </p></div>
-                <div>
-                <p>
-                        180 km/h <br>
-                        2 personnes <br>
-                        5 heures <br>
-                        400 kg
-                    </p>
-                </div>
-                </div>
-            </div>
-        </div>
-        <div class="carousel-item1">
-        <div class="carousel-item1 active">
-            <div class="m-auto">
-                <img src="../public/assets/ressources/ULM1.png" alt="ULM1" />
-            </div>
-            <div >
-                <h3 class="text-center">Caractéristiques</h3>
-                <div class="d-flex justify-content-center">
-                <div><p>
-                Vitesse max: <br>
-                Capacité: <br>
-                Autonomie: <br>
-                Poids
-                </p></div>
-                <div>
-                    <p>
-                        60 km/h <br>
-                        monoplace <br>
-                        3 heures <br>
-                        50 kg
-                    </p>
-                </div>
-                </div>
-            </div>
-        </div>
-        </div>
-        <div class="carousel-item1">
-        <div class="carousel-item1 active">
-            <div class="m-auto">
-                <img src="../public/assets/ressources/ULM1.png" alt="ULM1" />
-            </div>
-            <div >
-                <h3 class="text-center">Caractéristiques</h3>
-                <div class="d-flex justify-content-center">
-                <div><p>
-                Vitesse max: <br>
-                Capacité: <br>
-                Autonomie: <br>
-                Poids
-                </p></div>
-                <div>
-                    <p>
-                        150 km/h <br>
-                        2 personnes <br>
-                        4 heures <br>
-                        300 kg
-                    </p>
-                </div>
-                </div>
-            </div>
-        </div>
-        </div>
-        <div class="carousel-item1">
-        <div class="carousel-item1 active">
-            <div class="m-auto">
-                <img src="../public/assets/ressources/ULM1.png" alt="ULM1" />
-            </div>
-            <div >
-                <h3 class="text-center">Caractéristiques</h3>
-                <div class="d-flex justify-content-center">
-                <div><p>
-                Vitesse max: <br>
-                Capacité: <br>
-                Autonomie: <br>
-                Poids
-                </p></div>
-                <div>
-                    <p>
-                        130 km/h <br>
-                        2 personnes <br>
-                        4 heures <br>
-                        400 kg
-                    </p>
-                </div>
-                </div>
-            </div>
-        </div>
-        </div>
-        <div class="carousel-item1">
-        <div class="carousel-item1 active">
-            <div class="m-auto">
-                <img src="../public/assets/ressources/ULM1.png" alt="ULM1" />
-            </div>
-            <div >
-                <h3 class="text-center">Caractéristiques</h3>
-                <div class="d-flex justify-content-center">
-                <div><p>
-                Vitesse max: <br>
-                Capacité: <br>
-                Autonomie: <br>
-                Poids
-                </p></div>
-                <div>
-                    <p>
-                        130 km/h <br>
-                        monoplace <br>
-                        2 heures <br>
-                        200 kg
-                    </p>
-                </div>
-                </div>
-            </div>
-        </div>
-        </div>
-        <div class="carousel-item1">
-        <div class="carousel-item1 active">
-            <div class="m-auto">
-                <img src="../public/assets/ressources/ULM1.png" alt="ULM1" />
-            </div>
-            <div >
-                <h3 class="text-center">Caractéristiques</h3>
-                <div class="d-flex justify-content-center">
-                <div><p>
-                Vitesse max: <br>
-                Capacité: <br>
-                Autonomie: <br>
-                Poids
-                </p></div>
-                <div>
-                    <p>
-                        150 km/h <br>
-                        2 personnes <br>
-                        4 heures <br>
-                        300 kg
-                    </p>
-                </div>
-                </div>
-            </div>
-        </div>
-        </div>
-    </div>
-    <button id="prev">Précédent</button>
-    <button id="next">Suivant</button>
-</section>
+</div>
 
 <script>
 let index = 0;
@@ -590,4 +586,4 @@ prevButton.addEventListener('click', () => {
     });
 </script>
 <script src="../public/assets/script/script.js"></script>
-<script src="../public/assets/script/api_meteo.js"></script> -->
+<script src="../public/assets/script/api_meteo.js"></script>
