@@ -509,9 +509,9 @@
                     </div>
                 </div>
             </div>
-            <button id="prev" style="position: absolute; top: 50%; left: 0;
-             transform: translateY(-50%);">Précédent</button>
-            <button id="next" style="position: absolute; top: 50%; right: 0; transform: translateY(-50%);">Suivant</button>
+            <button id="prev" class="bg-transparent" style="position: absolute; top: 50%; left: 15%;  font-size: 6rem; border-radius: 50%; width:10%; height:24%;
+             transform: translateY(-50%);"><</button>
+            <button class="bg-transparent" id="next" style="position: absolute; top: 50%; right: 15%; transform: translateY(-50%); font-size: 6rem; border-radius: 50%; width:10%; height:24%;">></button>
         </div>
         <script>
             document.addEventListener('DOMContentLoaded', function() {
@@ -539,10 +539,10 @@
     </section>
     <section name="info + contact" style="padding-bottom: 5%;">
         <div class="container mt-5 mb-5">
-            <div class="text-center m-auto bg-white mb-5" >
-                <button class="btn btn-link  w-50" style="color: black; text-decoration: none;">
-                    <div class="text-center">RESERVEZ VOTRE VOL MAINTENANT</div>
-                </button>
+            <div class="text-center m-auto bg-white mb-5 w-50 p-3" style="border-radius: 10px;" >
+                <a href="?page=main.reservation"  class="w-50" style="color: black; text-decoration: none;">
+                    <div class="text-center" style="font-size: 1.2rem;">> RESERVEZ VOTRE VOL MAINTENANT <</div>
+        </a>
             </div>
             <div class="row d-flex justify-content-around">
                 <div class="col-12 col-md-5">
