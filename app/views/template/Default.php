@@ -14,8 +14,7 @@
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="assets/script/script.js">
-  </script>
+  <script src="assets/script/script.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
   </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Io4HIM2JZ5V7WtjHX3g5D6DfSi7M6Roi7zTP25IKb3kkZfL6BuP+4+DTP6DK6MgD" crossorigin="anonymous">
@@ -69,12 +68,14 @@
               <a class="nav-link " href="?admin.main.index">Admin</a>
             </li>
           <?php endif ?>
-
+          <li class="nav-item">
+            <a href="?page=main.reservation" class="nav-link ">Reservation</a>
+          </li>
           <li class="nav-item d-lg-none">
             <a href="?page=user.profil">Profil</a>
           </li>
           <li class="nav-item d-lg-none">
-          <a href="?page=user.logout" class="btn my-2 my-sm-0">Deconnecter</a>
+            <a href="?page=user.logout" class="btn my-2 my-sm-0">Deconnecter</a>
           </li>
         <?php endif ?>
       </ul>
@@ -88,12 +89,12 @@
     <?php else : ?>
 
       <?php if ($admin) : ?>
-        
-        
+
+
       <?php endif ?>
       <div class="form-inline d-none d-lg-flex nav-element align-items-center">
-      <a href="?page=user.logout" class="btn my-2 my-sm-0">Deconnecter</a>
-      
+        <a href="?page=user.logout" class="btn my-2 my-sm-0">Deconnecter</a>
+
         <a href="?page=user.profil" class="btn my-2 my-sm-0" style="width: 60px; height:60px;"><img src="assets/ressources/utilisateur-de-profil.png" width="100%" alt="" style="margin-bottom: 5px;"></a>
       </div>
     <?php endif ?>
@@ -105,7 +106,7 @@
   <?= $content ?>
   <footer class="bg-light text-center text-lg-start" style="background-color: #697987!important; color: #fff;">
     <div class="container p-4 d-flex align-items-center ">
-      <div class="col-lg-6 col-md-12 mb-4 mb-md-0 d-flex justify-content-center align-items-center">
+      <div class="col-lg-6 col-md-12 mb-4 mb-md-0 d-flex align-items-center">
         <svg width="auto" height="150" viewBox="0 0 149 109" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
           <rect width="149" height="108.354" fill="url(#pattern0)" />
           <defs>
@@ -124,16 +125,17 @@
             <ul class="list-unstyled mb-0">
               <li><a href="#!" class="text-white" style="text-decoration: none;">L’aérdorome</a></li>
               <li><a href="#!" class="text-white" style="text-decoration: none;">Mes données</a></li>
-              <li><a href="#!" class="text-white" style="text-decoration: none;">Conditions générales</a></li>
+              <li><a href="#!" class="text-white" style="text-decoration: none;">Conditions générales</a>
+              </li>
             </ul>
           </div>
-        </div>
-        <div class="row justify-content-around pt-2">
           <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
             <h5 class="text-uppercase">Nos services</h5>
             <ul class="list-unstyled mb-0">
-              <li><a href="#!" class="text-white" style="text-decoration: none;" onclick="acit()">Nos activités </a></li>
-              <li><a href="#!" class="text-white" style="text-decoration: none;" onclick="ulm()">ULM</a></li>
+              <li><a href="#!" class="text-white" style="text-decoration: none;" onclick="acit()">Nos
+                  activités </a></li>
+              <li><a href="#!" class="text-white" style="text-decoration: none;" onclick="ulm()">ULM</a>
+              </li>
             </ul>
           </div>
           <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
