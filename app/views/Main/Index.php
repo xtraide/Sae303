@@ -3,6 +3,14 @@
            background-position: center">
     <div id="icones" class="container-card d-flex justify-content-evenly align-content-center"
         style="padding-top: 50%; padding-bottom: 30%;">
+        <div class="card">
+            <h1 id="h1-card">Weather Information</h1>
+            <div id="temp-info"></div>
+            <div id="conditions-info"></div>
+            <div id="wind-info"></div>
+            <div id="clouds-info"></div>
+            <div class="weather-icon"></div>
+        </div>
     </div>
     <div class="container w-50 p-2 z-0">
         <p id="txt" class="z-0">Qui sommes nous ?</p>

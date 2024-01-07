@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const ville = 'Vesoul'
-    const apiUrl = `../prive/api.php?ville=${ville}`;
+    const apiUrl = `../app/api/api.php?ville=${ville}`;
     const infoTemperature = document.getElementById('temp-info');
     const infoConditions = document.getElementById('conditions-info');
     const infoVent = document.getElementById('wind-info');
