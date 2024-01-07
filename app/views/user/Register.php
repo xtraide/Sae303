@@ -16,22 +16,13 @@
                 </div>
             </div>
             <div class="form-group">
-                <?= $form->input('Nom', "Nom", ['class' => '']); ?>
-            </div>
-            <div class="form-group">
-                <?= $form->input('text', "Prénom", ['class' => '']); ?>
-            </div>
-            <div class="form-group">
                 <?= $form->input('email', "Adresse email", ['class' => 'form-control w-100', 'id' => 'email']); ?>
             </div>
             <div class="form-group">
-                <?= $form->input('Tel', "Téléphone", ['class' => '', 'id' => '', 'type' => 'number']); ?>
-            </div>
-            <div class="form-group">
-                <?= $form->input('date', "Date de naissance", ['class' => 'btn btn-primary d-flex align-items-center m-auto ', 'type' => 'date']); ?>
-            </div>
+            <?= $form->input('password', "Mot de passe", ['type' => 'password', 'class' => 'form-control w-100 back_input']); ?>
+        </div>
             <div class="form-group m-auto">
-                <?= $form->submit(['class' => 'btn btn-primary d-flex align-items-center m-auto ', 'value' => 'Se connecter']); ?>
+                <?= $form->submit(['class' => 'btn btn-primary', 'value' => 'Se connecter']); ?>
             </div>
         </form>
     </div>
