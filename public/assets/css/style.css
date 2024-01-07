@@ -377,19 +377,20 @@ section {
 }
 
 
-
 #avion_aerodrome {
   width: 60%;
   height: auto;
-  margin-bottom: 10%;
+  box-shadow: #000;
+  border-radius: 5%;
 }
 
 .aerodrome div p {
   font-family: quicksand;
   color: black;
-  font-size: 3rem;
+  font-size: 3rem !important;
   background-color: rgba(255, 255, 255, 0.6);
   border-radius: 20px;
+  margin-top: 25%;
 }
 
 .aerodrome div div p {
@@ -400,10 +401,23 @@ section {
   border-radius: 20px;
 }
 
+.icones_aerodrome{
+  width: 50px;
+  height: 50px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.plan{
+  border-radius: 20%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 .aerodrome div h1 {
   font-family: quicksand;
   color: black;
-  font-size: 4rem;
+  font-size: 5rem;
 }
 
 .background_equipement {
@@ -447,4 +461,15 @@ section {
 
 .equipement {
   margin-bottom: 20%;
+}
+
+.gallerie img{
+  width:300px;
+  height: auto;
+}
+
+.metre-carre::after {
+  content: '\00B2';
+  vertical-align: super;
+  font-size: smaller;
 }

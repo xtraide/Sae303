@@ -74,3 +74,19 @@ prevButton.addEventListener('click', () => {
   items1[index].classList.add('active');
 });
 
+function changeDisplay(selectedBtn) {
+  // Réinitialise le style des boutons et divs
+  console.log("coucou");
+  document.getElementById('btn1').style.fontSize = '1.2rem';
+  document.getElementById('btn2').style.fontSize = '1.2rem';
+  document.getElementById('btn3').style.fontSize = '1.2rem';
+
+  document.getElementById('ctn1').style.display = 'none';
+  document.getElementById('ctn2').style.display = 'none';
+  document.getElementById('ctn3').style.display = 'none';
+
+  // Applique le style sélectionné
+  document.getElementById(`btn${selectedBtn}`).style.fontSize = '3rem';
+  document.getElementById(`ctn${selectedBtn}`).style.display = 'block';
+}
+
