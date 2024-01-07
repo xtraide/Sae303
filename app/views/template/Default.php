@@ -82,9 +82,10 @@
       </div>
 
     <?php else : ?>
+
       <?php if ($admin) : ?>
         <div>
-          <a class="nav-link " href="?admin.main.index">admin</a>
+          <a class="nav-link " href="?page=admin.main.index">admin</a>
         </div>
       <?php endif ?>
       <a href="?page=user.logout">Deconnecter</a>
@@ -213,12 +214,17 @@
 <script>
   function acit() {
     var section = document.getElementById('Activités');
-    section.scrollIntoView({behavior: 'smooth'});
-}
+    section.scrollIntoView({
+      behavior: 'smooth'
+    });
+  }
 
-function ulm() {
+  function ulm() {
     var section = document.getElementById('ULM');
-    section.scrollIntoView({behavior: 'smooth'});
-}
+    section.scrollIntoView({
+      behavior: 'smooth'
+    });
+  }
 </script>
+
 </html>
