@@ -504,31 +504,31 @@
                 </div>
             </div>
             <button id="prev" style="position: absolute; top: 50%; left: 0; transform: translateY(-50%); z-index:4;">Précédent</button>
-            <button id="next" style="position: absolute; top: 50%; right: 0; transform: translateY(-50%);" >Suivant</button>
+            <button id="next" style="position: absolute; top: 50%; right: 0; transform: translateY(-50%);">Suivant</button>
         </div>
         <script>
-document.addEventListener('DOMContentLoaded', function() {
-    let index = 0;
-    const items1 = document.querySelectorAll('.carousel-item1');
-    const nextButton = document.getElementById('next');
-    const prevButton = document.getElementById('prev');
+            document.addEventListener('DOMContentLoaded', function() {
+                let index = 0;
+                const items1 = document.querySelectorAll('.carousel-item1');
+                const nextButton = document.getElementById('next');
+                const prevButton = document.getElementById('prev');
 
-    items1[0].classList.add('active');
+                items1[0].classList.add('active');
 
-    nextButton.addEventListener('click', () => {
-        items1[index].classList.remove('active');
-        index = (index + 1) % items1.length;
-        items1[index].classList.add('active');
-    });
+                nextButton.addEventListener('click', () => {
+                    items1[index].classList.remove('active');
+                    index = (index + 1) % items1.length;
+                    items1[index].classList.add('active');
+                });
 
-    prevButton.addEventListener('click', () => {
-        items1[index].classList.remove('active');
-        index = (index - 1 + items1.length) % items1.length;
-        items1[index].classList.add('active');
+                prevButton.addEventListener('click', () => {
+                    items1[index].classList.remove('active');
+                    index = (index - 1 + items1.length) % items1.length;
+                    items1[index].classList.add('active');
 
-    });
-});
-</script>
+                });
+            });
+        </script>
     </section>
     <section name="info + contact" style="padding-bottom: 5%;">
         <div class="container mt-5">

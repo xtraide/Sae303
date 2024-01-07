@@ -22,7 +22,7 @@ class MainController extends AppController
     public function forfait()
     {
         $form = new BootstrapForm($_POST);
-        $this->render('main.forfait', compact('form', 'error'));
+        $this->render('main.forfait', compact('form'));
     }
     public function aerodrome()
     {

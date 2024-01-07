@@ -64,7 +64,8 @@ class DatabaseAuth
         if ($this->logged()) {
 
             $user = $this->db->prepare('SELECT role FROM ' . self::$prefix . 'user WHERE id = ?', [$_SESSION['auth']], null, true);
-            if ($user->role == "admin") {
+
+            if ($user->role == "Admin") {
                 return true;
             }
         }
