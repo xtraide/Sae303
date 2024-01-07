@@ -68,7 +68,9 @@
               <a class="nav-link " href="?admin.main.index">Admin</a>
             </li>
           <?php endif ?>
-
+          <li class="nav-item">
+            <a href="?page=main.reservation" class="nav-link ">Reservation</a>
+          </li>
           <li class="nav-item d-lg-none">
             <a href="?page=user.profil">Profil</a>
           </li>

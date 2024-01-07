@@ -57,11 +57,13 @@
                                     class="m-auto text-center" alt="..." />
                             </div>
                             <div class="d-flex">
-                                <img src="../public/assets/ressources/loc.png" alt="loc" width="5%" height="5%" />
+                                <img src="../public/assets/ressources/loc.png" alt="loc" width="5%" height="5%"
+                                    style="margin-right: 5px;" />
                                 <p>Aéroport de Lyon-Bron - Bron, France</p>
                             </div>
                             <div class="d-flex">
-                                <img src="../public/assets/ressources/temps.png " alt="heur" width="5%" height="5%" />
+                                <img src="../public/assets/ressources/temps.png " alt="heur" width="5%" height="5%"
+                                    style="margin-right: 5px;" />
                                 <p>09:00 AM to 02:00 PM</p>
                             </div>
                         </div>
@@ -78,11 +80,13 @@
                                     alt="..." />
                             </div>
                             <div class="d-flex">
-                                <img src="../public/assets/ressources/loc.png" alt="loc" width="5%" height="5%" />
+                                <img src="../public/assets/ressources/loc.png" alt="loc" width="5%" height="5%"
+                                    style="margin-right: 5px;" />
                                 <p>Saint-Martin-de-Castillon</p>
                             </div>
                             <div class="d-flex">
-                                <img src="../public/assets/ressources/temps.png" alt="heur" width="5%" height="5%" />
+                                <img src="../public/assets/ressources/temps.png" alt="heur" width="5%" height="5%"
+                                    style="margin-right: 5px;" />
                                 <p>09:00 AM to 06:00 PM </p>
                             </div>
                         </div>
@@ -96,12 +100,14 @@
                                 <img src="../public/assets/ressources/Event1 (1).png" width="80%" alt="..."
                                     class="m-auto text-center" />
                             </div>
-                            <div class="d-flex">
-                                <img src="../public/assets/ressources/loc.png" alt="loc" width="5%" height="5%" />
+                            <div class="d-flex" style="margin-top: 20px;">
+                                <img src="../public/assets/ressources/loc.png" alt="loc" width="5%" height="5%"
+                                    style="margin-right: 5px;" />
                                 <p>Serrouville, France</p>
                             </div>
                             <div class="d-flex">
-                                <img src="../public/assets/ressources/temps.png" width="5%" height="5%" alt="heur" />
+                                <img src="../public/assets/ressources/temps.png" width="5%" height="5%" alt="heur"
+                                    style="margin-right: 5px;" />
                                 <p>09:00 AM to 02:00 PM</p>
                             </div>
                         </div>
