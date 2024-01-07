@@ -16,8 +16,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="assets/script/script.js">
-    </script>
+    <script src="assets/script/script.js"></script>
+    <script src="assets/script/api_meteo.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
     </script>
@@ -77,7 +77,9 @@
                     <a class="nav-link " href="?admin.main.index">Admin</a>
                 </li>
                 <?php endif ?>
-
+                <li class="nav-item">
+                    <a href="?page=main.reservation" class="nav-link ">Reservation</a>
+                </li>
                 <li class="nav-item d-lg-none">
                     <a href="?page=user.profil">Profil</a>
                 </li>
@@ -115,7 +117,7 @@
     <?= $content ?>
     <footer class="bg-light text-center text-lg-start" style="background-color: #697987!important; color: #fff;">
         <div class="container p-4 d-flex align-items-center ">
-            <div class="col-lg-6 col-md-12 mb-4 mb-md-0 d-flex justify-content-center align-items-center">
+            <div class="col-lg-6 col-md-12 mb-4 mb-md-0 d-flex align-items-center">
                 <svg width="auto" height="150" viewBox="0 0 149 109" fill="none" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink">
                     <rect width="149" height="108.354" fill="url(#pattern0)" />

@@ -27,11 +27,19 @@ body {
 }
 
 #icones .card {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
   width: 235px;
   border-radius: 40px;
-
+  border: none !important;
   text-align: center;
+}
+
+#icones>.card>h1 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
+}
+
+#icones>.card>div>p {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
 }
 
 #personnage {
@@ -397,14 +405,14 @@ section {
   border-radius: 20px;
 }
 
-.icones_aerodrome{
+.icones_aerodrome {
   width: 50px;
   height: 50px;
   margin-top: auto;
   margin-bottom: auto;
 }
 
-.plan{
+.plan {
   border-radius: 20%;
   margin-top: auto;
   margin-bottom: auto;
@@ -459,8 +467,8 @@ section {
   margin-bottom: 20%;
 }
 
-.gallerie img{
-  width:300px;
+.gallerie img {
+  width: 300px;
   height: auto;
 }
 

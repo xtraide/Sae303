@@ -1,7 +1,16 @@
 <section class="container-fluid w-100" style="background-image: url('../public/assets/ressources/BackgroundAcceuil.png'); 
            background-size: cover; 
            background-position: center">
-    <div id="icones" class="container-card d-flex justify-content-evenly align-content-center" style="padding-top: 50%; padding-bottom: 30%;">
+    <div id="icones" class="container-card d-flex justify-content-evenly align-content-center"
+        style="padding-top: 50%; padding-bottom: 30%;">
+        <div class="card">
+            <h1 id="h1-card">Weather Information</h1>
+            <div id="temp-info"></div>
+            <div id="conditions-info"></div>
+            <div id="wind-info"></div>
+            <div id="clouds-info"></div>
+            <div class="weather-icon"></div>
+        </div>
     </div>
     <div class="container w-50 p-2 z-0">
         <p id="txt" class="z-0">Qui sommes nous ?</p>
@@ -54,11 +63,13 @@
                                 <img src="../public/assets/ressources/yesiiir.png" width="80%" class="m-auto text-center" alt="..." />
                             </div>
                             <div class="d-flex">
-                                <img src="../public/assets/ressources/loc.png" alt="loc" width="5%" height="5%" />
+                                <img src="../public/assets/ressources/loc.png" alt="loc" width="5%" height="5%"
+                                    style="margin-right: 5px;" />
                                 <p>Aéroport de Lyon-Bron - Bron, France</p>
                             </div>
                             <div class="d-flex">
-                                <img src="../public/assets/ressources/temps.png " alt="heur" width="5%" height="5%" />
+                                <img src="../public/assets/ressources/temps.png " alt="heur" width="5%" height="5%"
+                                    style="margin-right: 5px;" />
                                 <p>09:00 AM to 02:00 PM</p>
                             </div>
                         </div>
@@ -74,11 +85,13 @@
                                 <img src="../public/assets/ressources/360_F_159634840_Fa2HPb8ITrbr5gddY2eKlomVfsnu1gx6.png" alt="..." />
                             </div>
                             <div class="d-flex">
-                                <img src="../public/assets/ressources/loc.png" alt="loc" width="5%" height="5%" />
+                                <img src="../public/assets/ressources/loc.png" alt="loc" width="5%" height="5%"
+                                    style="margin-right: 5px;" />
                                 <p>Saint-Martin-de-Castillon</p>
                             </div>
                             <div class="d-flex">
-                                <img src="../public/assets/ressources/temps.png" alt="heur" width="5%" height="5%" />
+                                <img src="../public/assets/ressources/temps.png" alt="heur" width="5%" height="5%"
+                                    style="margin-right: 5px;" />
                                 <p>09:00 AM to 06:00 PM </p>
                             </div>
                         </div>
@@ -91,12 +104,14 @@
                             <div class="m-auto text-center">
                                 <img src="../public/assets/ressources/Event1 (1).png" width="80%" alt="..." class="m-auto text-center" />
                             </div>
-                            <div class="d-flex">
-                                <img src="../public/assets/ressources/loc.png" alt="loc" width="5%" height="5%" />
+                            <div class="d-flex" style="margin-top: 20px;">
+                                <img src="../public/assets/ressources/loc.png" alt="loc" width="5%" height="5%"
+                                    style="margin-right: 5px;" />
                                 <p>Serrouville, France</p>
                             </div>
                             <div class="d-flex">
-                                <img src="../public/assets/ressources/temps.png" width="5%" height="5%" alt="heur" />
+                                <img src="../public/assets/ressources/temps.png" width="5%" height="5%" alt="heur"
+                                    style="margin-right: 5px;" />
                                 <p>09:00 AM to 02:00 PM</p>
                             </div>
                         </div>
@@ -147,7 +162,8 @@
                                 joies de
                                 l'aviation.</p>
                             <div class="card-footer bg-white border-white rounded d-flex
-                            align-items-center justify-content-center w-50" style=" background-color: rgba(0, 0, 0, 0.7) !important">
+                            align-items-center justify-content-center w-50"
+                                style=" background-color: rgba(0, 0, 0, 0.7) !important">
                                 <p class="text-center " style="color: white; margin: 0;">300 €</p>
                             </div>
                         </div>
@@ -163,7 +179,8 @@
                                 entraînement pratique, navigation et communication aérienne, préparant à la licence de
                                 pilote.</p>
                             <div class="card-footer bg-white border-white rounded
-                            d-flex align-items-center justify-content-center w-50" style=" background-color: rgba(0, 0, 0, 0.7) !important">
+                            d-flex align-items-center justify-content-center w-50"
+                                style=" background-color: rgba(0, 0, 0, 0.7) !important">
                                 <p class="text-center " style="color: white; margin: 0;">1500 €</p>
                             </div>
                         </div>
@@ -177,7 +194,8 @@
                                 techniques
                                 d'enseignement et la gestion de vol, visant à former des instructeurs compétents.</p>
                             <div class="card-footer bg-white border-white rounded
-                            d-flex align-items-center justify-content-center w-50" style=" background-color: rgba(0, 0, 0, 0.7) !important">
+                            d-flex align-items-center justify-content-center w-50"
+                                style=" background-color: rgba(0, 0, 0, 0.7) !important">
                                 <p class="text-center " style="color: white; margin: 0;">5000 €</p>
                             </div>
                         </div>
@@ -196,7 +214,8 @@
                                 Évolution,
                                 Maîtrise - pour répondre à vos besoins de formation et d'expérience de vol.</p>
                             <div class="card-footer bg-white border-white rounded
-                            d-flex align-items-center justify-content-center w-50" style=" background-color: rgba(0, 0, 0, 0.7) !important">
+                            d-flex align-items-center justify-content-center w-50"
+                                style=" background-color: rgba(0, 0, 0, 0.7) !important">
                                 <a href=" " class="text-center " style="color: white; margin: 0;">EN SAVOIR PLUS</a>
                             </div>
                         </div>
@@ -212,7 +231,8 @@
                                 permettent
                                 une progression constante et adaptée à vos objectifs de vol.</p>
                             <div class="card-footer bg-white border-white rounded
-                            d-flex align-items-center justify-content-center w-50" style=" background-color: rgba(0, 0, 0, 0.7) !important">
+                            d-flex align-items-center justify-content-center w-50"
+                                style=" background-color: rgba(0, 0, 0, 0.7) !important">
                                 <a href=" " class="text-center " style="color: white; margin: 0;">EN SAVOIR PLUS</a>
                             </div>
                         </div>
@@ -587,3 +607,53 @@
         </div>
     </section>
 </div>
+
+<script>
+var coll = document.querySelectorAll(".btn.btn-link");
+coll.forEach((btn) => {
+    btn.addEventListener("click", function() {
+        var arrowIcon = this.querySelector('.fas');
+        arrowIcon.classList.toggle('rotate');
+    });
+});
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var images = ['i1', 'i2', 'i3', 'i4', 'i5'];
+    var texts = {
+        'i1': 'L’entretien des ULM est compris dans le service par défaut de location, lors de la location de ces derniers',
+        'i2': 'Notre équipe s’occupe de tout, et monte votre ULM en amont du vol, afin de bénéficeier d’une expérience avancé',
+        'i3': 'Un service de location d’emplacements sont disponible dans le cas d’une utilisation de votre propre ULM !',
+        'i4': 'Nous avons la possibilité de vous accueillir à proximité de l’aéroclub pour y passez une merveilleuse nuit :',
+        'i5': 'Un service de restauration est proposés tous les week-ends, à un moindre coût et de qualité.'
+    };
+
+    images.forEach(function(imageId) {
+        var li = document.getElementById(imageId);
+
+        li.addEventListener('click', function(e) {
+            var popup = li.querySelector('div');
+            if (popup) {
+                li.removeChild(popup);
+            } else {
+                var popupHTML = `
+                <div style="
+                    position: absolute;
+                    left: ${li.offsetLeft}px;
+                    top: ${li.offsetTop + 10}px;
+                    background-color: #fff;
+                    width: 50%;
+                    border-radius: 10px;
+                    padding: 10px;
+                    color:black;
+                    text-align: center;
+                    z-index:1000;">
+                    ${texts[imageId] || 'Erreur'}
+                </div>
+            `;
+                li.insertAdjacentHTML('beforeend', popupHTML);
+            }
+        });
+    });
+});
+</script>

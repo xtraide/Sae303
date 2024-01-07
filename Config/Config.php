@@ -9,5 +9,6 @@ return array(
     'DB_NAME' => 'ntrhndmam_acf2l',
     'DB_USER' => 'root',
     'DB_PASS' => '',
-    'DB_HOST' => 'localhost'
+    'DB_HOST' => 'localhost',
+    'DB_PREFIX' => 'ntrhndmam_'
 );

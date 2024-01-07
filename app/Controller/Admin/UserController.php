@@ -4,26 +4,26 @@ namespace App\Controller\Admin;
 
 use Core\HTML\BootstrapForm;
 
-class AdherentController extends \App\Controller\AppController
+class UserController extends \App\Controller\AppController
 {
     public function __construct()
     {
         parent::__construct();
-        $this->loadModel('Adherent');
+        $this->loadModel('User');
     }
 
 
     public function index()
     {
-        $avions = $this->Adherent->all();
-        $this->render('admin.avion.index', compact('avions'));
+        $users = $this->User->all();
+        $this->render('admin.user.index', compact('users'));
     }
 
 
     public function edit()
     {
 
-        $table = $this->Adherent;
+        $table = $this->User;
         if (!empty($_POST)) {
             $result = $table->update($_GET['id'], [
                 'civilite' => $_POST['civilite'],
@@ -38,7 +38,7 @@ class AdherentController extends \App\Controller\AppController
                 'nb_a_charge' => $_POST['nb_a_charge'],
                 'activite' => $_POST['activite'],
                 'role' => $_POST['role']
-            ]);
+            ],);
 
             if ($result) {
 ?>
@@ -56,7 +56,7 @@ class AdherentController extends \App\Controller\AppController
     public function add()
     {
 
-        $table = $this->Adherent;
+        $table = $this->User;
         if (!empty($_POST)) {
             $result = $table->create([
                 'civilite' => $_POST['civilite'],

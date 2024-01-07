@@ -11,7 +11,7 @@ namespace App\Entity;
 use Core\Entity\Entity;
 
 
-class AdherentEntity extends Entity
+class UserEntity extends Entity
 {
 
     /**
