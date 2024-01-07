@@ -23,4 +23,9 @@ class MainController extends AppController
         $form = new BootstrapForm($_POST);
         $this->render('main.forfait', compact('form', 'error'));
     }
+    public function aerodrome()
+    {
+
+        $this->render('main.aerodrome');
+    }
 }

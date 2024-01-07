@@ -11,13 +11,15 @@ class UserController extends AppController
 {
     public function login()
     {
+        $error = false;
         $form = new BootstrapForm($_POST);
         if (!empty($_POST)) {
             $auth = new DatabaseAuth(App::getInstance()->getDatabase());
             if ($auth->login($_POST['email'], $_POST['password'])) {
-                header('Location: index.php?p=admin.posts.index');
+
+                header('Location: ?p=main.index');
             } else {
-                $error = true;
+                $error = $auth->login($_POST['email'], $_POST['password']);
             }
         }
         $this->render('user.login', compact('form', 'error'));
@@ -43,6 +45,7 @@ class UserController extends AppController
         }
         $this->render('user.register', compact('form', 'error'));
     }
+
     public function profil()
     {
         $form = new BootstrapForm($_POST);

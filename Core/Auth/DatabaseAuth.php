@@ -14,7 +14,7 @@ class DatabaseAuth
         $this->db = $db;
     }
 
-    public function getUserId()
+    public function getUserAuth()
     {
         if ($this->logged()) {
             return $_SESSION['auth'];
@@ -31,6 +31,7 @@ class DatabaseAuth
     {
         $user = $this->db->prepare('SELECT * FROM ' . self::$prefix . 'user WHERE email = ?', [$email], null, true);
         if ($user) {
+            var_dump($user);
             if ($user->password === sha1($password)) {
                 $_SESSION['auth'] = $user->id;
                 return true;
@@ -51,15 +52,7 @@ class DatabaseAuth
 
     public function register($fields)
     {
-        $sql_parts = [];
-        $attributes = [];
-        foreach ($fields as $champ => $value) {
-            $sql_parts[] = "$champ = ?";
-            $attributes[] = $value;
-        }
-        $sql_part = implode(', ', $sql_parts);
-        $result = $this->db->prepare("INSERT INTO  " . self::$prefix . "user SET $sql_part", $attributes, true);
-        if ($result) {
+        if ($this->db->prepare('INSERT INTO ' . self::$prefix . 'user SET email = ?, password = ?', [$fields['email'], sha1($fields['password'])])) {
             return true;
         } else {
             return false;

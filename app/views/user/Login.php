@@ -1,3 +1,6 @@
+<?= $error ?>
+
+
 <div class="w-100 vh-100 background d-flex align-items-center">
     <form action="#" method="post" class="w-50 m-auto ">
         <h1 class="text-center">Login</h1>
