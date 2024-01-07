@@ -340,7 +340,7 @@
                     <h3 style="padding: 4px 40px; background-color:#556672; border-radius:10px;position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index:4;">
                         Multiaxes</h3>
                 </div>
-                <div style="color:#fff; background-color:#556672; border-radius:10px; width:20%; margin:auto;">
+                <div style="color:#fff; background-color:#556672; border-radius:10px; width:300px; margin:auto;">
                     <h3 class="text-center">Caractéristiques</h3>
                     <div class="d-flex justify-content-center">
                         <div>
@@ -368,7 +368,7 @@
                     <h3 style="padding: 4px 40px; background-color:#556672; border-radius:10px;position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index:4;">
                         Paramoteur</h3>
                 </div>
-                <div style="color:#fff; background-color:#556672; border-radius:10px; width:20%; margin:auto;">
+                <div style="color:#fff; background-color:#556672; border-radius:10px; width:300px; margin:auto;">
                     <h3 class="text-center">Caractéristiques</h3>
                     <div class="d-flex justify-content-center">
                         <div>
@@ -396,7 +396,7 @@
                     <h3 style="padding: 4px 40px; background-color:#556672; border-radius:10px;position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index:4;">
                         Autogire Ultraléger</h3>
                 </div>
-                <div style="color:#fff; background-color:#556672; border-radius:10px; width:20%; margin:auto;">
+                <div style="color:#fff; background-color:#556672; border-radius:10px; width:300px; margin:auto;">
                     <h3 class="text-center">Caractéristiques</h3>
                     <div class="d-flex justify-content-center">
                         <div>
@@ -424,7 +424,7 @@
                     <h3 style="padding: 4px 40px; background-color:#556672; border-radius:10px;position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index:4;">
                         Pendulaire</h3>
                 </div>
-                <div style="color:#fff; background-color:#556672; border-radius:10px; width:20%; margin:auto;">
+                <div style="color:#fff; background-color:#556672; border-radius:10px; width:300px; margin:auto;">
                     <h3 class="text-center">Caractéristiques</h3>
                     <div class="d-flex justify-content-center">
                         <div>
@@ -452,7 +452,7 @@
                     <h3 style="padding: 4px 40px; background-color:#556672; border-radius:10px;position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index:4;">
                         Hélicoptère Ultraléger</h3>
                 </div>
-                <div style="color:#fff; background-color:#556672; border-radius:10px; width:20%; margin:auto;">
+                <div style="color:#fff; background-color:#556672; border-radius:10px; width:300px; margin:auto;">
                     <h3 class="text-center">Caractéristiques</h3>
                     <div class="d-flex justify-content-center">
                         <div>
@@ -480,7 +480,7 @@
                     <h3 style="padding: 4px 40px; background-color:#556672;border-radius:10px;position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index:4;">
                         Aérostat Ultraléger</h3>
                 </div>
-                <div style="color:#fff; background-color:#556672; border-radius:10px; width:20%; margin:auto;">
+                <div style="color:#fff; background-color:#556672; border-radius:10px; width:300px; margin:auto;">
                     <h3 class="text-center">Caractéristiques</h3>
                     <div class="d-flex justify-content-center">
                         <div>

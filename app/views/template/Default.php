@@ -66,31 +66,35 @@
           <?php if ($admin) : ?>
 
             <li class="nav-item ">
-              <a class="nav-link " href="?admin.main.index">admin</a>
+              <a class="nav-link " href="?admin.main.index">Admin</a>
             </li>
           <?php endif ?>
+
           <li class="nav-item d-lg-none">
-            <a href=""><img src="profile.png" alt=""></a>
+            <a href="">Profil</a>
+          </li>
+          <li class="nav-item d-lg-none">
+          <a href="?page=user.logout" class="btn my-2 my-sm-0">Deconnecter</a>
           </li>
         <?php endif ?>
       </ul>
     </div>
     <?php if (!$logged) : ?>
       <div class="form-inline d-none d-lg-flex nav-element align-items-center">
-        <a href="?page=user.login" class="btn my-2 my-sm-0" type="submit">Connexion</a>
-        <a href="?page=user.register" class="btn my-2 my-sm-0" type="submit">Inscription</a>
+        <a href="?page=user.login" class="btn my-2 my-sm-0">Connexion</a>
+        <a href="?page=user.register" class="btn my-2 my-sm-0">Inscription</a>
       </div>
 
     <?php else : ?>
 
       <?php if ($admin) : ?>
-        <div>
-          <a class="nav-link " href="?page=admin.main.index">admin</a>
-        </div>
+        
+        
       <?php endif ?>
-      <a href="?page=user.logout">Deconnecter</a>
-      <div>
-        <a href=""><img src="profile.png" alt=""></a>
+      <div class="form-inline d-none d-lg-flex nav-element align-items-center">
+      <a href="?page=user.logout" class="btn my-2 my-sm-0">Deconnecter</a>
+      
+        <a href="" class="btn my-2 my-sm-0" style="width: 60px; height:60px;"><img src="assets/ressources/utilisateur-de-profil.png" width="100%" alt="" style="margin-bottom: 5px;"></a>
       </div>
     <?php endif ?>
 
@@ -98,37 +102,6 @@
 </header>
 
 <body>
-
-  <?php /*
-    $dir = "../Views/staff";
-    echo "<h4>" . $dir . "</h4>";
-    $scandir = scandir($dir);
-
-    foreach (array_diff($scandir, array(".", "..")) as $row) {
-    ?>
-        <a href="<?= $dir . "/" . $row ?>"><?= $row ?></a> <br>
-    <?php
-    }
-    $dir = "../Views/user";
-    echo "<h4>" . $dir . "</h4>";
-    $scandir = scandir($dir);
-    foreach (array_diff($scandir, array(".", "..")) as $row) {
-    ?>
-        <a href="<?= $dir . "/" . $row ?>"><?= $row ?></a> <br>
-    <?php
-    }
-    $dir = "../Views/template";
-    echo "<h4>" . $dir . "</h4>";
-    $scandir = scandir($dir);
-    foreach (array_diff($scandir, array(".", "..")) as $row) {
-    ?>
-        <a href="<?= $dir . "/" . $row ?>"><?= $row ?></a> <br>
-    <?php
-    }
-
-
-
-    */ ?>
   <?= $content ?>
   <footer class="bg-light text-center text-lg-start" style="background-color: #697987!important; color: #fff;">
     <div class="container p-4 d-flex align-items-center ">
