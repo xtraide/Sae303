@@ -71,7 +71,7 @@
           <?php endif ?>
 
           <li class="nav-item d-lg-none">
-            <a href="">Profil</a>
+            <a href="?page=user.profil">Profil</a>
           </li>
           <li class="nav-item d-lg-none">
           <a href="?page=user.logout" class="btn my-2 my-sm-0">Deconnecter</a>
@@ -94,7 +94,7 @@
       <div class="form-inline d-none d-lg-flex nav-element align-items-center">
       <a href="?page=user.logout" class="btn my-2 my-sm-0">Deconnecter</a>
       
-        <a href="" class="btn my-2 my-sm-0" style="width: 60px; height:60px;"><img src="assets/ressources/utilisateur-de-profil.png" width="100%" alt="" style="margin-bottom: 5px;"></a>
+        <a href="?page=user.profil" class="btn my-2 my-sm-0" style="width: 60px; height:60px;"><img src="assets/ressources/utilisateur-de-profil.png" width="100%" alt="" style="margin-bottom: 5px;"></a>
       </div>
     <?php endif ?>
 
