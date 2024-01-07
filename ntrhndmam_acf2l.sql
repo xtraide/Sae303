@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le : dim. 07 jan. 2024 à 15:37
+-- Généré le : dim. 07 jan. 2024 à 18:59
 -- Version du serveur : 8.2.0
 -- Version de PHP : 8.2.13
 
@@ -31,6 +31,10 @@ DROP TABLE IF EXISTS `ntrhndmam_avion`;
 CREATE TABLE IF NOT EXISTS `ntrhndmam_avion` (
   `id` int NOT NULL AUTO_INCREMENT,
   `modele` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `v_max` int NOT NULL,
+  `capacite` int NOT NULL,
+  `autonomie` int NOT NULL,
+  `poid` int NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
@@ -38,9 +42,9 @@ CREATE TABLE IF NOT EXISTS `ntrhndmam_avion` (
 -- Déchargement des données de la table `ntrhndmam_avion`
 --
 
-INSERT INTO `ntrhndmam_avion` (`id`, `modele`) VALUES
-(6, 'Boeing 747r'),
-(7, 'fff');
+INSERT INTO `ntrhndmam_avion` (`id`, `modele`, `v_max`, `capacite`, `autonomie`, `poid`) VALUES
+(6, 'Boeing 747r', 0, 0, 0, 0),
+(7, 'fff', 0, 0, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -117,14 +121,15 @@ CREATE TABLE IF NOT EXISTS `ntrhndmam_user` (
   `password` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `role` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Déchargement des données de la table `ntrhndmam_user`
 --
 
 INSERT INTO `ntrhndmam_user` (`id`, `civilite`, `nom`, `prenom`, `_date`, `adresse`, `situation_familiale`, `date_situation_familiale`, `dateFin_situation_familiale`, `email`, `numero`, `nb_a_charge`, `activite`, `token`, `verified`, `password`, `role`) VALUES
-(1, 'Mr', 'Doe', 'John', '2023-12-13', '123 Street', 'Single', '2023-12-13', '2023-12-13', 'john@example.com', 1234567890, 0, 'Developer', 'token', 1, 'password', 'Admin');
+(1, 'Mr', 'Doe', 'John', '2023-12-13', '123 Street', 'Single', '2023-12-13', '2023-12-13', 'john@example.com', 1234567890, 0, 'Developer', 'token', 1, 'password', 'Admin'),
+(2, 'Ms', 'Doe', 'Jane', '2023-12-14', '456 Street', 'Married', '2023-12-14', '2023-12-14', 'jane@example.com', 2147483647, 2, 'Designer', 'token2', 1, 'password2', 'User');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

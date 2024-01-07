@@ -13,7 +13,8 @@
 </section>
 <section>
 
-    <div id="personnage" class="d-flex justify-content-evenly align-content-center" style="padding-top: 20%; padding-bottom: 30%;">
+    <div id="personnage" class="d-flex justify-content-evenly align-content-center"
+        style="padding-top: 20%; padding-bottom: 30%;">
         <div id="card_1" class="card p-1">
             <h3>Kevin SATOUT</h3>
             <img src="../public/assets/ressources/ChefPilote.png" alt="chef_pilote" class="pt-1" />
@@ -49,7 +50,7 @@
                     <div class="card" style="width: 30rem; height: 400px">
 
                         <div class="card-body ">
-                            <h5 class="card-title">France Air Expo 2023</h5>
+                            <h5 class="card-title text-center">France Air Expo 2023</h5>
                             <div class="m-auto text-center">
                                 <img src="../public/assets/ressources/yesiiir.png" width="80%"
                                     class="m-auto text-center" alt="..." />
@@ -68,7 +69,7 @@
                 <div class="carousel-item carou-card">
                     <div class="card" style="width: 30rem; height: 400px">
                         <div class="card-body m-auto text-center">
-                            <h5 class="card-title">
+                            <h5 class="card-title text-center">
                                 1er Rassemblement ULM des femmes pilotes
                             </h5>
                             <div class="m-auto text-center">
@@ -88,9 +89,8 @@
                 </div>
                 <div class="carousel-item carou-card">
                     <div class="card" style="width: 30rem; height: 400px">
-                        <img src="../public/assets/ressources/" class="card-img-top" alt="..." />
                         <div class="card-body">
-                            <h5 class="card-title">Journée sécurité des vols - GRAND EST</h5>
+                            <h5 class="card-title text-center">Journée sécurité des vols - GRAND EST</h5>
                             <div class="m-auto text-center">
                                 <img src="../public/assets/ressources/Event1 (1).png" width="80%" alt="..."
                                     class="m-auto text-center" />
@@ -117,15 +117,15 @@
           width: 20px;
           border-radius: 100%;
         "></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="m-3"
-        aria-label="Slide 2" style="
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="m-3"
+            aria-label="Slide 2" style="
           background-color: black;
           height: 20px;
           width: 20px;
           border-radius: 100%;
         "></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="m-3"
-        aria-label="Slide 3" style="
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="m-3"
+            aria-label="Slide 3" style="
           background-color: black;
           height: 20px;
           width: 20px;
@@ -249,9 +249,11 @@
             <div class="row m-auto">
                 <div class="col-12 col-md-6">
                     <ul class="list-group">
-                        <li class="list-group-item" style="cursor:pointer;" id="i1">Maintenance des ULM <img src="../public/assets/ressources/i.png" width="5%" alt="i" style="margin-left: 2%;">
+                        <li class="list-group-item" style="cursor:pointer;" id="i1">Maintenance des ULM <img
+                                src="../public/assets/ressources/i.png" width="5%" alt="i" style="margin-left: 2%;">
                         </li>
-                        <li class="list-group-item" style="cursor:pointer;" id="i2">Montage des ULM <img src="../public/assets/ressources/i.png" width="5%" alt="i" style="margin-left: 2%;">
+                        <li class="list-group-item" style="cursor:pointer;" id="i2">Montage des ULM <img
+                                src="../public/assets/ressources/i.png" width="5%" alt="i" style="margin-left: 2%;">
                         </li>
                         <li class="list-group-item" style="cursor:pointer;" id="i3">Location d’emplacements ULM protégés
                             <img src="../public/assets/ressources/i.png" width="5%" alt="i" style="margin-left: 2%;">
@@ -260,9 +262,11 @@
                 </div>
                 <div class="col-12 col-md-6 m-auto">
                     <ul class="list-group">
-                        <li class="list-group-item" style="cursor:pointer;" id="i4">Hébergement <img src="../public/assets/ressources/i.png" width="5%" alt="i" style="margin-left: 2%;">
+                        <li class="list-group-item" style="cursor:pointer;" id="i4">Hébergement <img
+                                src="../public/assets/ressources/i.png" width="5%" alt="i" style="margin-left: 2%;">
                         </li>
-                        <li class="list-group-item" style="cursor:pointer;" id="i5">Service de restauration <img src="../public/assets/ressources/i.png" width="5%" alt="i" style="margin-left: 2%;">
+                        <li class="list-group-item" style="cursor:pointer;" id="i5">Service de restauration <img
+                                src="../public/assets/ressources/i.png" width="5%" alt="i" style="margin-left: 2%;">
                         </li>
                     </ul>
                 </div>
@@ -319,7 +323,8 @@
     <section name="ULM" id="ULM">
         <div class="m-auto text-center">
             <h1>Les Types d'ULM</h1>
-            <img src="../public/assets/ressources/backgroundTypeDeULM.jpg" alt="" width="80%" style="aspect-ratio: 16/9; object-fit: cover;">
+            <img src="../public/assets/ressources/backgroundTypeDeULM.jpg" alt="" width="80%"
+                style="aspect-ratio: 16/9; object-fit: cover;">
         </div>
         <div>
             <h2 class="text-center"
@@ -331,10 +336,11 @@
                 <div style="position: relative; display: block; text-align: center; margin: auto;">
                     <img src="../public/assets/ressources/Multiaxes.png" alt="ULM1" width="30%" id="ulm1"
                         style="margin: auto; display: block;" />
-                    <h3 style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index:4;">
+                    <h3 style="padding: 4px 40px; background-color:#556672; border-radius:10px;position: absolute;
+                         top: 50%; left: 50%; transform: translate(-50%, -50%);">
                         Multiaxes</h3>
                 </div>
-                <div style="color:#fff; background-color:#556672; border-radius:10px; width:20%; margin:auto;">
+                <div style="color:#fff; background-color:#556672; border-radius:10px; width:300px; margin:auto;">
                     <h3 class="text-center">Caractéristiques</h3>
                     <div class="d-flex justify-content-center">
                         <div>
@@ -342,7 +348,7 @@
                                 Vitesse max: <br>
                                 Capacité: <br>
                                 Autonomie: <br>
-                                Poids
+                                Poidswidth:300px
                             </p>
                         </div>
                         <div>
@@ -360,10 +366,11 @@
                 <div style="position: relative; display: block; text-align: center; margin: auto;">
                     <img src="../public/assets/ressources/Paramoteur.png" alt="ULM1" width="30%" id="ulm1"
                         style="margin: auto; display: block;" />
-                    <h3 style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index:4;">
+                    <h3 style="padding: 4px 40px; background-color:#556672; border-radius:10px;position: absolute;
+                         top: 50%; left: 50%; transform: translate(-50%, -50%); ">
                         Paramoteur</h3>
                 </div>
-                <div style="color:#fff; background-color:#556672; border-radius:10px; width:20%; margin:auto;">
+                <div style="color:#fff; background-color:#556672; border-radius:10px; width:300px; margin:auto;">
                     <h3 class="text-center">Caractéristiques</h3>
                     <div class="d-flex justify-content-center">
                         <div>
@@ -389,10 +396,11 @@
                 <div style="position: relative; display: block; text-align: center; margin: auto;">
                     <img src="../public/assets/ressources/Autogire.png" alt="ULM1" width="30%" id="ulm1"
                         style="margin: auto; display: block;" />
-                    <h3 style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index:4;">
+                    <h3 style="padding: 4px 40px; background-color:#556672; border-radius:10px;position: absolute;
+                         top: 50%; left: 50%; transform: translate(-50%, -50%); ">
                         Autogire Ultraléger</h3>
                 </div>
-                <div style="color:#fff; background-color:#556672; border-radius:10px; width:20%; margin:auto;">
+                <div style="color:#fff; background-color:#556672; border-radius:10px; width:300px; margin:auto;">
                     <h3 class="text-center">Caractéristiques</h3>
                     <div class="d-flex justify-content-center">
                         <div>
@@ -418,10 +426,11 @@
                 <div style="position: relative; display: block; text-align: center; margin: auto;">
                     <img src="../public/assets/ressources/Pendulaire.png" alt="ULM1" width="30%" id="ulm1"
                         style="margin: auto; display: block;" />
-                    <h3 style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index:4;">
+                    <h3 style="padding: 4px 40px; background-color:#556672; border-radius:10px;position: absolute;
+                         top: 50%; left: 50%; transform: translate(-50%, -50%); ">
                         Pendulaire</h3>
                 </div>
-                <div style="color:#fff; background-color:#556672; border-radius:10px; width:20%; margin:auto;">
+                <div style="color:#fff; background-color:#556672; border-radius:10px; width:300px; margin:auto;">
                     <h3 class="text-center">Caractéristiques</h3>
                     <div class="d-flex justify-content-center">
                         <div>
@@ -447,10 +456,11 @@
                 <div style="position: relative; display: block; text-align: center; margin: auto;">
                     <img src="../public/assets/ressources/HelicoLeger.png" alt="ULM1" width="30%" id="ulm1"
                         style="margin: auto; display: block;" />
-                    <h3 style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index:4;">
+                    <h3 style="padding: 4px 40px; background-color:#556672; border-radius:10px;position: absolute;
+                         top: 50%; left: 50%; transform: translate(-50%, -50%); ">
                         Hélicoptère Ultraléger</h3>
                 </div>
-                <div style="color:#fff; background-color:#556672; border-radius:10px; width:20%; margin:auto;">
+                <div style="color:#fff; background-color:#556672; border-radius:10px; width:300px; margin:auto;">
                     <h3 class="text-center">Caractéristiques</h3>
                     <div class="d-flex justify-content-center">
                         <div>
@@ -476,10 +486,11 @@
                 <div style="position: relative; display: block; text-align: center; margin: auto;">
                     <img src="../public/assets/ressources/Baloon.png" alt="ULM1" width="30%" id="ulm1"
                         style="margin: auto; display: block;" />
-                    <h3 style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index:4;">
+                    <h3 style="padding: 4px 40px; background-color:#556672;border-radius:10px;position: absolute;
+                         top: 50%; left: 50%; transform: translate(-50%, -50%); ">
                         Aérostat Ultraléger</h3>
                 </div>
-                <div style="color:#fff; background-color:#556672; border-radius:10px; width:20%; margin:auto;">
+                <div style="color:#fff; background-color:#556672; border-radius:10px; width:300px; margin:auto;">
                     <h3 class="text-center">Caractéristiques</h3>
                     <div class="d-flex justify-content-center">
                         <div>
@@ -501,11 +512,34 @@
                     </div>
                 </div>
             </div>
-            <button id="prev"
-                style="position: absolute; top: 50%; left: 0; transform: translateY(-50%); z-index:4;">Précédent</button>
+            <button id="prev" style="position: absolute; top: 50%; left: 0;
+             transform: translateY(-50%);">Précédent</button>
             <button id="next"
                 style="position: absolute; top: 50%; right: 0; transform: translateY(-50%);">Suivant</button>
         </div>
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            let index = 0;
+            const items1 = document.querySelectorAll('.carousel-item1');
+            const nextButton = document.getElementById('next');
+            const prevButton = document.getElementById('prev');
+
+            items1[0].classList.add('active');
+
+            nextButton.addEventListener('click', () => {
+                items1[index].classList.remove('active');
+                index = (index + 1) % items1.length;
+                items1[index].classList.add('active');
+            });
+
+            prevButton.addEventListener('click', () => {
+                items1[index].classList.remove('active');
+                index = (index - 1 + items1.length) % items1.length;
+                items1[index].classList.add('active');
+
+            });
+        });
+        </script>
     </section>
     <section name="info + contact" style="padding-bottom: 5%;">
         <div class="container mt-5">
@@ -514,7 +548,10 @@
                     <div class="card">
                         <div class="card-header">
                             <h3 class="mb-0 ">
-                                <button class="btn btn-link d-flex align-items-center w-100 justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#infoCollapse1" aria-expanded="false" aria-controls="infoCollapse1" style="color: black; text-decoration: none;">
+                                <button class="btn btn-link d-flex align-items-center w-100 justify-content-between"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#infoCollapse1"
+                                    aria-expanded="false" aria-controls="infoCollapse1"
+                                    style="color: black; text-decoration: none;">
                                     <div>Infos</div>
                                     <div class="fas p-2 text-end">▲</div>
                                 </button>
@@ -535,7 +572,10 @@
                     <div class="card">
                         <div class="card-header">
                             <h3 class="mb-0 d-flex justify-content-between">
-                                <button class="btn btn-link d-flex align-items-center w-100 justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#contactForm" aria-expanded="false" aria-controls="contactForm" style="color: black; text-decoration: none;">
+                                <button class="btn btn-link d-flex align-items-center w-100 justify-content-between"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#contactForm"
+                                    aria-expanded="false" aria-controls="contactForm"
+                                    style="color: black; text-decoration: none;">
                                     <div>Contactez-nous</div>
                                     <div class="fas p-2 text-end">▲</div>
                                 </button>
