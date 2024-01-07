@@ -338,7 +338,7 @@
             <div class="carousel-item1 active">
                 <div style="position: relative; display: block; text-align: center; margin: auto;">
                     <img src="../public/assets/ressources/Multiaxes.png" alt="ULM1" width="30%" id="ulm1" style="margin: auto; display: block;" />
-                    <h3 style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index:4;">
+                    <h3 style="padding: 4px 40px; background-color:#556672; border-radius:10px;position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index:4;">
                         Multiaxes</h3>
                 </div>
                 <div style="color:#fff; background-color:#556672; border-radius:10px; width:20%; margin:auto;">
@@ -366,7 +366,7 @@
             <div class="carousel-item1">
                 <div style="position: relative; display: block; text-align: center; margin: auto;">
                     <img src="../public/assets/ressources/Paramoteur.png" alt="ULM1" width="30%" id="ulm1" style="margin: auto; display: block;" />
-                    <h3 style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index:4;">
+                    <h3 style="padding: 4px 40px; background-color:#556672; border-radius:10px;position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index:4;">
                         Paramoteur</h3>
                 </div>
                 <div style="color:#fff; background-color:#556672; border-radius:10px; width:20%; margin:auto;">
@@ -394,7 +394,7 @@
             <div class="carousel-item1">
                 <div style="position: relative; display: block; text-align: center; margin: auto;">
                     <img src="../public/assets/ressources/Autogire.png" alt="ULM1" width="30%" id="ulm1" style="margin: auto; display: block;" />
-                    <h3 style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index:4;">
+                    <h3 style="padding: 4px 40px; background-color:#556672; border-radius:10px;position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index:4;">
                         Autogire Ultraléger</h3>
                 </div>
                 <div style="color:#fff; background-color:#556672; border-radius:10px; width:20%; margin:auto;">
@@ -422,7 +422,7 @@
             <div class="carousel-item1">
                 <div style="position: relative; display: block; text-align: center; margin: auto;">
                     <img src="../public/assets/ressources/Pendulaire.png" alt="ULM1" width="30%" id="ulm1" style="margin: auto; display: block;" />
-                    <h3 style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index:4;">
+                    <h3 style="padding: 4px 40px; background-color:#556672; border-radius:10px;position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index:4;">
                         Pendulaire</h3>
                 </div>
                 <div style="color:#fff; background-color:#556672; border-radius:10px; width:20%; margin:auto;">
@@ -450,7 +450,7 @@
             <div class="carousel-item1">
                 <div style="position: relative; display: block; text-align: center; margin: auto;">
                     <img src="../public/assets/ressources/HelicoLeger.png" alt="ULM1" width="30%" id="ulm1" style="margin: auto; display: block;" />
-                    <h3 style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index:4;">
+                    <h3 style="padding: 4px 40px; background-color:#556672; border-radius:10px;position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index:4;">
                         Hélicoptère Ultraléger</h3>
                 </div>
                 <div style="color:#fff; background-color:#556672; border-radius:10px; width:20%; margin:auto;">
@@ -478,7 +478,7 @@
             <div class="carousel-item1">
                 <div style="position: relative; display: block; text-align: center; margin: auto;">
                     <img src="../public/assets/ressources/Baloon.png" alt="ULM1" width="30%" id="ulm1" style="margin: auto; display: block;" />
-                    <h3 style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index:4;">
+                    <h3 style="padding: 4px 40px; background-color:#556672;border-radius:10px;position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index:4;">
                         Aérostat Ultraléger</h3>
                 </div>
                 <div style="color:#fff; background-color:#556672; border-radius:10px; width:20%; margin:auto;">
@@ -504,8 +504,31 @@
                 </div>
             </div>
             <button id="prev" style="position: absolute; top: 50%; left: 0; transform: translateY(-50%); z-index:4;">Précédent</button>
-            <button id="next" style="position: absolute; top: 50%; right: 0; transform: translateY(-50%);">Suivant</button>
+            <button id="next" style="position: absolute; top: 50%; right: 0; transform: translateY(-50%);" >Suivant</button>
         </div>
+        <script>
+document.addEventListener('DOMContentLoaded', function() {
+    let index = 0;
+    const items1 = document.querySelectorAll('.carousel-item1');
+    const nextButton = document.getElementById('next');
+    const prevButton = document.getElementById('prev');
+
+    items1[0].classList.add('active');
+
+    nextButton.addEventListener('click', () => {
+        items1[index].classList.remove('active');
+        index = (index + 1) % items1.length;
+        items1[index].classList.add('active');
+    });
+
+    prevButton.addEventListener('click', () => {
+        items1[index].classList.remove('active');
+        index = (index - 1 + items1.length) % items1.length;
+        items1[index].classList.add('active');
+
+    });
+});
+</script>
     </section>
     <section name="info + contact" style="padding-bottom: 5%;">
         <div class="container mt-5">
@@ -573,28 +596,7 @@
     </section>
 </div>
 
-<script>
-    let index = 0;
-    const items1 = document.querySelectorAll('.carousel-item1');
-    const nextButton = document.getElementById('next');
-    const prevButton = document.getElementById('prev');
 
-    window.onload = function() {
-        items1[0].classList.add('active');
-    }
-
-    nextButton.addEventListener('click', () => {
-        items1[index].classList.remove('active');
-        index = (index + 1) % items1.length;
-        items1[index].classList.add('active');
-    });
-
-    prevButton.addEventListener('click', () => {
-        items1[index].classList.remove('active');
-        index = (index - 1 + items1.length) % items1.length;
-        items1[index].classList.add('active');
-    });
-</script>
 
 
 
