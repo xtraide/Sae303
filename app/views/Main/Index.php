@@ -719,8 +719,3 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 </script>
-
-gffrefr"eferffze
-fcloseze
-fclosef
-zef
