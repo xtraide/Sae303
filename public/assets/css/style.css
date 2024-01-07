@@ -346,3 +346,80 @@ section {
   width: 100%;
   height: 400px!important;
 }
+
+.aerodrome {
+  background-repeat: no-repeat;
+  background: linear-gradient(180deg, #768891 0%, #354552 100%);
+  background-size: cover;
+}
+
+
+
+#avion_aerodrome{
+  width: 60%;
+  height: auto;
+  margin-bottom: 10%;
+}
+
+.aerodrome div p{
+  font-family: quicksand;
+  color: black;
+  font-size: 3rem;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 20px;
+}
+
+.aerodrome div div p{
+  font-family: quicksand;
+  color: black;
+  font-size: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 20px;
+}
+
+.aerodrome div h1{
+  font-family: quicksand;
+  color: black;
+  font-size: 4rem;
+}
+
+.background_equipement{
+  background-color:#556672;
+}
+
+.border_equipement{
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border: solid white 4px;
+  margin-top:-4px !important;
+
+}
+
+.equipement div button{
+  font-family: quicksand;
+  background-color: #556672;
+  border: solid white 4px;
+  outline: none;
+  color: white;
+  z-index: 1000;
+  border-bottom: solid #556672 4px;
+  position: relative;
+}
+
+
+#btn1{
+font-size: 3rem;
+height: 100%;
+}
+#btn2{
+font-size: 1.2rem;
+height: 100%;
+}
+#btn3{
+font-size: 1.2rem;
+height: 100%;
+}
+
+.equipement{
+  margin-bottom: 20%;
+}
