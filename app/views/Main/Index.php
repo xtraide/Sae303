@@ -1,8 +1,7 @@
 <section class="container-fluid w-100" style="background-image: url('../public/assets/ressources/BackgroundAcceuil.png'); 
            background-size: cover; 
            background-position: center">
-    <div id="icones" class="container-card d-flex justify-content-evenly align-content-center"
-        style="padding-top: 50%; padding-bottom: 30%;">
+    <div id="icones" class="container-card d-flex justify-content-evenly align-content-center" style="padding-top: 50%; padding-bottom: 30%;">
         <div id="card_1" class="card p-3" style="background-color: rgba(255, 255, 255, 0.5);">
             <h2>L'AERODROME</h2>
             <img src="../public/assets/ressources/AppOne.png" alt="icone_piste" class="pt-1" />
@@ -19,8 +18,8 @@
             <button onclick="aerodrome()" class="decouvrer" class="pb-3">Découvrez</button>
         </div>
     </div>
-    <div class="container w-50 p-2">
-        <p id="txt">Qui sommes nous ?</p>
+    <div class="container w-50 p-2 z-0">
+        <p id="txt" class="z-0">Qui sommes nous ?</p>
     </div>
     <!--
         <img src="../public/assets/ressources/BlackSmokeEnBasDesPersonnages.png" alt="black_smoke1" id="smoke">
@@ -29,8 +28,7 @@
 </section>
 <section>
 
-    <div id="personnage" class="d-flex justify-content-evenly align-content-center"
-        style="padding-top: 20%; padding-bottom: 30%;">
+    <div id="personnage" class="d-flex justify-content-evenly align-content-center" style="padding-top: 20%; padding-bottom: 30%;">
         <div id="card_1" class="card p-1">
             <h3>Kevin SATOUT</h3>
             <img src="../public/assets/ressources/ChefPilote.png" alt="chef_pilote" class="pt-1" />
@@ -134,15 +132,15 @@
           width: 20px;
           border-radius: 100%;
         "></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="m-3"
-            aria-label="Slide 2" style="
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="m-3"
+        aria-label="Slide 2" style="
           background-color: black;
           height: 20px;
           width: 20px;
           border-radius: 100%;
         "></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="m-3"
-            aria-label="Slide 3" style="
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="m-3"
+        aria-label="Slide 3" style="
           background-color: black;
           height: 20px;
           width: 20px;
@@ -266,11 +264,9 @@
             <div class="row m-auto">
                 <div class="col-12 col-md-6">
                     <ul class="list-group">
-                        <li class="list-group-item" style="cursor:pointer;" id="i1">Maintenance des ULM <img
-                                src="../public/assets/ressources/i.png" width="5%" alt="i" style="margin-left: 2%;">
+                        <li class="list-group-item" style="cursor:pointer;" id="i1">Maintenance des ULM <img src="../public/assets/ressources/i.png" width="5%" alt="i" style="margin-left: 2%;">
                         </li>
-                        <li class="list-group-item" style="cursor:pointer;" id="i2">Montage des ULM <img
-                                src="../public/assets/ressources/i.png" width="5%" alt="i" style="margin-left: 2%;">
+                        <li class="list-group-item" style="cursor:pointer;" id="i2">Montage des ULM <img src="../public/assets/ressources/i.png" width="5%" alt="i" style="margin-left: 2%;">
                         </li>
                         <li class="list-group-item" style="cursor:pointer;" id="i3">Location d’emplacements ULM protégés
                             <img src="../public/assets/ressources/i.png" width="5%" alt="i" style="margin-left: 2%;">
@@ -279,11 +275,9 @@
                 </div>
                 <div class="col-12 col-md-6 m-auto">
                     <ul class="list-group">
-                        <li class="list-group-item" style="cursor:pointer;" id="i4">Hébergement <img
-                                src="../public/assets/ressources/i.png" width="5%" alt="i" style="margin-left: 2%;">
+                        <li class="list-group-item" style="cursor:pointer;" id="i4">Hébergement <img src="../public/assets/ressources/i.png" width="5%" alt="i" style="margin-left: 2%;">
                         </li>
-                        <li class="list-group-item" style="cursor:pointer;" id="i5">Service de restauration <img
-                                src="../public/assets/ressources/i.png" width="5%" alt="i" style="margin-left: 2%;">
+                        <li class="list-group-item" style="cursor:pointer;" id="i5">Service de restauration <img src="../public/assets/ressources/i.png" width="5%" alt="i" style="margin-left: 2%;">
                         </li>
                     </ul>
                 </div>
@@ -340,8 +334,7 @@
     <section name="ULM" id="ULM">
         <div class="m-auto text-center">
             <h1>Les Types d'ULM</h1>
-            <img src="../public/assets/ressources/backgroundTypeDeULM.jpg" alt="" width="80%"
-                style="aspect-ratio: 16/9; object-fit: cover;">
+            <img src="../public/assets/ressources/backgroundTypeDeULM.jpg" alt="" width="80%" style="aspect-ratio: 16/9; object-fit: cover;">
         </div>
         <div>
             <h2 class="text-center"
@@ -536,10 +529,7 @@
                     <div class="card">
                         <div class="card-header">
                             <h3 class="mb-0 ">
-                                <button class="btn btn-link d-flex align-items-center w-100 justify-content-between"
-                                    type="button" data-bs-toggle="collapse" data-bs-target="#infoCollapse1"
-                                    aria-expanded="false" aria-controls="infoCollapse1"
-                                    style="color: black; text-decoration: none;">
+                                <button class="btn btn-link d-flex align-items-center w-100 justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#infoCollapse1" aria-expanded="false" aria-controls="infoCollapse1" style="color: black; text-decoration: none;">
                                     <div>Infos</div>
                                     <div class="fas p-2 text-end">▲</div>
                                 </button>
@@ -560,10 +550,7 @@
                     <div class="card">
                         <div class="card-header">
                             <h3 class="mb-0 d-flex justify-content-between">
-                                <button class="btn btn-link d-flex align-items-center w-100 justify-content-between"
-                                    type="button" data-bs-toggle="collapse" data-bs-target="#contactForm"
-                                    aria-expanded="false" aria-controls="contactForm"
-                                    style="color: black; text-decoration: none;">
+                                <button class="btn btn-link d-flex align-items-center w-100 justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#contactForm" aria-expanded="false" aria-controls="contactForm" style="color: black; text-decoration: none;">
                                     <div>Contactez-nous</div>
                                     <div class="fas p-2 text-end">▲</div>
                                 </button>
@@ -607,7 +594,7 @@
     const nextButton = document.getElementById('next');
     const prevButton = document.getElementById('prev');
 
-    window.onload = function () {
+    window.onload = function() {
         items1[0].classList.add('active');
     }
 
@@ -630,7 +617,7 @@
 <script>
     var coll = document.querySelectorAll(".btn.btn-link");
     coll.forEach((btn) => {
-        btn.addEventListener("click", function () {
+        btn.addEventListener("click", function() {
             var arrowIcon = this.querySelector('.fas');
             arrowIcon.classList.toggle('rotate');
         });
@@ -640,25 +627,25 @@
 <script src="../public/assets/script/api_meteo.js"></script>
 
 <script>
-    document.addEventListener('DOMContentLoaded', function () {
-        var images = ['i1', 'i2', 'i3', 'i4', 'i5'];
-        var texts = {
-            'i1': 'L’entretien des ULM est compris dans le service par défaut de location, lors de la location de ces derniers',
-            'i2': 'Notre équipe s’occupe de tout, et monte votre ULM en amont du vol, afin de bénéficeier d’une expérience avancé',
-            'i3': 'Un service de location d’emplacements sont disponible dans le cas d’une utilisation de votre propre ULM !',
-            'i4': 'Nous avons la possibilité de vous accueillir à proximité de l’aéroclub pour y passez une merveilleuse nuit :',
-            'i5': 'Un service de restauration est proposés tous les week-ends, à un moindre coût et de qualité.'
-        };
+document.addEventListener('DOMContentLoaded', function() {
+    var images = ['i1', 'i2', 'i3', 'i4', 'i5'];
+    var texts = {
+        'i1': 'L’entretien des ULM est compris dans le service par défaut de location, lors de la location de ces derniers',
+        'i2': 'Notre équipe s’occupe de tout, et monte votre ULM en amont du vol, afin de bénéficeier d’une expérience avancé',
+        'i3': 'Un service de location d’emplacements sont disponible dans le cas d’une utilisation de votre propre ULM !',
+        'i4': 'Nous avons la possibilité de vous accueillir à proximité de l’aéroclub pour y passez une merveilleuse nuit :',
+        'i5': 'Un service de restauration est proposés tous les week-ends, à un moindre coût et de qualité.'
+    };
 
-        images.forEach(function (imageId) {
-            var li = document.getElementById(imageId);
+    images.forEach(function(imageId) {
+        var li = document.getElementById(imageId);
 
-            li.addEventListener('click', function (e) {
-                var popup = li.querySelector('div');
-                if (popup) {
-                    li.removeChild(popup);
-                } else {
-                    var popupHTML = `
+        li.addEventListener('click', function(e) {
+            var popup = li.querySelector('div');
+            if (popup) {
+                li.removeChild(popup);
+            } else {
+                var popupHTML = `
                     <div style="
                         position: absolute;
                         left: ${li.offsetLeft}px;
@@ -703,35 +690,34 @@
         return null;
     }
 
-    // Fonction pour afficher le popup de cookies
-    function showCookiePopup() {
-        var cookiePopup = document.createElement('div');
-        cookiePopup.textContent =
-            'Ce site utilise des cookies pour améliorer votre expérience. En continuant à utiliser ce site, vous acceptez leur utilisation.';
-        cookiePopup.style.position = 'fixed';
-        cookiePopup.style.bottom = '0';
-        cookiePopup.style.left = '0';
-        cookiePopup.style.backgroundColor = '#fff';
-        cookiePopup.style.padding = '10px';
-        cookiePopup.style.zIndex = '1000';
-        cookiePopup.style.borderRadius = '10px';
-        document.body.appendChild(cookiePopup);
+// Fonction pour afficher le popup de cookies
+function showCookiePopup() {
+    var cookiePopup = document.createElement('div');
+    cookiePopup.textContent = 'Ce site utilise des cookies pour améliorer votre expérience. En continuant à utiliser ce site, vous acceptez leur utilisation.';
+    cookiePopup.style.position = 'fixed';
+    cookiePopup.style.bottom = '0';
+    cookiePopup.style.left = '0';
+    cookiePopup.style.backgroundColor = '#fff';
+    cookiePopup.style.padding = '10px';
+    cookiePopup.style.zIndex = '1000';
+    cookiePopup.style.borderRadius = '10px';
+    document.body.appendChild(cookiePopup);
 
-        var acceptButton = document.createElement('button');
-        acceptButton.textContent = 'Accepter';
-        acceptButton.onclick = function () {
-            setCookie('cookiesAccepted', 'true', 30);
-            document.body.removeChild(cookiePopup);
-        };
-        cookiePopup.appendChild(acceptButton);
+    var acceptButton = document.createElement('button');
+    acceptButton.textContent = 'Accepter';
+    acceptButton.onclick = function() {
+        setCookie('cookiesAccepted', 'true', 30);
+        document.body.removeChild(cookiePopup);
+    };
+    cookiePopup.appendChild(acceptButton);
+}
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    if (!getCookie('cookiesAccepted')) {
+        showCookiePopup();
     }
-
-
-    document.addEventListener('DOMContentLoaded', function () {
-        if (!getCookie('cookiesAccepted')) {
-            showCookiePopup();
-        }
-    });
+});
 </script>
 
 gffrefr"eferffze
