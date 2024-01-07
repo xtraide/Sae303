@@ -59,45 +59,64 @@
 <div class="d-flex justify-content-center">
     <div id="carouselExampleIndicators" class="carousel slide m-auto d-flex flex-column" data-bs-ride="carousel">
         <div class="carousel-inner">
-            <div class="carousel-item active">
-                <div class="card" style="width: 25rem; height: 200px">
-                    <img src="..." class="card-img-top" alt="..." />
-                    <div class="card-body">
-                        <h5 class="card-title">Card title 1</h5>
-                        <p class="card-text">
-                            Some quick example text to build on the card title and make up
-                            the bulk of the card's content.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="card" style="width: 25rem; height: 200px">
-                    <div class="card-body m-auto text-center">
-                        <h5 class="card-title">
-                            Journée sécurité des vols - GRAND EST
-                        </h5>
-                        <img src="..." class="card-img-top m-auto" alt="..." />
+            <div class="carousel-item active carou-card">
+                <div class="card" style="width: 30rem; height: 400px">
+
+                    <div class="card-body ">
+                        <h5 class="card-title">France Air Expo 2023</h5>
+                        <div class="m-auto text-center">
+                            <img src="../public/assets/ressources/yesiiir.png" width="80%" class="m-auto text-center"
+                                alt="..." />
+                        </div>
                         <div class="d-flex">
-                            <img src="" alt="loc" />
+                            <img src="../public/assets/ressources/loc.png" alt="loc" width="5%" height="5%" />
                             <p>Aéroport de Lyon-Bron - Bron, France</p>
                         </div>
                         <div class="d-flex">
-                            <img src="" alt="heur" />
+                            <img src="../public/assets/ressources/temps.png " alt="heur" width="5%" height="5%" />
                             <p>09:00 AM to 02:00 PM</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="carousel-item">
-                <div class="card" style="width: 25rem; height: 200px">
-                    <img src="..." class="card-img-top" alt="..." />
+            <div class="carousel-item carou-card">
+                <div class="card" style="width: 30rem; height: 400px">
+                    <div class="card-body m-auto text-center">
+                        <h5 class="card-title">
+                            1er Rassemblement ULM des femmes pilotes
+                        </h5>
+                        <div class="m-auto text-center">
+                            <img src="../public/assets/ressources/360_F_159634840_Fa2HPb8ITrbr5gddY2eKlomVfsnu1gx6.png"
+                                alt="..." />
+                        </div>
+                        <div class="d-flex">
+                            <img src="../public/assets/ressources/loc.png" alt="loc" width="5%" height="5%" />
+                            <p>Saint-Martin-de-Castillon</p>
+                        </div>
+                        <div class="d-flex">
+                            <img src="../public/assets/ressources/temps.png" alt="heur" width="5%" height="5%" />
+                            <p>09:00 AM to 06:00 PM </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item carou-card">
+                <div class="card" style="width: 30rem; height: 400px">
+                    <img src="../public/assets/ressources/" class="card-img-top" alt="..." />
                     <div class="card-body">
-                        <h5 class="card-title">Card title 3</h5>
-                        <p class="card-text">
-                            Some quick example text to build on the card title and make up
-                            the bulk of the card's content.
-                        </p>
+                        <h5 class="card-title">Journée sécurité des vols - GRAND EST</h5>
+                        <div class="m-auto text-center">
+                            <img src="../public/assets/ressources/Event1 (1).png" width="80%" alt="..."
+                                class="m-auto text-center" />
+                        </div>
+                        <div class="d-flex">
+                            <img src="../public/assets/ressources/loc.png" alt="loc" width="5%" height="5%" />
+                            <p>Serrouville, France</p>
+                        </div>
+                        <div class="d-flex">
+                            <img src="../public/assets/ressources/temps.png" width="5%" height="5%" alt="heur" />
+                            <p>09:00 AM to 02:00 PM</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -131,8 +150,7 @@
     <section name="activités" class="acti section">
         <h1 class="text-center m-auto mt-3 mb-3 title_h1" style="color: black;">ACTIVITES</h1>
         <div class="m-auto text-center">
-            <img src="../public/assets/ressources/backgroundActivites.jpg" alt="" width="80%"
-                style="aspect-ratio: 16/9; margin: auto; object-fit: cover; object-position: 50% 63%;
+            <img src="../public/assets/ressources/backgroundActivites.jpg" alt="" width="80%" style="aspect-ratio: 16/9; margin: auto; object-fit: cover; object-position: 50% 63%;
                  text-align: center; ">
         </div>
         <h1 class="text-center" style="background-color: white; border-radius: 20px; color: black;
@@ -376,35 +394,165 @@
     </div>
 </section>
 <section name="ULM">
-<div id="carousel1">
-  <div class="carousel-item1 active">Item 1</div>
-  <div class="carousel-item1">Item 2</div>
-  <div class="carousel-item1">Item 3</div>
-  <div class="carousel-item1">Item 4</div>
-  <div class="carousel-item1">Item 5</div>
-  <div class="carousel-item1">Item 6</div>
-</div>
-<button id="prev">Précédent</button>
-<button id="next">Suivant</button>
+    <div id="carousel1">
+        <div class="carousel-item1 active">
+            <div class="m-auto">
+                <img src="../public/assets/ressources/ULM1.png" alt="ULM1" />
+            </div>
+            <div >
+                <h3 class="text-center">Caractéristiques</h3>
+                <div class="d-flex justify-content-center">
+                <div><p>
+                Vitesse max: <br>
+                Capacité: <br>
+                Autonomie: <br>
+                Poids
+                </p></div>
+                <div>
+                <p>
+                        180 km/h <br>
+                        2 personnes <br>
+                        5 heures <br>
+                        400 kg
+                    </p>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item1">
+        <div class="carousel-item1 active">
+            <div class="m-auto">
+                <img src="../public/assets/ressources/ULM1.png" alt="ULM1" />
+            </div>
+            <div >
+                <h3 class="text-center">Caractéristiques</h3>
+                <div class="d-flex justify-content-center">
+                <div><p>
+                Vitesse max: <br>
+                Capacité: <br>
+                Autonomie: <br>
+                Poids
+                </p></div>
+                <div>
+                    <p>
+                        60 km/h <br>
+                        monoplace <br>
+                        3 heures <br>
+                        50 kg
+                    </p>
+                </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="carousel-item1">
+        <div class="carousel-item1 active">
+            <div class="m-auto">
+                <img src="../public/assets/ressources/ULM1.png" alt="ULM1" />
+            </div>
+            <div >
+                <h3 class="text-center">Caractéristiques</h3>
+                <div class="d-flex justify-content-center">
+                <div><p>
+                Vitesse max: <br>
+                Capacité: <br>
+                Autonomie: <br>
+                Poids
+                </p></div>
+                <div>
+                    <p>
+                        150 km/h <br>
+                        2 personnes <br>
+                        4 heures <br>
+                        300 kg
+                    </p>
+                </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="carousel-item1">
+        <div class="carousel-item1 active">
+            <div class="m-auto">
+                <img src="../public/assets/ressources/ULM1.png" alt="ULM1" />
+            </div>
+            <div >
+                <h3 class="text-center">Caractéristiques</h3>
+                <div class="d-flex justify-content-center">
+                <div><p>
+                Vitesse max: <br>
+                Capacité: <br>
+                Autonomie: <br>
+                Poids
+                </p></div>
+                <div>
+                    <p>
+                        130 km/h <br>
+                        2 personnes <br>
+                        4 heures <br>
+                        400 kg
+                    </p>
+                </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="carousel-item1">
+        <div class="carousel-item1 active">
+            <div class="m-auto">
+                <img src="../public/assets/ressources/ULM1.png" alt="ULM1" />
+            </div>
+            <div >
+                <h3 class="text-center">Caractéristiques</h3>
+                <div class="d-flex justify-content-center">
+                <div><p>
+                Vitesse max: <br>
+                Capacité: <br>
+                Autonomie: <br>
+                Poids
+                </p></div>
+                <div>
+                    <p>
+                        130 km/h <br>
+                        monoplace <br>
+                        2 heures <br>
+                        200 kg
+                    </p>
+                </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="carousel-item1">
+        <div class="carousel-item1 active">
+            <div class="m-auto">
+                <img src="../public/assets/ressources/ULM1.png" alt="ULM1" />
+            </div>
+            <div >
+                <h3 class="text-center">Caractéristiques</h3>
+                <div class="d-flex justify-content-center">
+                <div><p>
+                Vitesse max: <br>
+                Capacité: <br>
+                Autonomie: <br>
+                Poids
+                </p></div>
+                <div>
+                    <p>
+                        150 km/h <br>
+                        2 personnes <br>
+                        4 heures <br>
+                        300 kg
+                    </p>
+                </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <button id="prev">Précédent</button>
+    <button id="next">Suivant</button>
 </section>
-<style>
-    #carousel1 {
-  display: flex;
-  overflow: hidden;
-}
-
-.carousel-item1 {
-  flex: 0 0 auto;
-  width: 100%;
-  color: #000;
-  transition: transform 0.5s ease-in-out;
-  display: none;
-}
-
-.carousel-item1.active {
-  display: block;
-}
-</style>
 
 <script>
 let index = 0;
@@ -431,7 +579,7 @@ prevButton.addEventListener('click', () => {
 
 
 
-<!--
+
 <script>
     var coll = document.querySelectorAll(".btn.btn-link");
     coll.forEach((btn) => {

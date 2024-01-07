@@ -324,3 +324,25 @@ section {
   transition: top 0.3s;
   margin-bottom: 50px;
 }
+
+#carousel1 {
+  display: flex;
+  overflow: hidden;
+}
+
+.carousel-item1 {
+  flex: 0 0 auto;
+  width: 100%;
+  color: #000;
+  transition: transform 0.5s ease-in-out;
+  display: none;
+}
+
+.carousel-item1.active {
+  display: block;
+}
+
+.carou-card {
+  width: 100%;
+  height: 400px!important;
+}
