@@ -64,7 +64,7 @@
                     <div class="card" style="width: 30rem; height: 400px">
 
                         <div class="card-body ">
-                            <h5 class="card-title">France Air Expo 2023</h5>
+                            <h5 class="card-title text-center">France Air Expo 2023</h5>
                             <div class="m-auto text-center">
                                 <img src="../public/assets/ressources/yesiiir.png" width="80%" class="m-auto text-center" alt="..." />
                             </div>
@@ -82,7 +82,7 @@
                 <div class="carousel-item carou-card">
                     <div class="card" style="width: 30rem; height: 400px">
                         <div class="card-body m-auto text-center">
-                            <h5 class="card-title">
+                            <h5 class="card-title text-center">
                                 1er Rassemblement ULM des femmes pilotes
                             </h5>
                             <div class="m-auto text-center">
@@ -101,9 +101,8 @@
                 </div>
                 <div class="carousel-item carou-card">
                     <div class="card" style="width: 30rem; height: 400px">
-                        <img src="../public/assets/ressources/" class="card-img-top" alt="..." />
                         <div class="card-body">
-                            <h5 class="card-title">Journée sécurité des vols - GRAND EST</h5>
+                            <h5 class="card-title text-center">Journée sécurité des vols - GRAND EST</h5>
                             <div class="m-auto text-center">
                                 <img src="../public/assets/ressources/Event1 (1).png" width="80%" alt="..." class="m-auto text-center" />
                             </div>
@@ -213,7 +212,7 @@
                                 Maîtrise - pour répondre à vos besoins de formation et d'expérience de vol.</p>
                             <div class="card-footer bg-white border-white rounded
                             d-flex align-items-center justify-content-center w-50">
-                                <a href=" " class="text-center " style="color: black; margin: 0;">EN SAVOIR PLUS</a>
+                                <a href="?page=main.forfait" class="text-center " style="color: black; margin: 0;">EN SAVOIR PLUS</a>
                             </div>
                         </div>
                     </div>
@@ -229,7 +228,7 @@
                                 une progression constante et adaptée à vos objectifs de vol.</p>
                             <div class="card-footer bg-white border-white rounded
                             d-flex align-items-center justify-content-center w-50">
-                                <a href=" " class="text-center " style="color: black; margin: 0;">EN SAVOIR PLUS</a>
+                                <a href="?page=main.forfait" class="text-center " style="color: black; margin: 0;">EN SAVOIR PLUS</a>
                             </div>
                         </div>
                     </div>
