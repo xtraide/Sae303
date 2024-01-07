@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const ville = 'Vesoul'
+    const ville = 'Frotey-lès-Lure'
     const apiUrl = `../app/api/api.php?ville=${ville}`;
     const infoTemperature = document.getElementById('temp-info');
     const infoConditions = document.getElementById('conditions-info');
