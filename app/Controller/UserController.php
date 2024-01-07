@@ -9,17 +9,22 @@ use \App;
 
 class UserController extends AppController
 {
+
+
+
+
     public function login()
     {
         $error = false;
         $form = new BootstrapForm($_POST);
         if (!empty($_POST)) {
             $auth = new DatabaseAuth(App::getInstance()->getDatabase());
+
             if ($auth->login($_POST['email'], $_POST['password'])) {
 
-                header('Location: ?p=main.index');
+                header('Location: ?page=main.index');
             } else {
-                $error = $auth->login($_POST['email'], $_POST['password']);
+                $error = true;
             }
         }
         $this->render('user.login', compact('form', 'error'));
@@ -27,8 +32,9 @@ class UserController extends AppController
 
     public function logout()
     {
-        session_destroy();
-        return $this->login();
+        $auth = new DatabaseAuth(App::getInstance()->getDatabase());
+        $auth->logout();
+        header('Location: ?page=main.index');
     }
 
     public function register()

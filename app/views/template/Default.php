@@ -52,6 +52,7 @@
         <li class="nav-item ">
           <button class="nav-link">ULM</button>
         </li>
+
         <?php if (!$logged) : ?>
           <li class="nav-item d-lg-none">
             <a href="?page=user.login">Connexion</a>
@@ -60,6 +61,12 @@
             <a href="?page=user.register">Inscription</a>
           </li>
         <?php else : ?>
+          <?php if ($admin) : ?>
+
+            <li class="nav-item ">
+              <a class="nav-link " href="?admin.main.index">admin</a>
+            </li>
+          <?php endif ?>
           <li class="nav-item d-lg-none">
             <a href=""><img src="profile.png" alt=""></a>
           </li>
@@ -71,7 +78,14 @@
         <a href="?page=user.login" class="btn my-2 my-sm-0" type="submit">Connexion</a>
         <a href="?page=user.register" class="btn my-2 my-sm-0" type="submit">Inscription</a>
       </div>
+
     <?php else : ?>
+      <?php if ($admin) : ?>
+        <div>
+          <a class="nav-link " href="?admin.main.index">admin</a>
+        </div>
+      <?php endif ?>
+      <a href="?page=user.logout">Deconnecter</a>
       <div>
         <a href=""><img src="profile.png" alt=""></a>
       </div>

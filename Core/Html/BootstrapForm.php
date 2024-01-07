@@ -75,7 +75,7 @@ class BootstrapForm extends Form
      * @param array $options 
      * @return string
      */
-    public function select($name, $options)
+    public function select($name, $label, $options, $class = "")
     {
         $options_html = '';
         foreach ($options as $k => $v) {
@@ -86,7 +86,7 @@ class BootstrapForm extends Form
             $options_html .= "<option value='$k' $selected>$v</option>";
         }
         return $this->surround(
-            '<label>' . $name . '</label><select class="form-control" name="' . $name . '">' . $options_html . '</select>'
+            '<label>' . $label . '</label><select class="form-control ' . $class . '" name="' . $name . '">' . $options_html . '</select>'
         );
     }
 }
