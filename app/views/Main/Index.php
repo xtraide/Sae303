@@ -66,8 +66,7 @@
                         <div class="card-body ">
                             <h5 class="card-title">France Air Expo 2023</h5>
                             <div class="m-auto text-center">
-                                <img src="../public/assets/ressources/yesiiir.png" width="80%"
-                                    class="m-auto text-center" alt="..." />
+                                <img src="../public/assets/ressources/yesiiir.png" width="80%" class="m-auto text-center" alt="..." />
                             </div>
                             <div class="d-flex">
                                 <img src="../public/assets/ressources/loc.png" alt="loc" width="5%" height="5%" />
@@ -87,8 +86,7 @@
                                 1er Rassemblement ULM des femmes pilotes
                             </h5>
                             <div class="m-auto text-center">
-                                <img src="../public/assets/ressources/360_F_159634840_Fa2HPb8ITrbr5gddY2eKlomVfsnu1gx6.png"
-                                    alt="..." />
+                                <img src="../public/assets/ressources/360_F_159634840_Fa2HPb8ITrbr5gddY2eKlomVfsnu1gx6.png" alt="..." />
                             </div>
                             <div class="d-flex">
                                 <img src="../public/assets/ressources/loc.png" alt="loc" width="5%" height="5%" />
@@ -107,8 +105,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Journée sécurité des vols - GRAND EST</h5>
                             <div class="m-auto text-center">
-                                <img src="../public/assets/ressources/Event1 (1).png" width="80%" alt="..."
-                                    class="m-auto text-center" />
+                                <img src="../public/assets/ressources/Event1 (1).png" width="80%" alt="..." class="m-auto text-center" />
                             </div>
                             <div class="d-flex">
                                 <img src="../public/assets/ressources/loc.png" alt="loc" width="5%" height="5%" />
@@ -125,22 +122,19 @@
         </div>
     </div>
     <div class="d-flex justify-content-center">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active m-3"
-            aria-current="true" aria-label="Slide 1" style="
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active m-3" aria-current="true" aria-label="Slide 1" style="
           background-color: black;
           height: 20px;
           width: 20px;
           border-radius: 100%;
         "></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="m-3"
-        aria-label="Slide 2" style="
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="m-3" aria-label="Slide 2" style="
           background-color: black;
           height: 20px;
           width: 20px;
           border-radius: 100%;
         "></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="m-3"
-        aria-label="Slide 3" style="
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="m-3" aria-label="Slide 3" style="
           background-color: black;
           height: 20px;
           width: 20px;
@@ -337,15 +331,13 @@
             <img src="../public/assets/ressources/backgroundTypeDeULM.jpg" alt="" width="80%" style="aspect-ratio: 16/9; object-fit: cover;">
         </div>
         <div>
-            <h2 class="text-center"
-                style="background-color: white; border-radius: 10px; color: black; width:20%; margin:3% auto;">
+            <h2 class="text-center" style="background-color: white; border-radius: 10px; color: black; width:20%; margin:3% auto;">
                 Différents ULM</h2>
         </div>
         <div id="carousel1" style="position: relative;">
             <div class="carousel-item1 active">
                 <div style="position: relative; display: block; text-align: center; margin: auto;">
-                    <img src="../public/assets/ressources/Multiaxes.png" alt="ULM1" width="30%" id="ulm1"
-                        style="margin: auto; display: block;" />
+                    <img src="../public/assets/ressources/Multiaxes.png" alt="ULM1" width="30%" id="ulm1" style="margin: auto; display: block;" />
                     <h3 style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index:4;">
                         Multiaxes</h3>
                 </div>
@@ -373,8 +365,7 @@
             </div>
             <div class="carousel-item1">
                 <div style="position: relative; display: block; text-align: center; margin: auto;">
-                    <img src="../public/assets/ressources/Paramoteur.png" alt="ULM1" width="30%" id="ulm1"
-                        style="margin: auto; display: block;" />
+                    <img src="../public/assets/ressources/Paramoteur.png" alt="ULM1" width="30%" id="ulm1" style="margin: auto; display: block;" />
                     <h3 style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index:4;">
                         Paramoteur</h3>
                 </div>
@@ -402,8 +393,7 @@
             </div>
             <div class="carousel-item1">
                 <div style="position: relative; display: block; text-align: center; margin: auto;">
-                    <img src="../public/assets/ressources/Autogire.png" alt="ULM1" width="30%" id="ulm1"
-                        style="margin: auto; display: block;" />
+                    <img src="../public/assets/ressources/Autogire.png" alt="ULM1" width="30%" id="ulm1" style="margin: auto; display: block;" />
                     <h3 style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index:4;">
                         Autogire Ultraléger</h3>
                 </div>
@@ -431,8 +421,7 @@
             </div>
             <div class="carousel-item1">
                 <div style="position: relative; display: block; text-align: center; margin: auto;">
-                    <img src="../public/assets/ressources/Pendulaire.png" alt="ULM1" width="30%" id="ulm1"
-                        style="margin: auto; display: block;" />
+                    <img src="../public/assets/ressources/Pendulaire.png" alt="ULM1" width="30%" id="ulm1" style="margin: auto; display: block;" />
                     <h3 style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index:4;">
                         Pendulaire</h3>
                 </div>
@@ -460,8 +449,7 @@
             </div>
             <div class="carousel-item1">
                 <div style="position: relative; display: block; text-align: center; margin: auto;">
-                    <img src="../public/assets/ressources/HelicoLeger.png" alt="ULM1" width="30%" id="ulm1"
-                        style="margin: auto; display: block;" />
+                    <img src="../public/assets/ressources/HelicoLeger.png" alt="ULM1" width="30%" id="ulm1" style="margin: auto; display: block;" />
                     <h3 style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index:4;">
                         Hélicoptère Ultraléger</h3>
                 </div>
@@ -489,8 +477,7 @@
             </div>
             <div class="carousel-item1">
                 <div style="position: relative; display: block; text-align: center; margin: auto;">
-                    <img src="../public/assets/ressources/Baloon.png" alt="ULM1" width="30%" id="ulm1"
-                        style="margin: auto; display: block;" />
+                    <img src="../public/assets/ressources/Baloon.png" alt="ULM1" width="30%" id="ulm1" style="margin: auto; display: block;" />
                     <h3 style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index:4;">
                         Aérostat Ultraléger</h3>
                 </div>
@@ -516,10 +503,8 @@
                     </div>
                 </div>
             </div>
-            <button id="prev"
-                style="position: absolute; top: 50%; left: 0; transform: translateY(-50%); z-index:4;">Précédent</button>
-            <button id="next"
-                style="position: absolute; top: 50%; right: 0; transform: translateY(-50%);">Suivant</button>
+            <button id="prev" style="position: absolute; top: 50%; left: 0; transform: translateY(-50%); z-index:4;">Précédent</button>
+            <button id="next" style="position: absolute; top: 50%; right: 0; transform: translateY(-50%);">Suivant</button>
         </div>
     </section>
     <section name="info + contact" style="padding-bottom: 5%;">
@@ -627,25 +612,25 @@
 <script src="../public/assets/script/api_meteo.js"></script>
 
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-    var images = ['i1', 'i2', 'i3', 'i4', 'i5'];
-    var texts = {
-        'i1': 'L’entretien des ULM est compris dans le service par défaut de location, lors de la location de ces derniers',
-        'i2': 'Notre équipe s’occupe de tout, et monte votre ULM en amont du vol, afin de bénéficeier d’une expérience avancé',
-        'i3': 'Un service de location d’emplacements sont disponible dans le cas d’une utilisation de votre propre ULM !',
-        'i4': 'Nous avons la possibilité de vous accueillir à proximité de l’aéroclub pour y passez une merveilleuse nuit :',
-        'i5': 'Un service de restauration est proposés tous les week-ends, à un moindre coût et de qualité.'
-    };
+    document.addEventListener('DOMContentLoaded', function() {
+        var images = ['i1', 'i2', 'i3', 'i4', 'i5'];
+        var texts = {
+            'i1': 'L’entretien des ULM est compris dans le service par défaut de location, lors de la location de ces derniers',
+            'i2': 'Notre équipe s’occupe de tout, et monte votre ULM en amont du vol, afin de bénéficeier d’une expérience avancé',
+            'i3': 'Un service de location d’emplacements sont disponible dans le cas d’une utilisation de votre propre ULM !',
+            'i4': 'Nous avons la possibilité de vous accueillir à proximité de l’aéroclub pour y passez une merveilleuse nuit :',
+            'i5': 'Un service de restauration est proposés tous les week-ends, à un moindre coût et de qualité.'
+        };
 
-    images.forEach(function(imageId) {
-        var li = document.getElementById(imageId);
+        images.forEach(function(imageId) {
+            var li = document.getElementById(imageId);
 
-        li.addEventListener('click', function(e) {
-            var popup = li.querySelector('div');
-            if (popup) {
-                li.removeChild(popup);
-            } else {
-                var popupHTML = `
+            li.addEventListener('click', function(e) {
+                var popup = li.querySelector('div');
+                if (popup) {
+                    li.removeChild(popup);
+                } else {
+                    var popupHTML = `
                     <div style="
                         position: absolute;
                         left: ${li.offsetLeft}px;
@@ -690,32 +675,32 @@ document.addEventListener('DOMContentLoaded', function() {
         return null;
     }
 
-// Fonction pour afficher le popup de cookies
-function showCookiePopup() {
-    var cookiePopup = document.createElement('div');
-    cookiePopup.textContent = 'Ce site utilise des cookies pour améliorer votre expérience. En continuant à utiliser ce site, vous acceptez leur utilisation.';
-    cookiePopup.style.position = 'fixed';
-    cookiePopup.style.bottom = '0';
-    cookiePopup.style.left = '0';
-    cookiePopup.style.backgroundColor = '#fff';
-    cookiePopup.style.padding = '10px';
-    cookiePopup.style.zIndex = '1000';
-    cookiePopup.style.borderRadius = '10px';
-    document.body.appendChild(cookiePopup);
+    // Fonction pour afficher le popup de cookies
+    function showCookiePopup() {
+        var cookiePopup = document.createElement('div');
+        cookiePopup.textContent = 'Ce site utilise des cookies pour améliorer votre expérience. En continuant à utiliser ce site, vous acceptez leur utilisation.';
+        cookiePopup.style.position = 'fixed';
+        cookiePopup.style.bottom = '0';
+        cookiePopup.style.left = '0';
+        cookiePopup.style.backgroundColor = '#fff';
+        cookiePopup.style.padding = '10px';
+        cookiePopup.style.zIndex = '1000';
+        cookiePopup.style.borderRadius = '10px';
+        document.body.appendChild(cookiePopup);
 
-    var acceptButton = document.createElement('button');
-    acceptButton.textContent = 'Accepter';
-    acceptButton.onclick = function() {
-        setCookie('cookiesAccepted', 'true', 30);
-        document.body.removeChild(cookiePopup);
-    };
-    cookiePopup.appendChild(acceptButton);
-}
-
-
-document.addEventListener('DOMContentLoaded', function() {
-    if (!getCookie('cookiesAccepted')) {
-        showCookiePopup();
+        var acceptButton = document.createElement('button');
+        acceptButton.textContent = 'Accepter';
+        acceptButton.onclick = function() {
+            setCookie('cookiesAccepted', 'true', 30);
+            document.body.removeChild(cookiePopup);
+        };
+        cookiePopup.appendChild(acceptButton);
     }
-});
+
+
+    document.addEventListener('DOMContentLoaded', function() {
+        if (!getCookie('cookiesAccepted')) {
+            showCookiePopup();
+        }
+    });
 </script>

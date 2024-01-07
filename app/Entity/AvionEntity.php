@@ -14,4 +14,8 @@ class AvionEntity extends Entity
 {
     public $id;
     public $modele;
+    public $v_max;
+    public $capacite;
+    public $autonomie;
+    public $poid;
 }
