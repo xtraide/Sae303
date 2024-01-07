@@ -27,11 +27,19 @@ body {
 }
 
 #icones .card {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
   width: 235px;
   border-radius: 40px;
-
+  border: none !important;
   text-align: center;
+}
+
+#icones>.card>h1 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
+}
+
+#icones>.card>div>p {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
 }
 
 #personnage {
