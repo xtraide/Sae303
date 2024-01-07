@@ -401,14 +401,14 @@ section {
   border-radius: 20px;
 }
 
-.icones_aerodrome{
+.icones_aerodrome {
   width: 50px;
   height: 50px;
   margin-top: auto;
   margin-bottom: auto;
 }
 
-.plan{
+.plan {
   border-radius: 20%;
   margin-top: auto;
   margin-bottom: auto;
@@ -463,8 +463,8 @@ section {
   margin-bottom: 20%;
 }
 
-.gallerie img{
-  width:300px;
+.gallerie img {
+  width: 300px;
   height: auto;
 }
 
@@ -472,4 +472,192 @@ section {
   content: '\00B2';
   vertical-align: super;
   font-size: smaller;
+}
+
+#main_Antoine_User {
+  display: flex;
+  gap: 3rem;
+  flex-direction: column;
+}
+
+#main_Antoine_User #h1-Antoine {
+  margin: auto;
+  text-align: center;
+}
+
+#main_Antoine_User #h2-Antoine {
+  color: white;
+}
+
+#main_Antoine_User #greatRectangle-Antoine {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+#main_Antoine_User #greatRectangle-Antoine #rectangle-Antoine {
+  background-color: rgba(0, 0, 0, 0.6);
+  max-width: 50rem;
+  height: 41rem;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+#main_Antoine_User #rectangle-Antoine table {
+  border-radius: 20px;
+  padding: 10px;
+  border-collapse: separate;
+  border-spacing: 10px;
+  max-width: 800px;
+  width: 100%;
+}
+
+#main_Antoine_Main #main-Antoine {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+#main_Antoine_Main #greatRectangle-Antoine {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+#main_Antoine_Main #rectangle-Antoine {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 30rem;
+  height: 30rem;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#main_Antoine_Main #reservation,
+#main_Antoine_Main #adherent,
+#main_Antoine_Main #autres {
+  height: 10rem;
+  width: 10rem;
+  background-color: rgba(119, 137, 146, 0.5);
+  border-radius: 0.5rem;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#main_Antoine_Main #reservation:hover,
+#main_Antoine_Main #adherent:hover,
+#main_Antoine_Main #autres:hover {
+  box-shadow: -1px 5px 12px 0pc black;
+  transition: all ease-in-out 0.15s;
+}
+
+#main_Antoine_Main img {
+  width: 5rem;
+  margin: auto;
+}
+
+#main_Antoine_Main #h3-Antoine,
+#main_Antoine_Main #h1-Antoine {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  margin: auto;
+}
+
+#main_Antoine_Main #h1-Antoine {
+  gap: 1rem;
+}
+
+#main_Antoine_Reservation #main-Antoine {
+  display: flex;
+  gap: 3rem;
+  flex-direction: column;
+}
+
+#main_Antoine_Reservation #h1-Antoine {
+  margin: auto;
+  text-align: center;
+}
+
+#main_Antoine_Reservation #h2-Antoine {
+  color: white;
+}
+
+#main_Antoine_Reservation #greatRectangle-Antoine {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+#main_Antoine_Reservation #greatRectangle-Antoine #rectangle-Antoine {
+  background-color: rgba(0, 0, 0, 0.6);
+  max-width: 50rem;
+  height: 41rem;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+#main_Antoine_Reservation #rectangle-Antoine table {
+  border-radius: 20px;
+  padding: 10px;
+  border-collapse: separate;
+  border-spacing: 10px;
+  max-width: 800px;
+  width: 100%;
+}
+
+#main_Antoine_Reservation #rectangle-Antoine td {
+  background-color: rgba(119, 137, 146, 0.5);
+  border-radius: 0.25rem;
+  width: 5rem;
+  height: 3.5rem;
+  text-align: center;
+  vertical-align: middle;
+  color: white;
+  font-size: 1.1rem;
+}
+
+#main_Antoine_Reservation #rectangle-Antoine input {
+  background-color: rgba(119, 137, 146, 0);
+  border-radius: 0.25rem;
+  width: 93%;
+  height: 100%;
+  text-align: center;
+  vertical-align: middle;
+  color: white;
+  font-size: 0.9rem;
+  border: none;
+}
+
+#main_Antoine_Reservation #rectangle-Antoine td:hover {
+  box-shadow: 5px 5px 10px #0d0d0d,
+    -5px -5px 10px #393939;
+  transition: 0.3s;
+}
+
+#main_Antoine_Reservation #rectangle-Antoine .tabLine-Antoine {
+  background-color: rgba(119, 137, 146, 0.25);
+}
+
+#main_Antoine_Reservation #rectangle-Antoine .tabLine-Antoine:hover {
+  box-shadow: none;
+}
+
+#main_Antoine_Reservation #rectangle-Antoine #off {
+  visibility: hidden;
 }

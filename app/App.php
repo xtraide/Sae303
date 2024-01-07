@@ -60,7 +60,8 @@ class App
                 $config->get('DB_NAME'),
                 $config->get('DB_USER'),
                 $config->get('DB_PASS'),
-                $config->get('DB_HOST')
+                $config->get('DB_HOST'),
+                $config->get('DB_PREFIX')
             );
         }
         return $this->database;
