@@ -12,4 +12,6 @@ use Core\Entity\Entity;
 
 class AvionEntity extends Entity
 {
+    public $id;
+    public $modele;
 }

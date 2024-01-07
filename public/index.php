@@ -22,5 +22,7 @@ if ($page[0] == 'admin') {
     $controller = '\App\Controller\\' . ucfirst($page[0]) . 'Controller';
     $action = $page[1];
 }
+
 $controller = new $controller();
+
 $controller->$action();

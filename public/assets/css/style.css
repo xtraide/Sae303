@@ -7,11 +7,12 @@
 @font-face {
   font-family: quicksand;
   src: url(../quickravageregular-x31g8.otf);
-  }
-  @font-face {
-    font-family: baloo;
-    src: url(../Baloo2-VariableFont_wght.ttf);
-    }
+}
+
+@font-face {
+  font-family: baloo;
+  src: url(../Baloo2-VariableFont_wght.ttf);
+}
 
 :root {
   --translateZ: 360px;
@@ -19,37 +20,40 @@
 }
 
 body {
+
   font-family: Arial, sans-serif;
   width: 100%;
+  color: white;
 }
 
 #icones .card {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  width: 235px; 
-  border-radius: 40px; 
+  width: 235px;
+  border-radius: 40px;
 
   text-align: center;
 }
 
-#personnage{
+#personnage {
   background-color: black;
 }
 
-#personnage .card{
+#personnage .card {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  width: 400px; 
+  width: 400px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   text-align: center;
 }
 
-#personnage .card img{
+#personnage .card img {
   opacity: 0.8;
 }
 
 .descri-info {
   margin-top: 20px;
 }
-.weather-icon img{
+
+.weather-icon img {
   width: 70px;
 }
 
@@ -57,51 +61,63 @@ body {
   margin-top: 40px;
 }
 
-.back_input{
+.back_input {
   background-color: #556672;
 }
 
 /* login/signin */
 
-.nav-element{
-background: rgba(255, 255, 255, 0.41);
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(6.8px);
-border: 1px solid rgba(255, 255, 255, 0.18);
-border-radius: 20px;
+.nav-element {
+  background: rgba(255, 255, 255, 0.41);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.8px);
+  filter: blur(0.5px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 20px;
 }
 
-nav{
-font-family: quicksand;
-font-size: 2rem;
-background: rgba(255, 255, 255, 0.1);
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(7.1px);
--webkit-backdrop-filter: blur(7.1px);
-border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+nav {
+
 }
 
-
-.nav-element > div > a{
-text-decoration: none;
-color: black;
-text-align: center;
+#mynavbar {
+  width: 50% !important;
 }
 
-.nav-element > div > a:hover{
-color: rgba(0, 0, 0, 0.5);
+.nav-element>li>a {
+  text-decoration: none;
+  color: black !important;
+  text-align: center;
+  font-size: 2rem;
+  padding: 0.75rem;
 }
 
-h2{
+.nav-element>a {
+  margin: auto;
+  text-decoration: none;
+  color: black !important;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.nav-element>li>a:hover {
+  color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.nav-element>li>button:hover {
+  color: rgba(0, 0, 0, 0.5) !important;
+}
+
+h2 {
   text-align: center;
 }
 
-.container-card{
+.container-card {
   margin: auto;
   padding-top: 47%;
 }
 
-.decouvrer{
+.decouvrer {
   font-family: quicksand;
   font-size: 2rem;
   color: white;
@@ -110,11 +126,12 @@ h2{
   background-color: black;
   border-radius: 20px;
 }
-.decouvrer:hover{
+
+.decouvrer:hover {
   border: solid white 2px;
 }
 
-#Q{
+#Q {
   font-family: quicksand;
   font-size: 3.5rem;
   color: white;
@@ -123,25 +140,23 @@ h2{
   border-radius: 20px;
 }
 
-.cursor-classic{
+.cursor-classic {
   cursor: default;
 }
 
-.ml-2, .mr-2   {
+.ml-2,
+.mr-2 {
   margin-left: 1em;
   margin-right: 1em;
 }
 
-body{
-  background-color: #ff0000;
-}
 
-.container-fluid{
+.container-fluid {
   width: 100%;
   height: 100%;
 }
 
-#txt{
+#txt {
   font-family: quicksand;
   font-size: 3rem;
   color: black;
@@ -152,7 +167,7 @@ body{
   z-index: 900;
 }
 
-#smoke{
+#smoke {
   width: 100%;
   position: absolute;
   margin-top: -600px;
@@ -196,40 +211,39 @@ body{
 
 .fondu {
   background: rgb(118, 136, 145);
-  background: linear-gradient(
-    180deg,
-    rgba(118, 136, 145, 1) 0%,
-    rgba(53, 69, 82, 1) 100%
-  );
+  background: linear-gradient(180deg,
+      rgba(118, 136, 145, 1) 0%,
+      rgba(53, 69, 82, 1) 100%);
 }
+
 .acti {
   color: white;
 }
-.acti > div > div > div > div > div {
+
+.acti>div>div>div>div>div {
   color: white;
   background-color: #556672;
   border-radius: 20px;
 }
 
-.acti > div > div > div > div {
+.acti>div>div>div>div {
   background: none;
   border: none;
 }
-body {
-  color: white;
-}
+
 section {
   color: white;
 }
-.list-group > li {
+
+.list-group>li {
   background: none;
   border: none;
   color: white;
   font-size: 1.2rem;
 }
 
-.list-group{
-margin: auto;
+.list-group {
+  margin: auto;
 }
 
 .section {
@@ -240,4 +254,73 @@ margin: auto;
 
 .card-body {
   margin: 2% auto 2% auto;
+}
+
+.title_h1 {
+  font-family: quicksand;
+  font-size: 3rem;
+  color: black;
+  text-align: center;
+  margin-top: 10%;
+
+}
+#logo{
+  padding: 0;
+}
+.title_h2 {
+  font-family: quicksand;
+  font-size: 2rem;
+  color: black;
+  text-align: center;
+  margin-top: 10%;
+}
+
+.title_h5 {
+  font-family: quicksand;
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+  margin-top: 1%;
+}
+.navbar a.icon {
+  display: none;
+  /* cache l'icône par défaut */
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: quicksand;
+  font-size: 2rem;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.1px);
+  -webkit-backdrop-filter: blur(7.1px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+
+
+.navbar a.icon {
+  display: none;
+}
+
+#card-price > div > div > div > p {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.checkbox {
+  margin-left: 10px!important;
+  margin-top: 5px!important;
+}
+
+.navbar12 {
+  z-index: 1000;
+  background-color: #333;
+  color: white;
+  position: fixed;
+  top: -260px;
+  width: 100%;
+  transition: top 0.3s;
+  margin-bottom: 50px;
 }

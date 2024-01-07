@@ -10,6 +10,7 @@ namespace App\Entity;
 
 use Core\Entity\Entity;
 
+
 class AdherentEntity extends Entity
 {
 
@@ -20,9 +21,5 @@ class AdherentEntity extends Entity
     public function getUrl()
     {
         return "index.php?page=Adherent&id=" . $this->id;
-    }
-    public function tamer()
-    {
-        return "ARNOOOOOOOOOOOOOO";
     }
 }

@@ -19,8 +19,8 @@ class UserController extends AppController
             } else {
                 $error = true;
             }
-            $this->render('user.login', compact('form', 'error'));
         }
+        $this->render('user.login', compact('form', 'error'));
     }
 
     public function logout()
@@ -31,6 +31,7 @@ class UserController extends AppController
 
     public function register()
     {
+        $error = false;
         $form = new BootstrapForm($_POST);
         if (!empty($_POST)) {
             $auth = new DatabaseAuth(App::getInstance()->getDatabase());
@@ -39,7 +40,13 @@ class UserController extends AppController
             } else {
                 $error = true;
             }
-            $this->render('user.register', compact('form', 'error'));
         }
+        $this->render('user.register', compact('form', 'error'));
+    }
+    public function profil()
+    {
+        $form = new BootstrapForm($_POST);
+
+        $this->render('user.profil',  compact('form'));
     }
 }
