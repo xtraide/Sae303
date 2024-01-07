@@ -6,11 +6,10 @@
 
     <form action="#" method="post" class="w-50 m-auto mb-3">
         <?php if (!empty($error)) : ?>
-            <div class="alert alert-danger">
-                <?= $error ?>
-            </div>
+        <div class="alert alert-danger">
+            <?= $error ?>
+        </div>
         <?php endif; ?>
-        <h1 class="text-center">Login</h1>
         <div class="form-group w-100 m-auto label-log">
             <?= $form->input('email', "Adresse email", ['class' => 'form-control w-100', 'id' => 'email']); ?>
         </div>
