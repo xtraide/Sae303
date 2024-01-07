@@ -662,10 +662,11 @@
         cookiePopup.textContent = 'Ce site utilise des cookies pour améliorer votre expérience. En continuant à utiliser ce site, vous acceptez leur utilisation.';
         cookiePopup.style.position = 'fixed';
         cookiePopup.style.bottom = '0';
-        cookiePopup.style.left = '50%';
-        cookiePopup.style.backgroundColor = '#ccc';
+        cookiePopup.style.left = '0';
+        cookiePopup.style.backgroundColor = '#fff';
         cookiePopup.style.padding = '10px';
         cookiePopup.style.zIndex = '1000';
+        cookiePopup.style.borderRadius = '10px';
         document.body.appendChild(cookiePopup);
 
         var acceptButton = document.createElement('button');
@@ -676,6 +677,13 @@
         };
         cookiePopup.appendChild(acceptButton);
     }
+
+
+    document.addEventListener('DOMContentLoaded', function() {
+        if (!getCookie('cookiesAccepted')) {
+            showCookiePopup();
+        }
+    });
 
     // Afficher le popup de cookies lors du premier chargement de la page
     document.addEventListener('DOMContentLoaded', function() {
