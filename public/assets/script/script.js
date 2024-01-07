@@ -73,3 +73,4 @@ prevButton.addEventListener('click', () => {
   index = (index - 1 + items1.length) % items1.length;
   items1[index].classList.add('active');
 });
+

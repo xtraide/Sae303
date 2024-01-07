@@ -26,7 +26,7 @@
   <title><?= App::getInstance()->title ?></title>
 </head>
 <header>
-  <nav class="navbar navbar-expand-lg navbar-light position-absolute top-0 w-100 p-1">
+  <nav class="navbar navbar-expand-lg navbar-light position-fixed top-0 w-100 p-1 " id="navb12" style="z-index: 10000;">
     <a class="navbar-brand" href="#" id="logo">
       <svg width="auto" height="70" viewBox="0 0 149 109" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <rect width="149" height="108.354" fill="url(#pattern0)" />

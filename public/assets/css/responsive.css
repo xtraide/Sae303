@@ -1,34 +1,36 @@
 @media (max-width: 890px) {
-    :root {
-        --translateZ: 290px!important;
-        --faceWidth: 150px!important;
-      }
+  :root {
+    --translateZ: 290px !important;
+    --faceWidth: 150px !important;
+  }
 
-      .carousel_scene{
-        width: 150px!important;
+  .carousel_scene {
+    width: 150px !important;
 
-      }
-      .face{
-        height: 100px!important;
-      }
+  }
+
+  .face {
+    height: 100px !important;
+  }
 }
 
 
 
 @media (max-width: 645px) {
-    :root {
-        --translateZ: 194px!important;
-        --faceWidth: 100px!important;
-      }
-      .carousel_scene{
-        width: 100px!important;
+  :root {
+    --translateZ: 194px !important;
+    --faceWidth: 100px !important;
+  }
 
-      }
+  .carousel_scene {
+    width: 100px !important;
 
-      .face{
-        border: 2px solid!important;
-        height: 67px!important;
-      }
+  }
+
+  .face {
+    border: 2px solid !important;
+    height: 67px !important;
+  }
 }
 
 
@@ -61,17 +63,21 @@
   }
 
 }
+
 @media screen and (max-width: 990px) {
-  #navbarNav{
+  #navbarNav {
     background-color: white;
     z-index: 1000;
   }
+
   .nav-element>li>a {
-font-size: 1rem;
-padding: 0.5rem!important;
+    font-size: 1rem;
+    padding: 0.5rem !important;
+    text-align: left !important;
   }
+
   .nav-element>li>button {
     font-size: 1rem;
     padding: 0.5rem;
-      }
+  }
 }
