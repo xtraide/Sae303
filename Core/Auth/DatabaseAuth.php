@@ -21,6 +21,7 @@ class DatabaseAuth
         }
         return false;
     }
+
     /**
      * verifie si l'utilisateur est connecte
      * @param string $email 
@@ -32,7 +33,7 @@ class DatabaseAuth
         $user = $this->db->prepare('SELECT * FROM ' . self::$prefix . 'user WHERE email = ?', [$email], null, true);
         if ($user) {
             var_dump($user);
-            if ($user->password === sha1($password)) {
+            if ($user->password === $password) {
                 $_SESSION['auth'] = $user->id;
                 return true;
             }
@@ -57,5 +58,16 @@ class DatabaseAuth
         } else {
             return false;
         }
+    }
+    public function isAdmin()
+    {
+        if ($this->logged()) {
+
+            $user = $this->db->prepare('SELECT role FROM ' . self::$prefix . 'user WHERE id = ?', [$_SESSION['auth']], null, true);
+            if ($user->role == "admin") {
+                return true;
+            }
+        }
+        return false;
     }
 }

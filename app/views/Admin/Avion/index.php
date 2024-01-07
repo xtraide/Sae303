@@ -8,7 +8,7 @@
         </tr>
     </thead>
     <tbody>
-        <?php foreach ($avions as $plane) { ?>
+        <?php foreach ($avions as $plane) : ?>
             <tr>
                 <td><?= $plane->modele ?></td>
                 <td>
@@ -21,6 +21,6 @@
                 </td>
 
             </tr>
-        <?php } ?>
+        <?php endforeach; ?>
     </tbody>
 </table>

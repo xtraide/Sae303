@@ -6,6 +6,7 @@ use Core\HTML\BootstrapForm;
 
 class MainController extends AppController
 {
+    protected $Avion;
     public function __construct()
     {
         parent::__construct();

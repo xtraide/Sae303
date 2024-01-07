@@ -1,9 +1,17 @@
 <?php
+
+use Core\Auth\DatabaseAuth;
+use Core\Router\Router;
+
 define("ROOT", dirname(__DIR__));
 
 require ROOT . '/App/App.php';
 
 App::Load();
+$db = App::getInstance()->getDatabase(); // Get the database
+$dbAuth = new DatabaseAuth($db); // Instantiate DatabaseAuth
+
+$router = new Router($dbAuth); // Pass DatabaseAuth to the router
 
 if (isset($_GET['page'])) {
     $page = $_GET['page'];
@@ -11,18 +19,4 @@ if (isset($_GET['page'])) {
     $page = "main.index";
 }
 
-
-
-
-$page = explode('.', $page);
-if ($page[0] == 'admin') {
-    $controller = '\App\Controller\Admin\\' . ucfirst($page[1]) . 'Controller';
-    $action = $page[2];
-} else {
-    $controller = '\App\Controller\\' . ucfirst($page[0]) . 'Controller';
-    $action = $page[1];
-}
-
-$controller = new $controller();
-
-$controller->$action();
+$router->route($page); // Use the router to route the request

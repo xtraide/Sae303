@@ -1,8 +1,7 @@
 <section class="container-fluid w-100" style="background-image: url('../public/assets/ressources/BackgroundAcceuil.png'); 
            background-size: cover; 
            background-position: center">
-    <div id="icones" class="container-card d-flex justify-content-evenly align-content-center"
-        style="padding-top: 50%; padding-bottom: 30%;">
+    <div id="icones" class="container-card d-flex justify-content-evenly align-content-center" style="padding-top: 50%; padding-bottom: 30%;">
         <div id="card_1" class="card p-3" style="background-color: rgba(255, 255, 255, 0.5);">
             <h2>L'AERODROME</h2>
             <img src="../public/assets/ressources/AppOne.png" alt="icone_piste" class="pt-1" />
@@ -19,8 +18,8 @@
             <button onclick="aerodrome()" class="decouvrer" class="pb-3">Découvrez</button>
         </div>
     </div>
-    <div class="container w-50 p-2">
-        <p id="txt">Qui sommes nous ?</p>
+    <div class="container w-50 p-2 z-0">
+        <p id="txt" class="z-0">Qui sommes nous ?</p>
     </div>
     <!--
         <img src="../public/assets/ressources/BlackSmokeEnBasDesPersonnages.png" alt="black_smoke1" id="smoke">
@@ -29,8 +28,7 @@
 </section>
 <section>
 
-    <div id="personnage" class="d-flex justify-content-evenly align-content-center"
-        style="padding-top: 20%; padding-bottom: 30%;">
+    <div id="personnage" class="d-flex justify-content-evenly align-content-center" style="padding-top: 20%; padding-bottom: 30%;">
         <div id="card_1" class="card p-1">
             <h3>Kevin SATOUT</h3>
             <img src="../public/assets/ressources/ChefPilote.png" alt="chef_pilote" class="pt-1" />
@@ -65,8 +63,7 @@
                     <div class="card-body ">
                         <h5 class="card-title">France Air Expo 2023</h5>
                         <div class="m-auto text-center">
-                            <img src="../public/assets/ressources/yesiiir.png" width="80%" class="m-auto text-center"
-                                alt="..." />
+                            <img src="../public/assets/ressources/yesiiir.png" width="80%" class="m-auto text-center" alt="..." />
                         </div>
                         <div class="d-flex">
                             <img src="../public/assets/ressources/loc.png" alt="loc" width="5%" height="5%" />
@@ -86,8 +83,7 @@
                             1er Rassemblement ULM des femmes pilotes
                         </h5>
                         <div class="m-auto text-center">
-                            <img src="../public/assets/ressources/360_F_159634840_Fa2HPb8ITrbr5gddY2eKlomVfsnu1gx6.png"
-                                alt="..." />
+                            <img src="../public/assets/ressources/360_F_159634840_Fa2HPb8ITrbr5gddY2eKlomVfsnu1gx6.png" alt="..." />
                         </div>
                         <div class="d-flex">
                             <img src="../public/assets/ressources/loc.png" alt="loc" width="5%" height="5%" />
@@ -106,8 +102,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Journée sécurité des vols - GRAND EST</h5>
                         <div class="m-auto text-center">
-                            <img src="../public/assets/ressources/Event1 (1).png" width="80%" alt="..."
-                                class="m-auto text-center" />
+                            <img src="../public/assets/ressources/Event1 (1).png" width="80%" alt="..." class="m-auto text-center" />
                         </div>
                         <div class="d-flex">
                             <img src="../public/assets/ressources/loc.png" alt="loc" width="5%" height="5%" />
@@ -124,22 +119,19 @@
     </div>
 </div>
 <div class="d-flex justify-content-center">
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active m-3"
-        aria-current="true" aria-label="Slide 1" style="
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active m-3" aria-current="true" aria-label="Slide 1" style="
           background-color: black;
           height: 20px;
           width: 20px;
           border-radius: 100%;
         "></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="m-3"
-        aria-label="Slide 2" style="
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="m-3" aria-label="Slide 2" style="
           background-color: black;
           height: 20px;
           width: 20px;
           border-radius: 100%;
         "></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="m-3"
-        aria-label="Slide 3" style="
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="m-3" aria-label="Slide 3" style="
           background-color: black;
           height: 20px;
           width: 20px;
@@ -147,7 +139,7 @@
         "></button>
 </div>
 <div class="fondu">
-    <section name="activités" class="acti section">
+    <section name="activités" class="acti section" id="Activités">
         <h1 class="text-center m-auto mt-3 mb-3 title_h1" style="color: black;">ACTIVITES</h1>
         <div class="m-auto text-center">
             <img src="../public/assets/ressources/backgroundActivites.jpg" alt="" width="80%" style="aspect-ratio: 16/9; margin: auto; object-fit: cover; object-position: 50% 63%;
@@ -263,15 +255,21 @@
             <div class="row m-auto">
                 <div class="col-12 col-md-6">
                     <ul class="list-group">
-                        <li class="list-group-item">Maintenance des ULM</li>
-                        <li class="list-group-item">Montage des ULM</li>
-                        <li class="list-group-item">Location d’emplacements ULM protégés</li>
+                        <li class="list-group-item" style="cursor:pointer;" id="i1">Maintenance des ULM <img src="../public/assets/ressources/i.png" width="5%" alt="i" style="margin-left: 2%;">
+                        </li>
+                        <li class="list-group-item" style="cursor:pointer;" id="i2">Montage des ULM <img src="../public/assets/ressources/i.png" width="5%" alt="i" style="margin-left: 2%;">
+                        </li>
+                        <li class="list-group-item" style="cursor:pointer;" id="i3">Location d’emplacements ULM protégés
+                            <img src="../public/assets/ressources/i.png" width="5%" alt="i" style="margin-left: 2%;">
+                        </li>
                     </ul>
                 </div>
                 <div class="col-12 col-md-6 m-auto">
                     <ul class="list-group">
-                        <li class="list-group-item">Hébergement</li>
-                        <li class="list-group-item">Service de restauration</li>
+                        <li class="list-group-item" style="cursor:pointer;" id="i4">Hébergement <img src="../public/assets/ressources/i.png" width="5%" alt="i" style="margin-left: 2%;">
+                        </li>
+                        <li class="list-group-item" style="cursor:pointer;" id="i5">Service de restauration <img src="../public/assets/ressources/i.png" width="5%" alt="i" style="margin-left: 2%;">
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -322,259 +320,261 @@
             </div>
         </div>
     </section>
+
+
+    <section name="ULM" id="ULM">
+        <div class="m-auto text-center">
+            <h1>Les Types d'ULM</h1>
+            <img src="../public/assets/ressources/backgroundTypeDeULM.jpg" alt="" width="80%" style="aspect-ratio: 16/9; object-fit: cover;">
+        </div>
+        <div id="carousel1">
+            <div class="carousel-item1 active">
+                <div class="m-auto text-center">
+                    <img src="../public/assets/ressources/ULM1.png" alt="ULM1" />
+                </div>
+                <div>
+                    <h3 class="text-center">Caractéristiques</h3>
+                    <div class="d-flex justify-content-center">
+                        <div>
+                            <p>
+                                Vitesse max: <br>
+                                Capacité: <br>
+                                Autonomie: <br>
+                                Poids
+                            </p>
+                        </div>
+                        <div>
+                            <p>
+                                180 km/h <br>
+                                2 personnes <br>
+                                5 heures <br>
+                                400 kg
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item1">
+                <div class="m-auto text-center">
+                    <img src="../public/assets/ressources/ULM1.png" alt="ULM1" />
+                </div>
+                <div>
+                    <h3 class="text-center">Caractéristiques</h3>
+                    <div class="d-flex justify-content-center">
+                        <div>
+                            <p>
+                                Vitesse max: <br>
+                                Capacité: <br>
+                                Autonomie: <br>
+                                Poids
+                            </p>
+                        </div>
+                        <div>
+                            <p>
+                                60 km/h <br>
+                                monoplace <br>
+                                3 heures <br>
+                                50 kg
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item1">
+                <div class="m-auto text-center">
+                    <img src="../public/assets/ressources/ULM1.png" alt="ULM1" />
+                </div>
+                <div>
+                    <h3 class="text-center">Caractéristiques</h3>
+                    <div class="d-flex justify-content-center">
+                        <div>
+                            <p>
+                                Vitesse max: <br>
+                                Capacité: <br>
+                                Autonomie: <br>
+                                Poids
+                            </p>
+                        </div>
+                        <div>
+                            <p>
+                                150 km/h <br>
+                                2 personnes <br>
+                                4 heures <br>
+                                300 kg
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item1">
+                <div class="m-auto text-center">
+                    <img src="../public/assets/ressources/ULM1.png" alt="ULM1" />
+                </div>
+                <div>
+                    <h3 class="text-center">Caractéristiques</h3>
+                    <div class="d-flex justify-content-center">
+                        <div>
+                            <p>
+                                Vitesse max: <br>
+                                Capacité: <br>
+                                Autonomie: <br>
+                                Poids
+                            </p>
+                        </div>
+                        <div>
+                            <p>
+                                130 km/h <br>
+                                2 personnes <br>
+                                4 heures <br>
+                                400 kg
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item1">
+                <div class="m-auto text-center">
+                    <img src="../public/assets/ressources/ULM1.png" alt="ULM1" />
+                </div>
+                <div>
+                    <h3 class="text-center">Caractéristiques</h3>
+                    <div class="d-flex justify-content-center">
+                        <div>
+                            <p>
+                                Vitesse max: <br>
+                                Capacité: <br>
+                                Autonomie: <br>
+                                Poids
+                            </p>
+                        </div>
+                        <div>
+                            <p>
+                                130 km/h <br>
+                                monoplace <br>
+                                2 heures <br>
+                                200 kg
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item1">
+                <div class="m-auto text-center">
+                    <img src="../public/assets/ressources/ULM1.png" alt="ULM1" />
+                </div>
+                <div>
+                    <h3 class="text-center">Caractéristiques</h3>
+                    <div class="d-flex justify-content-center">
+                        <div>
+                            <p>
+                                Vitesse max: <br>
+                                Capacité: <br>
+                                Autonomie: <br>
+                                Poids
+                            </p>
+                        </div>
+                        <div>
+                            <p>
+                                150 km/h <br>
+                                2 personnes <br>
+                                4 heures <br>
+                                300 kg
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button id="prev">Précédent</button>
+        <button id="next">Suivant</button>
+    </section>
+    <section name="info + contact" style="padding-bottom: 5%;">
+        <div class="container mt-5">
+            <div class="row d-flex justify-content-around">
+                <div class="col-12 col-md-5">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="mb-0 ">
+                                <button class="btn btn-link d-flex align-items-center w-100 justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#infoCollapse1" aria-expanded="false" aria-controls="infoCollapse1" style="color: black; text-decoration: none;">
+                                    <div>Infos</div>
+                                    <div class="fas p-2 text-end">▲</div>
+                                </button>
+                            </h3>
+                        </div>
+                        <div class="collapse" id="infoCollapse1">
+                            <div class="card-body">
+                                Localisation: <br>
+                                Adresse mail: acf2l@gmail.com<br>
+                                01.24.26.85.45 <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-md-5 mt-3 mt-md-0">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="mb-0 d-flex justify-content-between">
+                                <button class="btn btn-link d-flex align-items-center w-100 justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#contactForm" aria-expanded="false" aria-controls="contactForm" style="color: black; text-decoration: none;">
+                                    <div>Contactez-nous</div>
+                                    <div class="fas p-2 text-end">▲</div>
+                                </button>
+
+                            </h3>
+                        </div>
+                        <!--formulaire de contact   -->
+                        <div class="collapse" id="contactForm">
+                            <div class="card-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="name" class="form-label">Nom</label>
+                                        <input type="text" class="form-control" id="name" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="email" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="email" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="subject" class="form-label">Sujet</label>
+                                        <input type="text" class="form-control" id="subject" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="message" class="form-label">Message</label>
+                                        <textarea class="form-control " id="message" rows="3" required></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Envoyer</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </div>
-<section name="info + contact" style="padding-bottom: 5%;">
-    <div class="container mt-5">
-        <div class="row d-flex justify-content-around">
-            <div class="col-12 col-md-5">
-                <div class="card">
-                    <div class="card-header">
-                        <h3 class="mb-0 ">
-                            <button class="btn btn-link d-flex align-items-center w-100 justify-content-between"
-                                type="button" data-bs-toggle="collapse" data-bs-target="#infoCollapse1"
-                                aria-expanded="false" aria-controls="infoCollapse1"
-                                style="color: black; text-decoration: none;">
-                                <div>Infos</div>
-                                <div class="fas p-2 text-end">▲</div>
-                            </button>
-                        </h3>
-                    </div>
-                    <div class="collapse" id="infoCollapse1">
-                        <div class="card-body">
-                            Localisation: <br>
-                            Adresse mail: acf2l@gmail.com<br>
-                            01.24.26.85.45 <br>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="col-12 col-md-5 mt-3 mt-md-0">
-                <div class="card">
-                    <div class="card-header">
-                        <h3 class="mb-0 d-flex justify-content-between">
-                            <button class="btn btn-link d-flex align-items-center w-100 justify-content-between"
-                                type="button" data-bs-toggle="collapse" data-bs-target="#contactForm"
-                                aria-expanded="false" aria-controls="contactForm"
-                                style="color: black; text-decoration: none;">
-                                <div>Contactez-nous</div>
-                                <div class="fas p-2 text-end">▲</div>
-                            </button>
-
-                        </h3>
-                    </div>
-                    <!--formulaire de contact   -->
-                    <div class="collapse" id="contactForm">
-                        <div class="card-body">
-                            <form>
-                                <div class="mb-3">
-                                    <label for="name" class="form-label">Nom</label>
-                                    <input type="text" class="form-control" id="name" required>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="email" class="form-label">Email</label>
-                                    <input type="email" class="form-control" id="email" required>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="subject" class="form-label">Sujet</label>
-                                    <input type="text" class="form-control" id="subject" required>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="message" class="form-label">Message</label>
-                                    <textarea class="form-control " id="message" rows="3" required></textarea>
-                                </div>
-                                <button type="submit" class="btn btn-primary">Envoyer</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<section name="ULM">
-    <div id="carousel1">
-        <div class="carousel-item1 active">
-            <div class="m-auto">
-                <img src="../public/assets/ressources/ULM1.png" alt="ULM1" />
-            </div>
-            <div >
-                <h3 class="text-center">Caractéristiques</h3>
-                <div class="d-flex justify-content-center">
-                <div><p>
-                Vitesse max: <br>
-                Capacité: <br>
-                Autonomie: <br>
-                Poids
-                </p></div>
-                <div>
-                <p>
-                        180 km/h <br>
-                        2 personnes <br>
-                        5 heures <br>
-                        400 kg
-                    </p>
-                </div>
-                </div>
-            </div>
-        </div>
-        <div class="carousel-item1">
-        <div class="carousel-item1 active">
-            <div class="m-auto">
-                <img src="../public/assets/ressources/ULM1.png" alt="ULM1" />
-            </div>
-            <div >
-                <h3 class="text-center">Caractéristiques</h3>
-                <div class="d-flex justify-content-center">
-                <div><p>
-                Vitesse max: <br>
-                Capacité: <br>
-                Autonomie: <br>
-                Poids
-                </p></div>
-                <div>
-                    <p>
-                        60 km/h <br>
-                        monoplace <br>
-                        3 heures <br>
-                        50 kg
-                    </p>
-                </div>
-                </div>
-            </div>
-        </div>
-        </div>
-        <div class="carousel-item1">
-        <div class="carousel-item1 active">
-            <div class="m-auto">
-                <img src="../public/assets/ressources/ULM1.png" alt="ULM1" />
-            </div>
-            <div >
-                <h3 class="text-center">Caractéristiques</h3>
-                <div class="d-flex justify-content-center">
-                <div><p>
-                Vitesse max: <br>
-                Capacité: <br>
-                Autonomie: <br>
-                Poids
-                </p></div>
-                <div>
-                    <p>
-                        150 km/h <br>
-                        2 personnes <br>
-                        4 heures <br>
-                        300 kg
-                    </p>
-                </div>
-                </div>
-            </div>
-        </div>
-        </div>
-        <div class="carousel-item1">
-        <div class="carousel-item1 active">
-            <div class="m-auto">
-                <img src="../public/assets/ressources/ULM1.png" alt="ULM1" />
-            </div>
-            <div >
-                <h3 class="text-center">Caractéristiques</h3>
-                <div class="d-flex justify-content-center">
-                <div><p>
-                Vitesse max: <br>
-                Capacité: <br>
-                Autonomie: <br>
-                Poids
-                </p></div>
-                <div>
-                    <p>
-                        130 km/h <br>
-                        2 personnes <br>
-                        4 heures <br>
-                        400 kg
-                    </p>
-                </div>
-                </div>
-            </div>
-        </div>
-        </div>
-        <div class="carousel-item1">
-        <div class="carousel-item1 active">
-            <div class="m-auto">
-                <img src="../public/assets/ressources/ULM1.png" alt="ULM1" />
-            </div>
-            <div >
-                <h3 class="text-center">Caractéristiques</h3>
-                <div class="d-flex justify-content-center">
-                <div><p>
-                Vitesse max: <br>
-                Capacité: <br>
-                Autonomie: <br>
-                Poids
-                </p></div>
-                <div>
-                    <p>
-                        130 km/h <br>
-                        monoplace <br>
-                        2 heures <br>
-                        200 kg
-                    </p>
-                </div>
-                </div>
-            </div>
-        </div>
-        </div>
-        <div class="carousel-item1">
-        <div class="carousel-item1 active">
-            <div class="m-auto">
-                <img src="../public/assets/ressources/ULM1.png" alt="ULM1" />
-            </div>
-            <div >
-                <h3 class="text-center">Caractéristiques</h3>
-                <div class="d-flex justify-content-center">
-                <div><p>
-                Vitesse max: <br>
-                Capacité: <br>
-                Autonomie: <br>
-                Poids
-                </p></div>
-                <div>
-                    <p>
-                        150 km/h <br>
-                        2 personnes <br>
-                        4 heures <br>
-                        300 kg
-                    </p>
-                </div>
-                </div>
-            </div>
-        </div>
-        </div>
-    </div>
-    <button id="prev">Précédent</button>
-    <button id="next">Suivant</button>
-</section>
 
 <script>
-let index = 0;
-const items1 = document.querySelectorAll('.carousel-item1');
-const nextButton = document.getElementById('next');
-const prevButton = document.getElementById('prev');
+    let index = 0;
+    const items1 = document.querySelectorAll('.carousel-item1');
+    const nextButton = document.getElementById('next');
+    const prevButton = document.getElementById('prev');
 
-window.onload = function() {
-  items1[0].classList.add('active');
-}
+    window.onload = function() {
+        items1[0].classList.add('active');
+    }
 
-nextButton.addEventListener('click', () => {
-  items1[index].classList.remove('active');
-  index = (index + 1) % items1.length;
-  items1[index].classList.add('active');
-});
+    nextButton.addEventListener('click', () => {
+        items1[index].classList.remove('active');
+        index = (index + 1) % items1.length;
+        items1[index].classList.add('active');
+    });
 
-prevButton.addEventListener('click', () => {
-  items1[index].classList.remove('active');
-  index = (index - 1 + items1.length) % items1.length;
-  items1[index].classList.add('active');
-});
+    prevButton.addEventListener('click', () => {
+        items1[index].classList.remove('active');
+        index = (index - 1 + items1.length) % items1.length;
+        items1[index].classList.add('active');
+    });
 </script>
 
 
@@ -583,11 +583,112 @@ prevButton.addEventListener('click', () => {
 <script>
     var coll = document.querySelectorAll(".btn.btn-link");
     coll.forEach((btn) => {
-        btn.addEventListener("click", function () {
+        btn.addEventListener("click", function() {
             var arrowIcon = this.querySelector('.fas');
             arrowIcon.classList.toggle('rotate');
         });
     });
 </script>
 <script src="../public/assets/script/script.js"></script>
-<script src="../public/assets/script/api_meteo.js"></script> -->
+<script src="../public/assets/script/api_meteo.js"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var images = ['i1', 'i2', 'i3', 'i4', 'i5'];
+        var texts = {
+            'i1': 'L’entretien des ULM est compris dans le service par défaut de location, lors de la location de ces derniers',
+            'i2': 'Notre équipe s’occupe de tout, et monte votre ULM en amont du vol, afin de bénéficeier d’une expérience avancé',
+            'i3': 'Un service de location d’emplacements sont disponible dans le cas d’une utilisation de votre propre ULM !',
+            'i4': 'Nous avons la possibilité de vous accueillir à proximité de l’aéroclub pour y passez une merveilleuse nuit :',
+            'i5': 'Un service de restauration est proposés tous les week-ends, à un moindre coût et de qualité.'
+        };
+
+        images.forEach(function(imageId) {
+            var li = document.getElementById(imageId);
+
+            li.addEventListener('click', function(e) {
+                var popup = li.querySelector('div');
+                if (popup) {
+                    li.removeChild(popup);
+                } else {
+                    var popupHTML = `
+                    <div style="
+                        position: absolute;
+                        left: ${li.offsetLeft}px;
+                        top: ${li.offsetTop + 10}px;
+                        background-color: #fff;
+                        width: 50%;
+                        border-radius: 10px;
+                        padding: 10px;
+                        color:black;
+                        text-align: center;
+                        z-index:1000;">
+                        ${texts[imageId] || 'Erreur'}
+                    </div>
+                `;
+                    li.insertAdjacentHTML('beforeend', popupHTML);
+                }
+            });
+        });
+    });
+</script>
+<script>
+    // Fonction pour définir un cookie
+    function setCookie(name, value, days) {
+        var expires = "";
+        if (days) {
+            var date = new Date();
+            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+            expires = "; expires=" + date.toUTCString();
+        }
+        document.cookie = name + "=" + (value || "") + expires + "; path=/";
+    }
+
+    // Fonction pour obtenir un cookie
+    function getCookie(name) {
+        var nameEQ = name + "=";
+        var ca = document.cookie.split(';');
+        for (var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+            if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+        }
+        return null;
+    }
+
+    // Fonction pour afficher le popup de cookies
+    function showCookiePopup() {
+        var cookiePopup = document.createElement('div');
+        cookiePopup.textContent = 'Ce site utilise des cookies pour améliorer votre expérience. En continuant à utiliser ce site, vous acceptez leur utilisation.';
+        cookiePopup.style.position = 'fixed';
+        cookiePopup.style.bottom = '0';
+        cookiePopup.style.left = '0';
+        cookiePopup.style.backgroundColor = '#fff';
+        cookiePopup.style.padding = '10px';
+        cookiePopup.style.zIndex = '1000';
+        cookiePopup.style.borderRadius = '10px';
+        document.body.appendChild(cookiePopup);
+
+        var acceptButton = document.createElement('button');
+        acceptButton.textContent = 'Accepter';
+        acceptButton.onclick = function() {
+            setCookie('cookiesAccepted', 'true', 30);
+            document.body.removeChild(cookiePopup);
+        };
+        cookiePopup.appendChild(acceptButton);
+    }
+
+
+    document.addEventListener('DOMContentLoaded', function() {
+        if (!getCookie('cookiesAccepted')) {
+            showCookiePopup();
+        }
+    });
+
+    // Afficher le popup de cookies lors du premier chargement de la page
+    document.addEventListener('DOMContentLoaded', function() {
+        if (!getCookie('cookiesAccepted')) {
+            showCookiePopup();
+        }
+    });
+</script>

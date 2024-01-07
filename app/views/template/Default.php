@@ -28,8 +28,8 @@
   <title><?= App::getInstance()->title ?></title>
 </head>
 <header>
-  <nav class="navbar navbar-expand-lg navbar-light position-fixed top-0 w-100 p-1 " id="navb12" style="z-index: 10000;">
-    <a class="navbar-brand" href="#" id="logo">
+  <nav class="navbar navbar-expand-lg navbar-light position-fixed top-0 w-100 p-1 z-1 " id="navb12">
+    <a class="navbar-brand" href="?page=main.index" id="logo">
       <svg width="auto" height="70" viewBox="0 0 149 109" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <rect width="149" height="108.354" fill="url(#pattern0)" />
         <defs>
@@ -49,14 +49,12 @@
           <a class="nav-link" href="?page=main.aerodrome">Aérodrome</a>
         </li>
         <li class="nav-item ">
-          <a class="nav-link" href="#">Activité</a>
+          <button class="nav-link" href="#">Activités</button>
         </li>
         <li class="nav-item ">
-          <a class="nav-link" href="#">ULM</a>
+          <button class="nav-link">ULM</button>
         </li>
-        <li class="nav-item ">
-          <a class="nav-link " href="#">Plus</a>
-        </li>
+
         <?php if (!$logged) : ?>
           <li class="nav-item d-lg-none">
             <a href="?page=user.login">Connexion</a>
@@ -65,6 +63,12 @@
             <a href="?page=user.register">Inscription</a>
           </li>
         <?php else : ?>
+          <?php if ($admin) : ?>
+
+            <li class="nav-item ">
+              <a class="nav-link " href="?admin.main.index">admin</a>
+            </li>
+          <?php endif ?>
           <li class="nav-item d-lg-none">
             <a href=""><img src="profile.png" alt=""></a>
           </li>
@@ -76,7 +80,14 @@
         <a href="?page=user.login" class="btn my-2 my-sm-0" type="submit">Connexion</a>
         <a href="?page=user.register" class="btn my-2 my-sm-0" type="submit">Inscription</a>
       </div>
+
     <?php else : ?>
+      <?php if ($admin) : ?>
+        <div>
+          <a class="nav-link " href="?admin.main.index">admin</a>
+        </div>
+      <?php endif ?>
+      <a href="?page=user.logout">Deconnecter</a>
       <div>
         <a href=""><img src="profile.png" alt=""></a>
       </div>
@@ -86,6 +97,7 @@
 </header>
 
 <body>
+
   <?php /*
     $dir = "../Views/staff";
     echo "<h4>" . $dir . "</h4>";
@@ -168,5 +180,41 @@
     </div>
   </footer>
 </body>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var buttons = document.querySelectorAll('.nav-item button');
+
+    buttons.forEach(function(button) {
+      button.addEventListener('click', function(e) {
+        e.preventDefault();
+        var sectionName = this.textContent.trim();
+        var section = document.getElementById(sectionName);
+
+        if (section) {
+          section.scrollIntoView({
+            behavior: 'smooth'
+          });
+        } else {
+          localStorage.setItem('sectionName', sectionName);
+          window.location.href = "?page=main.index";
+        }
+      });
+    });
+
+    var storedSectionName = localStorage.getItem('sectionName');
+
+    if (storedSectionName) {
+      var storedSection = document.getElementById(storedSectionName);
+
+      if (storedSection) {
+        storedSection.scrollIntoView({
+          behavior: 'smooth'
+        });
+      }
+
+      localStorage.removeItem('sectionName');
+    }
+  });
+</script>
 
 </html>
