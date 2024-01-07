@@ -651,3 +651,55 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 </script>
+<script>
+    // Fonction pour définir un cookie
+function setCookie(name, value, days) {
+    var expires = "";
+    if (days) {
+        var date = new Date();
+        date.setTime(date.getTime() + (days*24*60*60*1000));
+        expires = "; expires=" + date.toUTCString();
+    }
+    document.cookie = name + "=" + (value || "")  + expires + "; path=/";
+}
+
+// Fonction pour obtenir un cookie
+function getCookie(name) {
+    var nameEQ = name + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0;i < ca.length;i++) {
+        var c = ca[i];
+        while (c.charAt(0)==' ') c = c.substring(1,c.length);
+        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+    }
+    return null;
+}
+
+// Fonction pour afficher le popup de cookies
+function showCookiePopup() {
+    var cookiePopup = document.createElement('div');
+    cookiePopup.textContent = 'Ce site utilise des cookies pour améliorer votre expérience. En continuant à utiliser ce site, vous acceptez leur utilisation.';
+    cookiePopup.style.position = 'fixed';
+    cookiePopup.style.bottom = '0';
+    cookiePopup.style.left = '50%';
+    cookiePopup.style.backgroundColor = '#ccc';
+    cookiePopup.style.padding = '10px';
+    cookiePopup.style.zIndex = '1000';
+    document.body.appendChild(cookiePopup);
+
+    var acceptButton = document.createElement('button');
+    acceptButton.textContent = 'Accepter';
+    acceptButton.onclick = function() {
+        setCookie('cookiesAccepted', 'true', 30);
+        document.body.removeChild(cookiePopup);
+    };
+    cookiePopup.appendChild(acceptButton);
+}
+
+// Afficher le popup de cookies lors du premier chargement de la page
+document.addEventListener('DOMContentLoaded', function() {
+    if (!getCookie('cookiesAccepted')) {
+        showCookiePopup();
+    }
+});
+</script>
