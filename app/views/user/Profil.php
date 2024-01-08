@@ -25,7 +25,7 @@
                 <?= $form->input('_date', "Date de naissance", ['class' => 'btn btn-primary d-flex align-items-center m-auto ', 'type' => 'date']); ?>
             </div>
             <div class="form-group">
-                <?= $form->select('situation_familiale', "Situation familiale", ['class' => '', 'type' => 'date']); ?>
+                <?= $form->select('situation_familiale', "Situation familiale", ['class' => '', 'type' => 'marié', 'pacsé', 'divorcé', 'séparé', 'célibataire', 'veuf']); ?>
             </div>
             <div class="form-group">
                 <?= $form->input('date_situation_familiale', "Début de situation familiale", ['class' => '', 'type' => 'date']); ?>
@@ -45,6 +45,9 @@
                 <?= $form->input('ad2', "Rue", ['class' => '', 'type' => 'text']); ?>
                 <?= $form->input('ad3', "Code postal", ['class' => '', 'type' => 'text']); ?>
                 <?= $form->input('ad4', "Ville", ['class' => '', 'type' => 'text']); ?>
+            </div>
+            <div class="form-group">
+                <?= $form->submit('Se connecter', "Se connecter", ['class' => 'btn btn-primary', 'value' => 'Se connecter']); ?>
             </div>
         </form>
     </div>
