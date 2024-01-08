@@ -5,10 +5,10 @@
 <div class="w-100 background d-flex align-items-center">
 
     <form action="#" method="post" class="w-50 m-auto mb-3">
-        <?php if (!empty($error)) : ?>
-        <div class="alert alert-danger">
-            <?= $error ?>
-        </div>
+        <?php if (!empty($errorMessage)) : ?>
+            <div class="alert alert-danger">
+                <?= $errorMessage ?>
+            </div>
         <?php endif; ?>
         <div class="form-group w-100 m-auto label-log">
             <?= $form->input('email', "Adresse email", ['class' => 'form-control w-100', 'id' => 'email']); ?>

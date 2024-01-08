@@ -41,4 +41,30 @@ class Controller
         header('HTTP/1.0 404 Not Found');
         die('Page introuvable');
     }
+    protected function validateForm($post)
+    {
+
+        foreach ($post as $i) {
+            if (empty($i)) {
+                throw new \Exception('remplissez tous les champs');
+            }
+        }
+        if (!empty($_POST['email'])) {
+            if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+                throw new \Exception('email invalide');
+            }
+        }
+    }
+    public function validadd($champ, $action)
+    {
+        if ($action == "add") {
+            $action = "ajouté";
+        } else if ($action == "edit") {
+            $action = "modifié";
+        } else if ($action == "delete") {
+            $action = "supprimé";
+        }
+
+        return "<div class='alert alert-success'>" . $champ . " a bien été " . $action . "</div>";
+    }
 }

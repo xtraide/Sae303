@@ -20,10 +20,11 @@ class UserController extends AppController
     public function login()
     {
         $form = new BootstrapForm($_POST);
-        $error = '';
+
+        $status = '';
         if ($_POST) {
             try {
-                $this->validateForm();
+                $this->validateForm($_POST);
                 if ($this->auth->login($_POST['email'], $_POST['password'])) {
                     header('Location: ?page=main.index');
                     exit;
@@ -31,10 +32,12 @@ class UserController extends AppController
                     throw new \Exception('email ou mot de passe incorrect');
                 }
             } catch (\Exception $e) {
-                $error = $e->getMessage();
+                $status = $e->getMessage();
             }
         }
-        $this->render('user.login', compact('form', 'error'));
+
+
+        $this->render('user.login', compact('form', 'status'));
     }
 
     public function logout()
@@ -46,21 +49,21 @@ class UserController extends AppController
     public function register()
     {
         $form = new BootstrapForm($_POST);
-        $error = '';
-        if ($_POST) {
-            try {
-                $this->validateForm();
-                if ($this->auth->register($_POST['email'], $_POST['password'])) {
-                    header('Location: ?page=main.index');
-                    exit;
-                } else {
-                    throw new \Exception('erreur lors de l\'inscription');
-                }
-            } catch (\Exception $e) {
-                $error = $e->getMessage();
+        $status = '';
+
+        try {
+            $this->validateForm($_POST);
+            if ($this->auth->register($_POST['email'], $_POST['password'])) {
+                header('Location: ?page=main.index');
+                exit;
+            } else {
+                throw new \Exception('erreur lors de l\'inscription');
             }
+        } catch (\Exception $e) {
+            $status = $e->getMessage();
         }
-        $this->render('user.register', compact('form', 'error'));
+
+        $this->render('user.register', compact('form', 'status'));
     }
 
     public function profil()
@@ -68,39 +71,10 @@ class UserController extends AppController
         $form = new BootstrapForm($_POST);
         $this->render('user.profil',  compact('form'));
     }
-
-    public function wrongCredentials()
+    public function reservation()
     {
-        return '
-        <div class="alert alert-danger z-3" role="alert">
-            Adresse mail ou mot de passe incorrect
-        </div>';
-    }
-
-    public function wrongEmail()
-    {
-        return '
-        <div class="alert alert-danger z-3" role="alert">
-            Adresse mail incorrect ou invalide
-        </div>';
-    }
-
-    public function noCredentials()
-    {
-        return '
-        <div class="alert alert-danger z-3 mt-2" role="alert">
-            Veuillez remplir tous les champs
-        </div>';
-    }
-
-    private function validateForm()
-    {
-
-        if (empty($_POST['email']) || empty($_POST['password'])) {
-            throw new \Exception('remplissez tous les champs');
-        }
-        if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
-            throw new \Exception('email invalide');
-        }
+        $error = '';
+        $form = new BootstrapForm($_POST);
+        $this->render('user.reservation', compact('form', 'error'));
     }
 }

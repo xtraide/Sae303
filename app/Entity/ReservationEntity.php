@@ -12,4 +12,10 @@ use Core\Entity\Entity;
 
 class ReservationEntity extends Entity
 {
+
+    public $id;
+    public $_date;
+    public $id_1;
+    public $id_2;
+    public $id_3;
 }

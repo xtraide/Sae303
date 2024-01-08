@@ -14,6 +14,27 @@ use Core\Entity\Entity;
 class UserEntity extends Entity
 {
 
+
+    public $id;
+    public $civilite;
+    public $nom;
+    public $prenom;
+    public $_date;
+    public $adresse;
+    public $situation_familiale;
+    public $date_situation_familiale;
+    public $dateFin_situation_familiale;
+    public $email;
+    public $numero;
+    public $nb_a_charge;
+    public $activite;
+    public $role;
+    public $password;
+    public $token;
+    public $verified;
+
+
+
     /**
      * Recupere L'url
      * @return string Url a donne

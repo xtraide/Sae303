@@ -6,9 +6,9 @@
     <div class="col-md-6 mx-auto">
 
         <form action="" method="post" class="mb-3">
-            <?php if (!empty($error)) : ?>
+            <?php if (!empty($errorMessage)) : ?>
                 <div class="alert alert-danger">
-                    <?= $error ?>
+                    <?= $errorMessage ?>
                 </div>
             <?php endif; ?>
             <div class="">
