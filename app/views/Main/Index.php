@@ -509,9 +509,9 @@
                     </div>
                 </div>
             </div>
-            <button id="prev" class="bg-transparent" style="position: absolute; top: 50%; left: 15%;  font-size: 6rem; border-radius: 50%; width:10%; height:24%;
-             transform: translateY(-50%);"><</button>
-            <button class="bg-transparent" id="next" style="position: absolute; top: 50%; right: 15%; transform: translateY(-50%); font-size: 6rem; border-radius: 50%; width:10%; height:24%;">></button>
+            <div id="prev" class="bg-transparent" style="cursor: pointer; position: absolute; top: 50%; left: 22%;  font-size: 6rem; border-radius: 50%; width:10%; height:24%;
+             transform: translateY(-50%); animation: none"><</div>
+            <div class="bg-transparent" id="next" style="cursor: pointer;  animation:none; position: absolute; top: 50%; right: 15%; transform: translateY(-50%); font-size: 6rem; border-radius: 50%; width:10%; height:24%;">></div>
         </div>
         <script>
             document.addEventListener('DOMContentLoaded', function() {
