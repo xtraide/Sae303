@@ -76,4 +76,12 @@ class DatabaseAuth
         }
         return false;
     }
+    public function confirmToken($token, $user_id)
+    {
+        $user = $this->db->prepare('SELECT token FROM ' . self::$prefix . 'user WHERE id = ?', [$user_id], null, true);
+        if ($user && $user->token == $token) {
+            return $user;
+        }
+        return false;
+    }
 }

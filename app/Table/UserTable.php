@@ -22,4 +22,11 @@ class UserTable extends Table
     public $nb_a_charge;
     public $activite;
     public $role;
+
+    public function verify($id)
+    {
+        $this->update($id, [
+            'verified' => '1'
+        ]);
+    }
 }

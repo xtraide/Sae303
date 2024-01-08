@@ -36,7 +36,6 @@ class UserController extends AppController
             }
         }
 
-
         $this->render('user.login', compact('form', 'errorMessage'));
     }
 
@@ -77,5 +76,26 @@ class UserController extends AppController
         $error = '';
         $form = new BootstrapForm($_POST);
         $this->render('user.reservation', compact('form', 'errorMessage'));
+    }
+    public function VerifyAccount()
+    {
+        try {
+            if ((isset($_GET['token']) && !empty($_GET['token']))) {
+                if (isset($_GET['id']) && !empty($_GET['id'])) {
+                    $user_id = $_GET['id'];
+                    $token = $_GET['token'];
+                    $user = $this->auth->confirmToken($token, $user_id);
+                    if ($user) {
+                        $user->verify($user_id);
+                        exit;
+                    }
+                }
+            } else {
+                throw new \Exception('erreur lors de la vérification du compte');
+                exit;
+            }
+        } catch (\Exception $e) {
+            $errorMessage = $e->getMessage();
+        }
     }
 }
