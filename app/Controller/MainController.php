@@ -38,4 +38,11 @@ class MainController extends AppController
         $form = new BootstrapForm($_POST);
         $this->render('main.reservation', compact('form', 'error'));
     }
+
+    public function condition()
+    {
+        $error = '';
+        $form = new BootstrapForm($_POST);
+        $this->render('main.condition');
+    }
 }

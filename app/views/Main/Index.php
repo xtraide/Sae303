@@ -529,7 +529,7 @@
             </div>
             <div id="prev" class="bg-transparent" style="cursor: pointer; position: absolute; top: 50%; left: 22%;  font-size: 6rem; border-radius: 50%; width:10%; height:24%;
              transform: translateY(-50%); animation: none"><</div>
-            <div class="bg-transparent" id="next" style="cursor: pointer;  animation:none; position: absolute; top: 50%; right: 15%; transform: translateY(-50%); font-size: 6rem; border-radius: 50%; width:10%; height:24%;">></div>
+            <div class="bg-transparent" id="next" style="cursor: pointer; position: absolute; top: 50%; right: 15%; transform: translateY(-50%); font-size: 6rem; border-radius: 50%; width:10%; height:24%;"> > </div>
         </div>
         <script>
         document.addEventListener('DOMContentLoaded', function() {
@@ -559,7 +559,7 @@
         <div class="container mt-5 mb-5">
             <div class="text-center m-auto bg-white mb-5 w-50 p-3" style="border-radius: 10px;">
                 <a href="?page=main.reservation" class="w-50" style="color: black; text-decoration: none;">
-                    <div class="text-center" style="font-size: 1.2rem;">> RESERVEZ VOTRE VOL MAINTENANT << /div>
+                    <div class="text-center" style="font-size: 1.2rem;">> RESERVEZ VOTRE VOL MAINTENANT < </div>
                 </a>
             </div>
             <div class="row d-flex justify-content-around">
