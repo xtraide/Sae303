@@ -34,10 +34,6 @@ class MainController extends AppController
     {
         $this->render('main.aerodrome');
     }
-    public function condition()
-    {
-        $this->render('main.condition');
-    }
 
     public function condition()
     {

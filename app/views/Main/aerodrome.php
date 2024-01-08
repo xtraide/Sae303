@@ -77,9 +77,8 @@
             </div>
         </div>
 
-
+        <p class="w-50 mx-auto titre">Gallerie</p>
         <div class="gallerie container text-center">
-            <p class="w-50 mx-auto titre">Gallerie</p>
             <div class="row mt-5">
                 <div class="col-md-4 ">
                     <img src="../public/assets/ressources/aerodrome/RightLeft.jpg" alt="hélice_left" class="w-100" style="height: 100%;">

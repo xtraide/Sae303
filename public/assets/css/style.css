@@ -106,7 +106,7 @@ nav {}
 }
 
 .nav-element>li>a:hover {
-  color: rgba(0, 0, 0, 0.5) !important;
+  color: rgba(255, 255, 255, 0.5) !important;
 }
 
 .nav-element>li>a {
@@ -387,7 +387,7 @@ section {
   border-radius: 5%;
 }
 
-.aerodrome div p {
+.titre {
   font-family: quicksand;
   color: black;
   font-size: 3rem !important;
@@ -399,7 +399,7 @@ section {
 .aerodrome div div p {
   font-family: quicksand;
   color: black;
-  font-size: 1.5rem;
+  font-size: 1.5rem !important;
   background-color: rgba(255, 255, 255, 0.6);
   border-radius: 20px;
 }
