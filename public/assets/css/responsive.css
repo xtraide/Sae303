@@ -83,3 +83,11 @@
     margin: 0 !important;
   }
 }
+
+@media (body<100vh) {
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+}
