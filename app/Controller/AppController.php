@@ -27,6 +27,6 @@ class AppController extends Controller
     protected function loadModel($model_name)
     {
         // Get the table instance for the model from the App and assign it to the model variable
-        $this->$model_name = App::getInstance()->getTable($model_name);
+        return  App::getInstance()->getTable($model_name);
     }
 }

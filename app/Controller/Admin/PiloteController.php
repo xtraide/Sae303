@@ -3,75 +3,64 @@
 namespace App\Controller\Admin;
 
 use Core\HTML\BootstrapForm;
-use App;
+use App\Model\Pilote;
 
 class PiloteController extends \App\Controller\AppController
 {
+    protected $Pilote;
+
     public function __construct()
     {
         parent::__construct();
-        $this->loadModel('Pilote');
+        $this->Pilote = $this->loadModel('Pilote');
     }
-
 
     public function index()
     {
-        $pilotes = $this->Pilote->all();
-        $this->render('admin.pilote.index', compact('pilotes'));
+        $Pilotes = $this->Pilote->all();
+        $this->render('admin.Pilote.index', compact('Pilotes'));
     }
-
 
     public function edit()
     {
-        $table = $this->Pilote;
-        if (!empty($_POST)) {
-            $result = $table->update($_GET['id'], [
-                'nom' => $_POST['nom'],
-                'prenom' => $_POST['prenom'],
-                'civilite' => $_POST['civilite'],
-                'email' => $_POST['email'],
-            ]);
-
-            if ($result) {
-?>
-                <div class="alert alert-success">L'pilote a bien été modifié</div>
-            <?php
+        $errorMessage = '';
+        if ($_POST) {
+            try {
+                $this->validateForm($_POST);
+                $result = $this->Pilote->update($_GET['id'], $_POST);
+                return $this->index();
+            } catch (\Exception $e) {
+                $errorMessage = $e->getMessage();
             }
         }
-        $post = $table->find($_GET['id']);
 
-        $form = new \Core\HTML\BootstrapForm($post);
-        $this->render('admin.pilote.edit', compact('form'));
+        $Pilote = $this->Pilote->find($_GET['id']);
+        $form = new BootstrapForm($Pilote);
+        $this->render('admin.Pilote.edit', compact('form', 'errorMessage'));
     }
-
 
     public function add()
     {
-        $table = $this->Pilote;
-        if (!empty($_POST)) {
-            $result = $table->create([
-                'nom' => $_POST['nom'],
-                'prenom' => $_POST['prenom'],
-                'civilite' => $_POST['civilite'],
-                'email' => $_POST['email']
-            ]);
-
-            if ($result) {
-            ?>
-                <div class="alert alert-success">L'pilote a bien été ajouter</div>
-<?php
+        $errorMessage = '';
+        if ($_POST) {
+            try {
+                $this->validateForm($_POST);
+                $result = $this->Pilote->create($_POST);
+                return $this->index();
+            } catch (\Exception $e) {
+                $errorMessage = $e->getMessage();
             }
         }
 
-        $form = new \Core\HTML\BootstrapForm($_POST);
-        $this->render('admin.pilote.edit', compact('form'));
+        $form = new BootstrapForm($_POST);
+        $this->render('admin.Pilote.edit', compact('form', 'errorMessage'));
     }
 
     public function delete()
     {
         if (!empty($_POST)) {
-            $this->Pilote->delete($_POST['id']);
-            return $this->index();
+            $result = $this->Pilote->delete($_POST['id']);
         }
+        return $this->index();
     }
 }
