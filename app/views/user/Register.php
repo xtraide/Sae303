@@ -1,11 +1,11 @@
-<h1 style="padding-top: 100px;font-family: quicksand;
+<div class="w-100" style="padding-top: 100px; height:80vh;">
+    <h1 style="font-family: quicksand;
     font-size: 3rem;
     color: black;
     text-align: center;">Inscription</h1>
-<div class="w-100 background d-flex align-items-center">
     <div class="col-md-6 mx-auto">
 
-        <form action="" method="post" class="mb-3">
+        <form action="" method="post" class="w-50 m-auto mb-3">
             <?php if (!empty($errorMessage)) : ?>
                 <div class="alert alert-danger">
                     <?= $errorMessage ?>
