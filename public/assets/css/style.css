@@ -28,10 +28,9 @@ body {
 
 #icones .card {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
-  width: 235px;
-  border-radius: 40px;
-  border: none !important;
+  border-radius: 15px;
   text-align: center;
+  border: none;
 }
 
 #icones>.card>h1 {
