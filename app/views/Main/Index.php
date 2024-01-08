@@ -1,8 +1,7 @@
 <section class="container-fluid w-100" style="background-image: url('../public/assets/ressources/BackgroundAcceuil.png'); 
            background-size: cover; 
            background-position: center">
-    <div id="icones" class="container-card d-flex justify-content-evenly align-content-center"
-        style="padding-top: 55%; padding-bottom: 30%;">
+    <div id="icones" class="container-card d-flex justify-content-evenly align-content-center" style="padding-top: 55%; padding-bottom: 30%;">
         <div class="card">
             <h1 id="h1-card">Informations <br> météo</h1>
             <div id="temp-info" style="width: 50%; margin:auto;"></div>
@@ -22,8 +21,7 @@
 </section>
 <section>
 
-    <div id="personnage" class="d-flex justify-content-evenly align-content-center"
-        style="padding-top: 20%; padding-bottom: 30%;">
+    <div id="personnage" class="d-flex justify-content-evenly align-content-center" style="padding-top: 20%; padding-bottom: 30%;">
         <div id="card_1" class="card p-1">
             <h3>Kevin SATOUT</h3>
             <img src="../public/assets/ressources/ChefPilote.png" alt="chef_pilote" class="pt-1" />
@@ -61,17 +59,14 @@
                         <div class="card-body ">
                             <h5 class="card-title text-center">France Air Expo 2023</h5>
                             <div class="m-auto text-center">
-                                <img src="../public/assets/ressources/yesiiir.png" width="80%"
-                                    class="m-auto text-center" alt="..." />
+                                <img src="../public/assets/ressources/yesiiir.png" width="80%" class="m-auto text-center" alt="..." />
                             </div>
                             <div class="d-flex">
-                                <img src="../public/assets/ressources/loc.png" alt="loc" width="5%" height="5%"
-                                    style="margin-right: 5px;" />
+                                <img src="../public/assets/ressources/loc.png" alt="loc" width="5%" height="5%" style="margin-right: 5px;" />
                                 <p>Aéroport de Lyon-Bron - Bron, France</p>
                             </div>
                             <div class="d-flex">
-                                <img src="../public/assets/ressources/temps.png " alt="heur" width="5%" height="5%"
-                                    style="margin-right: 5px;" />
+                                <img src="../public/assets/ressources/temps.png " alt="heur" width="5%" height="5%" style="margin-right: 5px;" />
                                 <p>09:00 AM to 02:00 PM</p>
                             </div>
                         </div>
@@ -84,17 +79,14 @@
                                 1er Rassemblement ULM des femmes pilotes
                             </h5>
                             <div class="m-auto text-center">
-                                <img src="../public/assets/ressources/360_F_159634840_Fa2HPb8ITrbr5gddY2eKlomVfsnu1gx6.png"
-                                    alt="..." />
+                                <img src="../public/assets/ressources/360_F_159634840_Fa2HPb8ITrbr5gddY2eKlomVfsnu1gx6.png" alt="..." />
                             </div>
                             <div class="d-flex">
-                                <img src="../public/assets/ressources/loc.png" alt="loc" width="5%" height="5%"
-                                    style="margin-right: 5px;" />
+                                <img src="../public/assets/ressources/loc.png" alt="loc" width="5%" height="5%" style="margin-right: 5px;" />
                                 <p>Saint-Martin-de-Castillon</p>
                             </div>
                             <div class="d-flex">
-                                <img src="../public/assets/ressources/temps.png" alt="heur" width="5%" height="5%"
-                                    style="margin-right: 5px;" />
+                                <img src="../public/assets/ressources/temps.png" alt="heur" width="5%" height="5%" style="margin-right: 5px;" />
                                 <p>09:00 AM to 06:00 PM </p>
                             </div>
                         </div>
@@ -105,17 +97,14 @@
                         <div class="card-body">
                             <h5 class="card-title text-center">Journée sécurité des vols - GRAND EST</h5>
                             <div class="m-auto text-center">
-                                <img src="../public/assets/ressources/Event1 (1).png" width="80%" alt="..."
-                                    class="m-auto text-center" />
+                                <img src="../public/assets/ressources/Event1 (1).png" width="80%" alt="..." class="m-auto text-center" />
                             </div>
                             <div class="d-flex" style="margin-top: 20px;">
-                                <img src="../public/assets/ressources/loc.png" alt="loc" width="5%" height="5%"
-                                    style="margin-right: 5px;" />
+                                <img src="../public/assets/ressources/loc.png" alt="loc" width="5%" height="5%" style="margin-right: 5px;" />
                                 <p>Serrouville, France</p>
                             </div>
                             <div class="d-flex">
-                                <img src="../public/assets/ressources/temps.png" width="5%" height="5%" alt="heur"
-                                    style="margin-right: 5px;" />
+                                <img src="../public/assets/ressources/temps.png" width="5%" height="5%" alt="heur" style="margin-right: 5px;" />
                                 <p>09:00 AM to 02:00 PM</p>
                             </div>
                         </div>
@@ -125,22 +114,19 @@
         </div>
     </div>
     <div class="d-flex justify-content-center">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active m-3"
-            aria-current="true" aria-label="Slide 1" style="
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active m-3" aria-current="true" aria-label="Slide 1" style="
           background-color: black;
           height: 20px;
           width: 20px;
           border-radius: 100%;
         "></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="m-3"
-            aria-label="Slide 2" style="
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="m-3" aria-label="Slide 2" style="
           background-color: black;
           height: 20px;
           width: 20px;
           border-radius: 100%;
         "></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="m-3"
-            aria-label="Slide 3" style="
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="m-3" aria-label="Slide 3" style="
           background-color: black;
           height: 20px;
           width: 20px;
@@ -169,8 +155,7 @@
                                 joies de
                                 l'aviation.</p>
                             <div class="card-footer bg-white border-white rounded d-flex
-                            align-items-center justify-content-center w-50"
-                                style=" background-color: rgba(0, 0, 0, 0.7) !important">
+                            align-items-center justify-content-center w-50" style=" background-color: rgba(0, 0, 0, 0.7) !important">
                                 <p class="text-center " style="color: white; margin: 0;">300 €</p>
                             </div>
                         </div>
@@ -186,8 +171,7 @@
                                 entraînement pratique, navigation et communication aérienne, préparant à la licence de
                                 pilote.</p>
                             <div class="card-footer bg-white border-white rounded
-                            d-flex align-items-center justify-content-center w-50"
-                                style=" background-color: rgba(0, 0, 0, 0.7) !important">
+                            d-flex align-items-center justify-content-center w-50" style=" background-color: rgba(0, 0, 0, 0.7) !important">
                                 <p class="text-center " style="color: white; margin: 0;">1500 €</p>
                             </div>
                         </div>
@@ -201,8 +185,7 @@
                                 techniques
                                 d'enseignement et la gestion de vol, visant à former des instructeurs compétents.</p>
                             <div class="card-footer bg-white border-white rounded
-                            d-flex align-items-center justify-content-center w-50"
-                                style=" background-color: rgba(0, 0, 0, 0.7) !important">
+                            d-flex align-items-center justify-content-center w-50" style=" background-color: rgba(0, 0, 0, 0.7) !important">
                                 <p class="text-center " style="color: white; margin: 0;">5000 €</p>
                             </div>
                         </div>
@@ -221,8 +204,7 @@
                                 Évolution,
                                 Maîtrise - pour répondre à vos besoins de formation et d'expérience de vol.</p>
                             <div class="card-footer bg-white border-white rounded
-                            d-flex align-items-center justify-content-center w-50"
-                                style=" background-color: rgba(0, 0, 0, 0.7) !important">
+                            d-flex align-items-center justify-content-center w-50" style=" background-color: rgba(0, 0, 0, 0.7) !important">
                                 <a href=" " class="text-center " style="color: white; margin: 0;">EN SAVOIR PLUS</a>
                             </div>
                         </div>
@@ -238,8 +220,7 @@
                                 permettent
                                 une progression constante et adaptée à vos objectifs de vol.</p>
                             <div class="card-footer bg-white border-white rounded
-                            d-flex align-items-center justify-content-center w-50"
-                                style=" background-color: rgba(0, 0, 0, 0.7) !important">
+                            d-flex align-items-center justify-content-center w-50" style=" background-color: rgba(0, 0, 0, 0.7) !important">
                                 <a href=" " class="text-center " style="color: white; margin: 0;">EN SAVOIR PLUS</a>
                             </div>
                         </div>
@@ -269,11 +250,9 @@
             <div class="row m-auto">
                 <div class="col-12 col-md-6">
                     <ul class="list-group">
-                        <li class="list-group-item" style="cursor:pointer;" id="i1">Maintenance des ULM <img
-                                src="../public/assets/ressources/i.png" width="5%" alt="i" style="margin-left: 2%;">
+                        <li class="list-group-item" style="cursor:pointer;" id="i1">Maintenance des ULM <img src="../public/assets/ressources/i.png" width="5%" alt="i" style="margin-left: 2%;">
                         </li>
-                        <li class="list-group-item" style="cursor:pointer;" id="i2">Montage des ULM <img
-                                src="../public/assets/ressources/i.png" width="5%" alt="i" style="margin-left: 2%;">
+                        <li class="list-group-item" style="cursor:pointer;" id="i2">Montage des ULM <img src="../public/assets/ressources/i.png" width="5%" alt="i" style="margin-left: 2%;">
                         </li>
                         <li class="list-group-item" style="cursor:pointer;" id="i3">Location d’emplacements ULM protégés
                             <img src="../public/assets/ressources/i.png" width="5%" alt="i" style="margin-left: 2%;">
@@ -282,11 +261,9 @@
                 </div>
                 <div class="col-12 col-md-6 m-auto">
                     <ul class="list-group">
-                        <li class="list-group-item" style="cursor:pointer;" id="i4">Hébergement <img
-                                src="../public/assets/ressources/i.png" width="5%" alt="i" style="margin-left: 2%;">
+                        <li class="list-group-item" style="cursor:pointer;" id="i4">Hébergement <img src="../public/assets/ressources/i.png" width="5%" alt="i" style="margin-left: 2%;">
                         </li>
-                        <li class="list-group-item" style="cursor:pointer;" id="i5">Service de restauration <img
-                                src="../public/assets/ressources/i.png" width="5%" alt="i" style="margin-left: 2%;">
+                        <li class="list-group-item" style="cursor:pointer;" id="i5">Service de restauration <img src="../public/assets/ressources/i.png" width="5%" alt="i" style="margin-left: 2%;">
                         </li>
                     </ul>
                 </div>
@@ -342,15 +319,13 @@
 
     <section name="ULM" id="ULM">
         <div>
-            <h1 class="text-center p-2 mb-5"
-                style="background-color: rgba(0, 0, 0, 0.7); border-radius: 10px; color: white; width:25%; margin:3% auto; margin-top: 20%;">
+            <h1 class="text-center p-2 mb-5" style="background-color: rgba(0, 0, 0, 0.7); border-radius: 10px; color: white; width:25%; margin:3% auto; margin-top: 20%;">
                 Différents ULM</h1>
         </div>
         <div id="carousel1" style="position: relative;">
             <div class="carousel-item1 active">
                 <div style="position: relative; display: block; text-align: center; margin: auto;">
-                    <img src="../public/assets/ressources/Multiaxes.png" alt="ULM1" width="30%" id="ulm1"
-                        style="margin: auto; display: block;" />
+                    <img src="../public/assets/ressources/Multiaxes.png" alt="ULM1" width="30%" id="ulm1" style="margin: auto; display: block;" />
                     <h3 style="padding: 4px 40px; background-color:#556672; border-radius:10px;position: absolute;
                          top: 50%; left: 50%; transform: translate(-50%, -50%);">
                         Multiaxes</h3>
@@ -379,8 +354,7 @@
             </div>
             <div class="carousel-item1">
                 <div style="position: relative; display: block; text-align: center; margin: auto;">
-                    <img src="../public/assets/ressources/Paramoteur.png" alt="ULM1" width="30%" id="ulm1"
-                        style="margin: auto; display: block;" />
+                    <img src="../public/assets/ressources/Paramoteur.png" alt="ULM1" width="30%" id="ulm1" style="margin: auto; display: block;" />
                     <h3 style="padding: 4px 40px; background-color:#556672; border-radius:10px;position: absolute;
                          top: 50%; left: 50%; transform: translate(-50%, -50%); ">
                         Paramoteur</h3>
@@ -409,8 +383,7 @@
             </div>
             <div class="carousel-item1">
                 <div style="position: relative; display: block; text-align: center; margin: auto;">
-                    <img src="../public/assets/ressources/Autogire.png" alt="ULM1" width="30%" id="ulm1"
-                        style="margin: auto; display: block;" />
+                    <img src="../public/assets/ressources/Autogire.png" alt="ULM1" width="30%" id="ulm1" style="margin: auto; display: block;" />
                     <h3 style="padding: 4px 40px; background-color:#556672; border-radius:10px;position: absolute;
                          top: 50%; left: 50%; transform: translate(-50%, -50%); ">
                         Autogire Ultraléger</h3>
@@ -439,8 +412,7 @@
             </div>
             <div class="carousel-item1">
                 <div style="position: relative; display: block; text-align: center; margin: auto;">
-                    <img src="../public/assets/ressources/Pendulaire.png" alt="ULM1" width="30%" id="ulm1"
-                        style="margin: auto; display: block;" />
+                    <img src="../public/assets/ressources/Pendulaire.png" alt="ULM1" width="30%" id="ulm1" style="margin: auto; display: block;" />
                     <h3 style="padding: 4px 40px; background-color:#556672; border-radius:10px;position: absolute;
                          top: 50%; left: 50%; transform: translate(-50%, -50%); ">
                         Pendulaire</h3>
@@ -469,8 +441,7 @@
             </div>
             <div class="carousel-item1">
                 <div style="position: relative; display: block; text-align: center; margin: auto;">
-                    <img src="../public/assets/ressources/HelicoLeger.png" alt="ULM1" width="30%" id="ulm1"
-                        style="margin: auto; display: block;" />
+                    <img src="../public/assets/ressources/HelicoLeger.png" alt="ULM1" width="30%" id="ulm1" style="margin: auto; display: block;" />
                     <h3 style="padding: 4px 40px; background-color:#556672; border-radius:10px;position: absolute;
                          top: 50%; left: 50%; transform: translate(-50%, -50%); ">
                         Hélicoptère Ultraléger</h3>
@@ -499,8 +470,7 @@
             </div>
             <div class="carousel-item1">
                 <div style="position: relative; display: block; text-align: center; margin: auto;">
-                    <img src="../public/assets/ressources/Baloon.png" alt="ULM1" width="30%" id="ulm1"
-                        style="margin: auto; display: block;" />
+                    <img src="../public/assets/ressources/Baloon.png" alt="ULM1" width="30%" id="ulm1" style="margin: auto; display: block;" />
                     <h3 style="padding: 4px 40px; background-color:#556672;border-radius:10px;position: absolute;
                          top: 50%; left: 50%; transform: translate(-50%, -50%); ">
                         Aérostat Ultraléger</h3>
@@ -528,38 +498,40 @@
                 </div>
             </div>
             <div id="prev" class="bg-transparent" style="cursor: pointer; position: absolute; top: 50%; left: 22%;  font-size: 6rem; border-radius: 50%; width:10%; height:24%;
-             transform: translateY(-50%); animation: none"><</div>
-            <div class="bg-transparent" id="next" style="cursor: pointer;  animation:none; position: absolute; top: 50%; right: 15%; transform: translateY(-50%); font-size: 6rem; border-radius: 50%; width:10%; height:24%;">></div>
-        </div>
-        <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            let index = 0;
-            const items1 = document.querySelectorAll('.carousel-item1');
-            const nextButton = document.getElementById('next');
-            const prevButton = document.getElementById('prev');
+             transform: translateY(-50%); animation: none">
+                < </div>
+                    <div class="bg-transparent" id="next" style="cursor: pointer;  animation:none; position: absolute; top: 50%; right: 15%; transform: translateY(-50%); font-size: 6rem; border-radius: 50%; width:10%; height:24%;">
+                        ></div>
+            </div>
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    let index = 0;
+                    const items1 = document.querySelectorAll('.carousel-item1');
+                    const nextButton = document.getElementById('next');
+                    const prevButton = document.getElementById('prev');
 
-            items1[0].classList.add('active');
+                    items1[0].classList.add('active');
 
-            nextButton.addEventListener('click', () => {
-                items1[index].classList.remove('active');
-                index = (index + 1) % items1.length;
-                items1[index].classList.add('active');
-            });
+                    nextButton.addEventListener('click', () => {
+                        items1[index].classList.remove('active');
+                        index = (index + 1) % items1.length;
+                        items1[index].classList.add('active');
+                    });
 
-            prevButton.addEventListener('click', () => {
-                items1[index].classList.remove('active');
-                index = (index - 1 + items1.length) % items1.length;
-                items1[index].classList.add('active');
+                    prevButton.addEventListener('click', () => {
+                        items1[index].classList.remove('active');
+                        index = (index - 1 + items1.length) % items1.length;
+                        items1[index].classList.add('active');
 
-            });
-        });
-        </script>
+                    });
+                });
+            </script>
     </section>
     <section name="info + contact" style="padding-bottom: 5%;">
         <div class="container mt-5 mb-5">
             <div class="text-center m-auto bg-white mb-5 w-50 p-3" style="border-radius: 10px;">
                 <a href="?page=main.reservation" class="w-50" style="color: black; text-decoration: none;">
-                    <div class="text-center" style="font-size: 1.2rem;">> RESERVEZ VOTRE VOL MAINTENANT << /div>
+                    <div class="text-center" style="font-size: 1.2rem;">> RESERVEZ VOTRE VOL MAINTENANT < </div>
                 </a>
             </div>
             <div class="row d-flex justify-content-around">
@@ -567,10 +539,7 @@
                     <div class="card">
                         <div class="card-header">
                             <h3 class="mb-0 ">
-                                <button class="btn btn-link d-flex align-items-center w-100 justify-content-between"
-                                    type="button" data-bs-toggle="collapse" data-bs-target="#infoCollapse1"
-                                    aria-expanded="false" aria-controls="infoCollapse1"
-                                    style="color: black; text-decoration: none;">
+                                <button class="btn btn-link d-flex align-items-center w-100 justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#infoCollapse1" aria-expanded="false" aria-controls="infoCollapse1" style="color: black; text-decoration: none;">
                                     <div>Infos</div>
                                     <div class="fas p-2 text-end">▲</div>
                                 </button>
@@ -591,10 +560,7 @@
                     <div class="card">
                         <div class="card-header">
                             <h3 class="mb-0 d-flex justify-content-between">
-                                <button class="btn btn-link d-flex align-items-center w-100 justify-content-between"
-                                    type="button" data-bs-toggle="collapse" data-bs-target="#contactForm"
-                                    aria-expanded="false" aria-controls="contactForm"
-                                    style="color: black; text-decoration: none;">
+                                <button class="btn btn-link d-flex align-items-center w-100 justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#contactForm" aria-expanded="false" aria-controls="contactForm" style="color: black; text-decoration: none;">
                                     <div>Contactez-nous</div>
                                     <div class="fas p-2 text-end">▲</div>
                                 </button>
@@ -633,34 +599,34 @@
 </div>
 
 <script>
-var coll = document.querySelectorAll(".btn.btn-link");
-coll.forEach((btn) => {
-    btn.addEventListener("click", function() {
-        var arrowIcon = this.querySelector('.fas');
-        arrowIcon.classList.toggle('rotate');
+    var coll = document.querySelectorAll(".btn.btn-link");
+    coll.forEach((btn) => {
+        btn.addEventListener("click", function() {
+            var arrowIcon = this.querySelector('.fas');
+            arrowIcon.classList.toggle('rotate');
+        });
     });
-});
 </script>
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-    var images = ['i1', 'i2', 'i3', 'i4', 'i5'];
-    var texts = {
-        'i1': 'L’entretien des ULM est compris dans le service par défaut de location, lors de la location de ces derniers',
-        'i2': 'Notre équipe s’occupe de tout, et monte votre ULM en amont du vol, afin de bénéficeier d’une expérience avancé',
-        'i3': 'Un service de location d’emplacements sont disponible dans le cas d’une utilisation de votre propre ULM !',
-        'i4': 'Nous avons la possibilité de vous accueillir à proximité de l’aéroclub pour y passez une merveilleuse nuit :',
-        'i5': 'Un service de restauration est proposés tous les week-ends, à un moindre coût et de qualité.'
-    };
+    document.addEventListener('DOMContentLoaded', function() {
+        var images = ['i1', 'i2', 'i3', 'i4', 'i5'];
+        var texts = {
+            'i1': 'L’entretien des ULM est compris dans le service par défaut de location, lors de la location de ces derniers',
+            'i2': 'Notre équipe s’occupe de tout, et monte votre ULM en amont du vol, afin de bénéficeier d’une expérience avancé',
+            'i3': 'Un service de location d’emplacements sont disponible dans le cas d’une utilisation de votre propre ULM !',
+            'i4': 'Nous avons la possibilité de vous accueillir à proximité de l’aéroclub pour y passez une merveilleuse nuit :',
+            'i5': 'Un service de restauration est proposés tous les week-ends, à un moindre coût et de qualité.'
+        };
 
-    images.forEach(function(imageId) {
-        var li = document.getElementById(imageId);
+        images.forEach(function(imageId) {
+            var li = document.getElementById(imageId);
 
-        li.addEventListener('click', function(e) {
-            var popup = li.querySelector('div');
-            if (popup) {
-                li.removeChild(popup);
-            } else {
-                var popupHTML = `
+            li.addEventListener('click', function(e) {
+                var popup = li.querySelector('div');
+                if (popup) {
+                    li.removeChild(popup);
+                } else {
+                    var popupHTML = `
                 <div style="
                     position: absolute;
                     left: ${li.offsetLeft}px;
@@ -675,9 +641,9 @@ document.addEventListener('DOMContentLoaded', function() {
                     ${texts[imageId] || 'Erreur'}
                 </div>
             `;
-                li.insertAdjacentHTML('beforeend', popupHTML);
-            }
+                    li.insertAdjacentHTML('beforeend', popupHTML);
+                }
+            });
         });
     });
-});
 </script>
