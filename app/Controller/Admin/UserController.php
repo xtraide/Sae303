@@ -4,14 +4,16 @@ namespace App\Controller\Admin;
 
 use Core\HTML\BootstrapForm;
 
+
 class UserController extends \App\Controller\AppController
 {
+    protected $User;
+
     public function __construct()
     {
         parent::__construct();
-        $this->loadModel('User');
+        $this->User = $this->loadModel('User');
     }
-
 
     public function index()
     {
@@ -19,78 +21,46 @@ class UserController extends \App\Controller\AppController
         $this->render('admin.user.index', compact('users'));
     }
 
-
     public function edit()
     {
-
-        $table = $this->User;
-        if (!empty($_POST)) {
-            $result = $table->update($_GET['id'], [
-                'civilite' => $_POST['civilite'],
-                'nom' => $_POST['nom'],
-                'prenom' => $_POST['prenom'],
-                '_date' => $_POST['_date'],
-                'situation_familiale' => $_POST['situation_familiale'],
-                'date_situation_familiale' => $_POST['date_situation_familiale'],
-                'dateFin_situation_familiale' => $_POST['dateFin_situation_familiale'],
-                'email' => $_POST['email'],
-                'numero' => $_POST['numero'],
-                'nb_a_charge' => $_POST['nb_a_charge'],
-                'activite' => $_POST['activite'],
-                'role' => $_POST['role']
-            ],);
-
-            if ($result) {
-?>
-                <div class="alert alert-success">L'adherent a bien été modifié</div>
-            <?php
+        $errorMessage = '';
+        if ($_POST) {
+            try {
+                $this->validateForm($_POST);
+                $result = $this->User->update($_GET['id'], $_POST);
+                return $this->index();
+            } catch (\Exception $e) {
+                $errorMessage = $e->getMessage();
             }
         }
-        $post = $table->find($_GET['id']);
-        var_dump($post);
-        $form = new \Core\HTML\BootstrapForm($post);
-        $this->render('admin.avion.edit', compact('form'));
-    }
 
+        $user = $this->User->find($_GET['id']);
+        $form = new BootstrapForm($user);
+        $this->render('admin.user.edit', compact('form', 'errorMessage'));
+    }
 
     public function add()
     {
-
-        $table = $this->User;
-        if (!empty($_POST)) {
-            $result = $table->create([
-                'civilite' => $_POST['civilite'],
-                'nom' => $_POST['nom'],
-                'prenom' => $_POST['prenom'],
-                '_date' => $_POST['_date'],
-                'situation_familiale' => $_POST['situation_familiale'],
-                'date_situation_familiale' => $_POST['date_situation_familiale'],
-                'dateFin_situation_familiale' => $_POST['dateFin_situation_familiale'],
-                'email' => $_POST['email'],
-                'numero' => $_POST['numero'],
-                'nb_a_charge' => $_POST['nb_a_charge'],
-                'activite' => $_POST['activite'],
-                'role' => $_POST['role']
-            ]);
-
-
-
-            if ($result) {
-            ?>
-                <div class="alert alert-success">L'adherent a bien été ajouter</div>
-<?php
+        $errorMessage = '';
+        if ($_POST) {
+            try {
+                $this->validateForm($_POST);
+                $result = $this->User->create($_POST);
+                return $this->index();
+            } catch (\Exception $e) {
+                $errorMessage = $e->getMessage();
             }
         }
 
-        $form = new \Core\HTML\BootstrapForm($_POST);
-        $this->render('admin.adherent.edit', compact('form'));
+        $form = new BootstrapForm($_POST);
+        $this->render('admin.user.edit', compact('form', 'errorMessage'));
     }
+
     public function delete()
     {
-        $table = App::getInstance()->getTable('adherent');
         if (!empty($_POST)) {
-            $result = $table->delete($_POST['id']);
+            $this->User->delete($_POST['id']);
         }
-        header('Location: Staff.php?page=admin.adherent.index');
+        return $this->index();
     }
 }

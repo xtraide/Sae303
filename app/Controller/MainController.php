@@ -6,11 +6,13 @@ use Core\HTML\BootstrapForm;
 
 class MainController extends AppController
 {
+    protected $Avion;
     // Constructor function that initializes the MainController class and loads the 'Avion' model
     public function __construct()
     {
+
         parent::__construct();
-        $this->loadModel('Avion');
+        $this->Avion = $this->loadModel('Avion');
     }
 
     // Function that handles the index route. It fetches all 'Avion' records and renders the 'main.index' view with these records
@@ -32,11 +34,9 @@ class MainController extends AppController
     {
         $this->render('main.aerodrome');
     }
-    public function reservation()
+    public function condition()
     {
-        $error = '';
-        $form = new BootstrapForm($_POST);
-        $this->render('main.reservation', compact('form', 'error'));
+        $this->render('main.condition');
     }
 
     public function condition()

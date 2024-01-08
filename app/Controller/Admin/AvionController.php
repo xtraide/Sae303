@@ -3,15 +3,17 @@
 namespace App\Controller\Admin;
 
 use Core\HTML\BootstrapForm;
+use App\Model\Avion;
 
 class AvionController extends \App\Controller\AppController
 {
+    protected $Avion;
+
     public function __construct()
     {
         parent::__construct();
-        $this->loadModel('Avion');
+        $this->Avion = $this->loadModel('Avion');
     }
-
 
     public function index()
     {
@@ -19,58 +21,47 @@ class AvionController extends \App\Controller\AppController
         $this->render('admin.avion.index', compact('avions'));
     }
 
-
     public function edit()
     {
-        if (!empty($_POST)) {
-            $result = $this->Avion->update($_GET['id'], [
-                'modele' => $_POST['modele'],
-                'v_max' => $_POST['v_max'],
-                'capacite' => $_POST['capacite'],
-                'autonomie' => $_POST['autonomie'],
-                'poid' => $_POST['poid']
-
-            ]);
-            if ($result) {
+        $errorMessage = '';
+        if ($_POST) {
+            try {
+                $this->validateForm($_POST);
+                $result = $this->Avion->update($_GET['id'], $_POST);
                 return $this->index();
+            } catch (\Exception $e) {
+                $errorMessage = $e->getMessage();
             }
         }
+
         $avion = $this->Avion->find($_GET['id']);
         $form = new BootstrapForm($avion);
-        $this->render('admin.avion.edit', compact('form'));
+        $this->render('admin.avion.edit', compact('form', 'errorMessage'));
     }
-
 
     public function add()
     {
-        $table = $this->Avion;
-        if (!empty($_POST)) {
-            $result = $table->create([
-                'modele' => $_POST['modele'],
-                'v_max' => $_POST['v_max'],
-                'capacite' => $_POST['capacite'],
-                'autonomie' => $_POST['autonomie'],
-                'poid' => $_POST['poid'],
-
-            ]);
-
-            if ($result) {
-?>
-                <div class="alert alert-success">L'avion a bien été ajouter</div>
-<?php
+        $errorMessage = '';
+        if ($_POST) {
+            try {
+                $this->validateForm($_POST);
+                $result = $this->Avion->create($_POST);
+                return $this->index();
+            } catch (\Exception $e) {
+                $errorMessage = $e->getMessage();
             }
         }
 
-        $form = new \Core\HTML\BootstrapForm($_POST);
-        $this->render('admin.avion.edit', compact('form'));
-    }
 
+        $form = new BootstrapForm($_POST);
+        $this->render('admin.avion.edit', compact('form', 'errorMessage'));
+    }
 
     public function delete()
     {
         if (!empty($_POST)) {
-            $this->Avion->delete($_POST['id']);
-            return $this->index();
+            $result = $this->Avion->delete($_POST['id']);
         }
+        return $this->index();
     }
 }

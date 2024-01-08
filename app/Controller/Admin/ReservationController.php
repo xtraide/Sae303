@@ -4,66 +4,64 @@ namespace App\Controller\Admin;
 
 use Core\HTML\BootstrapForm;
 
+
 class ReservationController extends \App\Controller\AppController
 {
+
+    protected $Reservation;
+
     public function __construct()
     {
         parent::__construct();
-        $this->loadModel('Reservation');
+        $this->Reservation = $this->loadModel('Reservation');
     }
-
 
     public function index()
     {
         $Reservations = $this->Reservation->all();
-        $this->render('admin.avion.index', compact('Reservations'));
+        $this->render('admin.Reservation.index', compact('Reservations'));
     }
-
 
     public function edit()
     {
-        $table = $this->Reservation;
-        if (!empty($_POST)) {
-            $result = $table->update($_GET['id'], [
-                'modele' => $_POST['modele']
-            ]);
-
-            if ($result) {
-?>
-                <div class="alert alert-success">La reservation a bien été modifié</div>
-            <?php
+        $errorMessage = '';
+        if ($_POST) {
+            try {
+                $this->validateForm($_POST);
+                $result = $this->Reservation->update($_GET['id'], $_POST);
+                return $this->index();
+            } catch (\Exception $e) {
+                $errorMessage = $e->getMessage();
             }
         }
-        $post = $table->find($_GET['id']);
 
-        $form = new \Core\HTML\BootstrapForm($post);
-        $this->render('admin.reservation.edit', compact('form'));
+        $Reservation = $this->Reservation->find($_GET['id']);
+        $form = new BootstrapForm($Reservation);
+        $this->render('admin.Reservation.edit', compact('form', 'errorMessage'));
     }
-
 
     public function add()
     {
-        $table = $this->Reservation;
-        if (!empty($_POST)) {
-            $result = $table->create([
-                'modele' => $_POST['modele']
-            ]);
-
-            if ($result) {
-            ?>
-                <div class="alert alert-success">L'reservation a bien été ajouter</div>
-<?php
+        $errorMessage = '';
+        if ($_POST) {
+            try {
+                $this->validateForm($_POST);
+                $result = $this->Reservation->create($_POST);
+                return $this->index();
+            } catch (\Exception $e) {
+                $errorMessage = $e->getMessage();
             }
         }
 
-        $form = new \Core\HTML\BootstrapForm($_POST);
-        $this->render('admin.reservation.edit', compact('form'));
+        $form = new BootstrapForm($_POST);
+        $this->render('admin.Reservation.edit', compact('form', 'errorMessage'));
     }
+
     public function delete()
     {
         if (!empty($_POST)) {
-            $this->Reservation->delete($_POST['id']);
-            return $this->index();
+            $result = $this->Reservation->delete($_POST['id']);
         }
+        return $this->index();
     }
 }

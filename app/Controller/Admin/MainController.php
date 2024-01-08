@@ -5,10 +5,11 @@ namespace App\Controller\Admin;
 
 class MainController extends \App\Controller\AppController
 {
+    protected $Avion;
     public function __construct()
     {
         parent::__construct();
-        $this->loadModel('Avion');
+        $this->Avion = $this->loadModel('Avion');
     }
     public function index()
     {

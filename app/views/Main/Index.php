@@ -1,5 +1,5 @@
-<section class="container-fluid w-100" style="background-image: url('../public/assets/ressources/BackgroundAcceuil.png'); 
-           background-size: cover; 
+<section class="container-fluid w-100" style="background-image: url('../public/assets/ressources/BackgroundAcceuil.png');
+           background-size: cover;
            background-position: center">
     <div id="icones" class="container-card d-flex justify-content-evenly align-content-center"
         style="padding-top: 55%; padding-bottom: 30%;">
@@ -297,7 +297,8 @@
     <section class="margintop">
         <div class="container mt-5 mt-sm-5">
             <header>
-                <h1 class="text-center title_h1" style="background-color: rgba(0, 0, 0, 0.7); border-radius: 20px; color: white;
+                <h1 class="text-center title_h1" style="background-color: rgba(0, 0, 0, 0.7);
+                 border-radius: 20px; color: white;
          margin: 2% auto!important; padding: 1%; height: auto; width: 40%; margin-top: 20%;">Témoignages</h1>
             </header>
             <div class="row">
@@ -342,8 +343,9 @@
 
     <section name="ULM" id="ULM">
         <div>
-            <h1 class="text-center p-2 mb-5"
-                style="background-color: rgba(0, 0, 0, 0.7); border-radius: 10px; color: white; width:25%; margin:3% auto; margin-top: 20%;">
+            <h1 class="text-center p-2 mb-5" style="background-color:
+             rgba(0, 0, 0, 0.7); border-radius: 10px; color: white;
+                 width:25%; margin:3% auto; margin-top: 20%;">
                 Différents ULM</h1>
         </div>
         <div id="carousel1" style="position: relative;">
@@ -527,33 +529,38 @@
                     </div>
                 </div>
             </div>
-            <div id="prev" class="bg-transparent" style="cursor: pointer; position: absolute; top: 50%; left: 22%;  font-size: 6rem; border-radius: 50%; width:10%; height:24%;
-             transform: translateY(-50%); animation: none"><</div>
-            <div class="bg-transparent" id="next" style="cursor: pointer; position: absolute; top: 50%; right: 15%; transform: translateY(-50%); font-size: 6rem; border-radius: 50%; width:10%; height:24%;"> > </div>
-        </div>
-        <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            let index = 0;
-            const items1 = document.querySelectorAll('.carousel-item1');
-            const nextButton = document.getElementById('next');
-            const prevButton = document.getElementById('prev');
+            <div id="prev" class="bg-transparent" style="cursor: pointer; position: absolute;
+             top: 50%; left: 22%;  font-size: 6rem; border-radius: 50%; width:10%; height:24%;
+             transform: translateY(-50%); animation: none">
+                < </div>
+                    <div class="bg-transparent" id="next" style="cursor: pointer;  animation:none; position: absolute; top: 50%;
+                         right: 15%; transform: translateY(-50%); font-size: 6rem;
+                          border-radius: 50%; width:10%; height:24%;">
+                        ></div>
+            </div>
+            <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                let index = 0;
+                const items1 = document.querySelectorAll('.carousel-item1');
+                const nextButton = document.getElementById('next');
+                const prevButton = document.getElementById('prev');
 
-            items1[0].classList.add('active');
+                items1[0].classList.add('active');
 
-            nextButton.addEventListener('click', () => {
-                items1[index].classList.remove('active');
-                index = (index + 1) % items1.length;
-                items1[index].classList.add('active');
+                nextButton.addEventListener('click', () => {
+                    items1[index].classList.remove('active');
+                    index = (index + 1) % items1.length;
+                    items1[index].classList.add('active');
+                });
+
+                prevButton.addEventListener('click', () => {
+                    items1[index].classList.remove('active');
+                    index = (index - 1 + items1.length) % items1.length;
+                    items1[index].classList.add('active');
+
+                });
             });
-
-            prevButton.addEventListener('click', () => {
-                items1[index].classList.remove('active');
-                index = (index - 1 + items1.length) % items1.length;
-                items1[index].classList.add('active');
-
-            });
-        });
-        </script>
+            </script>
     </section>
     <section name="info + contact" style="padding-bottom: 5%;">
         <div class="container mt-5 mb-5">
@@ -578,7 +585,7 @@
                         </div>
                         <div class="collapse" id="infoCollapse1">
                             <div class="card-body">
-                                Localisation: <br>
+                                70200 Frotey-lès-Lure <br>
                                 Adresse mail: acf2l@gmail.com<br>
                                 01.24.26.85.45 <br>
                             </div>
