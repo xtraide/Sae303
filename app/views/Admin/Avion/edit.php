@@ -5,10 +5,10 @@
         </div>
     <?php endif; ?>
     <?= $form->input('modele', 'Modèle de l\'avion'); ?>
-    <?= $form->input('v_max', 'Vitesse Max'); ?>
-    <?= $form->input('capacite', 'Capacité'); ?>
-    <?= $form->input('autonomie', 'Autonomie'); ?>
-    <?= $form->input('poid', 'Poid'); ?>
+    <?= $form->input('v_max', 'Vitesse Max', ['type' => "number"]); ?>
+    <?= $form->input('capacite', 'Capacité', ['type' => "number"]); ?>
+    <?= $form->input('autonomie', 'Autonomie', ['type' => "number"]); ?>
+    <?= $form->input('poid', 'Poid', ['type' => "number"]); ?>
 
     <button class="btn btn-primary">Sauvegarder</button>
 </form>
