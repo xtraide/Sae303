@@ -1,25 +1,12 @@
-<section id="main-Antoine">
-    <h1 id="h1-Antoine">CENTRE DE CONTROLE</h1>
-
-    <div id="greatRectangle-Antoine">
-        <div id="rectangle-Antoine">
-
-            <div id="reservation">
-                <h3>Adhérents</h3>
-                <img src="../imgs/people.png" alt="adherents">
-            </div>
-
-            <div id="adherent">
-                <h3 id="h3-Antoine">Réservations</h3>
-                <img src="../imgs/agenda.png" alt="reservation">
-            </div>
-
-            <div id="autres">
-                <h3 id="h3-Antoine">Autres</h3>
-                <img src="../imgs/other.png" alt="autres">
-            </div>
+    <br>
+    <br>
+    <br>
+    <div class="container mt-5 mb-5 ">
+        <h1 class="mb-4">Page de gestion</h1>
+        <div class="list-group">
+            <a href="?page=admin.user.index" class="list-group-item list-group-item-action">Gerer les Users</a>
+            <a href="?page=admin.avion.index" class="list-group-item list-group-item-action">Gerer les Avions</a>
+            <a href="?page=admin.reservation.index" class="list-group-item list-group-item-action">Gerer les Reservations</a>
+            <a href="?page=admin.pilote.index" class="list-group-item list-group-item-action">Gerer les Pilotes</a>
         </div>
     </div>
-
-    </div>
-</section>

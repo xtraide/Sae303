@@ -73,7 +73,7 @@ class UserController extends AppController
     }
     public function reservation()
     {
-        $error = '';
+        $errorMessage = '';
         $form = new BootstrapForm($_POST);
         $this->render('user.reservation', compact('form', 'errorMessage'));
     }

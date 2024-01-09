@@ -13,13 +13,13 @@ class ReservationController extends \App\Controller\AppController
     public function __construct()
     {
         parent::__construct();
-        $this->Reservation = $this->loadModel('Reservation');
+        $this->Reservation = $this->loadModel('reservation');
     }
 
     public function index()
     {
         $Reservations = $this->Reservation->all();
-        $this->render('admin.Reservation.index', compact('Reservations'));
+        $this->render('admin.reservation.index', compact('Reservations'));
     }
 
     public function edit()
@@ -37,7 +37,7 @@ class ReservationController extends \App\Controller\AppController
 
         $Reservation = $this->Reservation->find($_GET['id']);
         $form = new BootstrapForm($Reservation);
-        $this->render('admin.Reservation.edit', compact('form', 'errorMessage'));
+        $this->render('admin.reservation.edit', compact('form', 'errorMessage'));
     }
 
     public function add()

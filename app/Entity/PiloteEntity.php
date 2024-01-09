@@ -12,4 +12,10 @@ use Core\Entity\Entity;
 
 class PiloteEntity extends Entity
 {
+
+    public $id;
+    public $nom;
+    public $prenom;
+    public $civilite;
+    public $email;
 }
