@@ -1,5 +1,10 @@
 <h1 style="padding-top: 100px; text-align:center">Reservation</h1>
 <div class="col-md-6 mx-auto">
+    <?php if (!empty($errorMessage)) : ?>
+    <div class="alert alert-danger">
+        <?= $errorMessage ?>
+    </div>
+    <?php endif; ?>
     <form action="#" method="post" class="mb-3">
         <div class="form-group">
             <?= $form->input('_date', "Date de réservation", ['class' => 'btn btn-primary', 'type' => 'date']); ?>
