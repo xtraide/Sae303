@@ -27,7 +27,7 @@ class AvionController extends \App\Controller\AppController
         if ($_POST) {
             try {
                 $this->validateForm($_POST);
-                $_POST['img'] = $this->uploadImage('img', 'reservation');
+                $_POST['img'] = $this->uploadImage('img', 'assets\ressources\avion\\');
                 $result = $this->Avion->update($_GET['id'], $_POST);
                 return $this->index();
             } catch (\Exception $e) {
@@ -46,7 +46,7 @@ class AvionController extends \App\Controller\AppController
         if ($_POST) {
             try {
                 $this->validateForm($_POST);
-                $_POST['img'] = $this->uploadImage('img', 'reservation');
+                $_POST['img'] = $this->uploadImage('img', 'assets\ressources\avion\\');
                 $result = $this->Avion->create($_POST);
                 return $this->index();
             } catch (\Exception $e) {

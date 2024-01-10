@@ -1,4 +1,4 @@
-<section class="mt-5" style="">
+<section class="mt-5">
     <br>
     <br>
     <br>
