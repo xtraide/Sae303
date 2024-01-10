@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le : dim. 07 jan. 2024 à 18:59
+-- Généré le : mer. 10 jan. 2024 à 23:18
 -- Version du serveur : 8.2.0
 -- Version de PHP : 8.2.13
 
@@ -36,7 +36,7 @@ CREATE TABLE IF NOT EXISTS `ntrhndmam_avion` (
   `autonomie` int NOT NULL,
   `poid` int NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Déchargement des données de la table `ntrhndmam_avion`
@@ -44,7 +44,7 @@ CREATE TABLE IF NOT EXISTS `ntrhndmam_avion` (
 
 INSERT INTO `ntrhndmam_avion` (`id`, `modele`, `v_max`, `capacite`, `autonomie`, `poid`) VALUES
 (6, 'Boeing 747r', 0, 0, 0, 0),
-(7, 'fff', 0, 0, 0, 0);
+(7, 'fff', 5, 5, 5, 5);
 
 -- --------------------------------------------------------
 
@@ -60,14 +60,14 @@ CREATE TABLE IF NOT EXISTS `ntrhndmam_pilote` (
   `civilite` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `email` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Déchargement des données de la table `ntrhndmam_pilote`
 --
 
 INSERT INTO `ntrhndmam_pilote` (`id`, `nom`, `prenom`, `civilite`, `email`) VALUES
-(1, 'Smith', 'Jane', 'Ms', 'jane@example.com');
+(1, 'Smith', 'Jane', 'Madame', 'jane@example.com');
 
 -- --------------------------------------------------------
 
@@ -82,18 +82,19 @@ CREATE TABLE IF NOT EXISTS `ntrhndmam_reservation` (
   `id_1` int NOT NULL,
   `id_2` int NOT NULL,
   `id_3` int NOT NULL,
+  `horraire` time NOT NULL,
   PRIMARY KEY (`id`),
   KEY `id_1` (`id_1`),
   KEY `id_2` (`id_2`),
   KEY `id_3` (`id_3`)
-) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Déchargement des données de la table `ntrhndmam_reservation`
 --
 
-INSERT INTO `ntrhndmam_reservation` (`id`, `_date`, `id_1`, `id_2`, `id_3`) VALUES
-(1, '2024-01-01', 1, 1, 1);
+INSERT INTO `ntrhndmam_reservation` (`id`, `_date`, `id_1`, `id_2`, `id_3`, `horraire`) VALUES
+(2, '2024-02-01', 1, 1, 6, '08:30:00');
 
 -- --------------------------------------------------------
 
@@ -121,15 +122,14 @@ CREATE TABLE IF NOT EXISTS `ntrhndmam_user` (
   `password` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `role` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Déchargement des données de la table `ntrhndmam_user`
 --
 
 INSERT INTO `ntrhndmam_user` (`id`, `civilite`, `nom`, `prenom`, `_date`, `adresse`, `situation_familiale`, `date_situation_familiale`, `dateFin_situation_familiale`, `email`, `numero`, `nb_a_charge`, `activite`, `token`, `verified`, `password`, `role`) VALUES
-(1, 'Mr', 'Doe', 'John', '2023-12-13', '123 Street', 'Single', '2023-12-13', '2023-12-13', 'john@example.com', 1234567890, 0, 'Developer', 'token', 1, 'password', 'Admin'),
-(2, 'Ms', 'Doe', 'Jane', '2023-12-14', '456 Street', 'Married', '2023-12-14', '2023-12-14', 'jane@example.com', 2147483647, 2, 'Designer', 'token2', 1, 'password2', 'User');
+(3, 'Monsieur', 'test', 'test', '2024-01-26', '742_av_77120_tg', 'pacsé', '2024-01-14', '2024-01-21', 'admin@gmail.com', 406406520, 0, 'des', NULL, NULL, 'c4033bff94b567a190e33faa551f411caef444f2', 'Admin');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
