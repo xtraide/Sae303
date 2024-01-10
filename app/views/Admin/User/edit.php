@@ -1,8 +1,8 @@
-<form method="post " class=" m-auto mb-5 col-12 col-md-10">
+<form method="post " class=" m-auto mb-5 col-12 col-md-10" style="padding-top:100px;">
     <?php if (!empty($errorMessage)) : ?>
-    <div class="alert alert-danger">
-        <?= $errorMessage ?>
-    </div>
+        <div class="alert alert-danger">
+            <?= $errorMessage ?>
+        </div>
     <?php endif; ?>
     <br>
     <br> <br>

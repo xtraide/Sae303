@@ -339,16 +339,7 @@ section {
   margin-top: 5px !important;
 }
 
-.navbar12 {
-  z-index: 1000;
-  background-color: #121212;
-  color: white;
-  position: fixed;
-  top: -260px;
-  width: 100%;
-  transition: top 0.3s;
-  margin-bottom: 50px;
-}
+
 
 #carousel1 {
   display: flex;
@@ -440,7 +431,7 @@ section {
   border: solid white 4px;
   outline: none;
   color: white;
-  z-index: 1000;
+  z-index: 2;
   border-bottom: solid #556672 4px;
   position: relative;
 }
@@ -483,4 +474,8 @@ section {
 #ntm {
   width: auto;
 
+}
+
+footer {
+  clear: both;
 }
