@@ -1,4 +1,9 @@
 <form method="post" class="mb-3">
+    <?php if (!empty($errorMessage)) : ?>
+    <div class="alert alert-danger">
+        <?= $errorMessage ?>
+    </div>
+    <?php endif; ?>
     <div class="form-group">
         <?= $form->input('reservation_date', "Date de réservation", ['class' => 'btn btn-primary', 'type' => 'date']); ?>
     </div>

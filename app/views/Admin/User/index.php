@@ -4,7 +4,7 @@
     <br>
     <h2>Administrer les users</h2>
 
-    <div class="m-auto mb-5 col-12 col-md-10">
+    <div class="m-auto">
         <a href="?page=admin.user.add" class="btn btn-success m-2">Crée un nouvel user</a>
         <table class="table table-bordered  text-center ">
 

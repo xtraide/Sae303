@@ -1,4 +1,9 @@
 <form method="post " class=" m-auto mb-5 col-12 col-md-10">
+    <?php if (!empty($errorMessage)) : ?>
+    <div class="alert alert-danger">
+        <?= $errorMessage ?>
+    </div>
+    <?php endif; ?>
     <br>
     <br> <br>
     <br> <br>
