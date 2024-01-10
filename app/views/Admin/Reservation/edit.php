@@ -1,16 +1,16 @@
 <form method="post" class="mb-3">
     <div class="form-group">
-        <?= $form->input('_date', "Date de réservation", ['class' => 'btn btn-primary', 'type' => 'date']); ?>
+        <?= $form->input('reservation_date', "Date de réservation", ['class' => 'btn btn-primary', 'type' => 'date']); ?>
     </div>
     <div class="form-group">
-        <?= $form->select('horraire', "Horraire", ['type' => '08:30', '10:30', '14:30', '16:30'], ''); ?>
+        <?= $form->select('reservation_horraire', "Horraire", ['08:30', '10:30', '14:30', '16:30'], ''); ?>
     </div>
     <div class="form-group">
-        <?= $form->select('avion', "Avion", ['type' => 'gergergrgre'], ''); ?>
+        <?= $form->select('avion_modele', "Modéle de l'Avion", $avions, ''); ?>
         <!-- A modifier  le gergergrgre-->
     </div>
     <div class="form-group">
-        <?= $form->select('Pilote', "Pilote", ['type' => 'gergergrgre'], ''); ?>
+        <?= $form->select('Pilote', "Pilote", $pilote, ''); ?>
         <!-- A modifier  le gergergrgre-->
     </div>
     <div class="form-group">

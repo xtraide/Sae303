@@ -12,18 +12,18 @@ use Core\Entity\Entity;
 
 class ReservationEntity extends Entity
 {
-    public $id;
-    public $_date;
-    public $horraire;
+    public $id_reservation;
+    public $reservation_date;
+    public $reservation_horraire;
 
-    public $id_1;
+    public $id_user;
     public $user_nom;
     public $user_prenom;
 
-    public $id_2;
+    public $id_avion;
     public $avion_modele;
 
-    public $id_3;
+    public $id_pilote;
     public $nom_pilote;
     public $prenom_pilote;
 }
