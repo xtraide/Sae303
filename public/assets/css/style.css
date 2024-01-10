@@ -194,7 +194,7 @@ h2 {
   margin-top: -600px;
 }
 
-.label-log>.form-group>label {
+.form-group>label {
   font-family: baloo;
 }
 
@@ -478,4 +478,15 @@ section {
 
 footer {
   clear: both;
+}
+
+.police {
+  font-family: baloo;
+}
+
+th,
+td,
+tr,
+table {
+  font-family: baloo;
 }
