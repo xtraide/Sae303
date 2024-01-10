@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le : mer. 10 jan. 2024 à 23:18
+-- Généré le : mer. 10 jan. 2024 à 23:29
 -- Version du serveur : 8.2.0
 -- Version de PHP : 8.2.13
 
@@ -129,7 +129,7 @@ CREATE TABLE IF NOT EXISTS `ntrhndmam_user` (
 --
 
 INSERT INTO `ntrhndmam_user` (`id`, `civilite`, `nom`, `prenom`, `_date`, `adresse`, `situation_familiale`, `date_situation_familiale`, `dateFin_situation_familiale`, `email`, `numero`, `nb_a_charge`, `activite`, `token`, `verified`, `password`, `role`) VALUES
-(3, 'Monsieur', 'test', 'test', '2024-01-26', '742_av_77120_tg', 'pacsé', '2024-01-14', '2024-01-21', 'admin@gmail.com', 406406520, 0, 'des', NULL, NULL, 'c4033bff94b567a190e33faa551f411caef444f2', 'Admin');
+(3, 'Monsieur', 'test', 'test', '2024-01-26', '742_av_77120_tg', 'pacsé', '2024-01-14', '2024-01-21', 'admin@gmail.com', 406406520, 0, 'des', NULL, NULL, 'a94a8fe5ccb19ba61c4c0873d391e987982fbbd3', 'Admin');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

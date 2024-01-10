@@ -25,6 +25,7 @@ class UserController extends AppController
         if ($_POST) {
             try {
                 $this->validateForm($_POST);
+
                 if ($this->auth->login($_POST['email'], sha1($_POST['password']))) {
                     header('Location: ?page=main.index');
                     exit;
