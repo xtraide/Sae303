@@ -23,6 +23,7 @@ class UserController extends \App\Controller\AppController
 
     public function edit()
     {
+
         $errorMessage = '';
         if ($_POST) {
             try {
@@ -36,6 +37,7 @@ class UserController extends \App\Controller\AppController
 
         $user = $this->User->find($_GET['id']);
         $form = new BootstrapForm($user);
+
         $this->render('admin.user.edit', compact('form', 'errorMessage'));
     }
 
@@ -53,6 +55,7 @@ class UserController extends \App\Controller\AppController
         }
 
         $form = new BootstrapForm($_POST);
+
         $this->render('admin.user.edit', compact('form', 'errorMessage'));
     }
 

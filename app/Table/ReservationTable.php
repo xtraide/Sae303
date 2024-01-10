@@ -15,17 +15,20 @@ class ReservationTable extends Table
             $this->query(
                 'SELECT
     ntrhndmam_reservation.id as "id_reservation", 
-    ntrhndmam_reservation._date as "reservation_date",
-    ntrhndmam_reservation.horraire as "reservation_horraire",
+    ntrhndmam_reservation._date ,
+    ntrhndmam_reservation.horraire ,
+    ntrhndmam_reservation.Id_1,
+    ntrhndmam_reservation.Id_2,
+    ntrhndmam_reservation.Id_3,
 
-    ntrhndmam_user.id as "id_user",
+
     ntrhndmam_user.nom as "user_nom",
     ntrhndmam_user.prenom as "user_prenom",
 
-    ntrhndmam_avion.id as "id_avion",
+
     ntrhndmam_avion.modele as "avion_modele",
 
-    ntrhndmam_pilote.id as "id_pilote",
+ 
     ntrhndmam_pilote.nom as "nom_pilote",
     ntrhndmam_pilote.prenom as "prenom_pilote"
 FROM
@@ -44,17 +47,20 @@ WHERE
         return $this->query(
             'SELECT
     ntrhndmam_reservation.id as "id_reservation", 
-    ntrhndmam_reservation._date as "reservation_date",
-    ntrhndmam_reservation.horraire as "reservation_horraire",
+    ntrhndmam_reservation._date ,
+    ntrhndmam_reservation.horraire ,
+    ntrhndmam_reservation.Id_1,
+    ntrhndmam_reservation.Id_2,
+    ntrhndmam_reservation.Id_3,
 
-    ntrhndmam_user.id as "id_user",
+
     ntrhndmam_user.nom as "user_nom",
     ntrhndmam_user.prenom as "user_prenom",
 
-    ntrhndmam_avion.id as "id_avion",
+
     ntrhndmam_avion.modele as "avion_modele",
 
-    ntrhndmam_pilote.id as "id_pilote",
+ 
     ntrhndmam_pilote.nom as "nom_pilote",
     ntrhndmam_pilote.prenom as "prenom_pilote"
 FROM

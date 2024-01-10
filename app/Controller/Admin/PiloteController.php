@@ -36,6 +36,7 @@ class PiloteController extends \App\Controller\AppController
 
         $Pilote = $this->Pilote->find($_GET['id']);
         $form = new BootstrapForm($Pilote);
+
         $this->render('admin.Pilote.edit', compact('form', 'errorMessage'));
     }
 

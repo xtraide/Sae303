@@ -25,17 +25,17 @@
                     <?php foreach ($Reservations as $Reservation) : ?>
                     <tr>
                         <td><?= $Reservation->id_reservation ?></td>
-                        <td><?= $Reservation->reservation_date ?></td>
-                        <td><?= $Reservation->reservation_horraire ?></td>
+                        <td><?= $Reservation->_date ?></td>
+                        <td><?= $Reservation->horraire ?></td>
                         <td>
-                            <?= $Reservation->id_user ?>
+
                             <?= $Reservation->user_nom ?>
                             <?= $Reservation->user_prenom ?></td>
                         <td>
-                            <?= $Reservation->id_avion ?>
+
                             <?= $Reservation->avion_modele ?></td>
                         <td>
-                            <?= $Reservation->id_pilote ?>
+
                             <?= $Reservation->nom_pilote ?>
                             <?= $Reservation->prenom_pilote ?>
                         </td>

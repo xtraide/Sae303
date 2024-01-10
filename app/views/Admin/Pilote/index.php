@@ -26,7 +26,8 @@
                         <td><?= $pilote->email ?></td>
                         <td>
                             <div class="btn-group" role="group" aria-label="Basic example">
-                                <a href="?page=admin.pilote.edit" class="btn btn-primary">Editer</a>
+                                <a href="?page=admin.pilote.edit&id=<?= $pilote->id ?>"
+                                    class="btn btn-primary">Editer</a>
                                 <form action="?page=admin.pilote.delete" method="post">
                                     <input type="hidden" name="id" value="<?= $pilote->id ?>">
                                     <button type="submit" class="btn btn-danger">Supprimer</button>
