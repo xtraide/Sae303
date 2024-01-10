@@ -18,4 +18,5 @@ class AvionEntity extends Entity
     public $capacite;
     public $autonomie;
     public $poid;
+    public $img;
 }

@@ -20,10 +20,18 @@ class UserEntity extends Entity
     public $nom;
     public $prenom;
     public $_date;
+
     public $adresse;
+    public $nb_voix;
+    public $rue;
+    public $code_postal;
+    public $ville;
+
+
     public $situation_familiale;
     public $date_situation_familiale;
     public $dateFin_situation_familiale;
+
     public $email;
     public $numero;
     public $nb_a_charge;
@@ -33,7 +41,14 @@ class UserEntity extends Entity
     public $token;
     public $verified;
 
-
+    public function __construct()
+    {
+        $this->nb_voix = explode("_", $this->adresse)[0];
+        $this->rue = explode("_", $this->adresse)[1];
+        $this->code_postal = explode("_", $this->adresse)[2];
+        $this->ville = explode("_", $this->adresse)[3];
+        $this->adresse = str_replace("_", " ", $this->adresse);
+    }
 
     /**
      * Recupere L'url

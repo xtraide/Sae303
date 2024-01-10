@@ -17,8 +17,12 @@ class Router
     {
         $page = explode('.', $page);
         if ($page[0] == 'admin') {
-            $controller = '\App\Controller\Admin\\' . ucfirst($page[1]) . 'Controller';
-            $action = $page[2];
+            if ($this->dbAuth->isAdmin()) {
+                $controller = '\App\Controller\Admin\\' . ucfirst($page[1]) . 'Controller';
+                $action = $page[2];
+            } else {
+                header('Location: index.php?page=main.index');
+            }
         } else {
             $controller = '\App\Controller\\' . ucfirst($page[0]) . 'Controller';
             $action = $page[1];

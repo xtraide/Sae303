@@ -67,6 +67,8 @@ class ReservationController extends \App\Controller\AppController
         if ($_POST) {
             try {
                 $this->validateForm($_POST);
+
+
                 $result = $this->Reservation->create($_POST);
                 return $this->index();
             } catch (\Exception $e) {

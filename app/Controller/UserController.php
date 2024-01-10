@@ -25,7 +25,7 @@ class UserController extends AppController
         if ($_POST) {
             try {
                 $this->validateForm($_POST);
-                if ($this->auth->login($_POST['email'], $_POST['password'])) {
+                if ($this->auth->login($_POST['email'], sha1($_POST['password']))) {
                     header('Location: ?page=main.index');
                     exit;
                 } else {
@@ -52,7 +52,7 @@ class UserController extends AppController
         if ($_POST) {
             try {
                 $this->validateForm($_POST);
-                if ($this->auth->register($_POST['email'], $_POST['password'])) {
+                if ($this->auth->register($_POST['email'], sha1($_POST['password']))) {
                     header('Location: ?page=main.index');
                     exit;
                 } else {
@@ -73,9 +73,33 @@ class UserController extends AppController
     }
     public function reservation()
     {
+
         $errorMessage = '';
+
+        if ($_POST) {
+            try {
+                $this->validateForm($_POST);
+                $result = $this->Reservation->create($_POST);
+                header('Location: ?page=main.index');
+            } catch (\Exception $e) {
+                $errorMessage = $e->getMessage();
+            }
+        }
+        $avions = $this->loadModel('avion')->extract('id', 'modele');
+
+        $pilotes_model = $this->loadModel('pilote')->all();
+        foreach ($pilotes_model as $pilote) {
+            $pilotes[$pilote->id] = $pilote->nom . " " . $pilote->prenom;
+        }
+
+        $users_model = $this->loadModel('user')->all();
+        foreach ($users_model as $user) {
+            $users[$user->id] = $user->nom . " " . $user->prenom;
+        }
+
+
         $form = new BootstrapForm($_POST);
-        $this->render('user.reservation', compact('form', 'errorMessage'));
+        $this->render('admin.Reservation.edit', compact('form', 'avions', 'pilotes', 'users', 'errorMessage'));
     }
     public function VerifyAccount()
     {

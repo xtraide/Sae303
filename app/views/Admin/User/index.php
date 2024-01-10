@@ -15,6 +15,7 @@
                     <th scope="col">Nom</th>
                     <th scope="col">Prénom</th>
                     <th scope="col">Date</th>
+                    <th scope="col">Adresse</th>
                     <th scope="col">Situation Familiale</th>
                     <th scope="col">Date Situation Familiale</th>
                     <th scope="col">Date Fin Situation Familiale</th>
@@ -35,6 +36,7 @@
                         <td><?= $user->nom ?></td>
                         <td><?= $user->prenom ?></td>
                         <td><?= $user->_date ?></td>
+                        <td><?= $user->adresse  ?></td>
                         <td><?= $user->situation_familiale ?></td>
                         <td><?= $user->date_situation_familiale ?></td>
                         <td><?= $user->dateFin_situation_familiale ?></td>

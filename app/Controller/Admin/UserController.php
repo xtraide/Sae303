@@ -18,16 +18,21 @@ class UserController extends \App\Controller\AppController
     public function index()
     {
         $users = $this->User->all();
+
         $this->render('admin.user.index', compact('users'));
     }
 
     public function edit()
     {
-
         $errorMessage = '';
+
         if ($_POST) {
             try {
                 $this->validateForm($_POST);
+                $_POST['adresse'] = $_POST['nb_voix'] . "_" . $_POST['rue'] . "_" . $_POST['code_postal'] . "_" . $_POST['ville'];
+                unset($_POST['nb_voix'], $_POST['rue'], $_POST['code_postal'], $_POST['ville']);
+
+                $_POST['password'] = sha1($_POST['password']);
                 $result = $this->User->update($_GET['id'], $_POST);
                 return $this->index();
             } catch (\Exception $e) {
@@ -47,6 +52,10 @@ class UserController extends \App\Controller\AppController
         if ($_POST) {
             try {
                 $this->validateForm($_POST);
+                $_POST['adresse'] = $_POST['nb_voix'] . "_" . $_POST['rue'] . "_" . $_POST['code_postal'] . "_" . $_POST['ville'];
+                unset($_POST['nb_voix'], $_POST['rue'], $_POST['code_postal'], $_POST['ville']);
+
+                $_POST['password'] = sha1($_POST['password']);
                 $result = $this->User->create($_POST);
                 return $this->index();
             } catch (\Exception $e) {
