@@ -20,6 +20,4 @@
     <div class="form-group">
         <?= $form->submit('Se connecter', "Se connecter", ['class' => 'btn btn-primary', 'value' => 'Se connecter']); ?>
     </div>
-
-
 </form>

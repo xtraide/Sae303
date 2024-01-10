@@ -28,6 +28,7 @@ class ReservationController extends \App\Controller\AppController
         if ($_POST) {
             try {
                 $this->validateForm($_POST);
+                var_dump($_POST);
                 $result = $this->Reservation->update($_GET['id'], $_POST);
                 return $this->index();
             } catch (\Exception $e) {
@@ -36,10 +37,8 @@ class ReservationController extends \App\Controller\AppController
         }
 
         $Reservation = $this->Reservation->find($_GET['id']);
-
         $Reservation->Pilote = $Reservation->prenom_pilote . " " . $Reservation->nom_pilote;
         $Reservation->User = $Reservation->user_prenom . " " . $Reservation->user_nom;
-
 
         $avions = $this->loadModel('avion')->extract('id', 'modele');
 
@@ -49,7 +48,6 @@ class ReservationController extends \App\Controller\AppController
         }
 
         $users_model = $this->loadModel('user')->all();
-
         foreach ($users_model as $user) {
             $users[$user->id] = $user->nom . " " . $user->prenom;
         }
