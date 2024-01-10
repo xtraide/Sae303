@@ -1,4 +1,4 @@
-<form method="post" class="mb-3">
+<form method="post" class="mb-3" style="padding-top:100px;">
     <?php if (!empty($errorMessage)) : ?>
         <div class="alert alert-danger">
             <?= $errorMessage ?>

@@ -91,3 +91,9 @@
     width: 100%;
   }
 }
+
+@media (max-width: 768px) {
+  footer {
+    bottom: -80px !important;
+  }
+}
