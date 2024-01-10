@@ -1,4 +1,9 @@
 <form method="post">
+    <?php if (!empty($errorMessage)) : ?>
+    <div class="alert alert-danger">
+        <?= $errorMessage ?>
+    </div>
+    <?php endif; ?>
     <?= $form->input('nom', 'Nom'); ?>
     <?= $form->input('prenom', 'Prénom'); ?>
     <div class="">
