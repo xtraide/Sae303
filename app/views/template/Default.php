@@ -33,7 +33,7 @@
     <title><?= App::getInstance()->title ?></title>
 </head>
 <header>
-    <nav class="navbar navbar-expand-lg navbar-light position-fixed top-0 w-100 p-1 z-1 " id="navb12">
+    <nav class="navbar navbar-expand-lg navbar-light position-fixed top-0 w-100 p-1 z-3 " id="navb12">
         <a class="navbar-brand" href="?page=main.index" id="logo">
             <img src="../public/assets/ressources/logo.png" alt="" height="60px">
         </a>
@@ -74,7 +74,7 @@
                     <a href="?page=user.profil">Profil</a>
                 </li>
                 <li class="nav-item d-lg-none">
-                    <a href="?page=user.logout" class="btn my-2 my-sm-0">Deconnecter</a>
+                    <a href="?page=user.logout" class="btn my-2 my-sm-0">Deconnection</a>
                 </li>
                 <?php endif ?>
             </ul>
@@ -92,7 +92,7 @@
 
         <?php endif ?>
         <div class="form-inline d-none d-lg-flex nav-element align-items-center">
-            <a href="?page=user.logout" class="btn my-2 my-sm-0">Deconnecter</a>
+            <a href="?page=user.logout" class="btn my-2 my-sm-0">Deconnection</a>
 
             <a href="?page=user.profil" class="btn my-2 my-sm-0" style="width: 60px; height:60px;"><img
                     src="assets/ressources/utilisateur-de-profil.png" width="100%" alt=""
