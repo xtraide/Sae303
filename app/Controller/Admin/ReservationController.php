@@ -37,8 +37,27 @@ class ReservationController extends \App\Controller\AppController
 
         $Reservation = $this->Reservation->find($_GET['id']);
 
+        $Reservation->Pilote = $Reservation->prenom_pilote . " " . $Reservation->nom_pilote;
+        $Reservation->User = $Reservation->user_prenom . " " . $Reservation->user_nom;
+
+
+        $avions = $this->loadModel('avion')->extract('id', 'modele');
+
+        $pilotes_model = $this->loadModel('pilote')->all();
+        foreach ($pilotes_model as $pilote) {
+            $pilotes[$pilote->id] = $pilote->nom . " " . $pilote->prenom;
+        }
+
+        $users_model = $this->loadModel('user')->all();
+
+        foreach ($users_model as $user) {
+            $users[$user->id] = $user->nom . " " . $user->prenom;
+        }
+
+
         $form = new BootstrapForm($Reservation);
-        $this->render('admin.reservation.edit', compact('form', 'errorMessage'));
+
+        $this->render('admin.reservation.edit', compact('form', 'avions', 'pilotes', 'users', 'errorMessage'));
     }
 
     public function add()

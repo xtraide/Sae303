@@ -26,4 +26,7 @@ class ReservationEntity extends Entity
     public $id_pilote;
     public $nom_pilote;
     public $prenom_pilote;
+
+    public $User;
+    public $Pilote;
 }

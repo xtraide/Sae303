@@ -6,11 +6,15 @@
         <?= $form->select('reservation_horraire', "Horraire", ['08:30', '10:30', '14:30', '16:30'], ''); ?>
     </div>
     <div class="form-group">
-        <?= $form->select('avion_modele', "Modéle de l'Avion", $avions, ''); ?>
+        <?= $form->select('avion_modele', "Modéle de l'Avion", $avions); ?>
         <!-- A modifier  le gergergrgre-->
     </div>
     <div class="form-group">
-        <?= $form->select('Pilote', "Pilote", $pilote, ''); ?>
+        <?= $form->select('Pilote', "Pilote", $pilotes); ?>
+        <!-- A modifier  le gergergrgre-->
+    </div>
+    <div class="form-group">
+        <?= $form->select('User', "Utilisateur", $users); ?>
         <!-- A modifier  le gergergrgre-->
     </div>
     <div class="form-group">
