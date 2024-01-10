@@ -19,16 +19,18 @@ class ReservationController extends \App\Controller\AppController
     public function index()
     {
         $Reservations = $this->Reservation->all();
+
         $this->render('admin.reservation.index', compact('Reservations'));
     }
 
     public function edit()
     {
         $errorMessage = '';
+
         if ($_POST) {
             try {
                 $this->validateForm($_POST);
-                var_dump($_POST);
+
                 $result = $this->Reservation->update($_GET['id'], $_POST);
                 return $this->index();
             } catch (\Exception $e) {
@@ -37,8 +39,8 @@ class ReservationController extends \App\Controller\AppController
         }
 
         $Reservation = $this->Reservation->find($_GET['id']);
-        $Reservation->Pilote = $Reservation->prenom_pilote . " " . $Reservation->nom_pilote;
-        $Reservation->User = $Reservation->user_prenom . " " . $Reservation->user_nom;
+        $Reservation->Id_2 = $Reservation->prenom_pilote . " " . $Reservation->nom_pilote;
+        $Reservation->Id_1 = $Reservation->user_prenom . " " . $Reservation->user_nom;
 
         $avions = $this->loadModel('avion')->extract('id', 'modele');
 
@@ -61,6 +63,7 @@ class ReservationController extends \App\Controller\AppController
     public function add()
     {
         $errorMessage = '';
+
         if ($_POST) {
             try {
                 $this->validateForm($_POST);
@@ -70,9 +73,21 @@ class ReservationController extends \App\Controller\AppController
                 $errorMessage = $e->getMessage();
             }
         }
+        $avions = $this->loadModel('avion')->extract('id', 'modele');
+
+        $pilotes_model = $this->loadModel('pilote')->all();
+        foreach ($pilotes_model as $pilote) {
+            $pilotes[$pilote->id] = $pilote->nom . " " . $pilote->prenom;
+        }
+
+        $users_model = $this->loadModel('user')->all();
+        foreach ($users_model as $user) {
+            $users[$user->id] = $user->nom . " " . $user->prenom;
+        }
+
 
         $form = new BootstrapForm($_POST);
-        $this->render('admin.Reservation.edit', compact('form', 'errorMessage'));
+        $this->render('admin.Reservation.edit', compact('form', 'avions', 'pilotes', 'users', 'errorMessage'));
     }
 
     public function delete()

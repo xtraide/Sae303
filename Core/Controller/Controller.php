@@ -45,7 +45,7 @@ class Controller
     {
 
         foreach ($post as $i) {
-            if (empty($i)) {
+            if ($i == "") {
                 throw new \Exception('remplissez tous les champs');
             }
         }

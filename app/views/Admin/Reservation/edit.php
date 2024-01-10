@@ -1,25 +1,25 @@
 <form method="post" class="mb-3">
     <?php if (!empty($errorMessage)) : ?>
-    <div class="alert alert-danger">
-        <?= $errorMessage ?>
-    </div>
+        <div class="alert alert-danger">
+            <?= $errorMessage ?>
+        </div>
     <?php endif; ?>
     <div class="form-group">
-        <?= $form->input('reservation_date', "Date de réservation", ['class' => 'btn btn-primary', 'type' => 'date']); ?>
+        <?= $form->input('_date', "Date de réservation", ['class' => 'btn btn-primary', 'type' => 'date']); ?>
     </div>
     <div class="form-group">
-        <?= $form->select('reservation_horraire', "Horraire", ['08:30', '10:30', '14:30', '16:30'], ''); ?>
+        <?= $form->select('horraire', "Horraire", ['08:30', '10:30', '14:30', '16:30']); ?>
     </div>
     <div class="form-group">
-        <?= $form->select('avion_modele', "Modéle de l'Avion", $avions); ?>
+        <?= $form->select('Id_3', "Modéle de l'Avion", $avions, null, true); ?>
         <!-- A modifier  le gergergrgre-->
     </div>
     <div class="form-group">
-        <?= $form->select('Pilote', "Pilote", $pilotes); ?>
+        <?= $form->select('Id_2', "Pilote", $pilotes, null, true); ?>
         <!-- A modifier  le gergergrgre-->
     </div>
     <div class="form-group">
-        <?= $form->select('User', "Utilisateur", $users); ?>
+        <?= $form->select('Id_1', "Utilisateur", $users, null, true); ?>
         <!-- A modifier  le gergergrgre-->
     </div>
     <div class="form-group">
