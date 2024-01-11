@@ -33,25 +33,32 @@ class AppController extends Controller
     protected function uploadImage($inputName, $targetDirectory)
     {
 
-        if (isset($_FILES[$inputName])) {
+        $file_name = $_FILES[$inputName]['name'];
+        $file_size = $_FILES[$inputName]['size'];
+        $file_tmp = $_FILES[$inputName]['tmp_name'];
+        $file_type = $_FILES[$inputName]['type'];
+        $file_error = $_FILES[$inputName]['error'];
 
-            $file_name = $_FILES[$inputName]['name'];
-            $file_size = $_FILES[$inputName]['size'];
-            $file_tmp = $_FILES[$inputName]['tmp_name'];
-            $file_type = $_FILES[$inputName]['type'];
-            $file_ext = strtolower(end(explode('.', $_FILES[$inputName]['name'])));
+        $file_parts = explode('.', $file_name);
+        $file_ext = strtolower(end($file_parts));
 
-            $extensions = array("jpeg", "jpg", "png");
+        $extensions = array("jpeg", "jpg", "png");
 
-            if (in_array($file_ext, $extensions) === false) {
-                throw new  \Exception("le format de l'image doit être en jpeg, jpg ou png");
-            }
+        if (in_array($file_ext, $extensions) === false) {
+            $errors = "extension not allowed, please choose a JPEG or PNG file.";
+        }
 
-            if ($file_size > 20097152) {
-                throw new  \Exception("la taille de l'image doit être inférieure à 20Mo");
-            }
+        if ($file_size > 2097152) {
+            $errors = 'File size must be exactly 2 MB';
+        }
+        if (empty($file_error) == false) {
+            $errors = 'Error uploading file';
+        }
+        if (empty($errors) == true) {
             move_uploaded_file($file_tmp, $targetDirectory . $file_name);
             return $file_name;
+        } else {
+            return throw new \Exception($errors);
         }
     }
 }

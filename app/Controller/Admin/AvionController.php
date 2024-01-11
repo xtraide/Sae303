@@ -23,11 +23,15 @@ class AvionController extends \App\Controller\AppController
 
     public function edit()
     {
+
         $errorMessage = '';
         if ($_POST) {
             try {
                 $this->validateForm($_POST);
-                $_POST['img'] = $this->uploadImage('img', 'assets\ressources\avion\\');
+
+                $_POST['img'] = $this->uploadImage('img', '\public\assets\ressources\avion');
+                var_dump($_POST);
+
                 $result = $this->Avion->update($_GET['id'], $_POST);
                 return $this->index();
             } catch (\Exception $e) {

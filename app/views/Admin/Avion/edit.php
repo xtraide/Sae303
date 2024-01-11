@@ -1,4 +1,4 @@
-<form method="post" style="padding-top:100px;">
+<form method="post" enctype="multipart/form-data">
     <?php if (!empty($errorMessage)) : ?>
         <div class="alert alert-danger">
             <?= $errorMessage ?>
@@ -13,3 +13,4 @@
 
     <button class="btn btn-primary">Sauvegarder</button>
 </form>
+<?php var_dump($_POST, $_FILES); ?>
