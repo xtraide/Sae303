@@ -1,4 +1,4 @@
-<div class="w-100" style="padding-top: 100px; height:80vh;">
+<div class="w-100 police" style="padding-top: 100px; height:80vh; ">
     <h1 style="font-family: quicksand;
     font-size: 3rem;
     color: black;
