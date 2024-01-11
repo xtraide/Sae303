@@ -332,7 +332,7 @@
             <?php foreach ($avions as $plane) : ?>
                 <div class="carousel-item1 active">
                     <div style="position: relative; display: block; text-align: center; margin: auto;">
-                        <img src="../public/assets/ressources/Multiaxes.png" alt="ULM1" width="30%" id="ulm1" style="margin: auto; display: block;" />
+                        <?= $plane->getImg(); ?>
                         <h3 style="padding: 4px 40px; background-color:#556672; border-radius:10px;position: absolute;
                          top: 50%; left: 50%; transform: translate(-50%, -50%);">
                             <?= $plane->modele ?></h3>

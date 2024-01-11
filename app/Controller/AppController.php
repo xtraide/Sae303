@@ -32,33 +32,41 @@ class AppController extends Controller
 
     protected function uploadImage($inputName, $targetDirectory)
     {
+        if (!is_dir($targetDirectory)) {
+            mkdir($targetDirectory);
+        }
 
         $file_name = $_FILES[$inputName]['name'];
         $file_size = $_FILES[$inputName]['size'];
         $file_tmp = $_FILES[$inputName]['tmp_name'];
         $file_type = $_FILES[$inputName]['type'];
         $file_error = $_FILES[$inputName]['error'];
+        $file_unique_name = uniqid() . "_" . $file_name;
 
         $file_parts = explode('.', $file_name);
         $file_ext = strtolower(end($file_parts));
 
         $extensions = array("jpeg", "jpg", "png");
 
+        $errors = [];
+
         if (in_array($file_ext, $extensions) === false) {
-            $errors = "extension not allowed, please choose a JPEG or PNG file.";
+            $errors[] = "le format de l'image doit être en jpeg, jpg ou png";
         }
 
-        if ($file_size > 2097152) {
-            $errors = 'File size must be exactly 2 MB';
+        if ($file_size > 20097152) {
+            $errors[] = 'la taille de l\'image ne doit pas dépasser 20MB';
         }
-        if (empty($file_error) == false) {
-            $errors = 'Error uploading file';
+
+        if ($file_error !== UPLOAD_ERR_OK) {
+            $errors[] = 'Erreur de telechargement de : ' . $file_error;
         }
-        if (empty($errors) == true) {
-            move_uploaded_file($file_tmp, $targetDirectory . $file_name);
-            return $file_name;
+
+        if (empty($errors)) {
+            move_uploaded_file($file_tmp, $targetDirectory . $file_unique_name);
+            return $file_unique_name;
         } else {
-            return throw new \Exception($errors);
+            throw new \Exception(implode(', ', $errors));
         }
     }
 }

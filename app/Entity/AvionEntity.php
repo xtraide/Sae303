@@ -19,4 +19,10 @@ class AvionEntity extends Entity
     public $autonomie;
     public $poid;
     public $img;
+
+
+    public function getImg()
+    {
+        return '<img src="assets/ressources/avion/' . $this->img . '" alt="image de l\'avion " width="30%" id="ulm1" style="margin: auto; display: block;">';
+    }
 }

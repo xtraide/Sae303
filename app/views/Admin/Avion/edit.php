@@ -13,4 +13,3 @@
 
     <button class="btn btn-primary">Sauvegarder</button>
 </form>
-<?php var_dump($_POST, $_FILES); ?>
