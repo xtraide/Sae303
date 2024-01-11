@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le : mer. 10 jan. 2024 à 23:29
+-- Généré le : jeu. 11 jan. 2024 à 20:25
 -- Version du serveur : 8.2.0
 -- Version de PHP : 8.2.13
 
@@ -35,6 +35,7 @@ CREATE TABLE IF NOT EXISTS `ntrhndmam_avion` (
   `capacite` int NOT NULL,
   `autonomie` int NOT NULL,
   `poid` int NOT NULL,
+  `img` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
@@ -42,9 +43,9 @@ CREATE TABLE IF NOT EXISTS `ntrhndmam_avion` (
 -- Déchargement des données de la table `ntrhndmam_avion`
 --
 
-INSERT INTO `ntrhndmam_avion` (`id`, `modele`, `v_max`, `capacite`, `autonomie`, `poid`) VALUES
-(6, 'Boeing 747r', 0, 0, 0, 0),
-(7, 'fff', 5, 5, 5, 5);
+INSERT INTO `ntrhndmam_avion` (`id`, `modele`, `v_max`, `capacite`, `autonomie`, `poid`, `img`) VALUES
+(6, 'Boeing 747r', 0, 0, 0, 0, 'apple_PNG12484.png'),
+(7, 'fff', 5, 5, 5, 5, '');
 
 -- --------------------------------------------------------
 

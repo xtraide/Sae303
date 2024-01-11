@@ -1,4 +1,4 @@
-<form method="post" enctype="multipart/form-data">
+<form method="post" style="padding-top:100px;" enctype="multipart/form-data">
     <?php if (!empty($errorMessage)) : ?>
         <div class="alert alert-danger">
             <?= $errorMessage ?>
