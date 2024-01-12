@@ -55,16 +55,4 @@ class Controller
             }
         }
     }
-    public function validadd($champ, $action)
-    {
-        if ($action == "add") {
-            $action = "ajouté";
-        } else if ($action == "edit") {
-            $action = "modifié";
-        } else if ($action == "delete") {
-            $action = "supprimé";
-        }
-
-        return "<div class='alert alert-success'>" . $champ . " a bien été " . $action . "</div>";
-    }
 }
