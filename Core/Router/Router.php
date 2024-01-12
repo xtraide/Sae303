@@ -16,32 +16,36 @@ class Router
     public function route($page)
     {
         try {
+
             $page = explode('.', $page);
             if ($page[0] == 'admin') {
                 if ($this->dbAuth->isAdmin()) {
-                    $controller = '\App\Controller\Admin\\' . ucfirst($page[1]) . 'Controller';
+                    $controller_name = '\App\Controller\Admin\\' . ucfirst($page[1]) . 'Controller';
                     $action = $page[2];
                 } else {
-                    header('Location: index.php?page=main.index');
+                    throw new \Exception('Page introuvable');
                 }
-            } else {
-                $controller = '\App\Controller\\' . ucfirst($page[0]) . 'Controller';
+            } elseif ($page[0] && $page[1]) {
+                $controller_name = '\App\Controller\\' . ucfirst($page[0]) . 'Controller';
                 $action = $page[1];
-            }
-
-            if ($controller == '\App\Controller\UserController') {
-                $controller = new $controller($this->dbAuth);
             } else {
-                $controller = new $controller();
+                throw new \Exception('Page introuvable');
             }
 
 
-            if (method_exists($controller, $action)) {
+
+            if (method_exists($controller_name, $action)) {
+
+                if ($controller_name == '\App\Controller\UserController') {
+                    $controller = new $controller_name($this->dbAuth);
+                } else {
+                    $controller = new $controller_name();
+                }
                 $controller->$action();
             } else {
-                throw new \Exception('');
+                throw new \Exception('Page introuvable');
             }
-        } catch (\Exception) {
+        } catch (\Exception $e) {
 
             $controller = new \App\Controller\MainController();
             $controller->notfound();

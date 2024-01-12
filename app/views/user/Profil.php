@@ -1,5 +1,32 @@
 <div class="container" style="padding-top: 90px;">
     <div class="col-md-6 mx-auto">
+        <table class="table table-bordered  text-center " aria-label="Reservation Table">
+
+            <thead>
+                <tr>
+                    <th scope="col">Date</th>
+                    <th scope="col">Horraire</th>
+                    <th scope="col">Avion</th>
+                    <th scope="col">Pilote</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <?php foreach ($Reservations as $Reservation) : ?>
+                    <tr>
+
+                        <td><?= $Reservation->_date ?></td>
+                        <td><?= $Reservation->horraire ?></td>
+                        <td><?= $Reservation->user_prenom ?></td>
+                        <td><?= $Reservation->avion_modele ?></td>
+                        <td>
+                            <?= $Reservation->nom_pilote ?>
+                            <?= $Reservation->prenom_pilote ?>
+                        </td>
+                    </tr>
+                <?php endforeach; ?>
+            </tbody>
+        </table>
         <form method="post " class=" m-auto mb-5 col-12 col-md-10" style="padding-top:100px;">
             <?php if (!empty($errorMessage)) : ?>
                 <div class="alert alert-danger">
@@ -9,9 +36,6 @@
             <br>
             <br> <br>
             <br> <br>
-
-
-
             <?= $form->select('civilite', "Civilité", ['Monsieur', 'Madame'], "form-control"); ?>
             <?= $form->input('nom', 'Nom', ['class' => 'form-control']); ?>
             <?= $form->input('prenom', 'Prénom', ['class' => 'form-control']); ?>

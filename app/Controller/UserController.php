@@ -85,7 +85,10 @@ class UserController extends AppController
 
     public function profil()
     {
+        $this->Reservation =  $this->loadModel('reservation');
+        $Reservations = $this->Reservation->find($_SESSION['auth']);
 
+        var_dump($Reservations);
         $errorMessage = '';
         try {
             $form = new BootstrapForm($_POST);
@@ -94,7 +97,7 @@ class UserController extends AppController
             $errorMessage = $e->getMessage();
         }
 
-        $this->render('user.profil',  compact('form', 'errorMessage'));
+        $this->render('user.profil',  compact('form', 'errorMessage', 'Reservations'));
     }
     public function reservation()
     {

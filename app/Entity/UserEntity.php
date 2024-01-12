@@ -51,13 +51,4 @@ class UserEntity extends Entity
             $this->adresse = str_replace("_", " ", $this->adresse);
         }
     }
-
-    /**
-     * Recupere L'url
-     * @return string Url a donne
-     */
-    public function getUrl()
-    {
-        return "index.php?page=Adherent&id=" . $this->id;
-    }
 }

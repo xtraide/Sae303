@@ -2,36 +2,23 @@
 
      <thead>
          <tr>
-             <th scope="col">id</th>
-             <th scope="col">modèle</th>
-             <th scope="col">Vitesse Max</th>
-             <th scope="col">Capacité</th>
-             <th scope="col">Autonomie</th>
-             <th scope="col">Poid</th>
-             <th scope="col">Action</th>
+
+             <th scope="col">Nombre d'utilisateurs</th>
+             <th scope="col">Nombre d'avions</th>
+             <th scope="col">Nombre de pilotes</th>
+             <th scope="col">Nombre d'reservation</th>
          </tr>
      </thead>
      <tbody>
-         <?php foreach ($avions as $plane) : ?>
-             <tr>
-                 <th><?= $plane->id ?></th>
-                 <td><?= $plane->modele ?></td>
-                 <td><?= $plane->v_max ?></td>
-                 <td><?= $plane->capacite ?></td>
-                 <td><?= $plane->autonomie ?></td>
+
+         <tr>
+             <th><?= $result->user ?></th>
+             <td><?= $plane->avion ?></td>
+             <td><?= $plane->pilote ?></td>
+             <td><?= $plane->reservation ?></td>
+
+         </tr>
 
 
-                 <td>
-                     <a href="?page=admin.avion.edit&id=<?= $plane->id ?>" class="btn btn-primary">Editer</a>
-                     <form action="?page=admin.avion.delete" method="post" style="display: inline-block;">
-                         <input type="hidden" name="id" value="<?= $plane->id ?>">
-                         <button type="submit" class="btn btn-danger">Supprimer</a>
-                     </form>
-
-                 </td>
-
-             </tr>
-
-         <?php endforeach; ?>
      </tbody>
  </table>
