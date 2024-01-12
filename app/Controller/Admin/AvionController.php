@@ -67,6 +67,8 @@ class AvionController extends \App\Controller\AppController
     public function delete()
     {
         if (!empty($_POST)) {
+            $avion = $this->Avion->find($_POST['id']);
+            $this->deleteImg('assets\ressources\avion\\' . $avion->img);
             $result = $this->Avion->delete($_POST['id']);
         }
         return $this->index();

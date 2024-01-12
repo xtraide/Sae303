@@ -30,6 +30,17 @@ class AppController extends Controller
         return  App::getInstance()->getTable($model_name);
     }
 
+    protected function deleteImg($img)
+    {
+        if (file_exists($img)) {
+
+            unlink($img);
+        } else {
+            var_dump($img);
+            throw new \Exception("Le fichier n'existe pas");
+        }
+    }
+
     protected function uploadImage($inputName, $targetDirectory)
     {
         if (!is_dir($targetDirectory)) {
@@ -49,17 +60,14 @@ class AppController extends Controller
         $extensions = array("jpeg", "jpg", "png");
 
         $errors = [];
-
-        if (in_array($file_ext, $extensions) === false) {
+        if (empty($file_name)) {
+            throw new \Exception("Vous devez choisir une image");
+        } elseif (in_array($file_ext, $extensions) === false) {
             $errors[] = "le format de l'image doit être en jpeg, jpg ou png";
-        }
-
-        if ($file_size > 20097152) {
+        } elseif ($file_size > 20097152) {
             $errors[] = 'la taille de l\'image ne doit pas dépasser 20MB';
-        }
-
-        if ($file_error !== UPLOAD_ERR_OK) {
-            $errors[] = 'Erreur de telechargement de : ' . $file_error;
+        } elseif ($file_error !== UPLOAD_ERR_OK) {
+            $errors[] = 'Erreur de telechargement : <br> code erreur  ' . $file_error;
         }
 
         if (empty($errors)) {
