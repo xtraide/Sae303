@@ -86,7 +86,7 @@ class UserController extends AppController
     public function profil()
     {
         $this->Reservation =  $this->loadModel('reservation');
-        $Reservations = $this->Reservation->find($_SESSION['auth']);
+        $Reservations = $this->Reservation->findByUser($_SESSION['auth']);
 
 
         $errorMessage = '';
