@@ -14,8 +14,6 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="assets/script/script.js"></script>
-    <script src="assets/script/api_meteo.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Io4HIM2JZ5V7WtjHX3g5D6DfSi7M6Roi7zTP25IKb3kkZfL6BuP+4+DTP6DK6MgD" crossorigin="anonymous">
@@ -128,28 +126,32 @@
         </div>
     </footer>
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var bodyHeight = document.body.offsetHeight;
-            var footer = document.querySelector('footer');
 
-            if (bodyHeight < 1000) {
-                footer.style.position = 'absolute';
-                footer.style.bottom = '0';
-            }
-        });
     </script>
-
+    <script src="assets/script/script.js"></script>
+    <script src="assets/script/api_meteo.js"></script>
 </body>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var bodyHeight = document.body.offsetHeight;
+        var footer = document.querySelector('footer');
+
+        if (bodyHeight < 1000) {
+            footer.style.position = 'absolute';
+            footer.style.bottom = '0';
+        }
+    });
+</script>
 <script>
     document.addEventListener('DOMContentLoaded', function() {
         var buttons = document.querySelectorAll('.nav-item button');
 
         buttons.forEach(function(button) {
+
             button.addEventListener('click', function(e) {
                 e.preventDefault();
                 var sectionName = this.textContent.trim();
                 var section = document.getElementById(sectionName);
-
                 if (section) {
                     section.scrollIntoView({
                         behavior: 'smooth'
@@ -175,21 +177,6 @@
             localStorage.removeItem('sectionName');
         }
     });
-</script>
-<script>
-    function acit() {
-        var section = document.getElementById('Activités');
-        section.scrollIntoView({
-            behavior: 'smooth'
-        });
-    }
-
-    function ulm() {
-        var section = document.getElementById('ULM');
-        section.scrollIntoView({
-            behavior: 'smooth'
-        });
-    }
 </script>
 
 </html>

@@ -8,15 +8,15 @@ window.onload = function () {
 }
 
 nextButton.addEventListener('click', () => {
-  items1[index].classList.remove('active');
-  index = (index + 1) % items1.length;
-  items1[index].classList.add('active');
+    items1[index].classList.remove('active');
+    index = (index + 1) % items1.length;
+    items1[index].classList.add('active');
 });
 
 prevButton.addEventListener('click', () => {
-  items1[index].classList.remove('active');
-  index = (index - 1 + items1.length) % items1.length;
-  items1[index].classList.add('active');
+    items1[index].classList.remove('active');
+    index = (index - 1 + items1.length) % items1.length;
+    items1[index].classList.add('active');
 });
 
 
@@ -89,3 +89,114 @@ function changeDisplay(selectedBtn) {
     document.getElementById(`btn${selectedBtn}`).style.fontSize = '3rem';
     document.getElementById(`ctn${selectedBtn}`).style.display = 'block';
 }
+
+function acit() {
+    var section = document.getElementById('Activités');
+    if (section) {
+        section.scrollIntoView({
+            behavior: 'smooth'
+        });
+        localStorage.removeItem('redirected1');
+    } else {
+        if (!localStorage.getItem('redirected1')) {
+            localStorage.setItem('redirected1', 'true');
+            window.location.href = "?page=main.index";
+        }
+    }
+}
+
+function ulm() {
+    var section = document.getElementById('ULM');
+    if (section) {
+        section.scrollIntoView({
+            behavior: 'smooth'
+        });
+        localStorage.removeItem('redirected');
+    } else {
+        if (!localStorage.getItem('redirected')) {
+            localStorage.setItem('redirected', 'true');
+            window.location.href = "?page=main.index";
+        }
+    }
+}
+
+
+
+window.onload = function () {
+    if (localStorage.getItem('redirected')) {
+        ulm();
+    } else if (localStorage.getItem('redirected1')) {
+        acit()
+    } else {
+        console.log('no redirection');
+    }
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+    let index = 0;
+    const items1 = document.querySelectorAll('.carousel-item1');
+    const nextButton = document.getElementById('next');
+    const prevButton = document.getElementById('prev');
+
+    items1[0].classList.add('active');
+
+    nextButton.addEventListener('click', () => {
+        items1[index].classList.remove('active');
+        index = (index + 1) % items1.length;
+        items1[index].classList.add('active');
+    });
+
+    prevButton.addEventListener('click', () => {
+        items1[index].classList.remove('active');
+        index = (index - 1 + items1.length) % items1.length;
+        items1[index].classList.add('active');
+
+    });
+});
+
+var coll = document.querySelectorAll(".btn.btn-link");
+coll.forEach((btn) => {
+    btn.addEventListener("click", function () {
+        var arrowIcon = this.querySelector('.fas');
+        arrowIcon.classList.toggle('rotate');
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    var images = ['i1', 'i2', 'i3', 'i4', 'i5'];
+    var texts = {
+        'i1': 'L’entretien des ULM est compris dans le service par défaut de location, lors de la location de ces derniers',
+        'i2': 'Notre équipe s’occupe de tout, et monte votre ULM en amont du vol, afin de bénéficeier d’une expérience avancé',
+        'i3': 'Un service de location d’emplacements sont disponible dans le cas d’une utilisation de votre propre ULM !',
+        'i4': 'Nous avons la possibilité de vous accueillir à proximité de l’aéroclub pour y passez une merveilleuse nuit :',
+        'i5': 'Un service de restauration est proposés tous les week-ends, à un moindre coût et de qualité.'
+    };
+
+    images.forEach(function (imageId) {
+        var li = document.getElementById(imageId);
+
+        li.addEventListener('click', function (e) {
+            var popup = li.querySelector('div');
+            if (popup) {
+                li.removeChild(popup);
+            } else {
+                var popupHTML = `
+                <div style="
+                    position: absolute;
+                    left: ${li.offsetLeft}px;
+                    top: ${li.offsetTop + 10}px;
+                    background-color: #fff;
+                    width: 50%;
+                    border-radius: 10px;
+                    padding: 10px;
+                    color:black;
+                    text-align: center;
+                    z-index:1000;">
+                    ${texts[imageId] || 'Erreur'}
+                </div>
+            `;
+                li.insertAdjacentHTML('beforeend', popupHTML);
+            }
+        });
+    });
+});
