@@ -8,7 +8,7 @@
     <?= $form->input('v_max', 'Vitesse Max', ['type' => "number"]); ?>
     <?= $form->input('capacite', 'Capacité', ['type' => "number"]); ?>
     <?= $form->input('autonomie', 'Autonomie', ['type' => "number"]); ?>
-    <?= $form->input('poid', 'Poid', ['type' => "number"]); ?>
+    <?= $form->input('poid', 'Poids', ['type' => "number"]); ?>
     <?= $form->input('img', 'Photo de l\'Avion', ['type' => "file"]); ?>
 
     <button class="btn btn-primary">Sauvegarder</button>

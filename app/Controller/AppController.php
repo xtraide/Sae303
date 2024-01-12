@@ -36,7 +36,6 @@ class AppController extends Controller
 
             unlink($img);
         } else {
-            var_dump($img);
             throw new \Exception("Le fichier n'existe pas");
         }
     }

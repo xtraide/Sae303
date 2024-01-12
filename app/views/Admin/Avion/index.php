@@ -16,7 +16,7 @@
                         <th scope="col">Vitesse Max</th>
                         <th scope="col">Capacité</th>
                         <th scope="col">Autonomie</th>
-                        <th scope="col">Poid</th>
+                        <th scope="col">Poids</th>
                         <th scope="col">Action</th>
                     </tr>
                 </thead>
