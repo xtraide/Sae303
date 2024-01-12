@@ -1,4 +1,4 @@
-<section class="container-fluid w-100 mt-5 vh-100">
+<section class="container-fluid w-100 mt-5">
     <div class="justify-content-center text-center mt-5">
         <img class="mt-5" id="icone_erreur" src="../public/assets/ressources/iconeErreur404.png" alt="icone_erreur404">
         <p id="error">ERROR 404</p>
