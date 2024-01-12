@@ -43,11 +43,13 @@ class UserEntity extends Entity
 
     public function __construct()
     {
-        $this->nb_voix = explode("_", $this->adresse)[0];
-        $this->rue = explode("_", $this->adresse)[1];
-        $this->code_postal = explode("_", $this->adresse)[2];
-        $this->ville = explode("_", $this->adresse)[3];
-        $this->adresse = str_replace("_", " ", $this->adresse);
+        if ($this->adresse) {
+            $this->nb_voix = explode("_", $this->adresse)[0];
+            $this->rue = explode("_", $this->adresse)[1];
+            $this->code_postal = explode("_", $this->adresse)[2];
+            $this->ville = explode("_", $this->adresse)[3];
+            $this->adresse = str_replace("_", " ", $this->adresse);
+        }
     }
 
     /**

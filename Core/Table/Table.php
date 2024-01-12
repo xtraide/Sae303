@@ -82,6 +82,10 @@ class Table
         $sql_part = implode(', ', $sql_parts);
         return $this->query("INSERT INTO " . $this->table . " SET $sql_part", $attributes, true);
     }
+    public function getLastId()
+    {
+        return $this->db->query('SELECT max(id) as id FROM ' . $this->table)[0]->id;
+    }
 
     // Function that extracts a key-value pair from all records in the table
     function extract($key, $value)
@@ -93,6 +97,7 @@ class Table
         }
         return $return;
     }
+
 
     // Function that sends a query to the database and returns the result
     public function query($sql, $parrams = [], $one = null)

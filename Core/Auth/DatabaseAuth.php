@@ -58,7 +58,7 @@ class DatabaseAuth
     // Function that registers a new user by inserting their email and password into the database
     public function register($fields)
     {
-        if ($this->db->prepare('INSERT INTO ' . self::$prefix . 'user SET email = ?, password = ?', [$fields['email'], sha1($fields['password'])])) {
+        if ($this->db->prepare('INSERT INTO ' . self::$prefix . 'user SET email = ?, password = ?,token = ? ', [$fields['email'], sha1($fields['password']), $fields['token']])) {
             return true;
         } else {
             return false;
@@ -69,8 +69,18 @@ class DatabaseAuth
     public function isAdmin()
     {
         if ($this->logged()) {
-            $user = $this->db->prepare('SELECT role FROM ' . self::$prefix . 'user WHERE id = ?', [$_SESSION['auth']], null, true);
+            $user = $this->db->query('SELECT role FROM ' . self::$prefix . 'user WHERE id = ?', [$_SESSION['auth']], null, true);
             if ($user->role == "Admin") {
+                return true;
+            }
+        }
+        return false;
+    }
+    public function isVerified()
+    {
+        if ($this->logged()) {
+            $user = $this->db->query('SELECT verified FROM ' . self::$prefix . 'user WHERE id = ?', [$_SESSION['auth']], null, true);
+            if ($user->verified == "1") {
                 return true;
             }
         }
@@ -78,10 +88,20 @@ class DatabaseAuth
     }
     public function confirmToken($token, $user_id)
     {
-        $user = $this->db->prepare('SELECT token FROM ' . self::$prefix . 'user WHERE id = ?', [$user_id], null, true);
+        $user = $this->db->prepare('SELECT token FROM ' . self::$prefix . 'user WHERE id = ?', [$user_id], null, true)[0];
+
         if ($user && $user->token == $token) {
             return $user;
         }
         return false;
+    }
+    public function isEmailAvailable($email)
+    {
+        $result = $this->db->prepare("SELECT email FROM  " . self::$prefix . "user WHERE email = ?;", [$email], null, true);
+        if ($result) {
+            return false;
+        } else {
+            return true;
+        }
     }
 }

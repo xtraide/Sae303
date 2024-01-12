@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le : jeu. 11 jan. 2024 à 20:25
+-- Généré le : ven. 12 jan. 2024 à 03:39
 -- Version du serveur : 8.2.0
 -- Version de PHP : 8.2.13
 
@@ -35,7 +35,7 @@ CREATE TABLE IF NOT EXISTS `ntrhndmam_avion` (
   `capacite` int NOT NULL,
   `autonomie` int NOT NULL,
   `poid` int NOT NULL,
-  `img` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `img` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
@@ -106,31 +106,33 @@ INSERT INTO `ntrhndmam_reservation` (`id`, `_date`, `id_1`, `id_2`, `id_3`, `hor
 DROP TABLE IF EXISTS `ntrhndmam_user`;
 CREATE TABLE IF NOT EXISTS `ntrhndmam_user` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `civilite` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
-  `nom` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
-  `prenom` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
-  `_date` date NOT NULL,
-  `adresse` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
-  `situation_familiale` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `civilite` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `nom` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `prenom` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `_date` date DEFAULT NULL,
+  `adresse` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `situation_familiale` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `date_situation_familiale` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `dateFin_situation_familiale` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `dateFin_situation_familiale` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `email` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
-  `numero` int NOT NULL,
-  `nb_a_charge` int NOT NULL,
+  `numero` int DEFAULT NULL,
+  `nb_a_charge` int DEFAULT NULL,
   `activite` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `token` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `verified` tinyint(1) DEFAULT NULL,
-  `password` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `role` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `verified` tinyint(1) DEFAULT '0',
+  `password` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `role` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'User',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=24 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Déchargement des données de la table `ntrhndmam_user`
 --
 
 INSERT INTO `ntrhndmam_user` (`id`, `civilite`, `nom`, `prenom`, `_date`, `adresse`, `situation_familiale`, `date_situation_familiale`, `dateFin_situation_familiale`, `email`, `numero`, `nb_a_charge`, `activite`, `token`, `verified`, `password`, `role`) VALUES
-(3, 'Monsieur', 'test', 'test', '2024-01-26', '742_av_77120_tg', 'pacsé', '2024-01-14', '2024-01-21', 'admin@gmail.com', 406406520, 0, 'des', NULL, NULL, 'a94a8fe5ccb19ba61c4c0873d391e987982fbbd3', 'Admin');
+(3, 'Monsieur', 'test', 'test', '2024-01-26', '742_av_77120_tg', 'pacsé', '2024-01-14', '2024-01-21', 'admin@gmail.com', 406406520, 0, 'des', NULL, NULL, 'a94a8fe5ccb19ba61c4c0873d391e987982fbbd3', 'Admin'),
+(23, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'xxtraide@gmail.com', NULL, NULL, NULL, '65a0b3de7d812', 0, 'c4033bff94b567a190e33faa551f411caef444f2', 'User'),
+(22, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'thieblemontnicolas@gmail.com', NULL, NULL, NULL, '65a0add5e2fda', 1, 'c4033bff94b567a190e33faa551f411caef444f2', 'User');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

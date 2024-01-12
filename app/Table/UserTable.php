@@ -23,6 +23,9 @@ class UserTable extends Table
     public $activite;
     public $role;
 
+
+
+
     public function verify($id)
     {
         $this->update($id, [

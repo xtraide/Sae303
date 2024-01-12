@@ -6,15 +6,17 @@ use Core\Auth\DatabaseAuth;
 use Core\HTML\BootstrapForm;
 use \App;
 
+use App\Mail\Mail;
 
 class UserController extends AppController
 {
     private $auth;
-
+    private $user;
     public function __construct(DatabaseAuth $auth)
     {
         parent::__construct();
         $this->auth = $auth;
+        $this->user = $this->loadModel('user');
     }
 
     public function login()
@@ -53,11 +55,25 @@ class UserController extends AppController
         if ($_POST) {
             try {
                 $this->validateForm($_POST);
-                if ($this->auth->register($_POST['email'], sha1($_POST['password']))) {
-                    header('Location: ?page=main.index');
-                    exit;
+
+                if ($this->auth->isEmailAvailable($_POST['email'])) {
+
+                    $token = uniqid();
+                    if ($this->auth->register([
+                        'email' => $_POST['email'],
+                        'password' => sha1($_POST['password']),
+                        'token' => $token
+                    ])) {
+                        $id = $this->user->getLastId();
+
+                        Mail::sendmail($_POST['email'], $token, $id);
+                        header('Location: ?page=main.index');
+                        exit;
+                    } else {
+                        throw new \Exception('erreur lors de l\'inscription');
+                    }
                 } else {
-                    throw new \Exception('erreur lors de l\'inscription');
+                    throw new \Exception('L\'email est déjà utilisé, veuillez en utiliser un autre.');
                 }
             } catch (\Exception $e) {
                 $errorMessage = $e->getMessage();
@@ -105,22 +121,27 @@ class UserController extends AppController
     public function VerifyAccount()
     {
         try {
-            if ((isset($_GET['token']) && !empty($_GET['token']))) {
-                if (isset($_GET['id']) && !empty($_GET['id'])) {
-                    $user_id = $_GET['id'];
-                    $token = $_GET['token'];
-                    $user = $this->auth->confirmToken($token, $user_id);
-                    if ($user) {
-                        $user->verify($user_id);
-                        exit;
-                    }
+
+            if ((isset($_GET['token']) && !empty($_GET['token'] && isset($_GET['id']) && !empty($_GET['id'])))) {
+
+                $user_id = $_GET['id'];
+                $token = $_GET['token'];
+                $user = $this->user->confirmToken($token, $user_id);
+
+                if ($user) {
+                    $this->user->verify($user_id);
+                    header('Location: ?page=main.index');
+                    exit;
+                } else {
+                    throw new \Exception('erreur lors de la vérification du compte');
                 }
             } else {
                 throw new \Exception('erreur lors de la vérification du compte');
-                exit;
             }
         } catch (\Exception $e) {
             $errorMessage = $e->getMessage();
+
+            header('Location: ?page=main.index');
         }
     }
 }

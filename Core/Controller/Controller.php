@@ -18,7 +18,7 @@ class Controller
     protected function render($view, $variables = [])
     { /* a supprimer */
         $auth = new DatabaseAuth(App::getInstance()->getDatabase());
-        $logged = $auth->logged();
+        $logged = $auth->isVerified();
 
         $admin = $auth->isAdmin();
 
