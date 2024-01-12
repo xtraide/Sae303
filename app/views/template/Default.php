@@ -60,13 +60,13 @@
                         </li>
                     <?php endif ?>
                     <li class="nav-item">
-                        <a href="?page=user.reservation" class="nav-link ">Reservation</a>
+                        <a href="?page=user.reservation" class="nav-link ">Réservation</a>
                     </li>
                     <li class="nav-item d-lg-none">
                         <a href="?page=user.profil">Profil</a>
                     </li>
                     <li class="nav-item d-lg-none">
-                        <a href="?page=user.logout" class="btn my-2 my-sm-0">Deconnection</a>
+                        <a href="?page=user.logout" class="btn my-2 my-sm-0">Déconnexion</a>
                     </li>
                 <?php endif ?>
             </ul>
@@ -104,7 +104,7 @@
             <ul class="list-unstyled mb-0">
                 <li><a href="?page=main.aerodrome" class="text-white" style="text-decoration: none;">L’aérdorome</a>
                 </li>
-                <li><a href="?page=user.profil" class="text-white" style="text-decoration: none;">Mes données</a></li>
+                <li><a href="<?= $logged ? '?page=user.profil' : '?page=user.login' ?>" class="text-white" style="text-decoration: none;">Mes données</a></li>
                 <li><a href="?page=main.condition" class="text-white" style="text-decoration: none;">Conditions
                         générales</a></li>
             </ul>
@@ -118,10 +118,10 @@
             </ul>
         </div>
         <div class="mb-3 mb-md-0">
-            <h5 class="text-uppercase">Contactez nous</h5>
+            <h5 class="text-uppercase">Contactez-nous</h5>
             <ul class="list-unstyled mb-0">
-                <li><a href="#!" class="text-white" style="text-decoration: none;">01.64.36.24.24</a></li>
-                <li><a href="#!" class="text-white" style="text-decoration: none;">aeroclubdefrotey@laposte.net</a></li>
+                <li><span href="#!" class="text-white" style="text-decoration: none;">01.64.36.24.24</span></li>
+                <li><span href="#!" class="text-white" style="text-decoration: none;">aeroclubdefrotey@laposte.net</span></li>
             </ul>
         </div>
     </footer>
