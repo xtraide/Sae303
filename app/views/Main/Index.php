@@ -2,7 +2,8 @@
            background-size: cover;
            background-position: center;
            position: relative;">
-    <div id="icones" class="container-card d-flex justify-content-evenly align-content-center" style="padding-top: 55%; padding-bottom: 30%;">
+    <div id="icones" class="container-card d-flex justify-content-evenly align-content-center"
+        style="padding-top: 55%; padding-bottom: 30%;">
         <div class="card">
             <h1 id="h1-card">Informations <br> météo</h1>
             <div id="temp-info" style="width: 50%; margin:auto;"></div>
@@ -15,7 +16,8 @@
     <div class="container w-50 p-2 " style="position: relative; z-index:2;">
         <p id="txt" class="z-0">Qui sommes nous ?</p>
     </div>
-    <img src="../public/assets/ressources/BlackSmokeEnBasDesPersonnages.png" alt="black_smoke1" class="w-100" id="smoke" style="position: absolute; bottom:0; z-index:1; left:0;">
+    <img src="../public/assets/ressources/BlackSmokeEnBasDesPersonnages.png" alt="black_smoke1" class="w-100" id="smoke"
+        style="position: absolute; bottom:0; z-index:1; left:0;">
 
 
 
@@ -23,7 +25,8 @@
 <section style="position: relative;">
 
 
-    <div id="personnage" class="d-flex justify-content-evenly align-content-center " style="padding-top: 20%; padding-bottom: 30%; position:relative;">
+    <div id="personnage" class="d-flex justify-content-evenly align-content-center "
+        style="padding-top: 20%; padding-bottom: 30%; position:relative;">
 
         <div id="card_1" class="card p-1">
             <h3>Kevin SATOUT</h3>
@@ -62,14 +65,17 @@
                         <div class="card-body ">
                             <h5 class="card-title text-center">France Air Expo 2023</h5>
                             <div class="m-auto text-center">
-                                <img src="../public/assets/ressources/yesiiir.png" width="80%" class="m-auto text-center" alt="..." />
+                                <img src="../public/assets/ressources/yesiiir.png" width="80%"
+                                    class="m-auto text-center" alt="..." />
                             </div>
                             <div class="d-flex">
-                                <img src="../public/assets/ressources/loc.png" alt="loc" width="5%" height="5%" style="margin-right: 5px;" />
+                                <img src="../public/assets/ressources/loc.png" alt="loc" width="5%" height="5%"
+                                    style="margin-right: 5px;" />
                                 <p>Aéroport de Lyon-Bron - Bron, France</p>
                             </div>
                             <div class="d-flex">
-                                <img src="../public/assets/ressources/temps.png " alt="heur" width="5%" height="5%" style="margin-right: 5px;" />
+                                <img src="../public/assets/ressources/temps.png " alt="heur" width="5%" height="5%"
+                                    style="margin-right: 5px;" />
                                 <p>09:00 AM to 02:00 PM</p>
                             </div>
                         </div>
@@ -82,14 +88,17 @@
                                 1er Rassemblement ULM des femmes pilotes
                             </h5>
                             <div class="m-auto text-center">
-                                <img src="../public/assets/ressources/360_F_159634840_Fa2HPb8ITrbr5gddY2eKlomVfsnu1gx6.png" alt="..." />
+                                <img src="../public/assets/ressources/360_F_159634840_Fa2HPb8ITrbr5gddY2eKlomVfsnu1gx6.png"
+                                    alt="..." />
                             </div>
                             <div class="d-flex">
-                                <img src="../public/assets/ressources/loc.png" alt="loc" width="5%" height="5%" style="margin-right: 5px;" />
+                                <img src="../public/assets/ressources/loc.png" alt="loc" width="5%" height="5%"
+                                    style="margin-right: 5px;" />
                                 <p>Saint-Martin-de-Castillon</p>
                             </div>
                             <div class="d-flex">
-                                <img src="../public/assets/ressources/temps.png" alt="heur" width="5%" height="5%" style="margin-right: 5px;" />
+                                <img src="../public/assets/ressources/temps.png" alt="heur" width="5%" height="5%"
+                                    style="margin-right: 5px;" />
                                 <p>09:00 AM to 06:00 PM </p>
                             </div>
                         </div>
@@ -100,14 +109,17 @@
                         <div class="card-body">
                             <h5 class="card-title text-center">Journée sécurité des vols - GRAND EST</h5>
                             <div class="m-auto text-center">
-                                <img src="../public/assets/ressources/Event1 (1).png" width="80%" alt="..." class="m-auto text-center" />
+                                <img src="../public/assets/ressources/Event1 (1).png" width="80%" alt="..."
+                                    class="m-auto text-center" />
                             </div>
                             <div class="d-flex" style="margin-top: 20px;">
-                                <img src="../public/assets/ressources/loc.png" alt="loc" width="5%" height="5%" style="margin-right: 5px;" />
+                                <img src="../public/assets/ressources/loc.png" alt="loc" width="5%" height="5%"
+                                    style="margin-right: 5px;" />
                                 <p>Serrouville, France</p>
                             </div>
                             <div class="d-flex">
-                                <img src="../public/assets/ressources/temps.png" width="5%" height="5%" alt="heur" style="margin-right: 5px;" />
+                                <img src="../public/assets/ressources/temps.png" width="5%" height="5%" alt="heur"
+                                    style="margin-right: 5px;" />
                                 <p>09:00 AM to 02:00 PM</p>
                             </div>
                         </div>
@@ -117,19 +129,22 @@
         </div>
     </div>
     <div class="d-flex justify-content-center">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active m-3" aria-current="true" aria-label="Slide 1" style="
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active m-3"
+            aria-current="true" aria-label="Slide 1" style="
           background-color: black;
           height: 20px;
           width: 20px;
           border-radius: 100%;
         "></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="m-3" aria-label="Slide 2" style="
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="m-3"
+            aria-label="Slide 2" style="
           background-color: black;
           height: 20px;
           width: 20px;
           border-radius: 100%;
         "></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="m-3" aria-label="Slide 3" style="
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="m-3"
+            aria-label="Slide 3" style="
           background-color: black;
           height: 20px;
           width: 20px;
@@ -158,7 +173,8 @@
                                 joies de
                                 l'aviation.</p>
                             <div class="card-footer bg-white border-white rounded d-flex
-                            align-items-center justify-content-center w-50" style=" background-color: rgba(0, 0, 0, 0.7) !important">
+                            align-items-center justify-content-center w-50"
+                                style=" background-color: rgba(0, 0, 0, 0.7) !important">
                                 <p class="text-center " style="color: white; margin: 0;">300 €</p>
                             </div>
                         </div>
@@ -174,7 +190,8 @@
                                 entraînement pratique, navigation et communication aérienne, préparant à la licence de
                                 pilote.</p>
                             <div class="card-footer bg-white border-white rounded
-                            d-flex align-items-center justify-content-center w-50" style=" background-color: rgba(0, 0, 0, 0.7) !important">
+                            d-flex align-items-center justify-content-center w-50"
+                                style=" background-color: rgba(0, 0, 0, 0.7) !important">
                                 <p class="text-center " style="color: white; margin: 0;">1500 €</p>
                             </div>
                         </div>
@@ -188,7 +205,8 @@
                                 techniques
                                 d'enseignement et la gestion de vol, visant à former des instructeurs compétents.</p>
                             <div class="card-footer bg-white border-white rounded
-                            d-flex align-items-center justify-content-center w-50" style=" background-color: rgba(0, 0, 0, 0.7) !important">
+                            d-flex align-items-center justify-content-center w-50"
+                                style=" background-color: rgba(0, 0, 0, 0.7) !important">
                                 <p class="text-center " style="color: white; margin: 0;">5000 €</p>
                             </div>
                         </div>
@@ -218,9 +236,11 @@
             <div class="row m-auto">
                 <div class="col-12 col-md-6">
                     <ul class="list-group">
-                        <li class="list-group-item" style="cursor:pointer;" id="i1">Maintenance des ULM <img src="../public/assets/ressources/i.png" width="5%" alt="i" style="margin-left: 2%;">
+                        <li class="list-group-item" style="cursor:pointer;" id="i1">Maintenance des ULM <img
+                                src="../public/assets/ressources/i.png" width="5%" alt="i" style="margin-left: 2%;">
                         </li>
-                        <li class="list-group-item" style="cursor:pointer;" id="i2">Montage des ULM <img src="../public/assets/ressources/i.png" width="5%" alt="i" style="margin-left: 2%;">
+                        <li class="list-group-item" style="cursor:pointer;" id="i2">Montage des ULM <img
+                                src="../public/assets/ressources/i.png" width="5%" alt="i" style="margin-left: 2%;">
                         </li>
                         <li class="list-group-item" style="cursor:pointer;" id="i3">Location d’emplacements ULM protégés
                             <img src="../public/assets/ressources/i.png" width="5%" alt="i" style="margin-left: 2%;">
@@ -229,9 +249,11 @@
                 </div>
                 <div class="col-12 col-md-6 m-auto">
                     <ul class="list-group">
-                        <li class="list-group-item" style="cursor:pointer;" id="i4">Hébergement <img src="../public/assets/ressources/i.png" width="5%" alt="i" style="margin-left: 2%;">
+                        <li class="list-group-item" style="cursor:pointer;" id="i4">Hébergement <img
+                                src="../public/assets/ressources/i.png" width="5%" alt="i" style="margin-left: 2%;">
                         </li>
-                        <li class="list-group-item" style="cursor:pointer;" id="i5">Service de restauration <img src="../public/assets/ressources/i.png" width="5%" alt="i" style="margin-left: 2%;">
+                        <li class="list-group-item" style="cursor:pointer;" id="i5">Service de restauration <img
+                                src="../public/assets/ressources/i.png" width="5%" alt="i" style="margin-left: 2%;">
                         </li>
                     </ul>
                 </div>
@@ -295,38 +317,39 @@
         </div>
         <div id="carousel1" style="position: relative;">
             <?php foreach ($avions as $plane) : ?>
-                <div class="carousel-item1 active">
-                    <div style="position: relative; display: block; text-align: center; margin: auto;">
-                        <?= $plane->getImg(); ?>
-                        <h3 style="padding: 4px 40px; background-color:#556672; border-radius:10px;position: absolute;
+            <div class="carousel-item1 active">
+                <div style="position: relative; display: block; text-align: center; margin: auto;">
+                    <?= $plane->getImg(); ?>
+                    <h3 style="padding: 4px 40px; background-color:#556672; border-radius:10px;position: absolute;
                          top: 50%; left: 50%; transform: translate(-50%, -50%);">
-                            <?= $plane->modele ?></h3>
-                    </div>
-                    <div style="color:#fff; background-color:#556672; border-radius:10px; width:300px; margin:auto;">
-                        <h3 class="text-center">Caractéristiques</h3>
-                        <div class="d-flex justify-content-center">
-                            <div>
-                                <p>
-                                    Vitesse max: <br>
-                                    Capacité: <br>
-                                    Autonomie: <br>
-                                    Poidswidth:300px
-                                </p>
-                            </div>
-                            <div>
-                                <p style="text-align: right;">
-                                    <?= $plane->v_max ?> km/h <br>
-                                    <?= $plane->capacite ?> personnes <br>
-                                    <?= $plane->autonomie ?> heures <br>
-                                    <?= $plane->poid ?> kg
-                                </p>
-                            </div>
+                        <?= $plane->modele ?></h3>
+                </div>
+                <div style="color:#fff; background-color:#556672; border-radius:10px; width:300px; margin:auto;">
+                    <h3 class="text-center">Caractéristiques</h3>
+                    <div class="d-flex justify-content-center">
+                        <div>
+                            <p>
+                                Vitesse max: <br>
+                                Capacité: <br>
+                                Autonomie: <br>
+                                Poidswidth:300px
+                            </p>
+                        </div>
+                        <div>
+                            <p style="text-align: right;">
+                                <?= $plane->v_max ?> km/h <br>
+                                <?= $plane->capacite ?> personnes <br>
+                                <?= $plane->autonomie ?> heures <br>
+                                <?= $plane->poid ?> kg
+                            </p>
                         </div>
                     </div>
                 </div>
+            </div>
             <?php endforeach; ?>
 
-            <div id="prev" class="bg-transparent" style="cursor: pointer; position: absolute;top: 50%; left: 22%;  font-size: 6rem; border-radius: 50%; width:10%; height:24%; transform: translateY(-50%); animation: none">
+            <div id="prev" class="bg-transparent"
+                style="cursor: pointer; position: absolute;top: 50%; left: 22%;  font-size: 6rem; border-radius: 50%; width:10%; height:24%; transform: translateY(-50%); animation: none">
                 < </div>
                     <div class="bg-transparent" id="next" style="cursor: pointer;  animation:none; position: absolute; top: 50%;
                          right: 15%; transform: translateY(-50%); font-size: 6rem;
@@ -340,7 +363,8 @@
     <section name="info + contact" style="padding-bottom: 5%;">
         <div class="container mt-5 mb-5">
             <div class="text-center m-auto bg-white mb-5 w-50 p-3" style="border-radius: 10px;">
-                <a href="<?= $logged ? '?page=user.reservation' : '?page=user.login' ?>" class="w-50" style="color: black; text-decoration: none;">
+                <a href="<?= $logged ? '?page=user.reservation' : '?page=user.login' ?>" class="w-50"
+                    style="color: black; text-decoration: none;">
                     <div class="text-center" style="font-size: 1.2rem;">> RESERVEZ VOTRE VOL MAINTENANT < </div>
                 </a>
             </div>
@@ -349,7 +373,10 @@
                     <div class="card">
                         <div class="card-header">
                             <h3 class="mb-0 ">
-                                <button class="btn btn-link d-flex align-items-center w-100 justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#infoCollapse1" aria-expanded="false" aria-controls="infoCollapse1" style="color: black; text-decoration: none;">
+                                <button class="btn btn-link d-flex align-items-center w-100 justify-content-between"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#infoCollapse1"
+                                    aria-expanded="false" aria-controls="infoCollapse1"
+                                    style="color: black; text-decoration: none;">
                                     <div>Infos</div>
                                     <div class="fas p-2 text-end">▲</div>
                                 </button>
@@ -369,7 +396,10 @@
                     <div class="card">
                         <div class="card-header">
                             <h3 class="mb-0 d-flex justify-content-between">
-                                <button class="btn btn-link d-flex align-items-center w-100 justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#contactForm" aria-expanded="false" aria-controls="contactForm" style="color: black; text-decoration: none;">
+                                <button class="btn btn-link d-flex align-items-center w-100 justify-content-between"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#contactForm"
+                                    aria-expanded="false" aria-controls="contactForm"
+                                    style="color: black; text-decoration: none;">
                                     <div>Contactez-nous</div>
                                     <div class="fas p-2 text-end">▲</div>
                                 </button>
@@ -406,7 +436,3 @@
         </div>
     </section>
 </div>
-
-<script>
-
-</script>
