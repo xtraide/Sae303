@@ -88,7 +88,7 @@ class UserController extends AppController
         $this->Reservation =  $this->loadModel('reservation');
         $Reservations = $this->Reservation->find($_SESSION['auth']);
 
-        var_dump($Reservations);
+
         $errorMessage = '';
         try {
             $form = new BootstrapForm($_POST);

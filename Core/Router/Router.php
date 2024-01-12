@@ -16,42 +16,37 @@ class Router
     public function route($page)
     {
         try {
+            $parts = explode('.', $page);
+            if (count($parts) < 2) {
+                throw new \Exception('Page introuvable');
+            }
 
-            $page = explode('.', $page);
-            if ($page[0] == 'admin') {
-                if ($this->dbAuth->isAdmin()) {
-                    $controller_name = '\App\Controller\Admin\\' . ucfirst($page[1]) . 'Controller';
-                    $action = $page[2];
-                } else {
-                    throw new \Exception('Page introuvable');
-                }
-            } elseif ($page[0] && $page[1]) {
-                $controller_name = '\App\Controller\\' . ucfirst($page[0]) . 'Controller';
-                $action = $page[1];
+            $isAdmin = $parts[0] === 'admin';
+            if ($isAdmin && !$this->dbAuth->isAdmin()) {
+                throw new \Exception('Page introuvable');
+            }
+            if ($isAdmin) {
+                $controllerName = $parts[1];
+                $action = $parts[2];
             } else {
-                throw new \Exception('Page introuvable');
+                $controllerName = $parts[0];
+                $action = $parts[1];
             }
 
 
-            if ($controller_name == null || $action == null) {
-                throw new \Exception('Page introuvable');
-            }
-            if (!class_exists($controller_name)) {
-                throw new \Exception('Page introuvable');
-            }
-            if (method_exists($controller_name, $action)) {
+            $controllerClass = '\App\Controller' . ($isAdmin ? '\Admin' : '') . '\\' . ucfirst($controllerName) . 'Controller';
 
-                if ($controller_name == '\App\Controller\UserController') {
-                    $controller = new $controller_name($this->dbAuth);
-                } else {
-                    $controller = new $controller_name();
-                }
-                $controller->$action();
+            if (!class_exists($controllerClass) || !method_exists($controllerClass, $action)) {
+                throw new \Exception('Page introuvable');
+            }
+            if ($controllerClass == '\App\Controller\UserController') {
+                $controller = new $controllerClass($this->dbAuth);
             } else {
-                throw new \Exception('Page introuvable');
+                $controller = new $controllerClass();
             }
-        } catch (\Exception $e) {
-
+            $controller->$action();
+            return;
+        } catch (\Exception) {
             $controller = new \App\Controller\MainController();
             $controller->notfound();
         }

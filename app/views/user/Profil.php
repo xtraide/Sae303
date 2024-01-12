@@ -1,9 +1,11 @@
 <div class="container" style="padding-top: 90px;">
     <div class="col-md-6 mx-auto">
+        <h2 class="mb-4">Réservation effectué</h2>
         <table class="table table-bordered  text-center " aria-label="Reservation Table">
 
             <thead>
                 <tr>
+                    <th scope="col">nb Réservation</th>
                     <th scope="col">Date</th>
                     <th scope="col">Horraire</th>
                     <th scope="col">Avion</th>
@@ -12,30 +14,30 @@
             </thead>
             <tbody>
 
-                <?php foreach ($Reservations as $Reservation) : ?>
+                <?php $i = 0;
+                foreach ($Reservations as $Reservation) : ?>
                     <tr>
-
+                        <td><?= $i ?></td>
                         <td><?= $Reservation->_date ?></td>
                         <td><?= $Reservation->horraire ?></td>
                         <td><?= $Reservation->avion_modele ?></td>
-
                         <td>
                             <?= $Reservation->nom_pilote ?>
                             <?= $Reservation->prenom_pilote ?>
                         </td>
                     </tr>
-                <?php endforeach; ?>
+                <?php $i++;
+                endforeach; ?>
             </tbody>
         </table>
-        <form method="post " class=" m-auto mb-5 col-12 col-md-10" style="padding-top:100px;">
+        <h2 class="mb-1 mt-5">Renseigner des information</h2>
+        <form method="post" class=" m-auto mb-5 col-12 col-md-10" style="padding-top:100px;">
             <?php if (!empty($errorMessage)) : ?>
                 <div class="alert alert-danger">
                     <?= $errorMessage ?>
                 </div>
             <?php endif; ?>
-            <br>
-            <br> <br>
-            <br> <br>
+
             <?= $form->select('civilite', "Civilité", ['Monsieur', 'Madame'], "form-control"); ?>
             <?= $form->input('nom', 'Nom', ['class' => 'form-control']); ?>
             <?= $form->input('prenom', 'Prénom', ['class' => 'form-control']); ?>

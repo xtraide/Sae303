@@ -86,7 +86,7 @@
 
             <?php endif ?>
             <div class="form-inline d-none d-lg-flex nav-element align-items-center">
-                <a href="?page=user.logout" class="btn my-2 my-sm-0">Deconnection</a>
+                <a href="?page=user.logout" class="btn my-2 my-sm-0">Déconnexion</a>
 
                 <a href="?page=user.profil" class="btn my-2 my-sm-0" style="width: 60px; height:60px;"><img src="assets/ressources/utilisateur-de-profil.png" width="100%" alt="" style="margin-bottom: 5px;"></a>
             </div>
