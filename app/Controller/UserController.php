@@ -85,8 +85,16 @@ class UserController extends AppController
 
     public function profil()
     {
-        $form = new BootstrapForm($_POST);
-        $this->render('user.profil',  compact('form'));
+
+        $errorMessage = '';
+        try {
+            $form = new BootstrapForm($_POST);
+            $this->validateForm($_POST);
+        } catch (\Exception $e) {
+            $errorMessage = $e->getMessage();
+        }
+
+        $this->render('user.profil',  compact('form', 'errorMessage'));
     }
     public function reservation()
     {

@@ -1,54 +1,37 @@
 <div class="container" style="padding-top: 90px;">
     <div class="col-md-6 mx-auto">
-        <form>
-            <div class="">
-                <div class="form-check-inline">
-                    <?= $form->input('civilite', "Monsieur", ['class' => 'checkbox', 'id' => '', 'type' => 'radio']); ?>
+        <form method="post " class=" m-auto mb-5 col-12 col-md-10" style="padding-top:100px;">
+            <?php if (!empty($errorMessage)) : ?>
+                <div class="alert alert-danger">
+                    <?= $errorMessage ?>
                 </div>
-                <div class="form-check-inline">
-                    <?= $form->input('civilite', "Madame", ['class' => 'checkbox', 'id' => '', 'type' => 'radio']); ?>
-                </div>
-            </div>
-            <div class="form-group">
-                <?= $form->input('nom', "Nom", ['class' => '']); ?>
-            </div>
-            <div class="form-group">
-                <?= $form->input('prenom', "Prénom", ['class' => '']); ?>
-            </div>
-            <div class="form-group">
-                <?= $form->input('email', "Adresse email", ['class' => 'form-control w-100', 'id' => 'email']); ?>
-            </div>
-            <div class="form-group">
-                <?= $form->input('numero', "Téléphone", ['class' => '', 'id' => '', 'type' => 'number']); ?>
-            </div>
-            <div class="form-group">
-                <?= $form->input('_date', "Date de naissance", ['class' => 'btn btn-primary d-flex align-items-center m-auto ', 'type' => 'date']); ?>
-            </div>
-            <div class="form-group">
-                <?= $form->select('situation_familiale', "Situation familiale", ['class' => '', 'type' => 'marié', 'pacsé', 'divorcé', 'séparé', 'célibataire', 'veuf']); ?>
-            </div>
-            <div class="form-group">
-                <?= $form->input('date_situation_familiale', "Début de situation familiale", ['class' => '', 'type' => 'date']); ?>
-            </div>
-            <div class="form-group">
-                <?= $form->input('dateFin_situation_familiale', "Fin de situation familiale", ['class' => '', 'type' => 'date']); ?>
-            </div>
-            <div class="form-group">
-                <?= $form->input('nb_a_charge', "Nombre d'enfant à charge", ['class' => '', 'type' => 'number']); ?>
-            </div>
-            <div class="form-group">
-                <?= $form->input('activite', "Activité", ['class' => '', 'type' => 'text']); ?>
-            </div>
+            <?php endif; ?>
+            <br>
+            <br> <br>
+            <br> <br>
 
+
+
+            <?= $form->select('civilite', "Civilité", ['Monsieur', 'Madame'], "form-control"); ?>
+            <?= $form->input('nom', 'Nom', ['class' => 'form-control']); ?>
+            <?= $form->input('prenom', 'Prénom', ['class' => 'form-control']); ?>
+            <?= $form->input('_date', 'Date de naissance', ['type' => "date", 'class' => 'form-control']); ?>
             <div class="form-group">
-                <?= $form->input('ad1', "Numéro de voix", ['class' => '', 'type' => 'text']); ?>
-                <?= $form->input('ad2', "Rue", ['class' => '', 'type' => 'text']); ?>
-                <?= $form->input('ad3', "Code postal", ['class' => '', 'type' => 'text']); ?>
-                <?= $form->input('ad4', "Ville", ['class' => '', 'type' => 'text']); ?>
+                <?= $form->input('nb_voix', "Numéro de voix", ['class' => '', 'type' => 'text']); ?>
+                <?= $form->input('rue', "Rue", ['class' => '', 'type' => 'text']); ?>
+                <?= $form->input('code_postal', "Code postal", ['class' => '', 'type' => 'text']); ?>
+                <?= $form->input('ville', "Ville", ['class' => '', 'type' => 'text']); ?>
             </div>
-            <div class="form-group">
-                <?= $form->submit('Se connecter', "Se connecter", ['class' => 'btn btn-primary', 'value' => 'Se connecter']); ?>
-            </div>
+            <?= $form->select('situation_familiale', "Situation familiale", ['pacsé', 'divorcé', 'séparé', 'célibataire', 'veuf'], 'form-control'); ?>
+            <?= $form->input('date_situation_familiale', 'Date Situation Familiale', ['type' => "date", 'class' => 'form-control']); ?>
+            <?= $form->input('dateFin_situation_familiale', 'Date Fin Situation Familiale', ['type' => "date", 'class' => 'form-control']); ?>
+            <?= $form->input('email', 'Email', ['type' => "email", 'class' => 'form-control']); ?>
+            <?= $form->input('password', "Mot de passe", ['type' => 'password', 'class' => 'form-control w-100 back_input']); ?>
+            <?= $form->input('numero', 'Numéro de telephone', ['type' => "number", 'class' => 'form-control']); ?>
+            <?= $form->input('nb_a_charge', 'Nombre à Charge', ['type' => "number", 'class' => 'form-control']); ?>
+            <?= $form->input('activite', 'Activité', ['class' => 'form-control']); ?>
+
+            <button class="btn btn-primary mt-3">Sauvegarder</button>
         </form>
     </div>
 </div>

@@ -7,9 +7,9 @@
 
         <form action="" method="post" class="w-50 m-auto mb-3 police">
             <?php if (!empty($errorMessage)) : ?>
-            <div class="alert alert-danger">
-                <?= $errorMessage ?>
-            </div>
+                <div class="alert alert-danger">
+                    <?= $errorMessage ?>
+                </div>
             <?php endif; ?>
             <div class="">
             </div>

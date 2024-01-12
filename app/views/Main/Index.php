@@ -395,7 +395,7 @@
     <section name="info + contact" style="padding-bottom: 5%;">
         <div class="container mt-5 mb-5">
             <div class="text-center m-auto bg-white mb-5 w-50 p-3" style="border-radius: 10px;">
-                <a href="?page=user.reservation" class="w-50" style="color: black; text-decoration: none;">
+                <a href="<?= $logged ? '?page=user.reservation' : '?page=user.login' ?>" class="w-50" style="color: black; text-decoration: none;">
                     <div class="text-center" style="font-size: 1.2rem;">> RESERVEZ VOTRE VOL MAINTENANT < </div>
                 </a>
             </div>

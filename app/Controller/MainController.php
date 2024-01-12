@@ -41,4 +41,8 @@ class MainController extends AppController
         $form = new BootstrapForm($_POST);
         $this->render('main.condition');
     }
+    public function notfound()
+    {
+        $this->render('error.404');
+    }
 }
