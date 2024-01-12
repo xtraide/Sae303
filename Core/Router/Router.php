@@ -33,7 +33,12 @@ class Router
             }
 
 
-
+            if ($controller_name == null || $action == null) {
+                throw new \Exception('Page introuvable');
+            }
+            if (!class_exists($controller_name)) {
+                throw new \Exception('Page introuvable');
+            }
             if (method_exists($controller_name, $action)) {
 
                 if ($controller_name == '\App\Controller\UserController') {
