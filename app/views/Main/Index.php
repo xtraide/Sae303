@@ -213,43 +213,6 @@
                     </div>
                 </div>
             </div>
-            <div class="row mt-4 justify-content-around">
-                <div class="col-md-5 d-flex">
-                    <div class="card flex-column h-100">
-                        <div class="card-body mb-auto d-flex flex-column justify-content-center align-items-center">
-                            <h5 class="card-title title_h5">Forfaits achat immédiat</h5>
-                            <p class="card-text text-center">Ces forfaits offrent une solution flexible et économique
-                                pour
-                                les
-                                passionnés d'ULM à tous les niveaux. Choisissez parmi trois options - Découverte,
-                                Évolution,
-                                Maîtrise - pour répondre à vos besoins de formation et d'expérience de vol.</p>
-                            <div class="card-footer bg-white border-white rounded
-                            d-flex align-items-center justify-content-center w-50"
-                                style=" background-color: rgba(0, 0, 0, 0.7) !important">
-                                <a href=" " class="text-center " style="color: white; margin: 0;">EN SAVOIR PLUS</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-5 d-flex">
-                    <div class="card flex-column h-100">
-                        <div class="card-body mb-auto d-flex flex-column justify-content-center align-items-center">
-                            <h5 class="card-title title_h5">Forfait abonnements</h5>
-                            <p class="card-text text-center">Idéal pour un engagement régulier dans le pilotage d'ULM,
-                                nos
-                                abonnements mensuels sont disponibles en trois niveaux - Envol, Ascension, Horizon. Ils
-                                permettent
-                                une progression constante et adaptée à vos objectifs de vol.</p>
-                            <div class="card-footer bg-white border-white rounded
-                            d-flex align-items-center justify-content-center w-50"
-                                style=" background-color: rgba(0, 0, 0, 0.7) !important">
-                                <a href=" " class="text-center " style="color: white; margin: 0;">EN SAVOIR PLUS</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
     <section class="margintop">

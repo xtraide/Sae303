@@ -34,7 +34,7 @@ class App
         App\Autoloader::register();
         require ROOT . "/Core/Autoloader.php";
         Core\Autoloader::register();
-        require ROOT . "/vendor/autoload.php";
+        //require ROOT . "/vendor/autoload.php";
     }
 
     /**
