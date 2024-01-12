@@ -140,7 +140,7 @@
 
     </script>
     <script src="assets/script/script.js"></script>
-    <script src="assets/script/api_meteo.js"></script>
+
 </body>
 <script>
 document.addEventListener('DOMContentLoaded', function() {
