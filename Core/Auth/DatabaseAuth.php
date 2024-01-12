@@ -69,7 +69,9 @@ class DatabaseAuth
     public function isAdmin()
     {
         if ($this->logged()) {
-            $user = $this->db->query('SELECT role FROM ' . self::$prefix . 'user WHERE id = ?', [$_SESSION['auth']], null, true);
+
+            $user = $this->db->prepare('SELECT role FROM ' . self::$prefix . 'user WHERE id = ?', [$_SESSION['auth']], null, true);
+
             if ($user->role == "Admin") {
                 return true;
             }
@@ -79,7 +81,7 @@ class DatabaseAuth
     public function isVerified()
     {
         if ($this->logged()) {
-            $user = $this->db->query('SELECT verified FROM ' . self::$prefix . 'user WHERE id = ?', [$_SESSION['auth']], null, true);
+            $user = $this->db->prepare('SELECT verified FROM ' . self::$prefix . 'user WHERE id = ?', [$_SESSION['auth']], null, true);
             if ($user->verified == "1") {
                 return true;
             }

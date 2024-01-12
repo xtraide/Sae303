@@ -96,6 +96,7 @@ class UserController extends AppController
         if ($_POST) {
             try {
                 $this->validateForm($_POST);
+                $this->Reservation = $this->loadModel('reservation');
                 $result = $this->Reservation->create($_POST);
                 header('Location: ?page=main.index');
             } catch (\Exception $e) {
@@ -109,14 +110,12 @@ class UserController extends AppController
             $pilotes[$pilote->id] = $pilote->nom . " " . $pilote->prenom;
         }
 
-        $users_model = $this->loadModel('user')->all();
-        foreach ($users_model as $user) {
-            $users[$user->id] = $user->nom . " " . $user->prenom;
-        }
+
+        $user = $_SESSION['auth'];
 
 
         $form = new BootstrapForm($_POST);
-        $this->render('admin.Reservation.edit', compact('form', 'avions', 'pilotes', 'users', 'errorMessage'));
+        $this->render('user.reservation', compact('form', 'avions', 'pilotes', 'user', 'errorMessage'));
     }
     public function VerifyAccount()
     {

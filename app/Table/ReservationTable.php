@@ -74,4 +74,20 @@ WHERE
             true
         );
     }
+    /*
+    public function validateReservation($reservation, $date, $horraire)
+    {
+        // Vérifiez que l'avion est valide et disponible
+        if (!$this->isPlaneAvailable($reservation['Id_3'], $date, $horraire)) {
+            throw new \Exception('L\'avion sélectionné n\'est pas disponible.');
+        }
+
+        // Vérifiez que le pilote est valide et disponible
+        if (!$this->isPilotAvailable($reservation['Id_2'], $date, $horraire)) {
+            throw new \Exception('Le pilote sélectionné n\'est pas disponible.');
+        }
+
+        // Si tout est valide, retournez vrai
+        return true;
+    }*/
 }
