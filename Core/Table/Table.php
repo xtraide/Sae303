@@ -41,7 +41,7 @@ class Table
     // Function that returns the number of records in the table
     public function count()
     {
-        return  $this->query("SELECT COUNT(*) FROM " . $this->table)[0]->count;
+        return  $this->query("SELECT COUNT(*) as " . $this->table . " FROM " . $this->table, [], true);
     }
 
     // Function that deletes a record from the table by its ID

@@ -10,5 +10,6 @@
                 Réservation</a>
             <a href="?page=admin.pilote.index" class="list-group-item list-group-item-action police">Gérer les
                 Pilotes</a>
+            <a href="?page=admin.main.analytiques" class="list-group-item list-group-item-action police">Analytiques</a>
         </div>
     </div>

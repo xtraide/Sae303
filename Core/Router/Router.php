@@ -37,16 +37,19 @@ class Router
             $controllerClass = '\App\Controller' . ($isAdmin ? '\Admin' : '') . '\\' . ucfirst($controllerName) . 'Controller';
 
             if (!class_exists($controllerClass) || !method_exists($controllerClass, $action)) {
-                throw new \Exception('Page introuvable');
+                throw new \Exception('Page introuvable ');
             }
             if ($controllerClass == '\App\Controller\UserController') {
                 $controller = new $controllerClass($this->dbAuth);
             } else {
                 $controller = new $controllerClass();
             }
+
             $controller->$action();
+
             return;
-        } catch (\Exception) {
+        } catch (\Exception $e) {
+            var_dump($e->getMessage());
             $controller = new \App\Controller\MainController();
             $controller->notfound();
         }

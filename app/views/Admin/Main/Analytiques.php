@@ -12,10 +12,11 @@
      <tbody>
 
          <tr>
-             <th><?= $result->user ?></th>
-             <td><?= $plane->avion ?></td>
-             <td><?= $plane->pilote ?></td>
-             <td><?= $plane->reservation ?></td>
+
+             <th><?= $User->ntrhndmam_user ?></th>
+             <td><?= $Avion->ntrhndmam_avion ?></td>
+             <td><?= $Pilote->ntrhndmam_pilote ?></td>
+             <td><?= $Reservation->ntrhndmam_reservation ?></td>
 
          </tr>
 
