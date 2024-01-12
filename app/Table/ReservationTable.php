@@ -70,8 +70,8 @@ FROM
     ntrhndmam_avion
 WHERE
     ntrhndmam_reservation.id_1 = ntrhndmam_user.id AND ntrhndmam_reservation.id_2 = ntrhndmam_pilote.id AND ntrhndmam_reservation.id_3 = ntrhndmam_avion.id AND ntrhndmam_reservation.id = ?;',
-            [$id],
-            true
+            [$id]
+
         );
     }
     /*

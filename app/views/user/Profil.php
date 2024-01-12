@@ -17,8 +17,8 @@
 
                         <td><?= $Reservation->_date ?></td>
                         <td><?= $Reservation->horraire ?></td>
-                        <td><?= $Reservation->user_prenom ?></td>
                         <td><?= $Reservation->avion_modele ?></td>
+
                         <td>
                             <?= $Reservation->nom_pilote ?>
                             <?= $Reservation->prenom_pilote ?>
