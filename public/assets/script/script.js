@@ -76,7 +76,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 function changeDisplay(selectedBtn) {
     // Réinitialise le style des boutons et divs
-    console.log("coucou");
     document.getElementById('btn1').style.fontSize = '1.2rem';
     document.getElementById('btn2').style.fontSize = '1.2rem';
     document.getElementById('btn3').style.fontSize = '1.2rem';
@@ -127,9 +126,7 @@ window.onload = function () {
         ulm();
     } else if (localStorage.getItem('redirected1')) {
         acit()
-    } else {
-        console.log('no redirection');
-    }
+    } else {}
 }
 
 document.addEventListener('DOMContentLoaded', function () {
